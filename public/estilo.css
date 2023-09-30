@@ -1,0 +1,627 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* VARIABLES */
+:root{
+    --verde--oscuro: rgb(132,183,78);
+    --verde-claro:rgb(164,200,120);
+    --verde-muy-claro:rgb(229,241,217);
+    --negro: #010101;
+    --blanco: rgb(249,250,252);
+    --gris:rgb(139, 143, 144);
+}
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    color: var(--negro);
+    overflow-x: hidden;
+    background-color: var(--blanco);
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+/*====== HEADER========= */
+header{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+nav a{
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 200ms ease;
+}
+nav a:hover{
+    color: var(--verde-claro);
+}
+.contenedor-header{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0rem;
+}
+.empresa{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.header-derecha{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.header-iconos a{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.header-iconos a:hover{
+    color: var(--verde-claro);
+}
+.registrarse a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    background-color: var(--blanco);
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.registrarse a:hover{
+    color: var(--verde-claro);
+}
+/*==== FIN HEADER======= */
+
+/*=========== HERO========== */
+.hero{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.circulo-verde-der{
+    width: 90rem;
+    height: 65rem;
+    background-color: var(--verde--oscuro);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 26rem;
+    left: 45rem;
+}
+.circulo-verde-izq{
+    width: 55rem;
+    height: 45rem;
+    background-color: var(--verde--oscuro);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15rem;
+    left: 89rem;
+}
+
+.planta-hero{
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+}
+.contenedor-hero{
+    width: 85vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+.textos-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.btn-hero-pregunta{
+    background-color: transparent;
+    border: 1px solid var(--negro);
+    border-radius: 25px;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.btn-hero-pregunta:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.textos-hero h1{
+    font-size: 5rem;
+    font-weight: 900;
+    width: 90%;
+    letter-spacing: 3px;
+    line-height: 6rem;
+    z-index: 10;
+}
+.textos-hero p{
+    color: var(--gris);
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 55%;
+}
+.btns-hero{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-hero-izq{
+    background-color: var(--verde--oscuro);
+    border: 1px solid var(--verde--oscuro);
+    padding: 1.4rem 2.8rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.btn-hero-izq:hover{
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+
+}
+.btn-hero-der{
+    background-color: transparent;
+    border: 1px solid var(--negro);
+    padding: 1.4rem 2.2rem;
+    color: var(--negro);
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.btn-hero-der span{
+    position: relative;
+    top: 0.1rem;
+}
+.btn-hero-der:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.imagenes-hero{
+    position: relative;
+    margin-right: 6rem;
+    z-index: 5;
+}
+.hero-comida-principal{
+    width: 30rem;
+    border-radius: 50%;
+    border: 2.3rem solid var(--verde-claro);
+    animation: girar infinite 40s linear;
+}
+.hero-comida-pequeña{
+    position: absolute;
+    width: 5.2rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.4rem solid rgb(205,182,182);
+}
+.panqueque{
+    border: 0.4rem solid rgb(205,182,182);
+    top: 21rem;
+    left: 35.5rem;
+}
+.pancakes{
+    border: 0.4rem solid rgb(217,198,154);
+    top: 30rem;
+    left: 30rem;
+}
+.pescado{
+    border: 0.4rem solid rgb(182,181,182);
+    top: 35rem;
+    left: 14rem;
+}
+.vegetales{
+    border: 0.4rem solid rgb(237,173,131);
+    top: 30rem;
+    left: 0rem;
+}
+.arroz{
+    border: 0.4rem solid rgb(203,210,218);
+    top: 21rem;
+    left: -7rem;
+}
+@keyframes girar{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*====== FIN HERO======== */
+
+/*========== SECCION OPCIONES========= */
+.seccion-opciones{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10rem 0rem 2rem;
+}
+.contenedor-opciones{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarjeta{
+    background-color: white;
+    border-radius: 25px;
+    width: 21rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+}
+.tarjeta img{
+    width: 14rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    position: absolute;
+    bottom: 14rem;
+    left: 3rem;
+}
+.tarjeta-textos{
+    padding: 9rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+}
+.tarjeta-textos h2{
+    font-size: 1.7rem;
+    width: 80%;
+}
+.tarjeta-textos p{
+    color: var(--gris);
+    width: 70%;
+    margin-top: 0.5;
+}
+.opciones-comprar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.opciones-comprar p{
+    border: 1px solid var(--negro);
+    border-radius: 20px;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: var(--negro);
+}
+.opciones-comprar button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+/*======= FIN SECCION OPCIONES=========== */
+
+/*==== SIGN-UP - LOG-IN====== */
+.ingreso {
+    display: flex;
+}
+.logo{
+    padding-bottom: 1em;
+    font-size: 5rem;
+    background-color: #E5F1D9;
+    font-family: 'Oswald', sans-serif;
+}
+.img{
+    background-color: #E5F1D9;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ensa{
+    width: 24em;
+    height: 24em;
+    background-color: transparent;
+    border: 15px solid #83B64D;
+    border-radius: 670px;
+}
+.partedos{
+    width: 60%;
+}
+.iniciar{
+    padding: 4.5em 0em 1em;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #F9FAFC;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+.persona{
+    display: flex;
+    padding-bottom: 2em;
+    align-items: center;
+}
+.imagen{
+    position: absolute;
+    background-color: transparent;
+    padding-left: 0.5em;
+}
+.email{
+    padding: 1rem 2.6rem ;
+    width: 22em;
+    border: 0;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+.btn-form{
+    width: 100%;
+    padding: 0.4em 0; 
+    text-align: center;
+    letter-spacing: 0.5px;
+    background-color: black;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.btn-form{
+    width: 100%;
+    padding: 0.4em 0; 
+    text-align: center;
+    letter-spacing: 0.5px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: all 250ms;
+}
+.btn-form:hover{
+    background-color: transparent;
+    color: #010101;
+}
+.regi{
+    padding-top: 1em;
+    display: flex;
+    transition: all 500ms;
+    justify-content: center;
+}
+.preg{
+    color: gray;
+}
+a{
+    text-decoration: none;
+    padding-left: 0.5em;
+    color: black;
+}
+.metodos{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2em;
+}
+.opcio{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.facebook i,
+.google i{
+    font-size: 1.5rem;
+}
+.facebook-enlace{
+    background-color: #3D5A99;
+    border: 1px solid #3D5A99;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 250ms;
+}
+.facebook-enlace:hover{
+    background-color: transparent;
+    color: #3D5A99;
+}
+.facebook-enlace:hover.facebook i{
+    color: #3D5A99;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-enlace{
+    background-color: #6AAAFB;
+    border: 1px solid #6AAAFB;
+    margin-left: 1em;
+    padding: 0.6rem 1.9rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 250ms;
+}
+.google-enlace:hover{
+    background-color: transparent;
+    color: #6AAAFB;
+}
+.google-enlace:hover.google i{
+    color: #6AAAFB;
+}
+.regi a:hover{
+    text-decoration: underline 1px solid black;
+    transition: 500ms;
+}
+/*==== FIN SIGN-UP - LOG-IN====== */
+
+
+/* MEDIA-QUERIES */
+/* HERO */
+@media (max-width:1900px) {
+    .circulo-verde-der{
+        left: 40rem;
+    }
+    .circulo-verde-izq{
+        left: 86rem;
+    }
+    .textos-hero h1{
+        font-size: 4.8rem;
+    }
+}
+@media (max-width:1850px) {
+    .textos-hero h1{
+        font-size: 4.7rem;
+    }
+}
+@media (max-width:1800px) {
+    .textos-hero h1{
+        font-size: 4.2rem;
+        width: 85%;
+    }
+
+}
+@media (max-width:1750px) {
+    .circulo-verde-der{
+        left: 36rem;
+    }
+    .circulo-verde-izq{
+        left: 78rem;
+    }
+    .textos-hero h1{
+        font-size: 3.6rem;
+        width: 85%;
+        line-height: 5rem;
+    }
+}
+@media (max-width:1650px) {
+    .circulo-verde-der{
+        left: 32rem;
+    }
+    .circulo-verde-izq{
+        left: 74rem;
+    }
+    .textos-hero h1{
+        font-size: 3.3rem;
+        width: 80%;
+    }
+}
+@media (max-width:1600px) {
+    .circulo-verde-der{
+        left: 28rem;
+    }
+    .circulo-verde-izq{
+        left: 65rem;
+    }
+    .textos-hero h1{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+    .hero-comida-principal{
+        width: 27rem;
+    }
+    .panqueque{
+        top: 21rem;
+        left: 31rem;
+    }
+    .pancakes{
+        top: 28rem;
+        left: 25rem;
+    }
+    .pescado{
+        top: 32rem;
+        left: 13rem;
+    }
+    .vegetales{
+        top: 28rem;
+        left: 1rem;
+    }
+    .arroz{
+        top: 21rem;
+        left: -5rem;
+    }
+    .contenedor-opciones{
+        gap: 2rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        bottom: 14rem;
+        left: 2rem;
+    }
+}
+
+/*======FIN MEDIA-QUERIES======= */
