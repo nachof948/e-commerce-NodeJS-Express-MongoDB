@@ -496,6 +496,11 @@ label{
     padding-bottom: 2em;
     align-items: center;
 }
+.persona-email{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 .imagen{
     position: absolute;
     background-color: transparent;

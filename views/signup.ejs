@@ -30,9 +30,12 @@
         </div>
             <div class="formulario">
                 <form for="" method="post">
-                    <div class="persona">
-                        <img class="imagen" src="icons8-nuevo-post-20.png" alt="">
-                        <input class="email" name="email" type="text" required  placeholder="Email">
+                    <div class="persona-email">
+                        <div class="persona">
+                            <img class="imagen" src="icons8-nuevo-post-20.png" alt="">
+                            <input class="email" name="email" type="email" required  placeholder="Email">
+                        </div>
+                        <div class="error-message" id="email-error"></div>
                     </div>
                     <div class="persona">
                         <img class="imagen" src="icons8-persona-24.png" alt="">
@@ -70,4 +73,5 @@
     </section>
 
 </body>
+<script src="../public/signup.js"></script>
 </html>

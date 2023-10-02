@@ -1,10 +1,39 @@
+const Cliente = require('../models/Cliente')
+const jwt = require('jsonwebtoken')
+
+/* MANEJO DE ERRORES */
+const manejoDeErrores = (err) => {
+    console.log(err.message, err.code)
+    let errors = {email:'', nombreCompleto:'', usuario:'', password:''}
+    
+    //Duplicacion emails
+    if(err.code === 11000){
+        errors.email = 'Ese email ya está registrado'
+        return errors
+    }
+
+    //Validacion de errores
+    if(err.message.includes('cliente validation failed')){
+        Object.values(err.errors).forEach(({properties}) =>{/* ESTO ES UN ARRAY */
+            errors[properties.path] = properties.message
+        })
+    }
+    return errors
+}
+
 
 /* METODO POST */
-
-const signup_post = (req, res) =>{
-    res.send('Usuario creado')
+const signup_post = async (req, res) =>{
     const {email, nombreCompleto, usuario, password} = req.body
-    console.log(email, nombreCompleto, usuario, password)
+    
+    try{
+        const cliente = await Cliente.create({email, nombreCompleto, usuario, password})
+        res.redirect('/login')  
+    }
+    catch(err){
+        const errors = manejoDeErrores(err)
+        res.status(400).json({errors})
+    }
 }
 
 const login_post = (req, res) =>{

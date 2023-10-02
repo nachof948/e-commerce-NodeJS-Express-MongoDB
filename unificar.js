@@ -6,20 +6,20 @@ require('dotenv').config()
 const connectDB=require('./db/conexion')
 
 /* Conexion al modelo */
-const Cliente = require('./models/Cliente')
+const Producto = require('./models/Producto')
 
 /* Lista de productos en JSON */
-/* const jsonComidas = require('./comidas.json') */
+const jsonComidas = require('./comidas.json')
 
 /* Conexion a la base de datos */
 const iniciar=async ()=>{
     try{
         await connectDB(process.env.MONGO_URL)
-        await Product.deleteMany()/* Dejar en blanco toda la informacion */
-        await Product.create(jsonProduct) /* Se crea en la base de datos el JSON */
+        await Producto.deleteMany()/* Dejar en blanco toda la informacion */
+        await Producto.create(jsonComidas) /* Se crea en la base de datos el JSON */
         console.log('SE EFECTUO EL CAMBIO')
     }catch(error){
         console.log(error)
     }
 }
-/* iniciar() */
+iniciar()
