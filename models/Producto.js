@@ -10,7 +10,7 @@ const productoSchema = new mongoose.Schema({
         required:[true, 'descripcion del producto']
     },
     precio:{
-        type:Number,
+        type:String,
         required:[true,'precio del producto']
     },
     vegano:{
@@ -20,6 +20,9 @@ const productoSchema = new mongoose.Schema({
     categoria:{
         type:String,
         required:[true,'categoria del producto']
+    },
+    imgUrl:{
+        type:String
     }
 })
 const Producto = mongoose.model('Producto', productoSchema)

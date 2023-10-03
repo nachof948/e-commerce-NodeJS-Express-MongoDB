@@ -2,489 +2,489 @@
     {
         "nombre": "Bife de Res a la Parrilla",
         "descripcion": "Un jugoso bife de res a la parrilla condimentado con hierbas frescas y acompañado de papas asadas y espárragos tiernos.",
-        "precio": 5899,
+        "precio": "$5.899",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Bife%20de%20Res%20a%20la%20Parrilla.png"
     },
     {
         "nombre": "Lasagna Clásica",
         "descripcion": "Nuestra lasagna casera con capas de pasta al huevo, ricota cremosa, carne molida y salsa de tomate, gratinada con queso mozzarella derretido.",
-        "precio": 4320,
+        "precio": "$4.320",
         "vegano": false,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Lasagna%20Clasica.png"
     },
     {
         "nombre": "Pizza BBQ con Pollo",
         "descripcion": "Una pizza gourmet con salsa barbacoa, tierno pollo a la parrilla, cebolla morada y cilantro fresco, coronada con queso cheddar derretido.",
-        "precio": 4599,
+        "precio": "$4.599",
         "vegano": false,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20BBQ%20con%20Pollo.png"
     },
     {
         "nombre": "Ensalada César",
         "descripcion": "Crujientes hojas de lechuga romana mezcladas con aderezo césar casero, croutons de ajo y lascas de queso parmesano.",
-        "precio": 2899,
+        "precio": "$2.899",
         "vegano": false,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20Cesar.png"
     },
     {
         "nombre": "Sopa de Champiñones",
         "descripcion": "Una sopa cremosa de champiñones frescos, cocida a fuego lento con cebolla caramelizada y ajo, coronada con cebollín picado.",
-        "precio": 2499,
+        "precio": "$2.499",
         "vegano": true,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Champi%C3%B1ones.png"
     },
     {
         "nombre": "Sushi de Salmón y Palta",
         "descripcion": "Finas rebanadas de salmón fresco y palta cremosa envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y wasabi.",
-        "precio": 3899,
+        "precio": "$3.899",
         "vegano": false,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Salmon%20y%20Palta.png"
     },
     {
         "nombre": "Tarta de Manzana",
         "descripcion": "Una deliciosa tarta de manzana con una base de masa hojaldrada y relleno de manzanas caramelizadas, espolvoreada con canela y azúcar glas.",
-        "precio": 3199,
+        "precio": "$3.199",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Manzana.png"
     },
     {
         "nombre": "Fideos con Albóndigas",
         "descripcion": "Fideos al dente servidos con albóndigas jugosas y salsa de tomate casera, espolvoreados con queso parmesano rallado.",
-        "precio": 3450,
+        "precio": "$3.450",
         "vegano": false,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Fideos%20con%20Albondigas.png"
     },
     {
         "nombre": "Hamburguesa Vegetariana",
         "descripcion": "Una sabrosa hamburguesa vegetariana a base de garbanzos, acompañada de lechuga fresca, tomate y mayonesa vegana, servida en pan integral.",
-        "precio": 3120,
+        "precio": "$3.120",
         "vegano": true,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20Vegetariana.png"
     },
     {
         "nombre": "Pizza Vegana de Verduras",
         "descripcion": "Una deliciosa pizza vegana con una mezcla de champiñones, pimientos, cebolla y aceitunas negras, cubierta con queso vegano derretido.",
-        "precio": 3699,
+        "precio": "$3.699",
         "vegano": true,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Vegana.png"
     },
     {
         "nombre": "Ensalada de Quinoa y Garbanzos",
         "descripcion": "Una ensalada nutritiva con quinoa cocida, garbanzos, pepino, tomate y aguacate, aliñada con vinagreta de limón y comino.",
-        "precio": 2860,
+        "precio": "$2.860",
         "vegano": true,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Quinoa%20y%20Garbanzos.png"
     },
     {
         "nombre": "Sopa de Tomate y Albahaca",
         "descripcion": "Una sopa reconfortante de tomate maduro y albahaca fresca, servida con croutons de pan y una pizca de queso parmesano.",
-        "precio": 2550,
+        "precio": "$2.550",
         "vegano": true,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Tomate%20y%20Albahaca.png"
     },
     {
         "nombre": "Sushi Vegano de Palta y Pepino",
         "descripcion": "Rolls de sushi rellenos de palta y pepino fresco, envueltos en alga nori y arroz sazonado, acompañados de salsa de soya y jengibre encurtido.",
-        "precio": 3399,
+        "precio": "$3.399",
         "vegano": true,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20Vegano%20de%20Palta%20y%20Pepino.png"
     },
     {
         "nombre": "Tarta de Chocolate Vegana",
         "descripcion": "Una tarta decadente de chocolate sin productos de origen animal, con una base crujiente y un relleno suave y cremoso.",
-        "precio": 3299,
+        "precio": "$3.299",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Chocolate%20Vegana.png"
     },
     {
         "nombre": "Lasaña de Berenjena",
         "descripcion": "Lasaña vegetariana con capas de berenjena asada, espinacas, ricota y salsa de tomate, gratinada con queso vegano.",
-        "precio": 3820,
+        "precio": "$3.820",
         "vegano": true,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Lasa%C3%B1a%20de%20Berenjena.png"
     },
     {
         "nombre": "Hamburguesa de Lentejas",
         "descripcion": "Una jugosa hamburguesa de lentejas y especias, servida en un pan integral con lechuga, tomate y mostaza dijon.",
-        "precio": 2999,
+        "precio": "$2.999",
         "vegano": true,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Lentejas.png"
     },
     {
         "nombre": "Pizza Margherita Vegana",
         "descripcion": "Nuestra versión vegana de la clásica pizza Margherita, con queso vegano, tomates frescos y hojas de albahaca.",
-        "precio": 3599,
+        "precio": "$3.599",
         "vegano": true,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Margherita%20Vegana.png"
     },
     {
         "nombre": "Ensalada de Garbanzos y Espinacas",
         "descripcion": "Ensalada fresca con garbanzos, espinacas, tomate, pepino y aceitunas, aliñada con aderezo de limón y tahini.",
-        "precio": 2760,
+        "precio": "$2.760",
         "vegano": true,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Garbanzos%20y%20Espinacas.png"
     },
     {
         "nombre": "Sopa de Calabaza y Coco",
         "descripcion": "Una sopa cremosa de calabaza con leche de coco, jengibre y cilantro fresco, acompañada de crujientes trozos de pan de ajo.",
-        "precio": 2650,
+        "precio": "$2.650",
         "vegano": true,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Calabaza%20y%20Coco.png"
     },
     {
         "nombre": "Sushi Vegano de Palta y Mango",
         "descripcion": "Rolls de sushi veganos rellenos de palta y mango fresco, envueltos en alga nori y arroz sazonado, acompañados de salsa de soya y jengibre encurtido.",
-        "precio": 3299,
+        "precio": "$3.299",
         "vegano": true,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20Vegano%20de%20Palta%20y%20Mango.png"
     },
     {
         "nombre": "Tarta de Limón Vegana",
         "descripcion": "Una tarta refrescante de limón sin productos de origen animal, con una base de galleta y un relleno suave y ácido.",
-        "precio": 3150,
+        "precio": "$3.150",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Lim%C3%B3n%20Vegana.png"
     },
     {
         "nombre": "Pechuga de Pollo a la Parrilla",
         "descripcion": "Jugosa pechuga de pollo marinada y cocinada a la parrilla, acompañada de puré de papas y espárragos al vapor.",
-        "precio": 5499,
+        "precio": "$5.499",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pechuga%20de%20Pollo%20a%20la%20Parrilla.png"
     },
     {
         "nombre": "Fettuccine Alfredo",
         "descripcion": "Fettuccine frescos bañados en una cremosa salsa Alfredo con manteca y parmesano, adornados con perejil picado.",
-        "precio": 3890,
+        "precio": "$3.890",
         "vegano": false,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Fettuccine%20Alfredo.png"
     },
     {
         "nombre": "Pizza Vegetariana",
         "descripcion": "Una colorida pizza con pimientos, champiñones, cebolla y aceitunas negras, cubierta con queso mozzarella derretido.",
-        "precio": 4199,
+        "precio": "$4.199",
         "vegano": true,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Vegetariana.png"
     },
     {
         "nombre": "Ensalada de Espinacas y Arándanos",
         "descripcion": "Espinacas frescas mezcladas con arándanos, nueces tostadas y queso feta, aliñadas con vinagreta de frambuesa.",
-        "precio": 2999,
+        "precio": "$2.999",
         "vegano": false,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Espinacas%20y%20Ar%C3%A1ndanos.png"
     },
     {
         "nombre": "Crema de Calabacín",
         "descripcion": "Una cremosa sopa de calabacín con un toque de nuez moscada, servida con picatostes de pan crujiente.",
-        "precio": 2499,
+        "precio": "$2.499",
         "vegano": false,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Crema%20de%20Calabac%C3%ADn.png"
     },
     {
         "nombre": "Sushi de Pez Mantequilla",
         "descripcion": "Finas rebanadas de pez mantequilla fresco y aguacate cremoso envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y jengibre encurtido.",
-        "precio": 4599,
+        "precio": "$4.599",
         "vegano": false,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Pez%20Mantequilla.png"
     },
     {
         "nombre": "Tarta de Frutillas",
         "descripcion": "Una tentadora tarta con una base de masa quebrada, rellena de frutillas frescas y cubierta con una capa de gelatina brillante.",
-        "precio": 3299,
+        "precio": "$3.299",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Frutillas.png"
     },
     {
         "nombre": "Canelones de Carne",
         "descripcion": "Canelones rellenos de una mezcla de carne molida, espinacas y ricota, cubiertos con bechamel y gratinados con queso parmesano.",
-        "precio": 3920,
+        "precio": "$3.920",
         "vegano": false,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Canelones%20de%20Carne.png"
     },
     {
         "nombre": "Hamburguesa de Garbanzos",
         "descripcion": "Una jugosa hamburguesa a base de garbanzos, aderezada con hierbas mediterráneas, acompañada de ensalada de pepino y tahini.",
-        "precio": 2999,
+        "precio": "$2.999",
         "vegano": true,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Garbanzos.png"
     },
     {
         "nombre": "Pizza Margherita con Tomates Cherry",
         "descripcion": "Una variante de la clásica pizza Margherita con tomates cherry, albahaca fresca y mozzarella de búfala.",
-        "precio": 3599,
+        "precio": "$3.599",
         "vegano": false,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Margherita%20con%20Tomates%20Cherry.png"
     },
     {
         "nombre": "Ensalada Griega",
         "descripcion": "Una ensalada tradicional con pepino, tomate, aceitunas Kalamata, queso feta y orégano, aliñada con aceite de oliva.",
-        "precio": 2860,
+        "precio": "$2.860",
         "vegano": false,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20Griega.png"
     },
     {
         "nombre": "Sopa de Calabaza y Zanahoria",
         "descripcion": "Una reconfortante sopa de zapallo y zanahoria con un toque de jengibre, servida con crocantes picatostes de pan.",
-        "precio": 2650,
+        "precio": "$2.650",
         "vegano": true,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Calabaza%20y%20Zanahoria.png"
     },
     {
         "nombre": "Sushi de Tempura de Vegetales",
         "descripcion": "Rolls de sushi con tempura de vegetales variados, palta y mayonesa picante, envueltos en alga nori y arroz sazonado.",
-        "precio": 3399,
+        "precio": "$3.399",
         "vegano": true,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Tempura%20de%20Vegetales.png"
     },
     {
         "nombre": "Tarta de Chocolate y Avellanas",
         "descripcion": "Una irresistible tarta de chocolate y avellanas con una base de galleta y un centro cremoso de avellanas.",
-        "precio": 3299,
+        "precio": "$3.299",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Chocolate%20y%20Avellanas.png"
     },
     {
         "nombre": "Pasta Primavera",
         "descripcion": "Pasta al dente mezclada con una variedad de vegetales frescos salteados en aceite de oliva y ajo, espolvoreada con queso parmesano.",
-        "precio": 3120,
+        "precio": "$3.120",
         "vegano": false,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pasta%20Primavera.png"
     },
     {
         "nombre": "Hamburguesa de Portobello",
         "descripcion": "Una suculenta hamburguesa a base de hongo Portobello a la parrilla, acompañada de rúcula y mayonesa de ajo.",
-        "precio": 2999,
+        "precio": "$2.999",
         "vegano": true,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Portobello.png"
     },
     {
         "nombre": "Pizza de Pera y Gorgonzola",
         "descripcion": "Una pizza gourmet con peras caramelizadas, queso gorgonzola y nueces tostadas, sobre una base de salsa de tomate.",
-        "precio": 3699,
+        "precio": "$3.699",
         "vegano": true,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20de%20Pera%20y%20Gorgonzola.png"
     },
     {
         "nombre": "Ensalada de Espárragos y Huevo",
         "descripcion": "Espárragos tiernos cocidos al vapor con huevo poché, tomate cherry y vinagreta de mostaza y miel.",
-        "precio": 2999,
+        "precio": "$2.999",
         "vegano": false,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Esparragos%20y%20Huevo.png"
     },
     {
         "nombre": "Crema de Espárragos",
         "descripcion": "Una deliciosa crema de espárragos verdes con un toque de crema fresca, servida con picatostes de pan integral.",
-        "precio": 2499,
+        "precio": "$2.499",
         "vegano": false,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Crema%20de%20Esparragos.png"
     },
     {
         "nombre": "Sushi de Salmón y Mango",
         "descripcion": "Finas rebanadas de salmón fresco y mango dulce envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y wasabi.",
-        "precio": 3899,
+        "precio": "$3.899",
         "vegano": false,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Salmon%20y%20Mango.png"
     },
     {
         "nombre": "Tarta de Frambuesas",
         "descripcion": "Una exquisita tarta con una base de masa quebrada, rellena de frambuesas frescas y cubierta con una capa de gelatina brillante.",
-        "precio": 3199,
+        "precio": "$3.199",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Frambuesas.png"
     },
     {
         "nombre": "Rigatoni con Salsa de Champiñones",
         "descripcion": "Rigatoni al dente en una cremosa salsa de champiñones frescos, espolvoreados con queso parmesano rallado.",
-        "precio": 3450,
+        "precio": "$3.450",
         "vegano": true,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Rigatoni%20con%20Salsa%20de%20Champi%C3%B1ones.png"
     },
     {
         "nombre": "Hamburguesa de Garbanzos y Espinacas",
         "descripcion": "Una jugosa hamburguesa a base de garbanzos, espinacas y especias, acompañada de hummus y ensalada de pepino.",
-        "precio": 3120,
+        "precio": "$3.120",
         "vegano": true,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Garbanzos%20y%20Espinacas.png"
     },
     {
         "nombre": "Pizza de Higos y Queso de Cabra",
         "descripcion": "Una pizza gourmet con higos frescos, queso de cabra y miel, sobre una base de salsa de tomate.",
-        "precio": 3990,
+        "precio": "$3.990",
         "vegano": false,
         "categoria": "pizzas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20de%20Higos%20y%20Queso%20de%20Cabra.png"
     },
     {
         "nombre": "Ensalada Caprese",
         "descripcion": "Rodajas de tomate y mozzarella fresca intercaladas, aderezadas con albahaca fresca y aceite de oliva virgen extra.",
-        "precio": 2899,
+        "precio": "$2.899",
         "vegano": false,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20Caprese.png"
     },
     {
         "nombre": "Sopa de Lentejas",
         "descripcion": "Una reconfortante sopa de lentejas con zanahoria, cebolla y ajo, sazonada con comino y pimentón ahumado.",
-        "precio": 2550,
+        "precio": "$2.550",
         "vegano": true,
         "categoria": "sopas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Lentejas.png"
     },
     {
         "nombre": "Sushi de Atún y Palta",
         "descripcion": "Finas rebanadas de atún fresco y palta cremosa envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y wasabi.",
-        "precio": 4299,
+        "precio": "$4.299",
         "vegano": false,
         "categoria": "sushi",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Atun%20%20y%20Palta.png"
     },
     {
         "nombre": "Tarta de Manzana y Caramelo",
         "descripcion": "Una deliciosa tarta de manzana con una base de masa brisa y un relleno de manzanas caramelizadas, bañada en una irresistible salsa de caramelo.",
-        "precio": 3499,
+        "precio": "$3.499",
         "vegano": true,
         "categoria": "dulces",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Manzana%20y%20Caramelo.png"
     },
     {
         "nombre": "Ravioles de Espinacas y Ricotta",
         "descripcion": "Ravioles rellenos de espinacas frescas y ricotta cremosa, bañados en una delicada salsa de manteca y salvia, espolvoreados con queso parmesano rallado.",
-        "precio": 3599,
+        "precio": "$3.599",
         "vegano": false,
         "categoria": "pastas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ravioles%20de%20Espinacas%20y%20Ricotta.png"
     },
     {
         "nombre": "Costillas de Cerdo a la Barbacoa",
         "descripcion": "Tiernas costillas de cerdo glaseadas con salsa barbacoa casera, servidas con ensalada de repollo y papas fritas.",
-        "precio": 6299,
+        "precio": "$6.299",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Costillas%20de%20Cerdo%20a%20la%20Barbacoa.png"
     },
     {
         "nombre": "Chuletas de Cerdo con Salsa de Manzana",
         "descripcion": "Chuletas de cerdo a la parrilla bañadas en una salsa agridulce de manzana y canela, acompañadas de puré de batata.",
-        "precio": 5799,
+        "precio": "$5.799",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Chuletas%20de%20Cerdo%20con%20Salsa%20de%20Manzana.png"
     },
     {
         "nombre": "Pechuga de Pollo al Limón",
         "descripcion": "Pechuga de pollo a la parrilla bañada en una salsa de limón y hierbas frescas, servida con arroz basmati y espárragos al vapor.",
-        "precio": 5120,
+        "precio": "$5.120",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pechuga%20de%20Pollo%20al%20Limon.png"
     },
     {
         "nombre": "Chuletas de Cerdo Glaseadas",
         "descripcion": "Chuletas de cerdo glaseadas con una mezcla de miel y mostaza, acompañadas de puré de batata y brócoli al vapor.",
-        "precio": 5499,
+        "precio": "$5.499",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Chuletas%20de%20Cerdo%20Glaseadas.png"
     },
     {
         "nombre": "Filete de Ternera con Salsa de Champiñones",
         "descripcion": "Filete de ternera a la parrilla con una rica salsa de champiñones y cebolla caramelizada, servido con puré de papas y espárragos a la manteca.",
-        "precio": 6320,
+        "precio": "$6.320",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Filete%20de%20Ternera%20con%20Salsa%20de%20Champi%C3%B1ones.png"
     },
     {
         "nombre": "Muslos de Pollo Asados con Hierbas",
         "descripcion": "Muslos de pollo asados con una mezcla de hierbas mediterráneas, acompañados de papas asadas y zanahorias glaseadas.",
-        "precio": 4980,
+        "precio": "$4.980",
         "vegano": false,
         "categoria": "carnes",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Muslos%20de%20Pollo%20Asados%20con%20Hierbas.png"
     },
     {
         "nombre": "Hamburguesa BBQ con Panceta",
         "descripcion": "Una jugosa hamburguesa de carne de res a la parrilla con panceta crujiente, cebolla caramelizada y salsa barbacoa, servida en pan de hamburguesa tostado.",
-        "precio": 4799,
+        "precio": "$4.799",
         "vegano": false,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20BBQ%20con%20Panceta.png"
     },
     {
         "nombre": "Hamburguesa de Pollo con Palta",
         "descripcion": "Una deliciosa hamburguesa de pechuga de pollo a la parrilla con rodajas de palta fresca, lechuga y mayonesa de chipotle, servida en pan integral.",
-        "precio": 4320,
+        "precio": "$4.320",
         "vegano": false,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Pollo%20con%20Palta.png"
     },
     {
         "nombre": "Hamburguesa de Ternera con Queso Azul",
         "descripcion": "Una hamburguesa de ternera a la parrilla con queso azul derretido, cebolla morada y mayonesa de mostaza dijon, servida en pan brioche.",
-        "precio": 4980,
+        "precio": "$4.980",
         "vegano": false,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Ternera%20con%20Queso%20Azul.png"
     },
     {
         "nombre": "Hamburguesa Vegetariana de Garbanzos",
         "descripcion": "Una sabrosa hamburguesa vegetariana a base de garbanzos y especias, acompañada de lechuga fresca, tomate y mayonesa vegana, servida en pan integral.",
-        "precio": 4120,
+        "precio": "$4.120",
         "vegano": true,
         "categoria": "hamburguesas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20Vegetariana%20de%20Garbanzos.png"
     },
     {
         "nombre": "Ensalada de Quinoa y Berros",
         "descripcion": "Una ensalada nutritiva con quinoa cocida, berros, tomate cherry y pepino, aliñada con vinagreta de limón y aceite de oliva.",
-        "precio": 2890,
+        "precio": "$2.890",
         "vegano": true,
         "categoria": "ensaladas",
-        "imagen": "url....."
+        "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Quinoa%20y%20Berros.png"
     }
 ]
