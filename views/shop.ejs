@@ -20,7 +20,7 @@
             <div class="header-derecha">
                 <div class="header-iconos">
                     <a href="#"><i class="bi bi-search"></i></a>
-                    <a href="#"><i class="bi bi-bag"></i></a>
+                    <a id="carrito" href="#"><i class="bi bi-bag"></i></a>
                 </div>
                 <div class="registrarse">
                     <a href="/auth/signup">Registarse</a>
@@ -60,5 +60,19 @@
         </div>
       </section>
     <%-include('./partials/footer.ejs') -%>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const botonComprar = document.querySelectorAll('.opciones-comprar button');
+        const carritoIcono = document.getElementById('carrito');
+
+        botonComprar.forEach(function(boton) {
+            boton.addEventListener('click', function() {
+                const numeroItems = Number(carritoIcono.dataset.numeroItems || 0) + 1;
+                carritoIcono.dataset.numeroItems = numeroItems;
+                carritoIcono.innerHTML = `<i class="bi bi-bag"></i><span class="badge">${numeroItems}</span>`;
+            });
+        });
+    });
+    </script>
 </body>
 </html>
