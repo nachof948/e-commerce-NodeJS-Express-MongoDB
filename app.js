@@ -24,6 +24,7 @@ app.use(cookieParser())
 // Configuración de plantilla EJS
 app.set('view engine', 'ejs')
 
+
 /* Conexion a la base de datos */
 const iniciar = async () =>{
     try{

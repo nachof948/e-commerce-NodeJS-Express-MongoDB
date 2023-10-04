@@ -21,6 +21,11 @@ const manejoDeErrores = (err) => {
     return errors
 }
 
+const maxAge = 3*24*60*60
+const createToken=(id, email, password) => {
+    return jwt.sign({id, email, password},'myfoodie', /* .sign es un metodo que se utiliza para crear una firma en JSON */
+    {expiresIn: maxAge })
+}
 
 /* METODO POST */
 const signup_post = async (req, res) =>{
@@ -28,6 +33,8 @@ const signup_post = async (req, res) =>{
     
     try{
         const cliente = await Cliente.create({email, nombreCompleto, usuario, password})
+        const token = createToken(cliente._id, cliente.email, cliente.password)
+        res.cookie('nuevo_cliente',token,{maxAge: maxAge*1000})
         res.redirect('/login')  
     }
     catch(err){
