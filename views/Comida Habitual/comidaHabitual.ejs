@@ -1,0 +1,38 @@
+<%- include('../partials/head.ejs') -%>
+<section class='comida-habitual'>
+    <div class="contenedor-comida-habitual">
+        <div class='titulos'>
+            <h1>NUESTRA COMIDA HABITUAL</h1>
+            <p >Esta es nuestra lista diaria de alimentos. Aquí encontrarás todo tipo de comida. Elige tu comida favorita y ordena.</p>
+        </div>
+      <div class="comidas">
+        <% for (let i = 8; i < productos.length && i < 14; i++) { %>
+        <div class="tarjeta-habitual">
+            <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
+            <div class="tarjeta-textos-habitual">
+                <h2><%=productos[i].nombre%></h2>
+                <div class="estrellasHabitual">
+                    <img class="estrella" src="/icons8-estrella.png" alt=""/>
+                    <img class="estrella"  src="/icons8-estrella.png" alt=""/>
+                    <img class="estrella"  src="/icons8-estrella.png" alt=""/>
+                    <img class="estrella" src="/icons8-estrella.png" alt=""/>
+                    <img class="estrella"  src="/icons8-estrella.png" alt=""/>
+                    <p class="numero">(102)</p>
+                </div>
+                <p><%=productos[i].descripcion%></p>
+                <div class="opciones-comprar-habitual">
+                    <p><%=productos[i].precio%></p>
+                    <button>Comprar ahora</button>
+                </div>
+            </div>
+        </div>
+        <%} %>
+    </div>
+    <div class='slide-habitual'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+  </section>

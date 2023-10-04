@@ -568,8 +568,212 @@ span:hover{
     background-color: var(--verde--oscuro);
 }
 
-
 /* ======= FIN COMIDA ESPECIAL====== */
+
+/* ========= COMIDA HABITUAL ============= */
+.comida-habitual{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+.contenedor-comida-habitual{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 8rem;
+    padding: 2rem 0rem;
+}
+.comidas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.titulos h1{
+    font-size: 3.5rem;
+}
+.titulos p{
+    font-size: 1.2rem;
+    width: 65%;
+    color: grey;
+    text-align: center;
+    margin-bottom: -1rem;
+}
+.tarjeta-habitual{
+    background-color: white;
+    border-radius: 25px;
+    width: 30rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+    margin-top: 9.5rem;
+}
+.tarjeta-habitual-img{
+    width: 18.5rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    position: absolute;
+    bottom: 19rem;
+    left: 5rem;
+}
+.tarjeta-textos-habitual{
+    padding: 9rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.tarjeta-textos-habitual h2{
+    font-size: 2rem;
+    width: 80%;
+    margin: 0rem;
+}
+.tarjeta-textos-habitual p{
+    color: var(--gris);
+    width: 80%;
+    font-size: 1.2rem;
+}
+.opciones-comprar-habitual{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.opciones-comprar-habitual p{
+    border: 1px solid var(--negro);
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: var(--negro);
+    user-select: none;
+}
+.opciones-comprar-habitual button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar-habitual button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+.estrellasHabitual{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0rem;
+}
+.estrellasHabitual img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.slide-habitual{
+    display: flex;
+    gap: 2.5rem;
+}
+.slide-habitual span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--verde-claro);
+    cursor: pointer;
+    transition: all 250ms;
+    margin-top: -2.6rem;
+}
+
+/* ========= FIN COMIDA HABITUAL ============= */
+
+/* ===== SOBRE NOSOTROS ======== */
+.chefs{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+.contenedor-chefs{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.texto-chefs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.texto-chefs h2{
+    margin-top: 1rem;
+    margin: 0;
+    font-size: 3rem;
+}
+.texto-chefs p{
+    color: gray;
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chefs-img{
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.uno{
+    background-color: #E5F1D9;
+    width: 24rem;
+    height: 30rem;
+    border-radius: 10px;
+    padding-top: 1.5rem;
+}
+.dos{
+    background-color: #E5F1D9;
+    width: 20rem;
+    height: 33rem;
+    border-radius: 10px;
+    padding: 1rem 2rem 0rem 2rem;
+    margin: 5rem 4rem 0rem;
+}
+
+.tres{
+    background-color: #E5F1D9;
+    width: 24rem;
+    height: 32rem;
+    border-radius: 10px;
+    padding-right: 1rem;
+}
+/* ===== FIN SOBRE NOSOTROS ======== */
+
 
 /* ======= FOOTER========= */
 footer{
