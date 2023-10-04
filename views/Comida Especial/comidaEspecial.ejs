@@ -1,0 +1,38 @@
+<%- include('../partials/head.ejs') -%>
+<section class='comida-especial'>
+    <div class="comida-especial-contenedor">
+        <div class='textos-especial'>
+            <h1>MENU ESPECIAL</h1>
+            <p>Parte de nuestro menú de comida especial se proporciona aquí. Estos son los que más pide la gente. Si quieres puedes hacer tu pedido desde aquí.</p>
+        </div>
+        <div class="especiales">
+            <% for (let i = 4; i < productos.length && i < 7; i++) { %>
+            <div class="especial">
+                <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                <h2><%=productos[i].nombre%></h2>
+                <div class="estrellas">
+                    <img src="/icons8-estrella.png" alt=""/>
+                    <img src="/icons8-estrella.png" alt=""/>
+                    <img src="/icons8-estrella.png" alt=""/>
+                    <img src="/icons8-estrella.png" alt=""/>
+                    <img src="/icons8-estrella.png" alt=""/>
+                    <p class="num">(169)</p>
+                </div>
+                <div class="precio">
+                    <p><%=productos[i].precio%></p>
+                </div>
+                <div class="bolsa">
+                    <img class="bolsasa" src="icons8-bolsa-de-compras-45.png"alt=""/>
+                </div>
+            </div>
+            <%} %>
+            </div>
+        </div>
+        <div class='slide'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</section>
