@@ -50,6 +50,9 @@ nav a{
 nav a:hover{
     color: var(--verde-claro);
 }
+nav a:focus{
+    color: var(--verde-claro);
+}
 .contenedor-header{
     width: 85vw;
     display: flex;
@@ -597,21 +600,20 @@ span:hover{
     margin-top: 1rem;
 }
 
-.titulos{
+.titulos-habitual{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
 }
-.titulos h1{
+.titulos-habitual h1{
     font-size: 3.5rem;
 }
-.titulos p{
-    font-size: 1.2rem;
+.titulos-habitual p{
+    font-size: 1.3rem;
     width: 65%;
     color: grey;
     text-align: center;
-    margin-bottom: -1rem;
+    margin-top: 1rem;
 }
 .tarjeta-habitual{
     background-color: white;
@@ -864,6 +866,59 @@ footer a:hover{
     color: rgb(132,183,78);
 }
 /* ====== FIN FOOTER========= */
+
+
+/* ======= SHOP =========== */
+.titulos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 6rem;
+    width: 100%;
+}
+.titulos a{
+    font-size: 1.4rem;
+    color: grey;
+    text-align: center;
+    margin-bottom: -1rem;
+}
+.titulos a:hover{
+    color: rgb(132,183,78);
+}
+.titulos a:hover{
+    color: rgb(132,183,78);
+}
+.comidas-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+}
+.tarjeta-shop{
+    margin-top: 6rem;
+    background-color: white;
+    border-radius: 25px;
+    width: 23rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+}
+.tarjeta-shop img{
+    width: 14rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    position: absolute;
+    bottom: 15rem;
+    left: 3.8rem;
+}
+/* ======= FIN SHOP =========== */
 
 
 

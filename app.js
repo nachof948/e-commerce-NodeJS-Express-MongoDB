@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const formulario = require('./routes/formulario')
 const home = require('./routes/home')
+const shop = require('./routes/shop')
 const connectDB = require('./db/conexion')
 const cookieParser = require('cookie-parser')
 require('dotenv').config()
@@ -16,8 +17,9 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 // CONEXION A LAS RUTAS
-app.use('/auth', formulario)
 app.use('/', home)
+app.use('/auth', formulario)
+app.use('/comidas', shop)
 /* PARA UTILIZAR COOKIE PARSER*/
 app.use(cookieParser())
 

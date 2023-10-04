@@ -35,7 +35,7 @@ const signup_post = async (req, res) =>{
         const cliente = await Cliente.create({email, nombreCompleto, usuario, password})
         const token = createToken(cliente._id, cliente.email, cliente.password)
         res.cookie('nuevo_cliente',token,{maxAge: maxAge*1000})
-        res.redirect('/login')  
+        res.redirect('/auth/login')  
     }
     catch(err){
         const errors = manejoDeErrores(err)
