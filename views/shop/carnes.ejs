@@ -23,7 +23,11 @@
                             <p><%=producto.descripcion%></p>
                             <div class="opciones-comprar">
                                 <p><%=producto.precio%></p>
-                                <button>Comprar Ahora</button>
+                                <%if (user) {%>
+                                    <a href="/comidas/all">Comprar Ahora</a>
+                                <%}else{%>
+                                    <a href="/auth/signup">Comprar Ahora</a>
+                                <%}%>
                             </div>
                         </div>
                     </div>
