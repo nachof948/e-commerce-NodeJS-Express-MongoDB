@@ -1,0 +1,74 @@
+
+<header style="background-color: rgb(132,183,78);">
+    <div class="contenedor-header">
+        <a class="empresa" href="/">FOODIED</a>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="#menuEspecial">Menu</a>
+            <a href="#sobreNosotros">Sobre Nosotros</a>
+            <a href="#contactos">Contacto</a>
+        </nav>
+        <div class="header-derecha">
+            <div class="header-iconos">
+                <a href="#"><i class="bi bi-search"></i></a>
+                <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
+                <div class="carrito-compras">
+                    <div class="carrito-productos">
+                        <img src="/Hero-Principal.png" alt="">
+                        <a href="#">+</a>
+                        <p>1</p>
+                        <a href="#">-</a>
+                        <a href="#">Eliminar</a>
+                        <p>$1.250</p>
+                    </div>
+                    <div class="carrito-productos">
+                        <img src="/Panqueques.png" alt="">
+                        <a href="#">+</a>
+                        <p>2</p>
+                        <a href="#">-</a>
+                        <a href="#">Eliminar</a>
+                        <p>$1.250</p>
+                    </div>
+                    <div class="carrito-productos">
+                        <img src="/Pescado.jpg" alt="">
+                        <a href="#">+</a>
+                        <p>5</p>
+                        <a href="#">-</a>
+                        <a href="#">Eliminar</a>
+                        <p>$1.250</p>
+                    </div>
+                    <div class="carrito-productos">
+                        <img src="/Vegetales.png" alt="">
+                        <a href="#">+</a>
+                        <p>5</p>
+                        <a href="#">-</a>
+                        <a href="#">Eliminar</a>
+                        <p>$1.250</p>
+                    </div>
+                    <div class="carrito-productos">
+                        <img src="/Hero-Principal.png" alt="">
+                        <a href="#">+</a>
+                        <p>5</p>
+                        <a href="#">-</a>
+                        <a href="#">Eliminar</a>
+                        <p>$1.250</p>
+                    </div>
+                    <div class="realizar-compra">
+                        <p>Total: $6.250</p>
+                        <a class="compra" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <%if(user) {%>
+                <div class="perfil">
+                    <img src=<%=user.image%> alt="">
+                    <a href="/auth/logout"><%=user.username%></a>
+                </div>
+                <%}else{%>
+                <div class="registrarse">
+                    <a href="/auth/signup">Registarse</a>
+                </div>
+            <%}%>
+        </div>
+    </div>
+</header>

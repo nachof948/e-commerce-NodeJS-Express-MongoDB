@@ -1,6 +1,5 @@
 const Cliente = require('../models/Cliente')
 const jwt = require('jsonwebtoken')
-
 /* MANEJO DE ERRORES */
 const manejoDeErrores = (err) => {
     console.log(err.message, err.code)
@@ -53,12 +52,17 @@ const signup_get = (req, res) =>{
 }
 
 const login_get = (req, res) =>{
-    res.render('login')
+    res.render('login', {user:req.user})
+}
+const logout_get = (req, res) =>{
+    req.logOut()
+    res.redirect('/')
 }
 
 module.exports = { 
     signup_get, 
     login_get, 
     signup_post, 
-    login_post
+    login_post,
+    logout_get
 }

@@ -12,22 +12,22 @@ const{getAllProductStatics,
     getAllProductDulces}=require('../controllers/shop')
 
 router.route('/all').get(getAllProductStatics)
-//localhost:3600/comidas/all
+//localhost:4500/comidas/all
 router.route('/carnes').get(getAllProductCarnes)
-//localhost:3600/comidas/carnes
+//localhost:4500/comidas/carnes
 router.route('/ensaladas').get(getAllProductEnsaladas)
-//localhost:3600/comidas/ensaladas
+//localhost:4500/comidas/ensaladas
 router.route('/sushi').get(getAllProductSushi)
-//localhost:3600/comidas/sushi
+//localhost:4500/comidas/sushi
 router.route('/pastas').get(getAllProductPastas)
-//localhost:3600/comidas/pastas
+//localhost:4500/comidas/pastas
 router.route('/pizzas').get(getAllProductPizzas)
-//localhost:3600/comidas/pizzas
+//localhost:4500/comidas/pizzas
 router.route('/veganas').get(getAllProductVeganos)
-//localhost:3600/comidas/veganas
+//localhost:4500/comidas/veganas
 router.route('/sopas').get(getAllProductSopas)
-//localhost:3600/comidas/sopas
+//localhost:4500/comidas/sopas
 router.route('/dulces').get(getAllProductDulces)
-//localhost:3600/comidas/dulces
+//localhost:4500/comidas/dulces
 
 module.exports=router

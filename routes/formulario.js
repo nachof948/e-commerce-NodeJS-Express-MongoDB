@@ -1,30 +1,9 @@
-const express = require("express");
-const router = express.Router()
+const express = require('express');
 const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy
-const FacebookStrategy = require('passport-facebook').Strategy
-const keys = require('../config/keys');
+const router = express.Router()
 
-passport.use(
-    new GoogleStrategy({
-        clientID: keys.google.clientID,
-        clientSecret: keys.google.clientSecret,
-        callbackURL:'auth/google/redirect'
-    },()=>{
 
-    })
-)
-passport.use(
-    new FacebookStrategy({
-        clientID: keys.facebook.clientID,
-        clientSecret: keys.facebook.clientSecret,
-        callbackURL:'auth/facebook/redirect'
-    },()=>{
-
-    })
-)
-
-const { signup_get, login_get, signup_post, login_post } = require('../controllers/formulario')
+const { signup_get, login_get, logout_get,signup_post, login_post } = require('../controllers/formulario')
 
 /* RUTAS */
 
@@ -32,12 +11,15 @@ router.route('/signup').get(signup_get)
 router.route('/signup').post(signup_post)
 
 router.route('/login').get(login_get)
+router.route('/logout').get(logout_get)
 router.route('/login').post(login_post)
 
 router.get('/google', passport.authenticate('google',{
     scope:['profile']
 }))
-router.get('/facebook', passport.authenticate('facebook',{
-    scope:['profile']
-}))
+
+router.get('/google/redirect', passport.authenticate('google'), (req, res) =>{
+    res.redirect('/')
+})
+
 module.exports = router

@@ -82,6 +82,46 @@ nav a:focus{
 .header-iconos a:hover{
     color: var(--verde-claro);
 }
+.header-iconos button{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease;
+    position: relative;
+}
+.header-iconos button:hover{
+    color: var(--verde-claro);
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    text-wrap: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    background-color: var(--blanco);
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    margin: 0;
+}
+.perfil img{
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.perfil a:hover{
+    color: var(--verde-claro);
+}
 .registrarse a{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -340,7 +380,7 @@ nav a:focus{
     font-weight: 700;
     color: var(--negro);
 }
-.opciones-comprar button{
+.opciones-comprar a{
     border: 1px solid var(--verde--oscuro);
     border-radius: 20px;
     padding: 0.5rem 0.8rem;
@@ -352,7 +392,7 @@ nav a:focus{
     cursor: pointer;
     transition: all 250ms ease;
 }
-.opciones-comprar button:hover{
+.opciones-comprar a:hover{
     border: 1px solid var(--verde--oscuro);
     background-color: var(--blanco);
     color: var(--verde--oscuro);
@@ -451,7 +491,7 @@ nav a:focus{
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    padding: 4rem 0rem;
+    padding: 6rem 0rem 4rem;
 }
 .comida-especial-contenedor{
     width: 85vw;
@@ -464,6 +504,7 @@ nav a:focus{
     align-items: center;
     gap: 6rem;
     margin-bottom: 4rem;
+    max-width: 85vw;
 }
 .textos-especial{
     display: flex;
@@ -581,7 +622,7 @@ span:hover{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 2rem 0rem;
+    padding: 4rem 0rem 2rem;
 }
 .contenedor-comida-habitual{
     width: 85vw;
@@ -668,7 +709,7 @@ span:hover{
     color: var(--negro);
     user-select: none;
 }
-.opciones-comprar-habitual button{
+.opciones-comprar-habitual a{
     border: 1px solid var(--verde--oscuro);
     border-radius: 20px;
     padding: 0.7rem 1rem;
@@ -680,7 +721,7 @@ span:hover{
     cursor: pointer;
     transition: all 250ms ease;
 }
-.opciones-comprar-habitual button:hover{
+.opciones-comprar-habitual a:hover{
     border: 1px solid var(--verde--oscuro);
     background-color: var(--blanco);
     color: var(--verde--oscuro);
@@ -717,7 +758,7 @@ span:hover{
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 4rem;
     margin: 0 auto;
 }
 .contenedor-chefs{
@@ -870,14 +911,27 @@ footer a:hover{
 
 
 /* ======= SHOP =========== */
+.shop{
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.shop h1{
+    color: #010101;
+    font-size: 3.5rem;
+    margin: 6rem 0rem 0rem 0rem;
+
+}
 .titulos{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     gap: 4rem;
-    margin-top: 6rem;
     width: 100%;
+    margin: 0;
 }
 .titulos a{
     font-size: 1.4rem;
@@ -897,7 +951,7 @@ footer a:hover{
     justify-content: center;
     gap: 3.2rem;
     flex-wrap: wrap;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 }
 .tarjeta-shop{
     margin-top: 6rem;
@@ -1214,4 +1268,76 @@ a{
 .badge:hover {
     background-color: red;
     color: white;
+}
+
+
+/* CARRITO DE COMPRAS */
+.header-iconos{
+    position: relative;
+}
+.carrito-compras{
+    position: absolute;
+    top: 2.5rem;
+    right: 0.3rem;
+    width: 25rem;
+    height: fit-content;
+    max-height: 25rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem;
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #aed882; /* Color del pulgar */
+    border-radius: 10px; /* Borde redondeado del pulgar */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #779e4c; /* Cambia el color del pulgar al pasar el ratón */
+}
+::-webkit-scrollbar-track {
+    background-color: #E5F1D9; /* Color de fondo de la barra de desplazamiento */
+}
+.carrito-productos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.carrito-productos img{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+.carrito-compras a{
+    background-color: #83B64D;
+    color: #EEEEEE;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    margin: 0;
+}
+.carrito-compras a:hover{
+    color: black;
+}
+.carrito-productos p{
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+.realizar-compra{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.realizar-compra p{
+    font-weight: 600;
+    font-size: 1.1rem;
 }

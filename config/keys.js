@@ -6,5 +6,8 @@ module.exports = {
     facebook:{
         clientID:'8f66190fb58cbc9145b989da54120f7c',
         clientSecret:'fde1bda67a9262c3516904ca831f9db1'
+    },
+    session:{
+        cookieKey:'foodie'
     }
 }

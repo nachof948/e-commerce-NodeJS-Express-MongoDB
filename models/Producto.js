@@ -23,6 +23,10 @@ const productoSchema = new mongoose.Schema({
     },
     imgUrl:{
         type:String
+    },
+    enCarrito:{
+        type:Boolean,
+        required:[true]
     }
 })
 const Producto = mongoose.model('Producto', productoSchema)
