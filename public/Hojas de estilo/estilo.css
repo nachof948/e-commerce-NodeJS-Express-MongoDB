@@ -1132,25 +1132,6 @@ a{
 .google i{
     font-size: 1.5rem;
 }
-.facebook-enlace{
-    background-color: #3D5A99;
-    border: 1px solid #3D5A99;
-    padding: 0.6rem 1.4rem;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    transition: all 250ms;
-}
-.facebook-enlace:hover{
-    background-color: transparent;
-    color: #3D5A99;
-}
-.facebook-enlace:hover.facebook i{
-    color: #3D5A99;
-}
 .google{
     display: flex;
     justify-content: center;
