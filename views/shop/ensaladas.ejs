@@ -1,5 +1,5 @@
 <%-include ('../partials/head.ejs')%>
-    <%- include('../partials/header-shop.ejs') -%>
+<%-include('../partials/header-shop.ejs')%>
     <section class='comida-habitual'>
         <div class="shop">
             <h1>NUESTRAS RECETAS</h1>
@@ -8,6 +8,7 @@
                 <a href="/comidas/carnes">Carnes</a>
                 <a href="/comidas/ensaladas" style="color:rgb(132,183,78)">Ensaladas</a>
                 <a href="/comidas/sushi">Sushi</a>
+                <a href="/comidas/hamburguesas">Hamburguesas</a>
                 <a href="/comidas/pastas">Pastas</a>
                 <a href="/comidas/pizzas">Pizzas</a>
                 <a href="/comidas/veganas">Opciones veganas</a>
@@ -16,13 +17,13 @@
             </div>
             <div class="comidas-shop">
                 <% productos.forEach((producto) =>{ %>
-                    <div class="tarjeta-shop">
+                    <div class="tarjeta-shop tarjeta-producto" data-producto-id="<%-producto._id%>">
                         <img src=<%=producto.imgUrl%> alt="">
                         <div class="tarjeta-textos">
                             <h2><%=producto.nombre%></h2>
                             <p><%=producto.descripcion%></p>
                             <div class="opciones-comprar">
-                                <p><%=producto.precio%></p>
+                                <p>$<%=producto.precio%></p>
                                 <%if (user) {%>
                                     <a href="/comidas/all">Comprar Ahora</a>
                                 <%}else{%>

@@ -1,8 +1,7 @@
-const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy
 const keys = require('./keys');
 const GoogleCliente = require('../models/Cliente-Google')
-
+const passport = require('passport');
 
 /* Para manetener iniciada la sesion */
 passport.serializeUser((user, done)=>{ /* Recupera los datos del usuario de la base datos */
@@ -46,30 +45,3 @@ passport.use(
     })
 );
 
-/* passport.use(
-    new FacebookStrategy({
-        clientID: keys.facebook.clientID,
-        clientSecret: keys.facebook.clientSecret,
-        callbackURL:'/auth/facebook/redirect'
-    }, async (accesToken, refreshToken, profile, cd)=>{
-        const user = await FacebookCliente.findOne({ 
-            accountId:profile.id,
-            provider:'facebook'
-        })
-         if(!user){
-            const user = new FacebookCliente({
-                accountId:profile.id,
-                name: profile.displayName,
-                provider: profile.provider
-            });
-            await user.save()
-            return cd(null, profile)
-         }
-        else{
-            
-            console.log('Usuario ya registrado')
-            return cd(null, profile)
-        }
-    })
-)
- */

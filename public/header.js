@@ -4,6 +4,14 @@ const badge = document.getElementById('carrito');
 const carrito = document.querySelector(".carrito-compras")
 
 
+
+
+document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
+    tarjeta.addEventListener('click', function() {
+      const productoId = this.dataset.productoId; // Obtener el ID del producto de la tarjeta clickeada
+      window.location.href = '/producto/' + productoId; // Redirigir a la página del producto
+    });
+  });
 badge.addEventListener('click', () =>{
     if(carrito.style.display==='flex'){
         carrito.style.display ='none'

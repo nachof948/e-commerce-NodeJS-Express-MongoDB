@@ -13,64 +13,55 @@
             <div class="header-iconos">
                 <a href="#"><i class="bi bi-search"></i></a>
                 <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
-                <div class="carrito-compras">
-                    <div class="carrito-productos">
-                        <img src="Hero-Principal.png" alt="">
-                        <a href="#">+</a>
-                        <p>1</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="Panqueques.png" alt="">
-                        <a href="#">+</a>
-                        <p>2</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="Pescado.jpg" alt="">
-                        <a href="#">+</a>
-                        <p>5</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="Vegetales.png" alt="">
-                        <a href="#">+</a>
-                        <p>5</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="Hero-Principal.png" alt="">
-                        <a href="#">+</a>
-                        <p>5</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="realizar-compra">
-                        <p>Total: $6.250</p>
-                        <a class="compra" href="#">Comprar</a>
-                    </div>
+                <div id="carrito-container" class="carrito-compras">
+                    <%if(carrito.length > 0){%>
+                        <% let total = 0 %>
+                        <% carrito.forEach(producto => { %>
+                            <div class="carrito-productos">
+                                <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
+                                <a href="#">+</a>
+                                <p><%= producto.cantidad %></p>
+                                <a href="#">-</a>
+                                <form action="/productos-carrito/<%=producto.id%>" method="post">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <a type="submit">Eliminar</a>
+                                </form>
+                                <p>$ <%= producto.precio %></p>
+                            </div>
+                            <% total += Number(producto.precio) * Number(producto.cantidad); %>
+                            <% }); %>
+                            <div class="realizar-compra">
+                                <p>Total: <%= total %></p>
+                                <a class="compra" href="#">Comprar</a>
+                            </div>
+                    
+                    <%
+                    }
+                    else
+                    {
+                    %>
+                        <p>No hay productos en el carrito</p>
+                    <%    
+                    }
+                    %>
+                        
+                    
+
+                    
                 </div>
-            </div>
-            <%if(user) {%>
-                <div class="perfil">
-                    <img src=<%=user.image%> alt="">
-                    <a href="/auth/logout"><%=user.username%></a>
-                </div>
-                <%}else{%>
-                <div class="registrarse">
-                    <a href="/auth/signup">Registarse</a>
-                </div>
-            <%}%>
+                
         </div>
+        <%if(user) {%>
+            <div class="perfil">
+                <img src="<%=user.image%>" alt="">
+                <a href="/auth/logout"><%=user.username%></a>
+            </div>
+            <%}else{%>
+            <div class="registrarse">
+                <a href="/auth/signup">Registarse</a>
+            </div>
+        <%}%>
+    </div>
     </div>
 </header>
 
@@ -79,7 +70,7 @@
     <section id="hero" class="hero">
         <span class="circulo-verde-der"></span>
         <span class="circulo-verde-izq"></span>
-        <img class="planta-hero" src="Planta-Header.png" alt="">
+        <img class="planta-hero" src="imagenes/Planta-Header.png" alt="">
         <div class="contenedor-hero">
             <div class="textos-hero">
                 <a href="#opciones" class="btn-hero-pregunta">Hambriento?</a>
@@ -91,12 +82,12 @@
                 </div>
             </div>
             <div class="imagenes-hero">
-                <img class="hero-comida-principal" src="Hero-Principal.png" alt="">
-                <img class="hero-comida-pequeña panqueque" src="Panqueques.png" alt="">
-                <img class="hero-comida-pequeña pancakes" src="Pancakes.png" alt="">
-                <img class="hero-comida-pequeña pescado" src="Pescado.jpg" alt="">
-                <img class="hero-comida-pequeña vegetales" src="Arroz.jpg" alt="">
-                <img class="hero-comida-pequeña arroz" src="Vegetales.png" alt="">
+                <img class="hero-comida-principal" src="imagenes/Hero-Principal.png" alt="">
+                <img class="hero-comida-pequeña panqueque" src="imagenes/Panqueques.png" alt="">
+                <img class="hero-comida-pequeña pancakes" src="imagenes/Pancakes.png" alt="">
+                <img class="hero-comida-pequeña pescado" src="imagenes/Pescado.jpg" alt="">
+                <img class="hero-comida-pequeña vegetales" src="imagenes/Arroz.jpg" alt="">
+                <img class="hero-comida-pequeña arroz" src="imagenes/Vegetales.png" alt="">
             </div>
         </div>
     </section>
@@ -106,15 +97,20 @@
         <section id="opciones" class="seccion-opciones">
             <div class="contenedor-opciones">
                 <% for (let i = 0; i < productos.length && i < 4; i++) { %>
-                    <div class="tarjeta">
+                    <div class="tarjeta tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                         <img src=<%=productos[i].imgUrl%> alt="">
                         <div class="tarjeta-textos">
                             <h2><%=productos[i].nombre%></h2>
                             <p><%=productos[i].descripcion%></p>
                             <div class="opciones-comprar">
-                                <p><%=productos[i].precio%></p>
+                                <p>$<%=productos[i].precio%></p>
                                 <%if (user) {%>
-                                    <a href="/comidas/all">Comprar Ahora</a>
+                                    <form class="comprar-formulario" action="/" method="post">
+                                        <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                        <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                        <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                        <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                    </form>
                                 <%}else{%>
                                     <a href="/auth/signup">Comprar Ahora</a>
                                 <%}%>
@@ -136,19 +132,19 @@
                 </div>
                 <div class="motivos">
                     <div class="motivo">
-                        <img src="/icons8-ensalada-64.png" alt=""/>
+                        <img src="imagenes/icons8-ensalada-64.png" alt=""/>
                         <h2>Comida sana</h2>
                         <p>Aqui servimos comida sana. Usted puede elegir cualquier alimento que le guste.</p>
                     </div>
         
                     <div class="motivo">
-                        <img src="/icons8-carpeta.svg" alt=""/>
+                        <img src="imagenes/icons8-carpeta.svg" alt=""/>
                         <h2>La mejor calidad</h2>
                         <p>La calidad de nuestra comida es excelente. Aqui obtendra exactamente lo que desea.</p>
                     </div>
         
                     <div class="motivo">
-                        <img src="/icons8-fast-delivery-64.png" alt=""/>
+                        <img src="imagenes/icons8-fast-delivery-64.png" alt=""/>
                         <h2>Entrega rapida</h2>
                         <p>Se puede decir que el principal objetivo de nuestro repartidor es entregar los pedidos rapidamente.</p>
                     </div>
@@ -168,25 +164,25 @@
                 </div>
                     <div class="especiales">
                         <% for (let i = 4; i < productos.length && i < 7; i++) { %>
-                        <div class="especial">
+                        <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                             <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
                             <h2><%=productos[i].nombre%></h2>
                             <div class="estrellas">
-                                <img src="/icons8-estrella.png" alt=""/>
-                                <img src="/icons8-estrella.png" alt=""/>
-                                <img src="/icons8-estrella.png" alt=""/>
-                                <img src="/icons8-estrella.png" alt=""/>
-                                <img src="/icons8-estrella.png" alt=""/>
+                                <img src="imagenes/icons8-estrella.png" alt=""/>
+                                <img src="imagenes/icons8-estrella.png" alt=""/>
+                                <img src="imagenes/icons8-estrella.png" alt=""/>
+                                <img src="imagenes/icons8-estrella.png" alt=""/>
+                                <img src="imagenes/icons8-estrella.png" alt=""/>
                                 <p class="num">(169)</p>
                             </div>
                             <div class="precio">
-                                <p><%=productos[i].precio%></p>
+                                <p>$<%=productos[i].precio%></p>
                             </div>
                             <div class="bolsa">
                                 <%if (user) {%>
-                                    <a href="/comidas/all"><img class="bolsasa" src="icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                    <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
                                 <%}else{%>
-                                    <a href="/auth/signup"><img class="bolsasa" src="icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                    <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
                                 <%}%>
                             </div>
                         </div>
@@ -215,21 +211,21 @@
                 </div>
               <div class="comidas">
                 <% for (let i = 8; i < productos.length && i < 14; i++) { %>
-                <div class="tarjeta-habitual">
+                <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                     <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
                     <div class="tarjeta-textos-habitual">
                         <h2><%=productos[i].nombre%></h2>
                         <div class="estrellasHabitual">
-                            <img class="estrella" src="/icons8-estrella.png" alt=""/>
-                            <img class="estrella"  src="/icons8-estrella.png" alt=""/>
-                            <img class="estrella"  src="/icons8-estrella.png" alt=""/>
-                            <img class="estrella" src="/icons8-estrella.png" alt=""/>
-                            <img class="estrella"  src="/icons8-estrella.png" alt=""/>
+                            <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                            <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                            <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                            <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                            <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
                             <p class="numero">(102)</p>
                         </div>
                         <p><%=productos[i].descripcion%></p>
                         <div class="opciones-comprar-habitual">
-                            <p><%=productos[i].precio%></p>
+                            <p>$<%=productos[i].precio%></p>
                             <%if (user) {%>
                                 <a href="/comidas/all">Comprar Ahora</a>
                             <%}else{%>
@@ -258,9 +254,9 @@
                     <p>A continuación se presentan algunos de nuestros chefs especiales que trabajan para preparar sus comidas.</p>
                 </div>
                 <div class="chefs-img">
-                    <img class="uno" src="/chef1.png"alt=""/>
-                    <img class="dos" src="/chef2.png"alt=""/>
-                    <img class="tres" src="/chef3.png" alt=""/>
+                    <img class="uno" src="imagenes/chef1.png"alt=""/>
+                    <img class="dos" src="imagenes/chef2.png"alt=""/>
+                    <img class="tres" src="imagenes/chef3.png" alt=""/>
                 </div>
             </div>
         </section>

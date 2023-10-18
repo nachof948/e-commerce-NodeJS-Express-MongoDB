@@ -12,53 +12,40 @@
             <div class="header-iconos">
                 <a href="#"><i class="bi bi-search"></i></a>
                 <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
-                <div class="carrito-compras">
-                    <div class="carrito-productos">
-                        <img src="/Hero-Principal.png" alt="">
-                        <a href="#">+</a>
-                        <p>1</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="/Panqueques.png" alt="">
-                        <a href="#">+</a>
-                        <p>2</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="/Pescado.jpg" alt="">
-                        <a href="#">+</a>
-                        <p>5</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="/Vegetales.png" alt="">
-                        <a href="#">+</a>
-                        <p>5</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="carrito-productos">
-                        <img src="/Hero-Principal.png" alt="">
-                        <a href="#">+</a>
-                        <p>5</p>
-                        <a href="#">-</a>
-                        <a href="#">Eliminar</a>
-                        <p>$1.250</p>
-                    </div>
-                    <div class="realizar-compra">
-                        <p>Total: $6.250</p>
-                        <a class="compra" href="#">Comprar</a>
-                    </div>
-                </div>
+                <div id="carrito-container" class="carrito-compras">
+                <%if(carrito.length > 0){%>
+                    <% let total = 0 %>
+                    <% carrito.forEach(producto => { %>
+                        <div class="carrito-productos">
+                            <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
+                            <a href="#">+</a>
+                            <p><%= producto.cantidad %></p>
+                            <a href="#">-</a>
+                            <form action="/productos-carrito/<%=producto.id%>" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <a type="submit">Eliminar</a>
+                            </form>
+                            <p>$ <%= producto.precio %></p>
+                        </div>
+                        <% total += Number(producto.precio) * Number(producto.cantidad); %>
+                        <% }); %>
+                        <div class="realizar-compra">
+                            <p>Total: <%= total %></p>
+                            <a class="compra" href="#">Comprar</a>
+                        </div>
+                
+                <%
+                }
+                else
+                {
+                %>
+                    <p>No hay productos en el carrito</p>
+                <%    
+                }
+                %>
+                
             </div>
+        </div>
             <%if(user) {%>
                 <div class="perfil">
                     <img src=<%=user.image%> alt="">
@@ -69,6 +56,7 @@
                     <a href="/auth/signup">Registarse</a>
                 </div>
             <%}%>
-        </div>
+        
     </div>
+</div>
 </header>

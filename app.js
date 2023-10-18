@@ -3,12 +3,15 @@ const app = express()
 const formulario = require('./routes/formulario')
 const home = require('./routes/home')
 const shop = require('./routes/shop')
+const carrito = require('./routes/carrito')
+const producto = require('./routes/producto')
 const keys = require('./config/keys')
 const connectDB = require('./db/conexion')
 require('dotenv').config()
 const cookieSession = require('cookie-session')
 const passportSetup= require('./config/config')
 const passport = require('passport')
+const bodyParser = require('body-parser');
 
 /* PUERTO DEL SERVIDOR */
 const puerto = process.env.PUERTO
@@ -40,10 +43,13 @@ app.use(express.urlencoded({extended:false}))
 
 // CONEXION A LAS RUTAS
 app.use('/', home)
+app.use('/', producto)
+app.use('/', carrito)
 app.use('/auth', formulario)
 app.use('/comidas', shop)
 
-
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 
 /* Conexion a la base de datos */

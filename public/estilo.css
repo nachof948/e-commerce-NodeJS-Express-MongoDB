@@ -69,6 +69,7 @@ nav a:focus{
     align-items: center;
     gap: 2.5rem;
 }
+
 .header-iconos a{
     font-size: 1.2rem;
     margin-left: 0.8rem;
@@ -340,6 +341,10 @@ nav a:focus{
     align-items: center;
     position: relative;
     box-shadow: 0px 0px 10px rgb(209, 205, 205);
+    cursor: pointer;
+}
+.tarjeta-producto{
+    cursor: pointer;
 }
 .tarjeta img{
     width: 14rem;
@@ -393,6 +398,24 @@ nav a:focus{
     transition: all 250ms ease;
 }
 .opciones-comprar a:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+.opciones-comprar button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar button:hover{
     border: 1px solid var(--verde--oscuro);
     background-color: var(--blanco);
     color: var(--verde--oscuro);
@@ -938,6 +961,7 @@ footer a:hover{
     color: grey;
     text-align: center;
     margin-bottom: -1rem;
+    text-wrap: nowrap;
 }
 .titulos a:hover{
     color: rgb(132,183,78);
@@ -1135,7 +1159,6 @@ a{
 .google-enlace{
     background-color: #6AAAFB;
     border: 1px solid #6AAAFB;
-    margin-left: 1em;
     padding: 0.6rem 1.9rem;
     border-radius: 10px;
     color: white;
@@ -1145,6 +1168,7 @@ a{
     justify-content: center;
     gap: 0.6rem;
     transition: all 250ms;
+    width: 19.6rem;
 }
 .google-enlace:hover{
     background-color: transparent;
@@ -1341,3 +1365,11 @@ a{
     font-weight: 600;
     font-size: 1.1rem;
 }
+
+
+
+
+
+
+
+

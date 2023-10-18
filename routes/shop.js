@@ -9,6 +9,7 @@ const{getAllProductStatics,
     getAllProductPizzas,
     getAllProductVeganos,
     getAllProductSopas,
+    getAllProductHamburguesas,
     getAllProductDulces}=require('../controllers/shop')
 
 router.route('/all').get(getAllProductStatics)
@@ -26,6 +27,8 @@ router.route('/pizzas').get(getAllProductPizzas)
 router.route('/veganas').get(getAllProductVeganos)
 //localhost:4500/comidas/veganas
 router.route('/sopas').get(getAllProductSopas)
+//localhost:4500/comidas/sopas
+router.route('/hamburguesas').get(getAllProductHamburguesas)
 //localhost:4500/comidas/sopas
 router.route('/dulces').get(getAllProductDulces)
 //localhost:4500/comidas/dulces

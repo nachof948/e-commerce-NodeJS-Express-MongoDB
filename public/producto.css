@@ -1,0 +1,277 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* VARIABLES */
+:root{
+    --verde--oscuro: rgb(132,183,78);
+    --verde-claro:rgb(164,200,120);
+    --verde-muy-claro:rgb(229,241,217);
+    --negro: #010101;
+    --blanco: rgb(249,250,252);
+    --gris:rgb(139, 143, 144);
+}
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--negro);
+    overflow-x: hidden;
+    background-color: var(--blanco);
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+/*====== HEADER========= */
+header{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+nav a{
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 200ms ease;
+}
+nav a:hover{
+    color: var(--verde-claro);
+}
+nav a:focus{
+    color: var(--verde-claro);
+}
+.contenedor-header{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0rem;
+}
+.empresa{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.header-derecha{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header-iconos a{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+    position: relative;
+}
+.header-iconos a:hover{
+    color: var(--verde-claro);
+}
+.header-iconos button{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease;
+    position: relative;
+}
+.header-iconos button:hover{
+    color: var(--verde-claro);
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    text-wrap: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    background-color: var(--blanco);
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    margin: 0;
+}
+.perfil img{
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.perfil a:hover{
+    color: var(--verde-claro);
+}
+.registrarse a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    background-color: var(--blanco);
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.registrarse a:hover{
+    color: var(--verde-claro);
+}
+/*==== FIN HEADER======= */
+
+/*======= PRODUCTO=========== */
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 12rem 0rem 6rem 20rem;
+}
+.img-producto{
+    width: 36.5rem;
+    height: 36.5rem;
+    border-radius: 50%;
+}
+/* ========FIN PRODUCTO======= */
+
+
+/*-----------------------------------------------*/
+.segundo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.nombre-producto{
+    font-size: 2.8rem;
+}
+
+.precio-producto{
+    font-size: 2.5rem;
+    color: rgba(132, 183, 78, 1);
+}
+
+.alfa{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(132, 183, 78, 1);
+}
+.alfa p{
+    font-size: 1.1rem;
+}
+
+.alfa, .beta{
+    font-size: 1rem;
+    display: flex;
+}
+
+.beta{
+    padding-left: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.grupo1{
+    display: flex;
+    align-items: center;
+}
+
+.palabra{
+    color: gray;
+    padding-left: 0.5rem;
+}
+
+.texto{
+    font-size: 1rem;
+    width: 70%;
+    color: gray;
+    line-height: 1.6rem;
+}
+
+.opciones{
+   width: 10rem;
+   height: 2.5rem;
+   text-align: center;
+   margin-top: 1rem;
+   color: rgb(77, 75, 75);
+   letter-spacing: 3px;
+   border: 1px solid rgb(168, 164, 164);
+   
+}
+
+.input-group{
+    margin-top: 1rem;
+    
+}
+.cantidad{
+    width: 10rem;
+    height: 2.35rem;
+    border: 1px solid rgb(168, 164, 164);
+}
+.menos, .mas{
+    width: 2.5rem;
+    height: 2.55rem;
+    background-color: white;
+    border: 1px solid rgb(168, 164, 164);
+    
+}
+
+.miniEstrella{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.comprar button {
+    color: white;
+    background-color: rgba(132, 183, 78, 1);
+    border: 2px solid rgba(132, 183, 78, 1);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.comprar button:hover{
+    color: rgba(132, 183, 78, 1);
+    background-color: transparent;
+}
+.segundo a {
+    color: white;
+    background-color: rgba(132, 183, 78, 1);
+    border: 2px solid rgba(132, 183, 78, 1);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.segundo a:hover{
+    color: rgba(132, 183, 78, 1);
+    background-color: transparent;
+}
