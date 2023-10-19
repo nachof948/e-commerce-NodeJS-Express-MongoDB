@@ -274,7 +274,7 @@ nav a:focus{
 .panqueque{
     border: 0.4rem solid rgb(205,182,182);
     top: 21rem;
-    left: 35.5rem;
+    left: 34.5rem;
 }
 .pancakes{
     border: 0.4rem solid rgb(217,198,154);
@@ -296,6 +296,18 @@ nav a:focus{
     top: 21rem;
     left: -7rem;
 }
+.swiper-button-prev,
+.swiper-button-next{
+    color: #010101;
+    background-color: #aed882;
+    border-radius: 50%;
+    padding: 1rem 1.4rem;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    color: white;
+}
+
 @keyframes girar{
     0%{
         transform: rotate(0);
