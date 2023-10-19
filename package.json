@@ -23,6 +23,7 @@
     "passport": "^0.5.0",
     "passport-facebook": "^3.0.0",
     "passport-google-oauth20": "^2.0.0",
+    "swiper": "^10.3.1",
     "validator": "^13.11.0"
   }
 }

@@ -156,18 +156,6 @@
         "descripcionDetallada": "Nuestro Sushi Vegano de Palta y Pepino es una celebración de la frescura y la simplicidad. Los rolls de sushi están rellenos de palta y pepino fresco, envueltos en alga nori y arroz sazonado con maestría. Esta combinación crea una experiencia de sabor equilibrada y deliciosa. Acompañamos este festín con salsa de soya para un toque salado y jengibre encurtido que añade un toque picante y aromático. Prepárate para una experiencia culinaria que deleitará tus sentidos."
         },
         {
-          "nombre": "Tarta de Limón Vegana",
-          "descripcion": "Una tarta refrescante de limón sin productos de origen animal, con una base de galleta y un relleno suave y ácido.",
-          "precio": 3150,
-          "vegano": true,
-          "categoria": "dulces",
-          "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Lim%C3%B3n%20Vegana.png",
-          "enCarrito": false,
-          "rating": 4.3,
-          "vendidos": 90,
-          "descripcionDetallada": "La Tarta de Limón Vegana es una opción refrescante y deliciosa para aquellos que prefieren una alternativa sin productos de origen animal. Su base de galleta proporciona un contraste crujiente con el relleno suave y ácido de limón. Esta tarta es una explosión de sabor agridulce que deleitará tu paladar. Perfecta para disfrutar en cualquier momento del día."
-        },
-        {
           "nombre": "Crema de Calabacín",
           "descripcion": "Una cremosa sopa de calabacín con un toque de nuez moscada, servida con picatostes de pan crujiente.",
           "precio": 2499,

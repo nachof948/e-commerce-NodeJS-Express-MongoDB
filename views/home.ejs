@@ -157,41 +157,120 @@
                     <h1>MENU ESPECIAL</h1>
                     <p>Parte de nuestro menú de comida especial se proporciona aquí. Estos son los que más pide la gente. Si quieres puedes hacer tu pedido desde aquí.</p>
                 </div>
-                    <div class="especiales">
-                        <% for (let i = 4; i < productos.length && i < 7; i++) { %>
-                        <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                            <h2><%=productos[i].nombre%></h2>
-                            <div class="estrellas">
-                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                <p class="num">(169)</p>
+                    <div class="swiper swiper-especial especiales"  >
+                        <div class="swiper-wrapper" style="margin-bottom: 5rem;">
+                            <div class="swiper-slide" style="display: flex; justify-content: space-between; padding-left: 0.3rem;">
+                                <% for (let i = 4; i < productos.length && i < 7; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <div class="bolsa">
+                                            <%if (user) {%>
+                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}else{%>
+                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}%>
+                                        </div>
+                                    </div>
+                                    <%}%>
                             </div>
-                            <div class="precio">
-                                <p>$<%=productos[i].precio%></p>
+                            <div class="swiper-slide" style="display: flex; justify-content: space-between;padding-left: 0.3rem;">
+                                <% for (let i = 7; i < productos.length && i < 10; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <div class="bolsa">
+                                            <%if (user) {%>
+                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}else{%>
+                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}%>
+                                        </div>
+                                    </div>
+                                    <%}%>
                             </div>
-                            <div class="bolsa">
-                                <%if (user) {%>
-                                    <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                <%}else{%>
-                                    <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                <%}%>
+                            <div class="swiper-slide" style="display: flex; justify-content: space-between;padding-left: 0.3rem;">
+                                <% for (let i = 10; i < productos.length && i < 13; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <div class="bolsa">
+                                            <%if (user) {%>
+                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}else{%>
+                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}%>
+                                        </div>
+                                    </div>
+                                    <%}%>
                             </div>
+                            <div class="swiper-slide" style="display: flex; justify-content: space-between;padding-left: 0.3rem;">
+                                <% for (let i = 13; i < productos.length && i < 16; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <div class="bolsa">
+                                            <%if (user) {%>
+                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}else{%>
+                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
+                                            <%}%>
+                                        </div>
+                                    </div>
+                                    <%}%>
+                            </div>
+                            
                         </div>
-                        <%}%>
+                        <div class='swiper-pagination'></div>
                         </div>
                 </div>
                 
                 </div>
-                 <div class='slide'>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                 
             </div>
         </section>
             
@@ -204,39 +283,127 @@
                     <h1>NUESTRA COMIDA HABITUAL</h1>
                     <p >Esta es nuestra lista diaria de alimentos. Aquí encontrarás todo tipo de comida. Elige tu comida favorita y ordena.</p>
                 </div>
-              <div class="comidas">
-                <% for (let i = 8; i < productos.length && i < 14; i++) { %>
-                <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                    <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
-                    <div class="tarjeta-textos-habitual">
-                        <h2><%=productos[i].nombre%></h2>
-                        <div class="estrellasHabitual">
-                            <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
-                            <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
-                            <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
-                            <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
-                            <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
-                            <p class="numero">(102)</p>
-                        </div>
-                        <p><%=productos[i].descripcion%></p>
-                        <div class="opciones-comprar-habitual">
-                            <p>$<%=productos[i].precio%></p>
-                            <%if (user) {%>
-                                <a href="/comidas/all">Comprar Ahora</a>
-                            <%}else{%>
-                                <a href="/auth/signup">Comprar Ahora</a>
-                            <%}%>
-                        </div>
+            <div class="swiper swiper-habitual comidas" style="width: 85vw; display: flex;justify-content: center; margin: 0 auto;">
+                <div class="swiper-wrapper" style="margin-bottom: 5rem;">
+                    <div class="swiper-slide" style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem; padding-top: 2.9rem;" >
+                        <% for (let i = 17; i < productos.length && i < 23; i++) { %>
+                            <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
+                                <div class="tarjeta-textos-habitual">
+                                    <h2><%=productos[i].nombre%></h2>
+                                    <div class="estrellasHabitual">
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <p class="numero">(102)</p>
+                                    </div>
+                                    <p><%=productos[i].descripcion%></p>
+                                    <div class="opciones-comprar-habitual">
+                                        <p>$<%=productos[i].precio%></p>
+                                        <%if (user) {%>
+                                            <a href="/comidas/all">Comprar Ahora</a>
+                                        <%}else{%>
+                                            <a href="/auth/signup">Comprar Ahora</a>
+                                        <%}%>
+                                    </div>
+                                </div>
+                            </div>
+                            <%} %>
                     </div>
+                    <div class="swiper-slide"style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem;padding-top: 2.9rem;" >
+                        <% for (let i = 23; i < productos.length && i < 29; i++) { %>
+                            <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
+                                <div class="tarjeta-textos-habitual">
+                                    <h2><%=productos[i].nombre%></h2>
+                                    <div class="estrellasHabitual">
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <p class="numero">(102)</p>
+                                    </div>
+                                    <p><%=productos[i].descripcion%></p>
+                                    <div class="opciones-comprar-habitual">
+                                        <p>$<%=productos[i].precio%></p>
+                                        <%if (user) {%>
+                                            <a href="/comidas/all">Comprar Ahora</a>
+                                        <%}else{%>
+                                            <a href="/auth/signup">Comprar Ahora</a>
+                                        <%}%>
+                                    </div>
+                                </div>
+                            </div>
+                            <%} %>
+                    </div>
+                    <div class="swiper-slide"style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem;padding-top: 2.9rem; " >
+                        <% for (let i = 29; i < productos.length && i < 35; i++) { %>
+                            <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
+                                <div class="tarjeta-textos-habitual">
+                                    <h2><%=productos[i].nombre%></h2>
+                                    <div class="estrellasHabitual">
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <p class="numero">(102)</p>
+                                    </div>
+                                    <p><%=productos[i].descripcion%></p>
+                                    <div class="opciones-comprar-habitual">
+                                        <p>$<%=productos[i].precio%></p>
+                                        <%if (user) {%>
+                                            <a href="/comidas/all">Comprar Ahora</a>
+                                        <%}else{%>
+                                            <a href="/auth/signup">Comprar Ahora</a>
+                                        <%}%>
+                                    </div>
+                                </div>
+                            </div>
+                            <%} %>
+                    </div>
+                    <div class="swiper-slide"style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem; padding-top: 2.9rem;" >
+                        <% for (let i = 35; i < productos.length && i < 41; i++) { %>
+                            <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
+                                <div class="tarjeta-textos-habitual">
+                                    <h2><%=productos[i].nombre%></h2>
+                                    <div class="estrellasHabitual">
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella" src="imagenes/icons8-estrella.png" alt=""/>
+                                        <img class="estrella"  src="imagenes/icons8-estrella.png" alt=""/>
+                                        <p class="numero">(102)</p>
+                                    </div>
+                                    <p><%=productos[i].descripcion%></p>
+                                    <div class="opciones-comprar-habitual">
+                                        <p>$<%=productos[i].precio%></p>
+                                        <%if (user) {%>
+                                            <a href="/comidas/all">Comprar Ahora</a>
+                                        <%}else{%>
+                                            <a href="/auth/signup">Comprar Ahora</a>
+                                        <%}%>
+                                    </div>
+                                </div>
+                            </div>
+                            <%} %>
+                    </div>
+                    
+                    </div>
+                    <div class='swiper-pagination'></div>
                 </div>
-                <%} %>
-            </div>
-            <div class='slide-habitual'>
+                
+<!--             <div class='slide-habitual'>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
             </div>
         </section>
         <!-- FIN COMIDA HABITUAL -->
@@ -259,6 +426,9 @@
         <!-- FIN NOSOTROS -->
 
     <%- include('./partials/footer.ejs') %>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    
 </body>
 </html>
