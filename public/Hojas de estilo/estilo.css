@@ -296,18 +296,6 @@ nav a:focus{
     top: 21rem;
     left: -7rem;
 }
-.swiper-button-prev,
-.swiper-button-next{
-    color: #010101;
-    background-color: #aed882;
-    border-radius: 50%;
-    padding: 1rem 1.4rem;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover{
-    color: white;
-}
-
 @keyframes girar{
     0%{
         transform: rotate(0);
@@ -325,6 +313,28 @@ nav a:focus{
         transform: rotate(360deg);
     }
 }
+
+/* ===== HERO SWIPER===== */
+.swiper-hero{
+    width: 2000px; 
+    height: 1000px;
+}
+.swiper-slide-hero{
+    display: flex; 
+    align-items: center; 
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: #010101;
+    background-color: #aed882;
+    border-radius: 50%;
+    padding: 1rem 1.4rem;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    color: white;
+}
+/* ======FIN HERO SWIPER======= */
 /*====== FIN HERO======== */
 
 /*========== SECCION OPCIONES========= */
@@ -583,21 +593,6 @@ nav a:focus{
     z-index: 10;
     object-fit: cover;
 }
-.swiper-especial{
-    width: 90vw;
-}
-.swiper-pagination span{
-    background-color: #84B74E;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.swiper-pagination{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
 .especial h2{
     font-size: 2.9rem;
     letter-spacing: 1px;
@@ -666,6 +661,30 @@ span:hover{
     background-color: var(--verde--oscuro);
 }
 
+/* ===== COMIDA ESPECIAL SWIPER====  */
+.swiper-especial{
+    width: 90vw;
+}
+.swiper-wrapper-especial{
+    margin-bottom: 5rem;
+}
+.swiper-slide-especial{
+    display: flex; 
+    justify-content: space-between; 
+    padding-left: 0.3rem;
+}
+.swiper-pagination span{
+    background-color: #84B74E;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+/* ===== FIN COMIDA ESPECIAL SWIPER====  */
 /* ======= FIN COMIDA ESPECIAL====== */
 
 /* ========= COMIDA HABITUAL ============= */
@@ -796,6 +815,25 @@ span:hover{
     width: 1.8rem;
     height: 1.8rem;
 }
+
+
+/* ===== COMIDA HABITUAL SWIPER===== */
+.swiper-habitual{
+    width: 85vw; 
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+}
+.swiper-wrapper-habitual{
+    margin-bottom: 5rem;
+}
+.swiper-slide-habitual{
+    display: flex; 
+    justify-content:center; 
+    flex-wrap: wrap; 
+    gap: 5rem; 
+    padding-top: 2.9rem;
+}
 .slide-habitual{
     display: flex;
     gap: 2.5rem;
@@ -809,6 +847,9 @@ span:hover{
     transition: all 250ms;
     margin-top: -2.6rem;
 }
+/* ===== FIN COMIDA HABITUAL SWIPER===== */
+
+
 
 /* ========= FIN COMIDA HABITUAL ============= */
 

@@ -67,9 +67,9 @@
         <span class="circulo-verde-izq"></span>
         <img class="planta-hero" src="imagenes/Planta-Header.png" alt="">
         <div class="contenedor-hero">
-            <div class="swiper swiper-hero" style="width: 2000px; height: 1000px;">
+            <div class="swiper swiper-hero">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="display: flex; align-items: center; margin-top: 20rem;">
+                    <div class="swiper-slide swiper-slide-hero  swiper-no-swiping">
                         <div class="textos-hero">
                             <a href="#opciones" class="btn-hero-pregunta">Hambriento?</a>
                             <h1>SOLO VEN A FOODIED & ORDENA</h1>
@@ -88,7 +88,7 @@
                             <img class="hero-comida-pequeña arroz" src="imagenes/Vegetales.png" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide"style="display: flex; align-items: center; margin-top: 20rem;">
+                    <div class="swiper-slide swiper-slide-hero  swiper-no-swiping">
                         <div class="textos-hero">
                             <a href="#opciones" class="btn-hero-pregunta">Hambriento?</a>
                             <h1>DISFRUTA DE LAS COMIDAS VEGANAS</h1>
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                         <div class="imagenes-hero">
-                            <img class="hero-comida-principal" src="imagenes/Vegetales.png" alt="">
+                            <img class="hero-comida-principal" src="imagenes/green salad wit 0.png" alt="">
                             <img class="hero-comida-pequeña panqueque" src="imagenes/Hero-Principal.png" alt="">
                             <img class="hero-comida-pequeña pancakes" src="imagenes/Pancakes.png" alt="">
                             <img class="hero-comida-pequeña pescado" src="imagenes/Pescado.jpg" alt="">
@@ -107,18 +107,18 @@
                             <img class="hero-comida-pequeña arroz" src="imagenes/Panqueques.png" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide"style="display: flex; align-items: center; margin-top: 20rem;">
+                    <div class="swiper-slide swiper-slide-hero  swiper-no-swiping">
                         <div class="textos-hero">
                             <a href="#opciones" class="btn-hero-pregunta">Hambriento?</a>
-                            <h1>SOLO VEN A FOODIED & ORDENA</h1>
-                            <p>Aquí encontrarás comida pura y de la mejor calidad. Ordene ahora para satisfacer su hambre</p>
+                            <h1>DISFRUTA DE LOS PLATOS DULCES</h1>
+                            <p>Aquí encontrarás comida dulces de la mejor calidad. Ordene ahora para satisfacer su hambre</p>
                             <div class="btns-hero">
                                 <a href="#comidaHabitual" class="btn-hero-izq">Ordena Ahora</a>
-                                <a href="/comidas/all" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <a href="/comidas/dulces" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="imagenes-hero">
-                            <img class="hero-comida-principal" src="imagenes/Arroz.jpg" alt="">
+                            <img class="hero-comida-principal" src="imagenes/cheesecake view 1.png" alt="">
                             <img class="hero-comida-pequeña panqueque" src="imagenes/Panqueques.png" alt="">
                             <img class="hero-comida-pequeña pancakes" src="imagenes/Pancakes.png" alt="">
                             <img class="hero-comida-pequeña pescado" src="imagenes/Pescado.jpg" alt="">
@@ -206,8 +206,8 @@
                     <p>Parte de nuestro menú de comida especial se proporciona aquí. Estos son los que más pide la gente. Si quieres puedes hacer tu pedido desde aquí.</p>
                 </div>
                     <div class="swiper swiper-especial especiales"  >
-                        <div class="swiper-wrapper" style="margin-bottom: 5rem;">
-                            <div class="swiper-slide" style="display: flex; justify-content: space-between; padding-left: 0.3rem;">
+                        <div class="swiper-wrapper swiper-wrapper-especial" >
+                            <div class="swiper-slide swiper-slide-especial" >
                                 <% for (let i = 4; i < productos.length && i < 7; i++) { %>
                                     <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                         <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
@@ -233,7 +233,7 @@
                                     </div>
                                     <%}%>
                             </div>
-                            <div class="swiper-slide" style="display: flex; justify-content: space-between;padding-left: 0.3rem;">
+                            <div class="swiper-slide swiper-slide-especial">
                                 <% for (let i = 7; i < productos.length && i < 10; i++) { %>
                                     <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                         <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
@@ -259,7 +259,7 @@
                                     </div>
                                     <%}%>
                             </div>
-                            <div class="swiper-slide" style="display: flex; justify-content: space-between;padding-left: 0.3rem;">
+                            <div class="swiper-slide swiper-slide-especial">
                                 <% for (let i = 10; i < productos.length && i < 13; i++) { %>
                                     <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                         <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
@@ -285,7 +285,7 @@
                                     </div>
                                     <%}%>
                             </div>
-                            <div class="swiper-slide" style="display: flex; justify-content: space-between;padding-left: 0.3rem;">
+                            <div class="swiper-slide swiper-slide-especial">
                                 <% for (let i = 13; i < productos.length && i < 16; i++) { %>
                                     <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                         <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
@@ -311,14 +311,11 @@
                                     </div>
                                     <%}%>
                             </div>
-                            
                         </div>
                         <div class='swiper-pagination'></div>
                         </div>
                 </div>
-                
                 </div>
-                 
             </div>
         </section>
             
@@ -331,9 +328,9 @@
                     <h1>NUESTRA COMIDA HABITUAL</h1>
                     <p >Esta es nuestra lista diaria de alimentos. Aquí encontrarás todo tipo de comida. Elige tu comida favorita y ordena.</p>
                 </div>
-            <div class="swiper swiper-habitual comidas" style="width: 85vw; display: flex;justify-content: center; margin: 0 auto;">
-                <div class="swiper-wrapper" style="margin-bottom: 5rem;">
-                    <div class="swiper-slide" style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem; padding-top: 2.9rem;" >
+            <div class="swiper swiper-habitual comidas">
+                <div class="swiper-wrapper swiper-wrapper-habitual" >
+                    <div class="swiper-slide swiper-slide-habitual" >
                         <% for (let i = 17; i < productos.length && i < 23; i++) { %>
                             <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                 <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
@@ -360,7 +357,7 @@
                             </div>
                             <%} %>
                     </div>
-                    <div class="swiper-slide"style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem;padding-top: 2.9rem;" >
+                    <div class="swiper-slide swiper-slide-habitual" >
                         <% for (let i = 23; i < productos.length && i < 29; i++) { %>
                             <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                 <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
@@ -387,7 +384,7 @@
                             </div>
                             <%} %>
                     </div>
-                    <div class="swiper-slide"style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem;padding-top: 2.9rem; " >
+                    <div class="swiper-slide swiper-slide-habitual" >
                         <% for (let i = 29; i < productos.length && i < 35; i++) { %>
                             <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                 <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
@@ -414,7 +411,7 @@
                             </div>
                             <%} %>
                     </div>
-                    <div class="swiper-slide"style="display: flex; justify-content:center; flex-wrap: wrap; gap: 5rem; padding-top: 2.9rem;" >
+                    <div class="swiper-slide swiper-slide-habitual">
                         <% for (let i = 35; i < productos.length && i < 41; i++) { %>
                             <div class="tarjeta-habitual tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                                 <img class='tarjeta-habitual-img' src=<%=productos[i].imgUrl%> alt=""/>
@@ -441,17 +438,9 @@
                             </div>
                             <%} %>
                     </div>
-                    
                     </div>
                     <div class='swiper-pagination'></div>
                 </div>
-                
-<!--             <div class='slide-habitual'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> -->
             </div>
         </section>
         <!-- FIN COMIDA HABITUAL -->

@@ -43,24 +43,14 @@ const swiperEspecial = new Swiper('.swiper-especial', {
       el: '.swiper-pagination',
       clickable:true,
       },
-  
-    // Navigation arrows
-  /*     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      }, */
-  
-    // And if we need scrollbar
-  /*     scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: true,
-      }, */
   });
   const swiperHero = new Swiper('.swiper-hero', {
     // Optional parameters
       direction: 'horizontal',
       loop: true,
       effect: 'slide',
+      noSwiping: true,
+      noSwipingClass: 'swiper-no-swiping',
       autoplay: {
         delay:4000,
         speed:3000,
@@ -79,10 +69,4 @@ const swiperEspecial = new Swiper('.swiper-especial', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
       }
-  
-    // And if we need scrollbar
-  /*     scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: true,
-      }, */
   });
