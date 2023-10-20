@@ -1,0 +1,174 @@
+/*==== SIGN-UP - LOG-IN====== */
+*{
+    margin: 0;
+    padding: 0;
+}
+a,
+p{
+    font-family: 'Lato', sans-serif;
+}
+.ingreso {
+    display: flex;
+}
+.logo{
+    padding-bottom: 1em;
+    font-size: 5rem;
+    background-color: #E5F1D9;
+    font-family: 'Oswald', sans-serif;
+}
+.img{
+    background-color: #E5F1D9;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ensa{
+    width: 24em;
+    height: 24em;
+    background-color: transparent;
+    border: 15px solid #83B64D;
+    border-radius: 670px;
+}
+.partedos{
+    width: 60%;
+}
+.partedos h1{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+.iniciar{
+    padding: 4.5em 0em 1em;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+.persona{
+    display: flex;
+    padding-bottom: 2em;
+    align-items: center;
+}
+.persona-email{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.imagen{
+    position: absolute;
+    background-color: transparent;
+    padding-left: 0.5em;
+}
+.email{
+    padding: 1rem 2.6rem ;
+    width: 22em;
+    border: 0;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+.btn-form{
+    width: 100%;
+    padding: 0.4em 0; 
+    text-align: center;
+    letter-spacing: 0.5px;
+    background-color: black;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.btn-form{
+    width: 100%;
+    padding: 0.4em 0; 
+    text-align: center;
+    letter-spacing: 0.5px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: all 250ms;
+}
+.btn-form:hover{
+    background-color: transparent;
+    color: #010101;
+}
+.regi{
+    padding-top: 1em;
+    display: flex;
+    transition: all 500ms;
+    justify-content: center;
+}
+.preg{
+    color: gray;
+}
+a{
+    text-decoration: none;
+    padding-left: 0.5em;
+    color: black;
+}
+.metodos{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+.opcio{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.facebook i,
+.google i{
+    font-size: 1.5rem;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-enlace{
+    background-color: #6AAAFB;
+    border: 1px solid #6AAAFB;
+    padding: 0.6rem 1.9rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 250ms;
+    width: 19.6rem;
+}
+.google-enlace:hover{
+    background-color: transparent;
+    color: #6AAAFB;
+}
+.google-enlace:hover.google i{
+    color: #6AAAFB;
+}
+.regi a:hover{
+    text-decoration: underline 1px solid black;
+    transition: 500ms;
+}
+/*==== FIN SIGN-UP - LOG-IN====== */
