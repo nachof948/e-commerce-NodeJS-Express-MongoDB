@@ -44,7 +44,7 @@ app.use(express.urlencoded({extended:false}))
 // CONEXION A LAS RUTAS
 app.use('/', home)
 app.use('/', producto)
-app.use('/', carrito)
+app.use('/compras', carrito)
 app.use('/auth', formulario)
 app.use('/comidas', shop)
 
@@ -58,7 +58,7 @@ const iniciar = async () =>{
         await connectDB(process.env.MONGO_URL)
         app.listen(puerto, console.log(`El servidor se inicio en http://localhost:${puerto}`))
     }catch(error){
-        console.log(error)
+        console.log('Error al conectar con la base de datos',error)
     }
 }
 iniciar()

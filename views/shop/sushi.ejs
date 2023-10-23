@@ -25,7 +25,12 @@
                             <div class="opciones-comprar">
                                 <p>$<%=producto.precio%></p>
                                 <%if (user) {%>
-                                    <a href="/comidas/all">Comprar Ahora</a>
+                                    <form class="comprar-formulario" action="/compras" method="post">
+                                        <input type="hidden" name="nombre" value="<%=producto.nombre%>">
+                                        <input type="hidden" name="imagen" value="<%=producto.imgUrl%>">
+                                        <input type="hidden" name="precio" value="<%=producto.precio%>">
+                                        <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                    </form>
                                 <%}else{%>
                                     <a href="/auth/signup">Comprar Ahora</a>
                                 <%}%>

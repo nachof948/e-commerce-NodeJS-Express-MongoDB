@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const { agregarProductos, modificarProductos, eliminarProductos } = require('../controllers/carrito');
+const { mostrarCarrito, agregarProductos, modificarProductos, eliminarProductos } = require('../controllers/carrito');
 
-
+router.route('/').get(mostrarCarrito)
 /* POST */
 router.route('/').post(agregarProductos);
 
 /* PUT */
-router.route('/productos-carrito/:productoId').post(modificarProductos);
+router.route('/:productoId').post(modificarProductos);
 
 /* DELETE */
-router.route('/productos-carrito/:productoId').delete(eliminarProductos);
+router.route('/:productoId').delete(eliminarProductos);
 
 module.exports = router;

@@ -316,7 +316,7 @@ nav a:focus{
 
 /* ===== HERO SWIPER===== */
 .swiper-hero{
-    width: 2000px; 
+    width: 85vw; 
     height: 1000px;
 }
 .swiper-slide-hero{
@@ -366,7 +366,11 @@ nav a:focus{
     cursor: pointer;
 }
 .tarjeta-producto{
+    transition: all 250ms;
     cursor: pointer;
+}
+.tarjeta-producto:hover{
+    box-shadow: 0px 0px 10px var(--verde--oscuro);
 }
 .tarjeta img{
     width: 14rem;
@@ -637,6 +641,7 @@ nav a:focus{
     position: absolute;
     bottom: 0;
     right: 0;
+    border: none;
     padding: 3rem 2.5rem;
     border-radius:8px;
     cursor: pointer;
@@ -745,7 +750,6 @@ span:hover{
 }
 .tarjeta-habitual:hover{
     box-shadow: 0px 0px 10px var(--verde--oscuro);
-
 }
 .tarjeta-habitual-img{
     width: 18.5rem;
@@ -815,7 +819,24 @@ span:hover{
     width: 1.8rem;
     height: 1.8rem;
 }
-
+.opciones-comprar-habitual button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar-habitual button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
 
 /* ===== COMIDA HABITUAL SWIPER===== */
 .swiper-habitual{
@@ -1017,6 +1038,7 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    margin-top: 4rem;
 }
 .shop h1{
     color: #010101;
@@ -1353,28 +1375,6 @@ a{
 }
 
 
-/* CARRITO DE COMPRAS */
-.header-iconos{
-    position: relative;
-}
-.carrito-compras{
-    position: absolute;
-    top: 2.5rem;
-    right: 0.3rem;
-    width: 25rem;
-    height: fit-content;
-    max-height: 25rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.6rem;
-    display: none;
-}
 ::-webkit-scrollbar {
     width: 12px; /* Ancho de la barra de desplazamiento */
     border-radius: 10px;
@@ -1389,45 +1389,3 @@ a{
 ::-webkit-scrollbar-track {
     background-color: #E5F1D9; /* Color de fondo de la barra de desplazamiento */
 }
-.carrito-productos{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.carrito-productos img{
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-}
-.carrito-compras a{
-    background-color: #83B64D;
-    color: #EEEEEE;
-    padding: 0.2rem 0.5rem;
-    border-radius: 10px;
-    margin: 0;
-}
-.carrito-compras a:hover{
-    color: black;
-}
-.carrito-productos p{
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 0.5rem;
-}
-.realizar-compra{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.realizar-compra p{
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-
-
-
-
-
-
-

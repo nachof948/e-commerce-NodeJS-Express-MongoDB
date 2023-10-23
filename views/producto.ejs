@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,39 +22,8 @@
                 <div class="header-iconos">
                     <a href="#"><i class="bi bi-search"></i></a>
                     <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
-                    <div id="carrito-container" class="carrito-compras">
-                    <%if(carrito.length > 0){%>
-                        <% let total = 0 %>
-                        <% carrito.forEach(producto => { %>
-                            <div class="carrito-productos">
-                                <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-                                <a href="#">+</a>
-                                <p><%= producto.cantidad %></p>
-                                <a href="#">-</a>
-                                <form action="/productos-carrito/<%=producto.id%>" method="post">
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <a type="submit">Eliminar</a>
-                                </form>
-                                <p>$ <%= producto.precio %></p>
-                            </div>
-                            <% total += Number(producto.precio) * Number(producto.cantidad); %>
-                            <% }); %>
-                            <div class="realizar-compra">
-                                <p>Total: <%= total %></p>
-                                <a class="compra" href="#">Comprar</a>
-                            </div>
-                    
-                    <%
-                    }
-                    else
-                    {
-                    %>
-                        <!-- <p>No hay productos en el carrito</p> -->
-                    <%    
-                    }
-                    %>
                 </div>
-                </div>
+                
                 <%if(user) {%>
                     <div class="perfil">
                         <img src=<%=user.image%> alt="">
@@ -68,61 +36,61 @@
                 <%}%>
             </div>
         </div>
+
     </header>
     
     <section class="contenedor-producto">
             <div class="producto">
-                     <img class="img-producto"  src="<%=producto.imgUrl%>" >
+                    <img class="img-producto"  src="<%=producto.imgUrl%>" >
         
-               <div class="segundo">
-                     <h1 class="nombre-producto"><%=producto.nombre%></h1>
-                     <div class="grupo1">
+            <div class="segundo">
+                    <h1 class="nombre-producto"><%=producto.nombre%></h1>
+                    <div class="grupo1">
                         <div class="alfa">
-                             <div class="estrellitas">
-                                 <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
-                                 <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
-                                 <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
-                                 <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
-                                 <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
-                              </div> 
-                              <p><%=producto.rating%></p>  
-                         </div>
-                         <div class="beta">
-                             <p class="palabra">Vendidos</p>
-                             <p><%=producto.vendidos%></p>
-                          </div>
-                     </div>
+                            <div class="estrellitas">
+                                <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
+                                <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
+                                <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
+                                <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
+                                <img class="miniEstrella" src="/imagenes/icons8-estrella.png" alt="estrella">
+                            </div> 
+                            <p><%=producto.rating%></p>  
+                        </div>
+                        <div class="beta">
+                            <p class="palabra">Vendidos</p>
+                            <p><%=producto.vendidos%></p>
+                        </div>
+                    </div>
                         
-                       <h2 class="precio-producto">$<%=producto.precio%></h2>
-                        <p class="texto"><%=producto.descripcionDetallada%></p>
-                          <select class="opciones" name="PORCIONES" id="PORCIONES">
-                           <option value="PEQUEÑA">PEQUEÑA</option>
-                           <option value="MEDIANA">MEDIANA</option>
-                           <option value="GRANDE">GRANDE</option>
-                          </select>
-                          <div class="input-group">
+                    <h2 class="precio-producto">$<%=producto.precio%></h2>
+                    <p class="texto"><%=producto.descripcionDetallada%></p>
+                        <select class="opciones" name="PORCIONES" id="PORCIONES">
+                        <option value="PEQUEÑA">PEQUEÑA</option>
+                        <option value="MEDIANA">MEDIANA</option>
+                        <option value="GRANDE">GRANDE</option>
+                        </select>
+                        <div class="input-group">
                             <button type="button" class="menos">-</button>
                                 <input class="cantidad" type="number" id="cantidad" name="cantidad" min="0" max="100" step="1">
                             <button type="button" class="mas">+</button>
-                          </div>
-                          <%if (user) {%>
-                            <form class="comprar" action="/" method="post">
-                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                        </div>
+                        <%if (user) {%>
+                            <form class="comprar" action="/compras" method="post">
+                                <input type="hidden" name="nombre" value="<%=producto.nombre%>">
+                                <input type="hidden" name="imagen" value="<%=producto.imgUrl%>">
+                                <input type="hidden" name="precio" value="<%=producto.precio%>">
                                 <button class="comprar-ahora" type="submit">Comprar Ahora</button>
                             </form>
                         <%}else{%>
                             <a href="/auth/signup">Comprar Ahora</a>
                         <%}%>
-               </div>
-               
-           </div>
+            </div>
+        </div>
     </section>
     
 
     <%- include('../views/partials/footer.ejs') %>
-   <script src="js/header.js"></script>
+<script src="js/header.js"></script>
 </body>
 </html>
 

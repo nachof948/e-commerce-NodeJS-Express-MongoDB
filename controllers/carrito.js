@@ -1,9 +1,17 @@
 const Carrito = require('../models/Carrito')
 const Producto= require('../models/Producto')
-const axios = require('axios')
+
+const mostrarCarrito= async(req, res) => { 
+    try{
+        const carrito = await Carrito.find({})
+        res.render('carrito', {carrito:carrito, user:req.user})
+    } catch(err){
+        console.error(err);
+        res.status(404).send('Error');
+    }
+}
 
 /* AGREGAR PRODUCTOS AL CARRITO */
-
 const agregarProductos = async (req, res) => {
     try {
         const { nombre, imagen, precio } = req.body;
@@ -30,13 +38,15 @@ const agregarProductos = async (req, res) => {
             { new: true }
         );
 
+        // Devuelve el estado del carrito de compras
+        const carrito = await Carrito.find({})
+        res.render('carrito', {carrito:carrito, user:req.user})
+
     } catch (error) {
         console.error(error);
         return res.status(500).json({ mensaje: "Error interno del servidor" });
     }
 };
-
-
 
 /* AGREGAR O ELIMINAR PRODUCTOS DEL CARRITO */
 const modificarProductos = async (req, res) => {
@@ -106,6 +116,7 @@ const eliminarProductos = async(req, res) => {
 }
 
 module.exports ={
+    mostrarCarrito,
     agregarProductos,
     modificarProductos,
     eliminarProductos

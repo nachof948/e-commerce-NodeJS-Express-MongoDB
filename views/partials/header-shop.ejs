@@ -11,38 +11,9 @@
         <div class="header-derecha">
             <div class="header-iconos">
                 <a href="#"><i class="bi bi-search"></i></a>
-                <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
+                <a href="/compras"><i class="bi bi-bag"></i></a>
                 <div id="carrito-container" class="carrito-compras">
-                <%if(carrito.length > 0){%>
-                    <% let total = 0 %>
-                    <% carrito.forEach(producto => { %>
-                        <div class="carrito-productos">
-                            <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-                            <a href="#">+</a>
-                            <p><%= producto.cantidad %></p>
-                            <a href="#">-</a>
-                            <form action="/productos-carrito/<%=producto.id%>" method="post">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <a type="submit">Eliminar</a>
-                            </form>
-                            <p>$ <%= producto.precio %></p>
-                        </div>
-                        <% total += Number(producto.precio) * Number(producto.cantidad); %>
-                        <% }); %>
-                        <div class="realizar-compra">
-                            <p>Total: <%= total %></p>
-                            <a class="compra" href="#">Comprar</a>
-                        </div>
-                
-                <%
-                }
-                else
-                {
-                %>
-                    <p>No hay productos en el carrito</p>
-                <%    
-                }
-                %>
+
                 
             </div>
         </div>
