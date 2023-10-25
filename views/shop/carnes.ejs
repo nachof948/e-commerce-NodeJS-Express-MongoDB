@@ -25,7 +25,7 @@
                             <div class="opciones-comprar">
                                 <p>$<%=producto.precio%></p>
                                 <%if (user) {%>
-                                    <form class="comprar-formulario" action="/compras" method="post">
+                                    <form class="comprar-formulario" action="/compras/agregar" method="POST">
                                         <input type="hidden" name="nombre" value="<%=producto.nombre%>">
                                         <input type="hidden" name="imagen" value="<%=producto.imgUrl%>">
                                         <input type="hidden" name="precio" value="<%=producto.precio%>">

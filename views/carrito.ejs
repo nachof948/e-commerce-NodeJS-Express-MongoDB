@@ -45,13 +45,10 @@
                     <% carrito.forEach(producto => { %>
                         <div class="carrito-productos">
                             <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-                            <a href="#">+</a>
-                            <p><%= producto.cantidad %></p>
-                            <a href="#">-</a>
-                            <form action="/productos-carrito/<%=producto.id%>" method="post">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <a type="submit">Eliminar</a>
-                            </form>
+                            <a href="compras/modificar/<%= producto._id %>?query=add">+</a>
+                            <p><%= Number(producto.cantidad) %></p>
+                            <a href="compras/modificar/<%= producto._id %>?query=del">-</a>
+                                <a href="compras/eliminar/<%= producto._id %>">Eliminar</a>
                             <p>$ <%= producto.precio %></p>
                         </div>
                         <% total += Number(producto.precio) * Number(producto.cantidad); %>
@@ -65,16 +62,13 @@
                                 <a class="explorar" href="/comidas/all">Explorar mas</a>
                             </div>
                         </div>
-                
                 <%
                 } else {%>
                     <div class="buscar-productos"> 
                         <h1 class="mensaje-carrito">No hay productos en el carrito</h1>
                         <a href="/comidas/all">Explorar mas</a>
                     </div>
-                <%
-                }
-                %>
+                <%}%>
             </div>
         </div>
     </section>

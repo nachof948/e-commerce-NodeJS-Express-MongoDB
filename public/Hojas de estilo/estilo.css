@@ -78,10 +78,21 @@ nav a:focus{
     padding: 0.5rem 0.6rem;
     cursor: pointer;
     transition: all 200ms ease;
-    position: relative;
 }
 .header-iconos a:hover{
     color: var(--verde-claro);
+}
+.bag{
+    position: relative;
+}
+.circulo-rojo{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: red;
+    top: 2.2rem;
+    right: 26.5rem;
 }
 .header-iconos button{
     font-size: 1.2rem;
@@ -123,6 +134,7 @@ nav a:focus{
 .perfil a:hover{
     color: var(--verde-claro);
 }
+
 .registrarse a{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
