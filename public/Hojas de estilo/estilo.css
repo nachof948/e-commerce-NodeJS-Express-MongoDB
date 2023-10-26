@@ -157,6 +157,10 @@ nav a:focus{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    background-image: url(../imagenes/Hero/Fondo\ del\ Hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px -50px 0px 0px;
 }
 .circulo-verde-der{
     width: 90rem;
@@ -347,6 +351,110 @@ nav a:focus{
     color: white;
 }
 /* ======FIN HERO SWIPER======= */
+
+/* HERO */
+@media (max-width:1900px) {
+    .textos-hero h1{
+        font-size: 4.8rem;
+    }
+}
+@media (max-width:1850px) {
+    .textos-hero h1{
+        font-size: 4.7rem;
+    }
+}
+@media (max-width:1800px) {
+    .textos-hero h1{
+        font-size: 4.2rem;
+        width: 85%;
+    }
+
+}
+@media (max-width:1750px) {
+    .textos-hero h1{
+        font-size: 3.6rem;
+        width: 85%;
+        line-height: 5rem;
+    }
+}
+@media (max-width:1650px) {
+    .textos-hero h1{
+        font-size: 3.3rem;
+        width: 80%;
+    }
+    .hero-comida-principal{
+        width: 27rem;
+    }
+    .hero-comida-pequeña{
+        position: absolute;
+        width: 5rem;
+        height: 4.8rem;
+    }
+    .panqueque{
+        top: 21rem;
+        left: 31rem;
+    }
+    .pancakes{
+        top: 30rem;
+        left: 26rem;
+    }
+    .pescado{
+        top: 33rem;
+        left: 13rem;
+    }
+    .vegetales{
+        top: 29rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 21rem;
+        left: -6rem;
+    }
+}
+@media (max-width:1600px) {
+    .textos-hero h1{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+    .hero-comida-principal{
+        width: 27rem;
+    }
+    .panqueque{
+        top: 21rem;
+        left: 31rem;
+    }
+    .pancakes{
+        top: 28rem;
+        left: 25rem;
+    }
+    .pescado{
+        top: 32rem;
+        left: 13rem;
+    }
+    .vegetales{
+        top: 28rem;
+        left: 1rem;
+    }
+    .arroz{
+        top: 21rem;
+        left: -5rem;
+    }
+    .contenedor-opciones{
+        gap: 2rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        bottom: 14rem;
+        left: 2rem;
+    }
+}
+@media (max-width:1565px) {
+    .textos-hero p{
+        width: 65%;
+    }
+}
+
+
 /*====== FIN HERO======== */
 
 /*========== SECCION OPCIONES========= */
@@ -459,6 +567,36 @@ nav a:focus{
     color: var(--verde--oscuro);
     cursor: pointer;
 }
+
+/* MEDIA QUERIES OPCIONES */
+@media (max-width:1750px) {
+    .tarjeta{
+        width: 21rem;
+        height: 22rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        bottom: 16.5rem;
+        left: 3.7rem;
+    }
+    .tarjeta-textos{
+        padding: 7rem 0rem 2rem 0rem;
+    }
+}
+@media (max-width:1650px) {
+    .tarjeta{
+        width: 20.4rem;
+        height: 22rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        bottom: 16.5rem;
+        left: 3.3rem;
+    }
+}
+/* FIN MEDIA QUERIES OPCIONES */
+
+
 /*======= FIN SECCION OPCIONES=========== */
 
 /* ===========ELEGIRNOS=============== */
@@ -482,8 +620,9 @@ nav a:focus{
 }
 .motivos{
     display: flex;
+    width: 85vw;
     align-items: center;
-    gap: 2.6rem;
+    justify-content: space-between;
     margin-top: 1.5rem;
 }
 .textos-elegirnos{
@@ -500,7 +639,7 @@ nav a:focus{
 }
 .motivo{
     width: 32rem;
-    height: 20rem;
+    height: 21rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,6 +681,50 @@ nav a:focus{
     width: 17.5em;
     padding-top: 1.2em;
 }
+
+/* MEDIA QUERIES ELEGINOS */
+@media (max-width:1850px) {
+    .motivo{
+        width: 31rem;
+        height: 20rem;
+    }
+}
+@media (max-width: 1800px) {
+    .motivo{
+        width: 30rem;
+        height: 18rem;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1720px) {
+    .motivo{
+        width: 27.5rem;
+        height: 18rem;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+/* FIN MEDIA QUERIES ELEGINOS */
+
 /* ===========FIN ELEGIRNOS=============== */
 
 /* =======COMIDA ESPECIAL====== */
@@ -702,6 +885,38 @@ span:hover{
     gap: 2rem;
 }
 /* ===== FIN COMIDA ESPECIAL SWIPER====  */
+
+/* MEDIA QUERIES ESPECIAL */
+@media (max-width: 1650px) {
+    .especial{
+        width: 25rem;
+        height: 27rem;
+    }
+    .comida{
+        width: 15rem;
+        height: 15rem;
+    }
+    .estrellas img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .especial h2{
+        font-size: 2.2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2.5rem 2rem;
+    }
+    .precio{
+        top: 23rem;
+    }
+    .estrellas{
+    top: 19.5rem;
+    }
+}
+/* FIN MEDIA QUERIES ESPECIAL */
+
+
 /* ======= FIN COMIDA ESPECIAL====== */
 
 /* ========= COMIDA HABITUAL ============= */
@@ -786,6 +1001,9 @@ span:hover{
 .tarjeta-textos-habitual p{
     color: var(--gris);
     width: 80%;
+    font-size: 1.2rem;
+}
+.habitual-precio p{
     font-size: 1.2rem;
 }
 .opciones-comprar-habitual{
@@ -882,6 +1100,30 @@ span:hover{
 }
 /* ===== FIN COMIDA HABITUAL SWIPER===== */
 
+/* MEDIA QUERIES HABITUAL */
+@media (max-width:1650px) {
+    .tarjeta-habitual{
+        width: 24rem;
+        height: 27rem;
+    }
+    .tarjeta-habitual-img{
+        width: 15rem;
+        bottom: 21rem;
+        left: 4rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+/* FIN MEDIA QUERIES HABITUAL */
 
 
 /* ========= FIN COMIDA HABITUAL ============= */
@@ -949,6 +1191,29 @@ span:hover{
     border-radius: 10px;
     padding-right: 1rem;
 }
+
+/* MEDIA QUERIES NOSOTROS */
+@media (max-width:1650px) {
+    .chefs-img{
+        gap: 4rem;
+    }
+    .uno{
+        width: 21.6rem;
+        height: 28rem;
+    }
+    .dos{
+        width: 20rem;
+        height: 33rem;
+    }
+    
+    .tres{
+        width: 22rem;
+        height: 32rem;
+    }
+}
+
+/* FIN  MEDIA QUERIES NOSOTROS */
+
 /* ===== FIN SOBRE NOSOTROS ======== */
 
 
@@ -1040,6 +1305,23 @@ footer a:hover{
     border: 2px solid rgb(132,183,78);
     color: rgb(132,183,78);
 }
+
+/* MEDIA QUERIES FOOTER */
+@media (max-width:1650px) {
+    footer h2{
+        font-size: 2.1rem;
+    }
+    footer a{
+        font-size: 1.3rem;
+    }
+    .suscribite button{
+        right: 7.6rem;
+    }
+}
+
+
+/* FIN MEDIA QUERIES FOOTER */
+
 /* ====== FIN FOOTER========= */
 
 
@@ -1362,11 +1644,6 @@ a{
     }
     .contenedor-opciones{
         gap: 2rem;
-    }
-    .tarjeta img{
-        width: 12rem;
-        bottom: 14rem;
-        left: 2rem;
     }
 }
 

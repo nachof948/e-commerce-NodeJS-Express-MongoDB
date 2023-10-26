@@ -36,42 +36,29 @@ const agregarProductos = async (req, res) => {
 };
 /* AGREGAR O ELIMINAR PRODUCTOS DEL CARRITO */
 const modificarProductos = async (req, res) => {
-    try{
-    const { id } = req.params
-    const { query }= req.query
-    const body = req.body
+    try {
+        const { query } = req.query;
+        const producto = req.body;
+        const id = producto._id;
 
-    /* Buscamos el producto en el carrito*/
-    const productoBuscado = await Carrito.findById(id)
-    
-    /* Si el producto esta en el carrito y quiero agregar */
-    if(productoBuscado && query === 'add'){
-        body.cantidad = Number(body.cantidad) + 1
-        await Carrito.findByIdAndUpdate(id, body, {
-            new: true,
-        }) .then((producto) =>{
-            res.json({
-                mensaje:`El producto: ${producto.nombre} fue actualizado`,
-                producto
-            })
-        })
-    } else if(productoBuscado && query === 'del'){
-        body.cantidad = Number(body.cantidad) - 1
-        await Carrito.findByIdAndUpdate(id, body, {
-            new:true,
-        }).then((producto) =>{
-            res.json({mensaje: `El producto: ${producto.nombre} fue actualizado`,
-            producto})
-        })
-    } else{
-        res.status(400).json({mensaje: "Ocurrio un error"})
-    }
-    res.redirect('/compras')
-    }
-    catch(error) {
+        const productoBuscado = await Carrito.findById(id);
+
+        if (productoBuscado && query === 'add') {
+            productoBuscado.cantidad += 1;
+            await Carrito.findByIdAndUpdate(id, productoBuscado, { new: true });
+            res.redirect('/compras'); 
+        } else if (productoBuscado && query === 'del') {
+            productoBuscado.cantidad -= 1;
+            await Carrito.findByIdAndUpdate(id, producto, { new: true });
+            res.redirect('/compras'); // Redirección en caso de 'del'
+        } else {
+            res.status(400).json({ mensaje: "Ocurrió un error" });
+        }
+    } catch (error) {
         res.status(500).json({ mensaje: "Error interno del servidor", error });
     }
 }
+
 /* ELIMINAR PRODUCTO DEL CARRITO */
 const eliminarProductos = async (req, res) => {
     const id = req.params.id;
