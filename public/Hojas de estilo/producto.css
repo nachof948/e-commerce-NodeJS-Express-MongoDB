@@ -275,3 +275,39 @@ nav a:focus{
     color: rgba(132, 183, 78, 1);
     background-color: transparent;
 }
+
+
+/* Pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem;
+    }
+
+    .img-producto {
+        width: 27.375rem;
+        height: 27.375rem;
+        border-radius: 50%;
+    }
+}
+
+/* Pantallas de hasta 390px */
+@media (max-width: 390px) {
+    .producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .img-producto {
+        width: 18.25rem;
+        height: 18.25rem;
+        border-radius: 50%;
+    }
+}
+
