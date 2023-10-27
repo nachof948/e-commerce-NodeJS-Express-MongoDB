@@ -1,7 +1,6 @@
 {
   "name": "e-commerce",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +24,6 @@
     "passport-google-oauth20": "^2.0.0",
     "swiper": "^10.3.1",
     "validator": "^13.11.0"
-  }
+  },
+  "description": ""
 }

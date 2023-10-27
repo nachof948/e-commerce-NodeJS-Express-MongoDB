@@ -172,3 +172,68 @@ a{
     transition: 500ms;
 }
 /*==== FIN SIGN-UP - LOG-IN====== */
+
+/* SECTOR MEDIA-QUERIES */
+
+@media (max-width:768px){
+    .ensa{
+        width: 16em;
+        height: 16em;
+    }
+}
+
+@media(max-width:390px){
+    .img{
+        display: none;
+    }
+
+    h1{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .iniciar{
+        width: 10em;
+    }
+
+    .email{
+       
+       width: 18em;
+    }
+
+    .imagen{
+       
+    }
+    
+    .btn-form{
+        width:13.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario{
+        
+        width: 26em;
+    }
+
+    .metodos{
+        width: 20.5em;
+    }
+
+    .google-enlace{
+        width:13em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .regi{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24.5em;
+    }
+}
