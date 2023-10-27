@@ -1336,6 +1336,68 @@ a{
     }
 }
 
+@media (max-width:768px){
+    .ensa{
+        width: 16em;
+        height: 16em;
+        border: 13px solid #83B64D;
+    }
+}
+
+@media(max-width:390px){
+    .img{
+        display: none;
+    }
+
+    h1{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .iniciar{
+        width: 10em;
+    }
+    .formulario{
+        
+        width: 26em;
+    }
+    .email{
+       
+        width: 18em;
+     }
+
+     .btn-form{
+        width:13.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .metodos{
+        width: 26em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .google-enlace{
+        width:13em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .regi{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25.5em;
+    }
+.opcio{
+   width: 26em;
+}
+}
+
 /*======FIN MEDIA-QUERIES======= */
 .badge {
     background-color: red;

@@ -179,6 +179,7 @@ a{
     .ensa{
         width: 16em;
         height: 16em;
+        border: 13px solid #83B64D;
     }
 }
 
@@ -202,9 +203,7 @@ a{
        width: 18em;
     }
 
-    .imagen{
-       
-    }
+   
     
     .btn-form{
         width:13.5em;
