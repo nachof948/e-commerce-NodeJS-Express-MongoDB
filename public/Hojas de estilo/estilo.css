@@ -1450,7 +1450,6 @@ span:hover{
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    background-color: red;
 }
 .texto-chefs{
     display: flex;
