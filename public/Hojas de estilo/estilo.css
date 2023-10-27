@@ -149,6 +149,52 @@ nav a:focus{
 .registrarse a:hover{
     color: var(--verde-claro);
 }
+
+/* MEDIA QUERIES HEADER */
+@media (max-width:1470px) {
+    nav{
+        gap: 5rem;
+    }
+}
+@media (max-width:1400px) {
+    nav{
+        gap: 4rem;
+    }
+}
+@media (max-width:1300px) {
+    nav{
+        gap: 3rem;
+    }
+    .empresa{
+        font-size: 1.7rem;
+    }
+    .registrarse a{
+        font-size: 1.1rem;
+        padding: 0.7rem 0.9rem;
+    }
+    .header-iconos a{
+        font-size: 1.2rem;
+        padding: 0.5rem 0.6rem;
+    }
+}
+@media (max-width:1200px) {
+    nav{
+        gap: 2.5rem;
+    }
+    nav a{
+        font-size: 0.9rem;
+    }
+    .empresa{
+        font-size: 1.5rem;
+    }
+    .registrarse a{
+        font-size: 0.9rem;
+    }
+    .header-iconos a{
+        font-size: 1rem;
+    }
+}
+/* FIN MEDIA QUERIES HEADER */
 /*==== FIN HEADER======= */
 
 /*=========== HERO========== */
@@ -416,9 +462,6 @@ nav a:focus{
         font-size: 3.5rem;
         width: 100%;
     }
-    .hero-comida-principal{
-        width: 27rem;
-    }
     .panqueque{
         top: 21rem;
         left: 31rem;
@@ -451,6 +494,58 @@ nav a:focus{
 @media (max-width:1565px) {
     .textos-hero p{
         width: 65%;
+    }
+}
+@media (max-width:1444px) {
+    .textos-hero p{
+        width: 75%;
+    }
+    .textos-hero h1{
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 25rem;
+        border: 1.8rem solid var(--verde-claro);
+    }
+    .panqueque{
+        top: 19rem;
+        left: 27.5rem;
+    }
+    .pancakes{
+        top: 27rem;
+        left: 21rem;
+    }
+    .pescado{
+        top: 30rem;
+        left: 10rem;
+    }
+    .vegetales{
+        top: 27rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 19rem;
+        left: -5rem;
+    }
+}
+@media (max-width:1400px) {
+    .textos-hero p{
+        font-size: 1.1rem;
+        width: 75%;
+    }
+    .textos-hero h1{
+        font-size: 3.2rem;
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 24rem;
+        border: 1.8rem solid var(--verde-claro);
+    }
+    .btn-hero-izq{
+        padding: 1.4rem 2.6rem;
+    }
+    .btn-hero-der{
+        padding: 1.4rem 2rem;
     }
 }
 
@@ -594,6 +689,39 @@ nav a:focus{
         left: 3.3rem;
     }
 }
+@media (max-width:1550px) {
+    .tarjeta{
+        width: 20.4rem;
+        height: 22rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        bottom: 16.5rem;
+        left: 2.7rem;
+    }
+}
+@media (max-width:1500px) {
+    .tarjeta{
+        width: 20.4rem;
+        height: 20rem;
+    }
+    .tarjeta img{
+        width: 11rem;
+        bottom: 15rem;
+        left: 2.9rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .opciones-comprar p{
+        font-size: 1rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .tarjeta-textos p{
+        font-size: 0.9rem;
+    }
+}
 /* FIN MEDIA QUERIES OPCIONES */
 
 
@@ -708,12 +836,46 @@ nav a:focus{
 }
 @media (max-width: 1720px) {
     .motivo{
-        width: 27.5rem;
+        width: 29rem;
         height: 18rem;
     }
     .motivo img{
         width: 4rem;
         height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1680px) {
+    .motivo{
+        width: 26rem;
+        height: 18rem;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1500px) {
+    .motivo{
+        width: 24rem;
+        height: 17rem;
+    }
+    .motivo img{
+        width: 3.5rem;
+        height: 3.5rem;
     }
     .motivo h2{
         font-size: 2.1rem;
@@ -887,6 +1049,33 @@ span:hover{
 /* ===== FIN COMIDA ESPECIAL SWIPER====  */
 
 /* MEDIA QUERIES ESPECIAL */
+@media (max-width: 1750px) {
+    .especial{
+        width: 26rem;
+        height: 29rem;
+    }
+    .comida{
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .estrellas img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .especial h2{
+        font-size: 2.3rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2.5rem 2rem;
+    }
+    .precio{
+        top: 23rem;
+    }
+    .estrellas{
+    top: 19.5rem;
+    }
+}
 @media (max-width: 1650px) {
     .especial{
         width: 25rem;
@@ -912,6 +1101,36 @@ span:hover{
     }
     .estrellas{
     top: 19.5rem;
+    }
+}
+@media (max-width: 1500px) {
+    .especial{
+        width: 21rem;
+        height: 23rem;
+    }
+    .comida{
+        width: 14rem;
+        height: 14rem;
+        padding: 0.7rem;
+        top: -7rem;
+        left: 9rem;
+    }
+    .estrellas img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2.5rem 2rem;
+    }
+    .precio{
+        top: 18rem;
+    }
+    .estrellas{
+    top: 16rem;
     }
 }
 /* FIN MEDIA QUERIES ESPECIAL */
@@ -1101,6 +1320,28 @@ span:hover{
 /* ===== FIN COMIDA HABITUAL SWIPER===== */
 
 /* MEDIA QUERIES HABITUAL */
+@media (max-width:1750px) {
+    .tarjeta-habitual{
+        width: 26rem;
+        height: 27rem;
+    }
+    .tarjeta-habitual-img{
+        width: 15.5rem;
+        bottom: 21rem;
+        left: 5rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
 @media (max-width:1650px) {
     .tarjeta-habitual{
         width: 24rem;
@@ -1123,6 +1364,73 @@ span:hover{
         font-size: 1.3rem;
     }
 }
+@media (max-width:1550px) {
+    .tarjeta-habitual{
+        width: 23rem;
+        height: 27rem;
+    }
+    .tarjeta-habitual-img{
+        width: 15rem;
+        bottom: 21rem;
+        left: 4rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1500px) {
+    .tarjeta-habitual{
+        width: 21.5rem;
+        height: 26rem;
+    }
+    .tarjeta-habitual-img{
+        width: 14rem;
+        bottom: 20rem;
+        left: 3.5rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1400px) {
+    .tarjeta-habitual{
+        width: 20rem;
+        height: 26rem;
+    }
+    .tarjeta-habitual-img{
+        width: 13rem;
+        bottom: 19rem;
+        left: 3rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.6rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+
 /* FIN MEDIA QUERIES HABITUAL */
 
 
@@ -1142,6 +1450,7 @@ span:hover{
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    background-color: red;
 }
 .texto-chefs{
     display: flex;
@@ -1193,6 +1502,24 @@ span:hover{
 }
 
 /* MEDIA QUERIES NOSOTROS */
+@media (max-width:1750px) {
+    .chefs-img{
+        gap: 5.6rem;
+    }
+    .uno{
+        width: 23rem;
+        height: 29rem;
+    }
+    .dos{
+        width: 20rem;
+        height: 33rem;
+    }
+    
+    .tres{
+        width: 23.2rem;
+        height: 33rem;
+    }
+}
 @media (max-width:1650px) {
     .chefs-img{
         gap: 4rem;
@@ -1209,6 +1536,29 @@ span:hover{
     .tres{
         width: 22rem;
         height: 32rem;
+    }
+}
+@media (max-width:1500px) {
+    .chefs-img{
+        gap: 3.4rem;
+    }
+    .uno{
+        width: 19rem;
+        height: 26rem;
+    }
+    .dos{
+        width: 18rem;
+        height: 29rem;
+    }
+    
+    .tres{
+        width: 19rem;
+        height: 27.5rem;
+    }
+}
+@media (max-width:1400px) {
+    .chefs-img{
+        gap: 2.5rem;
     }
 }
 
@@ -1296,7 +1646,7 @@ footer a:hover{
     padding: 1.19rem 2rem;
     border-radius: 10px;
     position: absolute;
-    right: 7.95rem;
+    right: 8.33rem;
     cursor: pointer;
     transition: all 250ms;
 }
@@ -1307,6 +1657,16 @@ footer a:hover{
 }
 
 /* MEDIA QUERIES FOOTER */
+@media (min-width:1800px) {
+    .suscribite button{
+        right: 9rem;
+    }
+}
+@media (max-width:1750px) {
+    .suscribite button{
+        right: 8rem;
+    }
+}
 @media (max-width:1650px) {
     footer h2{
         font-size: 2.1rem;
@@ -1315,7 +1675,40 @@ footer a:hover{
         font-size: 1.3rem;
     }
     .suscribite button{
-        right: 7.6rem;
+        right: 6.5rem;
+    }
+}
+@media (max-width:1550px) {
+    footer h2{
+        font-size: 2.1rem;
+    }
+    footer a{
+        font-size: 1.3rem;
+    }
+    .suscribite button{
+        right: 6rem;
+    }
+}
+@media (max-width:1450px) {
+    footer h2{
+        font-size: 1.9rem;
+    }
+    footer a{
+        font-size: 1.1rem;
+    }
+    .suscribite button{
+        right: 6rem;
+    }
+    .suscribite input{
+        width: 27rem;
+    }
+}
+@media (max-width:1400px) {
+    .suscribite button{
+        right: 6.5rem;
+    }
+    .suscribite input{
+        padding: 1rem 0.8rem 1rem;
     }
 }
 
@@ -1558,94 +1951,6 @@ a{
 /*==== FIN SIGN-UP - LOG-IN====== */
 
 
-/* MEDIA-QUERIES */
-/* HERO */
-@media (max-width:1900px) {
-    .circulo-verde-der{
-        left: 40rem;
-    }
-    .circulo-verde-izq{
-        left: 86rem;
-    }
-    .textos-hero h1{
-        font-size: 4.8rem;
-    }
-}
-@media (max-width:1850px) {
-    .textos-hero h1{
-        font-size: 4.7rem;
-    }
-}
-@media (max-width:1800px) {
-    .textos-hero h1{
-        font-size: 4.2rem;
-        width: 85%;
-    }
-
-}
-@media (max-width:1750px) {
-    .circulo-verde-der{
-        left: 36rem;
-    }
-    .circulo-verde-izq{
-        left: 78rem;
-    }
-    .textos-hero h1{
-        font-size: 3.6rem;
-        width: 85%;
-        line-height: 5rem;
-    }
-}
-@media (max-width:1650px) {
-    .circulo-verde-der{
-        left: 32rem;
-    }
-    .circulo-verde-izq{
-        left: 74rem;
-    }
-    .textos-hero h1{
-        font-size: 3.3rem;
-        width: 80%;
-    }
-}
-@media (max-width:1600px) {
-    .circulo-verde-der{
-        left: 28rem;
-    }
-    .circulo-verde-izq{
-        left: 65rem;
-    }
-    .textos-hero h1{
-        font-size: 3.5rem;
-        width: 100%;
-    }
-    .hero-comida-principal{
-        width: 27rem;
-    }
-    .panqueque{
-        top: 21rem;
-        left: 31rem;
-    }
-    .pancakes{
-        top: 28rem;
-        left: 25rem;
-    }
-    .pescado{
-        top: 32rem;
-        left: 13rem;
-    }
-    .vegetales{
-        top: 28rem;
-        left: 1rem;
-    }
-    .arroz{
-        top: 21rem;
-        left: -5rem;
-    }
-    .contenedor-opciones{
-        gap: 2rem;
-    }
-}
 
 /*======FIN MEDIA-QUERIES======= */
 .badge {
