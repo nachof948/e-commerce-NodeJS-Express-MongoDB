@@ -208,24 +208,6 @@ nav a:focus{
     background-size: contain;
     background-position: 0px -50px 0px 0px;
 }
-.circulo-verde-der{
-    width: 90rem;
-    height: 65rem;
-    background-color: var(--verde--oscuro);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 26rem;
-    left: 45rem;
-}
-.circulo-verde-izq{
-    width: 55rem;
-    height: 45rem;
-    background-color: var(--verde--oscuro);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 15rem;
-    left: 89rem;
-}
 
 .planta-hero{
     position: absolute;
@@ -492,6 +474,9 @@ nav a:focus{
     }
 }
 @media (max-width:1565px) {
+    .contenedor-hero{
+        margin-top: 1rem;
+    }
     .textos-hero p{
         width: 65%;
     }
@@ -548,6 +533,50 @@ nav a:focus{
         padding: 1.4rem 2rem;
     }
 }
+@media (max-width:1360px) {
+    .contenedor-hero{
+        margin-top: 1rem;
+    }
+    .textos-hero p{
+        font-size: 1.1rem;
+        width: 75%;
+    }
+    .textos-hero h1{
+        font-size: 3rem;
+        line-height: 4rem;
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 22rem;
+        border: 1.8rem solid var(--verde-claro);
+    }
+    .btn-hero-izq{
+        padding: 1.4rem 2.6rem;
+    }
+    .btn-hero-der{
+        padding: 1.4rem 2rem;
+    }
+    .panqueque{
+        top: 15rem;
+        left: 25.5rem;
+    }
+    .pancakes{
+        top: 23rem;
+        left: 20rem;
+    }
+    .pescado{
+        top: 26rem;
+        left: 10rem;
+    }
+    .vegetales{
+        top: 23rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 15rem;
+        left: -5.5rem;
+    }
+}
 
 
 /*====== FIN HERO======== */
@@ -576,7 +605,6 @@ nav a:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     box-shadow: 0px 0px 10px rgb(209, 205, 205);
     cursor: pointer;
 }
@@ -591,12 +619,12 @@ nav a:focus{
     width: 14rem;
     border-radius: 50%;
     border: 0.9rem solid var(--verde--oscuro);
-    position: absolute;
-    bottom: 15rem;
-    left: 3.8rem;
+    transform: translateY(-50%);
+    margin: 0;
 }
 .tarjeta-textos{
-    padding: 9rem 0rem 2rem 0rem;
+    transform: translateY(-50%);
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -644,7 +672,7 @@ nav a:focus{
     color: var(--verde--oscuro);
     cursor: pointer;
 }
-.opciones-comprar button{
+.opciones-comprar a{
     border: 1px solid var(--verde--oscuro);
     border-radius: 20px;
     padding: 0.5rem 0.8rem;
@@ -656,7 +684,7 @@ nav a:focus{
     cursor: pointer;
     transition: all 250ms ease;
 }
-.opciones-comprar button:hover{
+.opciones-comprar a:hover{
     border: 1px solid var(--verde--oscuro);
     background-color: var(--blanco);
     color: var(--verde--oscuro);
@@ -671,11 +699,15 @@ nav a:focus{
     }
     .tarjeta img{
         width: 12rem;
-        bottom: 16.5rem;
-        left: 3.7rem;
+/*         bottom: 16.5rem;
+        left: 3.7rem; */
     }
     .tarjeta-textos{
-        padding: 7rem 0rem 2rem 0rem;
+        padding-top: 2rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.7rem;
+        width: 90%;
     }
 }
 @media (max-width:1650px) {
@@ -685,8 +717,8 @@ nav a:focus{
     }
     .tarjeta img{
         width: 12rem;
-        bottom: 16.5rem;
-        left: 3.3rem;
+/*         bottom: 16.5rem;
+        left: 3.3rem; */
     }
 }
 @media (max-width:1550px) {
@@ -696,8 +728,8 @@ nav a:focus{
     }
     .tarjeta img{
         width: 12rem;
-        bottom: 16.5rem;
-        left: 2.7rem;
+/*         bottom: 16.5rem;
+        left: 2.7rem; */
     }
 }
 @media (max-width:1500px) {
@@ -707,8 +739,8 @@ nav a:focus{
     }
     .tarjeta img{
         width: 11rem;
-        bottom: 15rem;
-        left: 2.9rem;
+/*         bottom: 15rem;
+        left: 2.9rem; */
         border: 0.7rem solid var(--verde--oscuro);
     }
     .opciones-comprar p{
@@ -720,6 +752,55 @@ nav a:focus{
     }
     .tarjeta-textos p{
         font-size: 0.9rem;
+    }
+}
+@media (max-width:1400px) {
+    .tarjeta{
+        width: 21rem;
+        height: 20rem;
+    }
+    .tarjeta img{
+        width: 11rem;
+/*         bottom: 15rem;
+        left: 3.2rem; */
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .opciones-comprar p{
+        font-size: 1rem;
+    }
+    .tarjeta-textos{
+        padding-top: 3rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.4rem;
+        width: 90%;
+    }
+    .tarjeta-textos p{
+        font-size: 0.9rem;
+    }
+    .opciones-comprar a{
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0.7rem;
+    }
+}
+@media (max-width:1350px) {
+    .tarjeta img{
+        width: 9.5rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .tarjeta-textos{
+        padding-top: 5rem;
+    }
+    .tarjeta-textos h2{
+        width: 95%;
+    }
+}
+@media (max-width:1300px) {
+    .tarjeta-textos p{
+        font-size: 0.8rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.3rem;
     }
 }
 /* FIN MEDIA QUERIES OPCIONES */
@@ -1201,12 +1282,11 @@ span:hover{
     width: 18.5rem;
     border-radius: 50%;
     border: 0.9rem solid var(--verde--oscuro);
-    position: absolute;
-    bottom: 19rem;
-    left: 5rem;
+    transform: translateY(-60%);
 }
 .tarjeta-textos-habitual{
-    padding: 9rem 0rem 2rem 0rem;
+    transform: translateY(-60%);
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1341,6 +1421,9 @@ span:hover{
     .opciones-comprar-habitual p{
         font-size: 1.3rem;
     }
+    .tarjeta-textos-habitual{
+        transform: translateY(-50%);
+    }
 }
 @media (max-width:1650px) {
     .tarjeta-habitual{
@@ -1396,6 +1479,9 @@ span:hover{
         bottom: 20rem;
         left: 3rem;
     }
+    .tarjeta-textos-habitual{
+        transform: translateY(-45%);
+    }
     .tarjeta-textos-habitual h2{
         font-size: 1.8rem;
         width: 90%;
@@ -1410,13 +1496,16 @@ span:hover{
 }
 @media (max-width:1400px) {
     .tarjeta-habitual{
-        width: 20rem;
-        height: 26rem;
+        width: 21rem;
+        height: 24rem;
     }
     .tarjeta-habitual-img{
         width: 13rem;
         bottom: 19rem;
         left: 3rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-45%);
     }
     .tarjeta-textos-habitual h2{
         font-size: 1.6rem;
@@ -1557,7 +1646,7 @@ span:hover{
 }
 @media (max-width:1400px) {
     .chefs-img{
-        gap: 2.5rem;
+        gap: 2.2rem;
     }
 }
 
@@ -1658,7 +1747,7 @@ footer a:hover{
 /* MEDIA QUERIES FOOTER */
 @media (min-width:1800px) {
     .suscribite button{
-        right: 9rem;
+        right: 8.33rem;
     }
 }
 @media (max-width:1750px) {
