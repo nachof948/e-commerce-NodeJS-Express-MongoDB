@@ -1768,6 +1768,48 @@ span:hover{
         height: 23.5rem;
     }
 }
+@media (max-width:1200px) {
+    .tarjeta-habitual{
+        width: 18.5rem;
+        height: 23.5rem;
+    }
+    .tarjeta-habitual-img{
+        width: 12rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.4rem;
+    }
+    .estrellasHabitual img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media (max-width:1100px) {
+    .tarjeta-habitual{
+        width: 17.45rem;
+        height: 23rem;
+    }
+    .tarjeta-habitual-img{
+        width: 11.5rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.3rem;
+    }
+    .estrellasHabitual img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .opciones-comprar-habitual a{
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.1rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-40%);
+    }
+}
 
 /* FIN MEDIA QUERIES HABITUAL */
 
@@ -1898,6 +1940,47 @@ span:hover{
         gap: 2.2rem;
     }
 }
+@media (max-width:1350px) {
+    .chefs-img{
+        gap: 3.2rem;
+    }
+    .uno{
+        width: 17.3rem;
+        height: 24rem;
+    }
+    .dos{
+        width: 16rem;
+        height: 26rem;
+    }
+    
+    .tres{
+        width: 17.3rem;
+        height: 26rem;
+    }
+}
+@media (max-width:1300px) {
+    .chefs-img{
+        gap: 2.3rem;
+    }
+}
+@media (max-width:1250px) {
+    .chefs-img{
+        gap: 2.5rem;
+    }
+    .uno{
+        width: 16rem;
+        height: 23rem;
+    }
+    .dos{
+        width: 15rem;
+        height: 25rem;
+    }
+    
+    .tres{
+        width: 16rem;
+        height: 25rem;
+    }
+}
 
 /* FIN  MEDIA QUERIES NOSOTROS */
 
@@ -1960,7 +2043,6 @@ footer a:hover{
     line-height: 2rem;
 }
 .suscribite input{
-    position: relative;
     background-color: transparent;
     border: 2px solid rgb(132,183,78);
     border-radius: 10px;
@@ -1980,10 +2062,8 @@ footer a:hover{
     border: 2px solid rgb(132,183,78);
     font-size: 1.3rem;
     color: white;
-    padding: 1.19rem 2rem;
+    padding: 1.21rem 2rem;
     border-radius: 10px;
-    position: absolute;
-    right: 8.33rem;
     cursor: pointer;
     transition: all 250ms;
 }
@@ -1992,27 +2072,19 @@ footer a:hover{
     border: 2px solid rgb(132,183,78);
     color: rgb(132,183,78);
 }
+.suscribite span{
+    position: absolute;
+    transform: translateX(-100%);
+    background-color: transparent;
+}
 
 /* MEDIA QUERIES FOOTER */
-@media (min-width:1800px) {
-    .suscribite button{
-        right: 8.33rem;
-    }
-}
-@media (max-width:1750px) {
-    .suscribite button{
-        right: 8rem;
-    }
-}
 @media (max-width:1650px) {
     footer h2{
         font-size: 2.1rem;
     }
     footer a{
         font-size: 1.3rem;
-    }
-    .suscribite button{
-        right: 6.5rem;
     }
 }
 @media (max-width:1550px) {
@@ -2022,9 +2094,6 @@ footer a:hover{
     footer a{
         font-size: 1.3rem;
     }
-    .suscribite button{
-        right: 6rem;
-    }
 }
 @media (max-width:1450px) {
     footer h2{
@@ -2033,19 +2102,32 @@ footer a:hover{
     footer a{
         font-size: 1.1rem;
     }
-    .suscribite button{
-        right: 6rem;
-    }
     .suscribite input{
         width: 27rem;
     }
 }
 @media (max-width:1400px) {
-    .suscribite button{
-        right: 6.5rem;
-    }
     .suscribite input{
         padding: 1rem 0.8rem 1rem;
+    }
+    .suscribite h2{
+        line-height: 1.5rem;
+    }
+}
+@media (max-width:1300px) {
+    .suscribite input{
+        padding: 0.8rem 0.8rem 1rem;
+    }
+    .suscribite button{
+        padding: 1.1rem 2rem;
+    }
+}
+@media (max-width:1200px) {
+    .suscribite input{
+        width: 25rem;
+    }
+    .suscribite button{
+        padding: 1.1rem 2rem;
     }
 }
 
