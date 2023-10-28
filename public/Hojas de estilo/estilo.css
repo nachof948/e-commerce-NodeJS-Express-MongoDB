@@ -149,8 +149,15 @@ nav a:focus{
 .registrarse a:hover{
     color: var(--verde-claro);
 }
-
+.menu-responsive{
+    display: none;
+    background-color: transparent;
+    color: #F9FAFC;
+    font-size: 3rem;
+    border: none;
+}
 /* MEDIA QUERIES HEADER */
+/* ====COMPUTADORA O LAPTOP==== */
 @media (max-width:1470px) {
     nav{
         gap: 5rem;
@@ -194,6 +201,20 @@ nav a:focus{
         font-size: 1rem;
     }
 }
+/* =====FIN COMPUTADORA O LAPTOP===== */
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    .menu-responsive{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .header-derecha{
+        display: none;
+    }
+}
+/* ====FIN TABLET===== */
 /* FIN MEDIA QUERIES HEADER */
 /*==== FIN HEADER======= */
 
@@ -840,6 +861,7 @@ nav a:focus{
 }
 
 /* MEDIA QUERIES OPCIONES */
+/* ===COMPUTADORA O LAPTOP=== */
 @media (max-width:1750px) {
     .tarjeta{
         width: 21rem;
@@ -847,8 +869,6 @@ nav a:focus{
     }
     .tarjeta img{
         width: 12rem;
-/*         bottom: 16.5rem;
-        left: 3.7rem; */
     }
     .tarjeta-textos{
         padding-top: 2rem;
@@ -865,8 +885,6 @@ nav a:focus{
     }
     .tarjeta img{
         width: 12rem;
-/*         bottom: 16.5rem;
-        left: 3.3rem; */
     }
 }
 @media (max-width:1550px) {
@@ -876,8 +894,6 @@ nav a:focus{
     }
     .tarjeta img{
         width: 12rem;
-/*         bottom: 16.5rem;
-        left: 2.7rem; */
     }
 }
 @media (max-width:1500px) {
@@ -887,8 +903,6 @@ nav a:focus{
     }
     .tarjeta img{
         width: 11rem;
-/*         bottom: 15rem;
-        left: 2.9rem; */
         border: 0.7rem solid var(--verde--oscuro);
     }
     .opciones-comprar p{
@@ -909,8 +923,6 @@ nav a:focus{
     }
     .tarjeta img{
         width: 11rem;
-/*         bottom: 15rem;
-        left: 3.2rem; */
         border: 0.7rem solid var(--verde--oscuro);
     }
     .opciones-comprar p{
@@ -965,7 +977,15 @@ nav a:focus{
     .tarjeta-textos h2{
         font-size: 1.2rem;
     }
+    .opciones-comprar a{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar p{
+        padding: 0.4rem 0.6rem;
+    }
 }
+/* ===FIN COMPUTADORA O LAPTOP */
 /* FIN MEDIA QUERIES OPCIONES */
 
 
@@ -1055,6 +1075,7 @@ nav a:focus{
 }
 
 /* MEDIA QUERIES ELEGINOS */
+/* =====COMPUTADORA O LAPTOP===== */
 @media (max-width:1850px) {
     .motivo{
         width: 31rem;
@@ -1176,6 +1197,33 @@ nav a:focus{
         width: 90%;
     }
 }
+@media (max-width: 1150px) {
+    .motivo{
+        width: 19rem;
+        height: 13rem;
+    }
+    .motivo h2{
+        font-size: 1.5rem;
+    }
+    .motivo p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1100px) {
+    .motivo{
+        width: 17.6rem;
+        height: 13rem;
+    }
+    .motivo h2{
+        font-size: 1.5rem;
+    }
+    .motivo p{
+        font-size: 0.8rem;
+        width: 90%;
+    }
+}
+/* ====FIN COMPUTADORA O LAPTOP===== */
 /* FIN MEDIA QUERIES ELEGINOS */
 
 /* ===========FIN ELEGIRNOS=============== */
@@ -1340,6 +1388,7 @@ span:hover{
 /* ===== FIN COMIDA ESPECIAL SWIPER====  */
 
 /* MEDIA QUERIES ESPECIAL */
+/* ====COMPUTADORA O LAPTOP===== */
 @media (max-width: 1750px) {
     .especial{
         width: 26rem;
@@ -1565,6 +1614,81 @@ span:hover{
         top: 14rem;
     }
 }
+@media (max-width: 1200px) {
+    .especial{
+        width: 17rem;
+        height: 18rem;
+    }
+    .especial h2{
+        bottom: 7.5rem;
+    }
+    .comida{
+        width: 9.6rem;
+        height: 9.6rem;
+    }
+    .estrellas img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .especial h2{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.4rem 1.1rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 12rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width: 1100px) {
+    .especial{
+        width: 16rem;
+        height: 18rem;
+    }
+    .especial h2{
+        bottom: 7.5rem;
+    }
+    .comida{
+        width: 9.9rem;
+        height: 10rem;
+        top: -5rem;
+        left: 7.5rem;
+        padding: 0.5rem;
+    }
+    .estrellas img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .especial h2{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.4rem 1.1rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 12rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+    .precio{
+        font-size: 1.9rem;
+    }
+}
+/* ====FIN COMPUTADORA O LAPTOP===== */
 /* FIN MEDIA QUERIES ESPECIAL */
 
 
