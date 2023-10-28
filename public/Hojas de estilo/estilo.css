@@ -183,6 +183,10 @@ nav a:focus{
         font-size: 1.2rem;
         padding: 0.5rem 0.6rem;
     }
+    .perfil{
+        width: 11rem;
+        font-size: 1.1rem;
+    }
 }
 @media (max-width:1200px) {
     nav{
@@ -198,6 +202,10 @@ nav a:focus{
         font-size: 0.9rem;
     }
     .header-iconos a{
+        font-size: 1rem;
+    }
+    .perfil{
+        width: 10rem;
         font-size: 1rem;
     }
 }
@@ -792,13 +800,13 @@ nav a:focus{
     margin: 0;
 }
 .tarjeta-textos{
-    transform: translateY(-50%);
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 0.7rem;
+    transform: translateY(-50%);
 }
 .tarjeta-textos h2{
     font-size: 1.7rem;
@@ -841,7 +849,7 @@ nav a:focus{
     color: var(--verde--oscuro);
     cursor: pointer;
 }
-.opciones-comprar a{
+.opciones-comprar button{
     border: 1px solid var(--verde--oscuro);
     border-radius: 20px;
     padding: 0.5rem 0.8rem;
@@ -853,7 +861,7 @@ nav a:focus{
     cursor: pointer;
     transition: all 250ms ease;
 }
-.opciones-comprar a:hover{
+.opciones-comprar button:hover{
     border: 1px solid var(--verde--oscuro);
     background-color: var(--blanco);
     color: var(--verde--oscuro);
@@ -942,6 +950,10 @@ nav a:focus{
         font-size: 1rem;
         padding: 0.5rem 0.5rem 0.7rem;
     }
+    .opciones-comprar button{
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0.7rem;
+    }
 }
 @media (max-width:1350px) {
     .tarjeta img{
@@ -956,6 +968,9 @@ nav a:focus{
     }
 }
 @media (max-width:1300px) {
+    .seccion-opciones{
+        padding: 8rem 0rem 2rem;
+    }
     .tarjeta-textos p{
         font-size: 0.8rem;
     }
@@ -978,6 +993,10 @@ nav a:focus{
         font-size: 1.2rem;
     }
     .opciones-comprar a{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar button{
         font-size: 0.9rem;
         padding: 0.4rem 0.4rem;
     }
@@ -1168,6 +1187,9 @@ nav a:focus{
     }
 }
 @media (max-width: 1300px) {
+    .elegirnos{
+        padding: 4rem 0rem;
+    }
     .motivo{
         width: 21.5rem;
         height: 15rem;
@@ -1558,6 +1580,9 @@ span:hover{
     }
 }
 @media (max-width: 1300px) {
+    .comida-especial{
+        padding: 3rem 0rem 0rem;
+    }
     .especial{
         width: 19rem;
         height: 22rem;
@@ -1991,8 +2016,15 @@ span:hover{
     }
 }
 @media (max-width:1300px) {
+    .contenedor-comida-habitual{
+        padding: 0rem 0rem 2rem;
+    }
+    .comidas{
+        margin-top: 0rem;
+    }
     .swiper-slide-habitual{
         gap: 1rem; 
+        padding-top: 0.5rem;
     }
     .tarjeta-habitual{
         width: 20.5rem;
@@ -2112,6 +2144,7 @@ span:hover{
 }
 
 /* MEDIA QUERIES NOSOTROS */
+/* ====COMPUTADORA O LAPTOP */
 @media (max-width:1750px) {
     .chefs-img{
         gap: 5.6rem;
@@ -2253,7 +2286,7 @@ span:hover{
         height: 22rem;
     }
 }
-
+/* ===FIN COMPUTADORA O LAPTOP==== */
 /* FIN  MEDIA QUERIES NOSOTROS */
 
 /* ===== FIN SOBRE NOSOTROS ======== */
@@ -2351,6 +2384,7 @@ footer a:hover{
 }
 
 /* MEDIA QUERIES FOOTER */
+/* ===COMPUTADORA O LAPTOP==== */
 @media (max-width:1650px) {
     footer h2{
         font-size: 2.1rem;
@@ -2396,13 +2430,36 @@ footer a:hover{
 }
 @media (max-width:1200px) {
     .suscribite input{
-        width: 25rem;
+        width: 24rem;
+        padding: 0.6rem 0.8rem 0.8rem;
     }
     .suscribite button{
         padding: 1.1rem 2rem;
     }
 }
-
+@media (max-width:1150px) {
+    .suscribite input{
+        width: 23rem;
+    }
+    .suscribite button{
+        padding: 0.9rem 2rem;
+    }
+}
+@media (max-width:1100px) {
+    .suscribite input{
+        width: 23rem;
+    }
+    .suscribite button{
+        padding: 0.9rem 2rem;
+    }
+    footer a{
+        font-size: 0.9rem;
+    }
+    .suscribite{
+        gap: 1rem;
+    }
+}
+/* ====COMPUTADORA O LAPTOP==== */
 
 /* FIN MEDIA QUERIES FOOTER */
 
@@ -2447,15 +2504,15 @@ footer a:hover{
     color: rgb(132,183,78);
 }
 .comidas-shop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3.2rem;
-    flex-wrap: wrap;
-    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    place-items: center;
 }
 .tarjeta-shop{
-    margin-top: 6rem;
+    margin-top: 7rem;
     background-color: white;
     border-radius: 25px;
     width: 23rem;
@@ -2466,13 +2523,153 @@ footer a:hover{
     position: relative;
     box-shadow: 0px 0px 10px rgb(209, 205, 205);
 }
+.tarjeta-shop-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0rem 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+.tarjeta-shop-textos p{
+    color: gray;
+}
 .tarjeta-shop img{
     width: 14rem;
     border-radius: 50%;
     border: 0.9rem solid var(--verde--oscuro);
     position: absolute;
     bottom: 15rem;
-    left: 3.8rem;
+    left: 3.8em;
+}
+/* MEDIA QUERIES SHOP */
+/* FIN MEDIA QUERIES SHOP */
+@media (max-width:1900px){
+    .titulos a{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1600px){
+    .titulos a{
+        font-size: 1.2rem;
+    }
+    .comidas-shop{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+}
+@media (max-width:1550px){
+    .titulos a{
+        font-size: 1.1rem;
+    }
+    .comidas-shop{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    .tarjeta-shop{
+        width: 22rem;
+        height: 23rem;
+    }
+}
+@media (max-width:1480px){
+    .titulos a{
+        font-size: 1rem;
+    }
+    .tarjeta-shop{
+        width: 21rem;
+        height: 23rem;
+    }
+}
+@media (max-width:1480px){
+    .titulos a{
+        font-size: 1rem;
+    }
+    .tarjeta-shop{
+        width: 20rem;
+        height: 23rem;
+    }
+    .tarjeta-shop img{
+        width: 13rem;
+        bottom: 15rem;
+        left: 2.8rem;
+    }
+}
+@media (max-width:1360px){
+    .titulos a{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .tarjeta-shop{
+        width: 19rem;
+        height: 23.5rem;
+    }
+    .tarjeta-shop img{
+        width: 13rem;
+        bottom: 15rem;
+        left: 2.4rem;
+    }
+    .titulos{
+        gap: 3rem;
+    }
+}
+@media (max-width:1268px){
+    .tarjeta-shop{
+        width: 18rem;
+        height: 23.5rem;
+    }
+    .comidas-shop{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .tarjeta-shop img{
+        width: 12rem;
+        left: 2.4rem;
+    }
+    .titulos{
+        gap: 2rem;
+    }
+}
+@media (max-width:1170px){
+    .tarjeta-shop{
+        width: 18rem;
+        height: 22rem;
+    }
+    .comidas-shop{
+        gap: 2rem;
+    }
+    .tarjeta-shop img{
+        width: 10rem;
+        bottom: 17rem;
+        left: 3.4rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .titulos{
+        gap: 2rem;
+    }
+    .tarjeta-shop-textos{
+        margin-top: 8rem;
+    }
+}
+@media (max-width:1100px){
+    .tarjeta-shop{
+        width: 17.8rem;
+        height: 22rem;
+    }
+    .tarjeta-shop-textos{
+        margin-top: 6rem;
+    }
+    .titulos{
+        gap: 1rem;
+    }
+    .comidas-shop{
+        gap: 0.5rem;
+    }
 }
 /* ======= FIN SHOP =========== */
 
