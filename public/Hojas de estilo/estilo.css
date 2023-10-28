@@ -380,7 +380,9 @@ nav a:focus{
 }
 /* ======FIN HERO SWIPER======= */
 
-/* HERO */
+/* MEDIA QUERIES HERO */
+
+/* ====COMPUTADORA Y LAPTOP===== */
 @media (max-width:1900px) {
     .textos-hero h1{
         font-size: 4.8rem;
@@ -581,7 +583,7 @@ nav a:focus{
     .textos-hero h1{
         font-size: 2.7rem;
         line-height: 4rem;
-        width: 90%;
+        width: 85%;
     }
     .hero-comida-principal{
         width: 20rem;
@@ -618,8 +620,113 @@ nav a:focus{
         padding: 1.3rem 1.9rem;
     }
 }
-
-
+@media (max-width:1200px) {
+    .contenedor-hero{
+        margin-top: 0rem;
+    }
+    .hero-comida-principal{
+        width: 19rem;
+        border: 1.4rem solid var(--verde-claro);
+    }
+    .panqueque{
+        top: 14rem;
+        left: 22rem;
+    }
+    .pancakes{
+        top: 20rem;
+        left: 17rem;
+    }
+    .pescado{
+        top: 22.5rem;
+        left: 8.7rem;
+    }
+    .vegetales{
+        top: 20rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -5.2rem;
+    }
+}
+@media (max-width:1150px) {
+    .textos-hero h1{
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+        width: 90%;
+    }
+    .textos-hero p{
+        font-size: 1rem;
+    }
+    .hero-comida-pequeña{
+        width: 4rem;
+        height: 4rem;
+    }
+    .btn-hero-izq{
+        font-size: 0.9rem;
+        padding: 1.2rem 2.3rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 1.2rem 1.7rem;
+    }
+    .panqueque{
+        top: 14rem;
+        left: 22rem;
+    }
+    .pancakes{
+        top: 20rem;
+        left: 17rem;
+    }
+    .pescado{
+        top: 22rem;
+        left: 8.7rem;
+    }
+    .vegetales{
+        top: 20rem;
+        left: 1rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -4rem;
+    }
+}
+@media (max-width:1100px) {
+    .hero-comida-principal{
+        width: 18rem;
+        border: 1.3rem solid var(--verde-claro);
+    }
+    .textos-hero h1{
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+        width: 95%;
+    }
+    .textos-hero p{
+        font-size: 1rem;
+    }
+    .panqueque{
+        top: 14rem;
+        left: 20rem;
+    }
+    .pancakes{
+        top: 19rem;
+        left: 15rem;
+    }
+    .pescado{
+        top: 21rem;
+        left: 7.6rem;
+    }
+    .vegetales{
+        top: 19rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -4rem;
+    }
+}
+/* ====FIN COMPUTADOR LAPTOP===== */
+/* FIN MEDIA QUERIES HERO */
 /*====== FIN HERO======== */
 
 /*========== SECCION OPCIONES========= */
