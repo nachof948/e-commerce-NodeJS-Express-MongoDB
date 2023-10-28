@@ -610,7 +610,13 @@ nav a:focus{
     .swiper-button-prev,
     .swiper-button-next{
     padding: 0.6rem 1rem;
-}
+    } 
+    .btn-hero-izq{
+        padding: 1.3rem 2.4rem;
+    }
+    .btn-hero-der{
+        padding: 1.3rem 1.9rem;
+    }
 }
 
 
@@ -1371,7 +1377,7 @@ span:hover{
     .comida{
         padding: 0.7rem;
         top: -7rem;
-        left: 9rem;
+        left: 10rem;
     }
     .estrellas img{
         width: 1.4rem;
@@ -1393,6 +1399,63 @@ span:hover{
     }
     .num{
         font-size: 1.1rem;
+    }
+}
+@media (max-width: 1300px) {
+    .especial{
+        width: 19rem;
+        height: 22rem;
+    }
+    .comida{
+        padding: 0.6rem;
+    }
+    .estrellas img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .especial h2{
+        font-size: 1.8rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.8rem 1.5rem;
+    }
+    .precio{
+        top: 18rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 15.5rem;
+    }
+    .num{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1250px) {
+    .especial{
+        width: 18.5rem;
+        height: 20.5rem;
+    }
+    .comida{
+        width: 10.4rem;
+        height: 10.4rem;
+    }
+    .estrellas img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .especial h2{
+        font-size: 1.8rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.6rem 1.3rem;
+    }
+    .precio{
+        top: 17rem;
+    }
+    .estrellas{
+        top: 14rem;
     }
 }
 /* FIN MEDIA QUERIES ESPECIAL */
@@ -1588,8 +1651,6 @@ span:hover{
     }
     .tarjeta-habitual-img{
         width: 15.5rem;
-        bottom: 21rem;
-        left: 5rem;
     }
     .tarjeta-textos-habitual h2{
         font-size: 1.8rem;
@@ -1613,8 +1674,6 @@ span:hover{
     }
     .tarjeta-habitual-img{
         width: 15rem;
-        bottom: 21rem;
-        left: 4rem;
     }
     .tarjeta-textos-habitual h2{
         font-size: 1.8rem;
@@ -1635,8 +1694,6 @@ span:hover{
     }
     .tarjeta-habitual-img{
         width: 15rem;
-        bottom: 21rem;
-        left: 4rem;
     }
     .tarjeta-textos-habitual h2{
         font-size: 1.8rem;
@@ -1657,8 +1714,6 @@ span:hover{
     }
     .tarjeta-habitual-img{
         width: 14rem;
-        bottom: 20rem;
-        left: 3rem;
     }
     .tarjeta-textos-habitual{
         transform: translateY(-45%);
@@ -1676,14 +1731,15 @@ span:hover{
     }
 }
 @media (max-width:1400px) {
+    .swiper-slide-habitual{
+        gap: 3rem; 
+    }
     .tarjeta-habitual{
         width: 21rem;
         height: 24rem;
     }
     .tarjeta-habitual-img{
         width: 13rem;
-        bottom: 19rem;
-        left: 3rem;
     }
     .tarjeta-textos-habitual{
         transform: translateY(-45%);
@@ -1694,10 +1750,22 @@ span:hover{
     }
     .tarjeta-textos-habitual p{
         width: 90%;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .opciones-comprar-habitual p{
         font-size: 1.3rem;
+    }
+    .opciones-comprar-habitual{
+        margin-top: 1rem;
+    }
+}
+@media (max-width:1300px) {
+    .swiper-slide-habitual{
+        gap: 1rem; 
+    }
+    .tarjeta-habitual{
+        width: 20.5rem;
+        height: 23.5rem;
     }
 }
 
