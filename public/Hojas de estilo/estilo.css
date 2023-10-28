@@ -577,6 +577,41 @@ nav a:focus{
         left: -5.5rem;
     }
 }
+@media (max-width:1300px) {
+    .textos-hero h1{
+        font-size: 2.7rem;
+        line-height: 4rem;
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 20rem;
+        border: 1.5rem solid var(--verde-claro);
+    }
+    .panqueque{
+        top: 14rem;
+        left: 23rem;
+    }
+    .pancakes{
+        top: 21rem;
+        left: 18rem;
+    }
+    .pescado{
+        top: 24rem;
+        left: 8.5rem;
+    }
+    .vegetales{
+        top: 21rem;
+        left: -1rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -5.5rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+    padding: 0.6rem 1rem;
+}
+}
 
 
 /*====== FIN HERO======== */
@@ -803,6 +838,21 @@ nav a:focus{
         font-size: 1.3rem;
     }
 }
+@media (max-width:1200px) {
+    .contenedor-opciones{
+        justify-content: center;
+        gap: 1rem;
+    }
+    .tarjeta{
+        width: 22rem;
+    }
+    .tarjeta-textos p{
+        font-size: 0.8rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.2rem;
+    }
+}
 /* FIN MEDIA QUERIES OPCIONES */
 
 
@@ -963,6 +1013,53 @@ nav a:focus{
     }
     .motivo p{
         font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1400px) {
+    .motivo{
+        width: 22.5rem;
+        height: 16rem;
+    }
+    .motivo img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .motivo h2{
+        font-size: 1.9rem;
+    }
+    .motivo p{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1300px) {
+    .motivo{
+        width: 21.5rem;
+        height: 15rem;
+    }
+    .motivo img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .motivo h2{
+        font-size: 1.8rem;
+    }
+    .motivo p{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1250px) {
+    .motivo{
+        width: 20rem;
+        height: 14rem;
+    }
+    .motivo h2{
+        font-size: 1.7rem;
+    }
+    .motivo p{
+        font-size: 0.9rem;
         width: 90%;
     }
 }
@@ -1184,14 +1281,94 @@ span:hover{
     top: 19.5rem;
     }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     .especial{
-        width: 21rem;
-        height: 23rem;
+        width: 24rem;
+        height: 26.5rem;
     }
     .comida{
         width: 14rem;
         height: 14rem;
+    }
+    .especial h2{
+        font-size: 2.2rem;
+        width: 85%;
+    }
+}
+@media (max-width: 1550px) {
+    .especial{
+        width: 24rem;
+        height: 24.8rem;
+    }
+    .comida{
+        width: 13rem;
+        height: 13rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2rem 1.8rem;
+    }
+    .precio{
+        top: 20rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 16.5rem;
+    }
+    .num{
+        font-size: 1.1rem;
+    }
+    .comida{
+        padding: 0.8rem;
+    }
+}
+@media (max-width: 1500px) {
+    .especial{
+        width: 22rem;
+        height: 22.8rem;
+    }
+    .comida{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2rem 1.8rem;
+    }
+    .precio{
+        top: 19rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 16rem;
+    }
+}
+@media (max-width: 1450px) {
+    .especial{
+        width: 21rem;
+        height: 22.8rem;
+    }
+    .comida{
+        width: 11.5rem;
+        height: 11.5rem;
+    }
+    .estrellas img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media (max-width: 1400px) {
+    .especial{
+        width: 20rem;
+        height: 23rem;
+    }
+    .comida{
         padding: 0.7rem;
         top: -7rem;
         left: 9rem;
@@ -1201,17 +1378,21 @@ span:hover{
         height: 1.4rem;
     }
     .especial h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
         width: 85%;
     }
     .bolsa{
-        padding: 2.5rem 2rem;
+        padding: 2rem 1.8rem;
     }
     .precio{
         top: 18rem;
+        font-size: 2.5rem;
     }
     .estrellas{
-    top: 16rem;
+        top: 15.5rem;
+    }
+    .num{
+        font-size: 1.1rem;
     }
 }
 /* FIN MEDIA QUERIES ESPECIAL */
