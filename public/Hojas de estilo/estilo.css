@@ -2212,6 +2212,47 @@ span:hover{
         height: 25rem;
     }
 }
+@media (max-width:1200px) {
+    .chefs-img{
+        gap: 2rem;
+    }
+}
+@media (max-width:1150px) {
+    .chefs-img{
+        gap: 1.5rem;
+    }
+    .uno{
+        width: 15rem;
+        height: 21rem;
+    }
+    .dos{
+        width: 14rem;
+        height: 25rem;
+    }
+    
+    .tres{
+        width: 15rem;
+        height: 23rem;
+    }
+}
+@media (max-width:1150px) {
+    .chefs-img{
+        gap: 0.5rem;
+    }
+    .uno{
+        width: 14rem;
+        height: 20rem;
+    }
+    .dos{
+        width: 13rem;
+        height: 24rem;
+    }
+    
+    .tres{
+        width: 14rem;
+        height: 22rem;
+    }
+}
 
 /* FIN  MEDIA QUERIES NOSOTROS */
 
