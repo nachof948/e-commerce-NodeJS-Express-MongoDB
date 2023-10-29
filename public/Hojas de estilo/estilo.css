@@ -2618,18 +2618,8 @@ footer a{
 footer a:hover{
     color: black;
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 1.5rem;
-}
-.ayuda{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 1.5rem;
-}
+.menu,
+.ayuda,
 .contacto{
     display: flex;
     flex-direction: column;
@@ -2762,6 +2752,81 @@ footer a:hover{
     }
 }
 /* ====COMPUTADORA O LAPTOP==== */
+
+/* ===TABLET==== */
+@media (max-width:1024px) {
+    footer h2{
+        font-size: 1.7rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+    .suscribite input::placeholder{
+        font-size: 1.2rem;
+        color: grey;
+    }
+    .suscribite button{
+        font-size: 1.1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+@media (max-width:920px) {
+    footer h2{
+        font-size: 1.7rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 17rem;
+        font-size: 1.2rem;
+    }
+    .suscribite input::placeholder{
+        font-size: 1.2rem;
+        color: grey;
+    }
+    .suscribite button{
+        font-size: 1.1rem;
+        padding: 0.7rem 1rem;
+    }
+}
+@media (max-width:860px) {
+    .contenedor-footer{
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .menu,
+    .ayuda,
+    .contacto{
+        align-items: center;
+        gap: 1rem;
+    }
+    .suscribite{
+        align-items: center;
+    }
+    footer h2{
+        font-size: 2.4rem;
+    }
+    footer a{
+        font-size: 1.2rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+    .suscribite input::placeholder{
+        font-size: 1.2rem;
+        color: grey;
+    }
+    .suscribite button{
+        font-size: 1.1rem;
+        padding: 0.7rem 0.7rem;
+    } 
+}
+/* ===FIN TABLET==== */
 
 /* FIN MEDIA QUERIES FOOTER */
 
