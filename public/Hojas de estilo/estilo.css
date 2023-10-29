@@ -755,6 +755,61 @@ nav a:focus{
     }
 }
 /* ====FIN COMPUTADOR LAPTOP===== */
+@media (max-width:1024px) {
+    .panqueque,
+    .pancakes,
+    .pescado,
+    .vegetales,
+    .arroz{
+        display: none;
+    }
+    .hero-comida-principal{
+        width: 17.5rem;
+        border: 0.7rem solid var(--verde-claro);
+    }
+}
+@media (max-width:993px) {
+    .textos-hero p{
+        width: 95%;
+    }
+    .textos-hero h1{
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+    padding: 0.4rem 0.6rem;
+    } 
+    .swiper-slide-hero{
+        margin-left: 1.3rem;
+    }
+}
+@media (max-width:900px) {
+    .textos-hero p{
+        width: 100%;
+    }
+    .textos-hero h1{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 1rem 2rem;
+        text-wrap: nowrap;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+        text-wrap: nowrap;
+    }
+    .swiper-slide-hero{
+        margin-left: 1rem;
+    }
+}
+/* ==== TABLET===== */
+
+/* ==== FIN TABLET===== */
+
+
 /* FIN MEDIA QUERIES HERO */
 /*====== FIN HERO======== */
 
@@ -1005,6 +1060,56 @@ nav a:focus{
     }
 }
 /* ===FIN COMPUTADORA O LAPTOP */
+
+/* ===TABLET==== */
+@media (max-width:1024px) {
+    .seccion-opciones{
+        padding: 0rem;
+        margin: -2rem 0rem 0rem;
+    }
+    .tarjeta{
+        margin-top: 7rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        border: 0.6rem solid var(--verde--oscuro);
+    }
+    .contenedor-opciones{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .tarjeta-textos{
+        transform: translateY(-60%);
+    }
+    .tarjeta-textos p{
+        font-size: 1rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.5rem;
+    }
+    .opciones-comprar a{
+        font-size: 1.1rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar button{
+        font-size: 1.1rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar p{
+        font-size: 1.1rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+@media (max-width:848px) {
+    .tarjeta{
+        width: 20rem;
+    }
+}
+
+
+/* === FIN TABLET==== */
+
+
 /* FIN MEDIA QUERIES OPCIONES */
 
 
@@ -1246,6 +1351,39 @@ nav a:focus{
     }
 }
 /* ====FIN COMPUTADORA O LAPTOP===== */
+
+/* ==== TABLET===== */
+@media (max-width:1024px) {
+    .contenedor-elegirnos h1{
+        font-size: 2.8rem;
+    }
+    .textos-elegirnos p{
+        font-size: 1.1rem;
+    }
+    .motivos{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .motivo{
+        width: 26rem;
+        height: 16rem;
+    }
+    .motivo h2{
+        font-size: 2rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+/* ==== FIN TABLET===== */
+
+
+
 /* FIN MEDIA QUERIES ELEGINOS */
 
 /* ===========FIN ELEGIRNOS=============== */
@@ -1714,6 +1852,66 @@ span:hover{
     }
 }
 /* ====FIN COMPUTADORA O LAPTOP===== */
+
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    .swiper-slide-especial{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .textos-especial h1{
+        font-size: 3rem;
+    }
+    .textos-especial p{
+        font-size: 1.1rem;
+        width: 85%;
+    }
+    .especial{
+        width: 20rem;
+        height: 22rem;
+    }
+    .especial h2{
+        bottom: 7.5rem;
+    }
+    .comida{
+        width: 12rem;
+        height: 12rem;
+        top: -5rem;
+        left: 9rem;
+        padding: 0.8rem;
+    }
+    .estrellas img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 90%;
+    }
+    .bolsa{
+        padding: 2rem 1.5rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 15rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+    .precio{
+        font-size: 1.9rem;
+        top: 18rem;
+    }
+}
+
+/* ====FIN TABLET===== */
+
+
+
 /* FIN MEDIA QUERIES ESPECIAL */
 
 
@@ -1900,6 +2098,8 @@ span:hover{
 /* ===== FIN COMIDA HABITUAL SWIPER===== */
 
 /* MEDIA QUERIES HABITUAL */
+
+/* ==== COMPUTADORA O LAPTOP====== */
 @media (max-width:1750px) {
     .tarjeta-habitual{
         width: 26rem;
@@ -2073,6 +2273,50 @@ span:hover{
         transform: translateY(-40%);
     }
 }
+/* ====FIN COMPUTADORA O LAPTOP====== */
+
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    .titulos-habitual h1{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .titulos-habitual p{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .tarjeta-habitual{
+        width: 20rem;
+        height: 23rem;
+
+    }
+    .tarjeta-habitual-img{
+        width: 11.5rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.5rem;
+    }
+    .estrellasHabitual img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .opciones-comprar-habitual a{
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.1rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-40%);
+    }
+}
+
+
+/* ====FIN TABLET===== */
+
+
 
 /* FIN MEDIA QUERIES HABITUAL */
 
@@ -2287,6 +2531,61 @@ span:hover{
     }
 }
 /* ===FIN COMPUTADORA O LAPTOP==== */
+
+/* ===TABLET==== */
+@media (max-width:1024px) {
+    .chefs-img{
+        gap: 1.5rem;
+    }
+    .uno{
+        width: 12rem;
+        height: 18rem;
+    }
+    .dos{
+        width: 11rem;
+        height: 23rem;
+    }
+    
+    .tres{
+        width: 12rem;
+        height: 20rem;
+    }
+    .texto-chefs h2{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .texto-chefs p{
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:900px) {
+    .chefs-img{
+        gap: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .uno{
+        width: 24rem;
+        height: 30rem;
+        margin-bottom: -5rem;
+    }
+    .dos{
+        width: 20rem;
+        height: 33rem;
+    }
+    
+    .tres{
+        width: 23.3rem;
+        height: 32rem;
+    }
+}
+
+
+/* === FIN TABLET==== */
+
+
+
 /* FIN  MEDIA QUERIES NOSOTROS */
 
 /* ===== FIN SOBRE NOSOTROS ======== */
@@ -2416,6 +2715,9 @@ footer a:hover{
     .suscribite input{
         padding: 1rem 0.8rem 1rem;
     }
+    .suscribite button{
+        padding: 1.15rem 2rem;
+    }
     .suscribite h2{
         line-height: 1.5rem;
     }
@@ -2425,7 +2727,7 @@ footer a:hover{
         padding: 0.8rem 0.8rem 1rem;
     }
     .suscribite button{
-        padding: 1.1rem 2rem;
+        padding: 1.05rem 2rem;
     }
 }
 @media (max-width:1200px) {
@@ -2434,7 +2736,7 @@ footer a:hover{
         padding: 0.6rem 0.8rem 0.8rem;
     }
     .suscribite button{
-        padding: 1.1rem 2rem;
+        padding: 0.85rem 2rem;
     }
 }
 @media (max-width:1150px) {
