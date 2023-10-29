@@ -755,6 +755,7 @@ nav a:focus{
     }
 }
 /* ====FIN COMPUTADOR LAPTOP===== */
+/* ==== TABLET===== */
 @media (max-width:1024px) {
     .panqueque,
     .pancakes,
@@ -805,10 +806,82 @@ nav a:focus{
         margin-left: 1rem;
     }
 }
-/* ==== TABLET===== */
-
+@media (max-width:800px) {
+    .textos-hero p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .textos-hero h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 1rem 1.5rem;
+        text-wrap: nowrap;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 1rem 1rem;
+        text-wrap: nowrap;
+    }
+    .swiper-slide-hero{
+        gap: 1.5rem;
+    }
+    .hero-comida-principal{
+        width: 15rem;
+        border: 0.6rem solid var(--verde-claro);
+    }
+    .btn-hero-pregunta{
+        font-size: 1rem;
+    }
+}
 /* ==== FIN TABLET===== */
-
+/* ====CELULAR==== */
+@media (max-width:768px) {
+    .swiper-slide-hero{
+        justify-content: center;
+        text-align: center;
+        margin-top: -4rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -9rem;  
+        padding: 0.2rem 0.4rem;
+    } 
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 1.2rem;
+    } 
+    .btns-hero{
+        margin: 0 auto;
+    }
+    .hero-comida-principal{
+        display: none;
+    }
+    .btn-hero-pregunta{
+        display: none;
+    }
+    .textos-hero{
+        text-align: center;
+        justify-content: center;
+    }
+    .textos-hero h1{
+        font-size: 2rem;
+    }
+    .textos-hero p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:570px) {
+    .textos-hero h1{
+        font-size: 1.6rem;
+    }
+    .textos-hero p{
+        font-size: 1rem;
+    }
+}
+/* ====FIN CELULAR==== */
 
 /* FIN MEDIA QUERIES HERO */
 /*====== FIN HERO======== */
@@ -1105,10 +1178,15 @@ nav a:focus{
         width: 20rem;
     }
 }
-
-
 /* === FIN TABLET==== */
 
+/* ===CELULAR=== */
+@media (max-width:768px) {
+    .seccion-opciones{
+        margin: -13rem 0rem 0rem;
+    }
+}
+/* ===FIN CELULAR=== */
 
 /* FIN MEDIA QUERIES OPCIONES */
 
