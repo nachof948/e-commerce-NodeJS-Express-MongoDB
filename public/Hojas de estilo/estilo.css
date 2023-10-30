@@ -222,6 +222,11 @@ nav a:focus{
         display: none;
     }
 }
+@media (max-width:768px) {
+    .contenedor-header{
+        width: 95vw;
+    }
+}
 /* ====FIN TABLET===== */
 /* FIN MEDIA QUERIES HEADER */
 /*==== FIN HEADER======= */
@@ -839,6 +844,9 @@ nav a:focus{
 /* ==== FIN TABLET===== */
 /* ====CELULAR==== */
 @media (max-width:768px) {
+    .swiper-hero{
+        width: 95vw; 
+    }
     .swiper-slide-hero{
         justify-content: center;
         text-align: center;
@@ -853,6 +861,10 @@ nav a:focus{
     .swiper-button-next::after{
         font-size: 1.2rem;
     } 
+    .textos-hero{
+        align-items: center;
+        justify-content: center;
+    }
     .btns-hero{
         margin: 0 auto;
     }
@@ -861,10 +873,6 @@ nav a:focus{
     }
     .btn-hero-pregunta{
         display: none;
-    }
-    .textos-hero{
-        text-align: center;
-        justify-content: center;
     }
     .textos-hero h1{
         font-size: 2rem;
@@ -879,6 +887,93 @@ nav a:focus{
     }
     .textos-hero p{
         font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .textos-hero h1{
+        font-size: 1.4rem;
+    }
+    .textos-hero p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.8rem 1rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 0.8rem 0.8rem;
+    }
+}
+@media (max-width:400px) {
+    .textos-hero h1{
+        font-size: 1.2rem;
+    }
+    .textos-hero p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.6rem 0.7rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 0.6rem 0.6rem;
+    }
+}
+@media (max-width:360px) {
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -9rem;  
+        padding: 0.1rem 0.1rem;
+    } 
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 0.6rem;
+    } 
+    .textos-hero h1{
+        font-size: 1.2rem;
+    }
+    .textos-hero p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.6rem 0.7rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 0.6rem 0.6rem;
+    }
+}
+@media (max-width:322px) {
+    .swiper-slide-hero{
+        margin-top: 0rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -4rem;  
+        padding: 0.1rem 0.1rem;
+    } 
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 0.5rem;
+    } 
+    .textos-hero h1{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .textos-hero p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.6rem 0.7rem;
+        font-size: 0.7rem;
+    }
+    .btn-hero-der{
+        font-size: 0.7rem;
+        padding: 0.6rem 0.6rem;
     }
 }
 /* ====FIN CELULAR==== */
@@ -1182,8 +1277,47 @@ nav a:focus{
 
 /* ===CELULAR=== */
 @media (max-width:768px) {
+    .contenedor-opciones{
+        width: 95vw;
+    }
     .seccion-opciones{
         margin: -13rem 0rem 0rem;
+    }
+}
+@media (max-width:400px) {
+    .seccion-opciones{
+        margin: -12rem 0rem 0rem;
+    }
+}
+@media (max-width:360px) {
+    .seccion-opciones{
+        margin: -12rem 0rem 0rem;
+    }
+    .tarjeta{
+        width: 19rem;
+    }
+    .tarjeta img{
+        width: 10rem;
+        border: 0.6rem solid var(--verde--oscuro);
+    }
+    .tarjeta-textos{
+        transform: translateY(-50%);
+    }
+}
+@media (max-width:322px) {
+    .seccion-opciones{
+        margin: -5rem 0rem 0rem;
+    }
+    .tarjeta{
+        width: 16rem;
+    }
+    .tarjeta img{
+        width: 8.5rem;
+        border: 0.6rem solid var(--verde--oscuro);
+        transform: translateY(-60%);
+    }
+    .tarjeta-textos{
+        transform: translateY(-50%);
     }
 }
 /* ===FIN CELULAR=== */
@@ -1459,7 +1593,78 @@ nav a:focus{
     }
 }
 /* ==== FIN TABLET===== */
-
+/* ====CELULAR===== */
+@media (max-width:768px) {
+    .contenedor-elegirnos{
+        width: 95vw;
+    }
+    .contenedor-elegirnos h1{
+        font-size: 2.2rem;
+    }
+    .textos-elegirnos p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .motivo{
+        width: 24rem;
+        height: 16rem;
+    }
+    .motivo h2{
+        font-size: 1.8rem;
+    }
+    .motivo p{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width:500px) {
+    .contenedor-elegirnos h1{
+        font-size: 1.9rem;
+    }
+    .textos-elegirnos p{
+        font-size: 0.9rem;
+    }
+    .motivo{
+        width: 21rem;
+        height: 14rem;
+    }
+}
+@media (max-width:360px) {
+    .contenedor-elegirnos h1{
+        font-size: 1.7rem;
+    }
+    .textos-elegirnos p{
+        font-size: 0.8rem;
+    }
+    .motivo{
+        width: 19rem;
+        height: 14rem;
+    }
+}
+@media (max-width:322px) {
+    .contenedor-elegirnos h1{
+        font-size: 1.7rem;
+    }
+    .textos-elegirnos p{
+        font-size: 0.8rem;
+    }
+    .motivo{
+        width: 17rem;
+        height: 13rem;
+    }
+    .motivo h2{
+        font-size: 1.6rem;
+    }
+    .motivo p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .motivo img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+/* ====FIN CELULAR===== */
 
 
 /* FIN MEDIA QUERIES ELEGINOS */
@@ -1613,6 +1818,7 @@ span:hover{
     padding-left: 0.3rem;
 }
 .swiper-pagination span{
+    margin: 0 auto;
     background-color: #84B74E;
     width: 1.5rem;
     height: 1.5rem;
@@ -1988,6 +2194,133 @@ span:hover{
 
 /* ====FIN TABLET===== */
 
+/* ====CELULAR==== */
+@media (max-width:768px) {
+    .comida-especial-contenedor{
+        width: 95vw;
+    }
+    .swiper-especial{
+        width: 95vw;
+    }
+    .especiales{
+        max-width: 95vw;
+    }
+    .textos-especial h1{
+        font-size: 2.5rem;
+    }
+    .textos-especial p{
+        font-size: 1rem;
+        width: 85%;
+    }
+}
+@media (max-width:500px) {
+    .textos-especial h1{
+        font-size: 2rem;
+    }
+    .textos-especial p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .especial{
+        width: 18rem;
+        height: 20rem;
+    }
+    .especial h2{
+        bottom: 6.5rem;
+        font-size: 1.6rem;
+    }
+    .comida{
+        width: 11rem;
+        height: 11rem;
+        top: -5rem;
+        left: 9rem;
+        padding: 0.8rem;
+    }
+    .estrellas img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .bolsa{
+        padding: 1.6rem 1.3rem;
+    }
+    .precio{
+        top: 17rem;
+    }
+    .estrellas{
+        top: 15rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width:400px) {
+    .textos-especial p{
+        width: 100%;
+    }
+    .especial{
+        width: 17rem;
+        height: 18rem;
+    }
+    .comida{
+        width: 9rem;
+        height: 9rem;
+        top: -5rem;
+        left: 9rem;
+        padding: 0.8rem;
+    }
+    .estrellas img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .bolsa{
+        padding: 1.6rem 1.3rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 13rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width:322px) {
+    .textos-especial p{
+        width: 100%;
+    }
+    .especial{
+        width: 15rem;
+        height: 18rem;
+    }
+    .comida{
+        width: 9rem;
+        height: 9rem;
+        top: -4rem;
+        left: 7rem;
+        padding: 0.6rem;
+    }
+    .estrellas img{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    .bolsa{
+        padding: 1.3rem 1.1rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 13rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+/* ====FIN CELULAR==== */
 
 
 /* FIN MEDIA QUERIES ESPECIAL */
@@ -2366,7 +2699,6 @@ span:hover{
     .tarjeta-habitual{
         width: 20rem;
         height: 23rem;
-
     }
     .tarjeta-habitual-img{
         width: 11.5rem;
@@ -2390,10 +2722,38 @@ span:hover{
         transform: translateY(-40%);
     }
 }
-
-
 /* ====FIN TABLET===== */
-
+/* ===CELULAR=== */
+@media (max-width:768px) {
+    .contenedor-comida-habitual{
+        width: 95vw;
+    }
+    .titulos-habitual h1{
+        font-size: 2.4rem;
+    }
+    .titulos-habitual p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .tarjeta-habitual{
+        width: 21rem;
+        height: 23rem;
+    }
+}
+@media (max-width:360px) {
+    .titulos-habitual h1{
+        font-size: 1.8rem;
+    }
+    .titulos-habitual p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .tarjeta-habitual{
+        width: 19rem;
+        height: 22rem;
+    }
+}
+/* ===FIN CELULAR=== */
 
 
 /* FIN MEDIA QUERIES HABITUAL */
@@ -2658,10 +3018,84 @@ span:hover{
         height: 32rem;
     }
 }
-
-
 /* === FIN TABLET==== */
 
+/* =====CELULAR======= */
+@media (max-width:768px) {
+    .contenedor-chefs{
+        width: 95vw;
+    }
+    .texto-chefs h2{
+        margin-top: 0rem;
+        font-size: 2.5rem;
+    }
+    .texto-chefs p{
+        width: 85%;
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .texto-chefs h2{
+        font-size: 2.3rem;
+    }
+    .texto-chefs p{
+        width: 85%;
+        font-size: 0.9rem;
+    }
+    .uno{
+        width: 21rem;
+        height: 27rem;
+        margin-bottom: -5rem;
+    }
+    .dos{
+        width: 17rem;
+        height: 29rem;
+    }
+    
+    .tres{
+        width: 20rem;
+        height: 29rem;
+    }
+}
+@media (max-width:360px) {
+    .texto-chefs h2{
+        font-size: 1.8rem;
+    }
+    .texto-chefs p{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .uno{
+        width: 19rem;
+        height: 27rem;
+        margin-bottom: -5rem;
+    }
+    .dos{
+        width: 15rem;
+        height: 29rem;
+    }
+    
+    .tres{
+        width: 18rem;
+        height: 27rem;
+    }
+}
+@media (max-width:320px) {
+    .uno{
+        width: 17rem;
+        height: 24rem;
+    }
+    .dos{
+        width: 13rem;
+        height: 26rem;
+    }
+    
+    .tres{
+        width: 16rem;
+        height: 24rem;
+    }
+}
+/* =====FIN CELULAR======= */
 
 
 /* FIN  MEDIA QUERIES NOSOTROS */
@@ -2905,6 +3339,21 @@ footer a:hover{
     } 
 }
 /* ===FIN TABLET==== */
+
+/* ====CELULAR==== */
+@media (max-width:360px) {
+    footer h2{
+        font-size: 2rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 17rem;
+        font-size: 1.2rem;
+    }
+}
+/* ====FIN CELULAR==== */
+
+
 
 /* FIN MEDIA QUERIES FOOTER */
 
