@@ -3373,14 +3373,14 @@ footer a:hover{
     color: #010101;
     font-size: 3.5rem;
     margin: 6rem 0rem 0rem 0rem;
-
 }
 .titulos{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 4rem;
+    gap: 3.5rem;
     width: 100%;
     margin: 0;
 }
@@ -3430,6 +3430,9 @@ footer a:hover{
 .tarjeta-shop-textos p{
     color: gray;
 }
+.opciones-comprar p{
+    color: #010101;
+}
 .tarjeta-shop img{
     width: 14rem;
     border-radius: 50%;
@@ -3439,25 +3442,15 @@ footer a:hover{
     left: 3.8em;
 }
 /* MEDIA QUERIES SHOP */
-/* FIN MEDIA QUERIES SHOP */
-@media (max-width:1900px){
-    .titulos a{
-        font-size: 1.3rem;
-    }
-}
+
+/* === COMPUTADORA O LAPTOP===== */
 @media (max-width:1600px){
-    .titulos a{
-        font-size: 1.2rem;
-    }
     .comidas-shop{
         gap: 1rem;
         margin-top: 3rem;
     }
 }
 @media (max-width:1550px){
-    .titulos a{
-        font-size: 1.1rem;
-    }
     .comidas-shop{
         gap: 1rem;
         margin-top: 3rem;
@@ -3468,18 +3461,6 @@ footer a:hover{
     }
 }
 @media (max-width:1480px){
-    .titulos a{
-        font-size: 1rem;
-    }
-    .tarjeta-shop{
-        width: 21rem;
-        height: 23rem;
-    }
-}
-@media (max-width:1480px){
-    .titulos a{
-        font-size: 1rem;
-    }
     .tarjeta-shop{
         width: 20rem;
         height: 23rem;
@@ -3492,9 +3473,7 @@ footer a:hover{
 }
 @media (max-width:1360px){
     .titulos a{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        font-size: 1.2rem;
     }
     .tarjeta-shop{
         width: 19rem;
@@ -3505,9 +3484,7 @@ footer a:hover{
         bottom: 15rem;
         left: 2.4rem;
     }
-    .titulos{
-        gap: 3rem;
-    }
+
 }
 @media (max-width:1268px){
     .tarjeta-shop{
@@ -3525,9 +3502,6 @@ footer a:hover{
         width: 12rem;
         left: 2.4rem;
     }
-    .titulos{
-        gap: 2rem;
-    }
 }
 @media (max-width:1170px){
     .tarjeta-shop{
@@ -3543,9 +3517,6 @@ footer a:hover{
         left: 3.4rem;
         border: 0.7rem solid var(--verde--oscuro);
     }
-    .titulos{
-        gap: 2rem;
-    }
     .tarjeta-shop-textos{
         margin-top: 8rem;
     }
@@ -3558,13 +3529,59 @@ footer a:hover{
     .tarjeta-shop-textos{
         margin-top: 6rem;
     }
-    .titulos{
-        gap: 1rem;
-    }
     .comidas-shop{
         gap: 0.5rem;
     }
 }
+/* ===FIN COMPUTADORA O LAPTOP===== */
+
+/* ===TABLET Y CELULAR==== */
+@media (max-width:650px){
+    .shop h1{
+        font-size: 3rem;
+    }
+    .titulos{
+        gap: 3rem
+    }
+    .titulos a{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:550px){
+    .shop h1{
+        font-size: 2.4rem;
+    }
+    .titulos{
+        gap: 2.5rem
+    }
+    .titulos a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:430px){
+    .shop h1{
+        font-size: 2rem;
+    }
+    .titulos{
+        gap: 1.5rem
+    }
+    .titulos a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:365px){
+    .shop h1{
+        font-size: 1.7rem;
+    }
+    .titulos{
+        gap: 1.5rem
+    }
+    .titulos a{
+        font-size: 0.9rem;
+    }
+}
+/* === FIN TABLET Y CELULAR==== */
+/* FIN MEDIA QUERIES SHOP */
 /* ======= FIN SHOP =========== */
 
 
