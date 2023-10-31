@@ -58,7 +58,14 @@ nav a:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 1.8rem 0rem;
+}
+.contenedor-menu-responsive{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 72%;
 }
 .empresa{
     font-size: 2rem;
@@ -158,6 +165,11 @@ nav a:focus{
 }
 /* MEDIA QUERIES HEADER */
 /* ====COMPUTADORA O LAPTOP==== */
+@media (max-width:1650px) {
+    .contenedor-menu-responsive{
+        width: 75%;
+    }
+}
 @media (max-width:1470px) {
     nav{
         gap: 5rem;
@@ -212,14 +224,60 @@ nav a:focus{
 /* =====FIN COMPUTADORA O LAPTOP===== */
 /* ====TABLET===== */
 @media (max-width:1024px) {
+    header{
+        background-color: #83B64D;
+    }
     .menu-responsive{
         display: block;
+        cursor: pointer;
+    }
+    .menu-responsive i{
+        font-size: 3.5rem;
+    }
+    .menu-responsive:hover{
+        filter: drop-shadow(2px 2px 5px white);
+    }
+    .contenedor-menu-responsive{
+        height: 0vh;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 250ms;
+        cursor: pointer;
+    }
+    .contenedor-menu-responsive.activo{
+        overflow: hidden;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
     }
     nav{
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    nav a{
+        font-size: 1.3rem;
     }
     .header-derecha{
-        display: none;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .registrarse a{
+        font-size: 1.2rem;
+        padding: 0.7rem 1.7rem;
+        margin-left: 0.4rem;
+    }
+    .perfil{
+        font-size: 1.1rem;
     }
 }
 @media (max-width:768px) {
