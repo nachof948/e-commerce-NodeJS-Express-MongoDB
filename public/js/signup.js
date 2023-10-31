@@ -10,7 +10,7 @@ const password = form.password.value /* Capturar el valor del input password */
 
 
 try{ /* Capturo la informacion del usuario formulario de registro */
-const res = await fetch('/signup',{
+const res = await fetch('/auth/signup',{
     /* Agrego propiedades */
     method: 'POST',
     body: JSON.stringify({email, nombreCompleto, usuario, password}), /* Convierte de un objeto a un JSON es lo inverso a res.json() */

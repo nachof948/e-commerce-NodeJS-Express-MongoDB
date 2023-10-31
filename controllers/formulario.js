@@ -34,7 +34,7 @@ const signup_post = async (req, res) =>{
         const cliente = await Cliente.create({email, nombreCompleto, usuario, password})
         const token = createToken(cliente._id, cliente.email, cliente.password)
         res.cookie('nuevo_cliente',token,{maxAge: maxAge*1000})
-        res.redirect('/auth/login')  
+        res.redirect('/login')  
     }
     catch(err){
         const errors = manejoDeErrores(err)
@@ -42,8 +42,21 @@ const signup_post = async (req, res) =>{
     }
 }
 
-const login_post = (req, res) =>{
-
+const login_post = async (req, res) =>{
+    const {email} = req.body
+    
+    try{
+        const cliente = await Cliente.find({email})
+        if(cliente){
+            res.render('home')
+        } else{
+            res.render('signup')
+        }
+        
+    }
+    catch(error){
+        res.status(400).json({error})
+    }
 }
 
 /* METODO GET */
