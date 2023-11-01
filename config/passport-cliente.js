@@ -13,7 +13,6 @@ passport.deserializeUser((id, done)=>{
     })
 })
 
-
 passport.use(new LocalStrategy({
     usernameField: 'email',
     passwordField: 'password'
@@ -21,6 +20,7 @@ passport.use(new LocalStrategy({
     
     /* Comprobar si existe el email del usuario en la base de datos */
     const usuario = await Cliente.findOne({email})
+
     if(!usuario){
         return done(null, false, {message: 'No esta este usuario'})
     } else{
