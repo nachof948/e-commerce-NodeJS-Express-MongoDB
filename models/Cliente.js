@@ -39,5 +39,9 @@ clienteSchema.post('save', function(doc, next) { /*(.post (POSTERIOR)) INFORMO Q
     next()
 })
 
+clienteSchema.methods.matchPassword = async function(password){
+    return await bcrypt.compare(password, this.password)
+}
+
 const Cliente = mongoose.model('cliente',clienteSchema) //Nombre de la coleccion y el Esquema
 module.exports = Cliente

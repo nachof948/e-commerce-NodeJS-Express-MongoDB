@@ -3,6 +3,9 @@ const keys = require('./keys');
 const GoogleCliente = require('../models/Cliente-Google')
 const passport = require('passport');
 
+
+
+/* SESION CON GOOGLE */
 /* Para manetener iniciada la sesion */
 passport.serializeUser((user, done)=>{ /* Recupera los datos del usuario de la base datos */
     done(null, user.id)
@@ -45,3 +48,4 @@ passport.use(
     })
 );
 
+/* SESION CON FORMULARIO */

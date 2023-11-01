@@ -9,9 +9,13 @@ const keys = require('./config/keys')
 const connectDB = require('./db/conexion')
 require('dotenv').config()
 const cookieSession = require('cookie-session')
-const passportSetup= require('./config/config')
+const passportGoogle= require('./config/config')
+const passportLocal =require('./config/passport-cliente')
 const passport = require('passport')
 const bodyParser = require('body-parser');
+
+
+
 
 /* PUERTO DEL SERVIDOR */
 const puerto = process.env.PUERTO
@@ -21,7 +25,6 @@ app.set('view engine', 'ejs')
 
 // ACCESO A LOS ARCHIVOS ESTATICOS 
 app.use(express.static('public'))
-
 
 /* COOKIE SESSION */
 app.use(cookieSession({

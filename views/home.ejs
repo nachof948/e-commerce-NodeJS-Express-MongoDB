@@ -14,7 +14,7 @@
             <div class="header-derecha">
                 <div class="header-iconos">
                     <a href="#"><i class="bi bi-search"></i></a>
-                    <%if (carrito.length > 0) {%>
+                    <% if (carrito.length > 0) {%>
                     <a class="bag" href="/compras"><i class="bi bi-bag"></i></a>
                     <div class="circulo-rojo"></div>
                     <%}else{%>
@@ -26,14 +26,15 @@
                     <img src="<%=user.image%>" alt="">
                     <a href="/auth/logout"><%=user.username%></a>
                 </div>
-                <%}else{%>
+                <%} else if(cliente) {%>
+                    <a href="/auth/logout"><%=cliente.usuario%></a>
+                    <%} else{%>
                 <div class="registrarse">
                     <a href="/auth/signup">Registarse</a>
                 </div>
             <%}%>
         </div>
         </div>
-        
     </div>
 </header> 
 
@@ -476,6 +477,7 @@
     <%- include('./partials/footer.ejs') %>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/signup.js"></script>
     <script src="js/swiper.js"></script>
 
     
