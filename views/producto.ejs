@@ -12,17 +12,19 @@
     <header style="background-color: rgb(132,183,78);">
         <div class="contenedor-header">
             <a class="empresa" href="/">FOODIED</a>
-            <nav>
-                <a href="/">Inicio</a>
-                <a href="/#menuEspecial">Menu</a>
-                <a href="/#sobreNosotros">Sobre Nosotros</a>
-                <a href="/#contactos">Contacto</a>
-            </nav>
-            <div class="header-derecha">
-                <div class="header-iconos">
-                    <a href="#"><i class="bi bi-search"></i></a>
-                    <%if (carrito.length > 0) {%>
-                        <a href="/compras"><i class="bi bi-bag"></i></a>
+            <button id="menuResponsive" class="menu-responsive"><i class="bi bi-list"></i></button>
+            <div class="contenedor-menu-responsive">
+                <nav>
+                    <a href="/">Inicio</a>
+                    <a href="#menuEspecial">Menu</a>
+                    <a href="#sobreNosotros">Sobre Nosotros</a>
+                    <a href="#contactos">Contacto</a>
+                </nav>
+                <div class="header-derecha">
+                    <div class="header-iconos">
+                        <a href="#"><i class="bi bi-search"></i></a>
+                        <%if (carrito.length > 0) {%>
+                        <a class="bag" href="/compras"><i class="bi bi-bag"></i></a>
                         <div class="circulo-rojo"></div>
                         <%}else{%>
                             <a href="/compras"><i class="bi bi-bag"></i></a>
@@ -30,7 +32,7 @@
                 </div>
                 <%if(user) {%>
                     <div class="perfil">
-                        <img src=<%=user.image%> alt="">
+                        <img src="<%=user.image%>" alt="">
                         <a href="/auth/logout"><%=user.username%></a>
                     </div>
                     <%}else{%>
@@ -38,6 +40,7 @@
                         <a href="/auth/signup">Registarse</a>
                     </div>
                 <%}%>
+            </div>
             </div>
         </div>
 
