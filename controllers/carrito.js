@@ -1,111 +1,78 @@
 const Carrito = require('../models/Carrito')
 const Producto= require('../models/Producto')
-const axios = require('axios')
+
+const mostrarCarrito= async(req, res) => { 
+    try{
+        const carrito = await Carrito.find({})
+        res.render('carrito', {carrito:carrito, user:req.user})
+    } catch(err){
+        console.error(err);
+        res.status(404).send('Error');
+    }
+}
 
 /* AGREGAR PRODUCTOS AL CARRITO */
-
 const agregarProductos = async (req, res) => {
+    const nombre = req.body.nombre
+    const imagen = req.body.imagen
+    const precio = req.body.precio
     try {
-        const { nombre, imagen, precio } = req.body;
-
-        if (!nombre || !imagen || !precio) {
-            return res.status(400).json({ mensaje: "Faltan campos obligatorios" });
-        }
-
-        const productoEnDb = await Producto.findOne({ nombre });
-
-        if (!productoEnDb) {
-            return res.status(400).json({ mensaje: "Este producto no se encuentra en la base de datos" });
-        }
-
-        const productoEnCarrito = await Carrito.findOne({ nombre });
+        const productoEnCarrito = await Carrito.findOne({nombre});
 
         if (!productoEnCarrito) {
             const nuevoProductoCarrito = new Carrito({ nombre, imagen, precio, cantidad: 1 });
             await nuevoProductoCarrito.save();
+        } else {
+            // Si el producto ya está en el carrito, aumentar la cantidad en 1 (o como necesites)
+            productoEnCarrito.cantidad += 1;
+            await productoEnCarrito.save();
         }
 
-        await Producto.findByIdAndUpdate(productoEnDb._id,
-            { enCarrito: true, nombre, imagen, precio },
-            { new: true }
-        );
-
+        res.redirect('/compras');
     } catch (error) {
         console.error(error);
         return res.status(500).json({ mensaje: "Error interno del servidor" });
     }
 };
-
-
-
 /* AGREGAR O ELIMINAR PRODUCTOS DEL CARRITO */
 const modificarProductos = async (req, res) => {
-    try{
-    const { productoId } = req.params
-    const { query }= req.query
-    const body = req.body
+    try {
+        const { query } = req.query;
+        const producto = req.body;
+        const id = producto._id;
 
-    /* Buscamos el producto en el carrito*/
-    const productoBuscado = await Carrito.findById(productoId)
-    
-    /* Si no hay query 'add'o 'del' */
-    if(!query){
-        res.status(400).json({mensaje: "Debes enviar un query"})
-    
-    /* Si el producto esta en el carrito y quiero agregar */
-    } else if(productoBuscado && query === 'add'){
-        body.cantidad = body.cantidad + 1
-        await Carrito.findByIdAndUpdate(productoId, body, {
-            new: true,
-        }) .then((producto) =>{
-            res.json({
-                mensaje:`El producto: ${producto.nombre} fue actualizado`,
-                producto
-            })
-        })
-    } else if(productoBuscado && query === 'del'){
-        body.cantidad = body.cantidad - 1
-        await Carrito.findByIdAndUpdate(productoId, body, {
-            new:true,
-        }).then((producto) =>{
-            res.json({mensaje: `El producto: ${producto.nombre} fue actualizado`,
-            producto})
-        })
-    } else{
-        res.status(400).json({mensaje: "Ocurrio un error"})
-    }
-    }
-    catch(error) {
+        const productoBuscado = await Carrito.findById(id);
+
+        if (productoBuscado && query === 'add') {
+            productoBuscado.cantidad += 1;
+            await Carrito.findByIdAndUpdate(id, productoBuscado, { new: true });
+            res.redirect('/compras'); 
+        } else if (productoBuscado && query === 'del') {
+            productoBuscado.cantidad -= 1;
+            await Carrito.findByIdAndUpdate(id, producto, { new: true });
+            res.redirect('/compras'); // Redirección en caso de 'del'
+        } else {
+            res.status(400).json({ mensaje: "Ocurrió un error" });
+        }
+    } catch (error) {
         res.status(500).json({ mensaje: "Error interno del servidor", error });
     }
 }
 
 /* ELIMINAR PRODUCTO DEL CARRITO */
-const eliminarProductos = async(req, res) => {
-    const { productoId } = req.params
-
-    /* Buscamos el producto en el carrito */
-    const productoEnCarrito = await Carrito.findById(productoId)
-
-    /* Buscamos el producto en nuestra DB por el nombre del que esta en el carrito */
-    const { nombre, imgUrl, precio, _id} = await Producto.findOne({nombre: productoEnCarrito.nombre})
-    
-    /* Buscamos y eliminamos el producto con la id */
-    await Carrito.findByIdAndDelete(productoId)
-
-    /* Actualizamos la propiedad en la DB de Productos */
-    await Producto.findByIdAndUpdate(
-        _id,
-        { enCarrito: false, nombre, imgUrl, precio },
-        {new: false}
-    )
-    .then((producto) =>{
-        res.json({mensaje:`El producto ${producto.nombre} fue eliminado`})
-    })
-    .catch((error) => res.json({mensaje: "Hubo un error", error}))
+const eliminarProductos = async (req, res) => {
+    const id = req.params.id;
+    try {
+        await Carrito.findByIdAndRemove(id);
+        res.redirect('/compras');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error al eliminar el producto del carrito');
+    }
 }
 
 module.exports ={
+    mostrarCarrito,
     agregarProductos,
     modificarProductos,
     eliminarProductos

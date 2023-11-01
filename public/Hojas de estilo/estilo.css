@@ -58,7 +58,14 @@ nav a:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 1.8rem 0rem;
+}
+.contenedor-menu-responsive{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 72%;
 }
 .empresa{
     font-size: 2rem;
@@ -78,10 +85,21 @@ nav a:focus{
     padding: 0.5rem 0.6rem;
     cursor: pointer;
     transition: all 200ms ease;
-    position: relative;
 }
 .header-iconos a:hover{
     color: var(--verde-claro);
+}
+.bag{
+    position: relative;
+}
+.circulo-rojo{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: red;
+    top: 2.2rem;
+    right: 26.5rem;
 }
 .header-iconos button{
     font-size: 1.2rem;
@@ -123,6 +141,7 @@ nav a:focus{
 .perfil a:hover{
     color: var(--verde-claro);
 }
+
 .registrarse a{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -137,6 +156,137 @@ nav a:focus{
 .registrarse a:hover{
     color: var(--verde-claro);
 }
+.menu-responsive{
+    display: none;
+    background-color: transparent;
+    color: #F9FAFC;
+    font-size: 3rem;
+    border: none;
+}
+/* MEDIA QUERIES HEADER */
+/* ====COMPUTADORA O LAPTOP==== */
+@media (max-width:1650px) {
+    .contenedor-menu-responsive{
+        width: 75%;
+    }
+}
+@media (max-width:1470px) {
+    nav{
+        gap: 5rem;
+    }
+}
+@media (max-width:1400px) {
+    nav{
+        gap: 4rem;
+    }
+}
+@media (max-width:1300px) {
+    nav{
+        gap: 3rem;
+    }
+    .empresa{
+        font-size: 1.7rem;
+    }
+    .registrarse a{
+        font-size: 1.1rem;
+        padding: 0.7rem 0.9rem;
+    }
+    .header-iconos a{
+        font-size: 1.2rem;
+        padding: 0.5rem 0.6rem;
+    }
+    .perfil{
+        width: 11rem;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:1200px) {
+    nav{
+        gap: 2.5rem;
+    }
+    nav a{
+        font-size: 0.9rem;
+    }
+    .empresa{
+        font-size: 1.5rem;
+    }
+    .registrarse a{
+        font-size: 0.9rem;
+    }
+    .header-iconos a{
+        font-size: 1rem;
+    }
+    .perfil{
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+/* =====FIN COMPUTADORA O LAPTOP===== */
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    header{
+        background-color: #83B64D;
+    }
+    .menu-responsive{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-responsive i{
+        font-size: 3.5rem;
+    }
+    .menu-responsive:hover{
+        filter: drop-shadow(2px 2px 5px white);
+    }
+    .contenedor-menu-responsive{
+        height: 0vh;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 250ms;
+        cursor: pointer;
+    }
+    .contenedor-menu-responsive.activo{
+        overflow: hidden;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    nav a{
+        font-size: 1.3rem;
+    }
+    .header-derecha{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .registrarse a{
+        font-size: 1.2rem;
+        padding: 0.7rem 1.7rem;
+        margin-left: 0.4rem;
+    }
+    .perfil{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:768px) {
+    .contenedor-header{
+        width: 95vw;
+    }
+}
+/* ====FIN TABLET===== */
+/* FIN MEDIA QUERIES HEADER */
 /*==== FIN HEADER======= */
 
 /*=========== HERO========== */
@@ -145,24 +295,10 @@ nav a:focus{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-}
-.circulo-verde-der{
-    width: 90rem;
-    height: 65rem;
-    background-color: var(--verde--oscuro);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 26rem;
-    left: 45rem;
-}
-.circulo-verde-izq{
-    width: 55rem;
-    height: 45rem;
-    background-color: var(--verde--oscuro);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 15rem;
-    left: 89rem;
+    background-image: url(../imagenes/Hero/Fondo\ del\ Hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px -50px 0px 0px;
 }
 
 .planta-hero{
@@ -316,7 +452,7 @@ nav a:focus{
 
 /* ===== HERO SWIPER===== */
 .swiper-hero{
-    width: 2000px; 
+    width: 85vw; 
     height: 1000px;
 }
 .swiper-slide-hero{
@@ -335,6 +471,572 @@ nav a:focus{
     color: white;
 }
 /* ======FIN HERO SWIPER======= */
+
+/* MEDIA QUERIES HERO */
+
+/* ====COMPUTADORA Y LAPTOP===== */
+@media (max-width:1900px) {
+    .textos-hero h1{
+        font-size: 4.8rem;
+    }
+}
+@media (max-width:1850px) {
+    .textos-hero h1{
+        font-size: 4.7rem;
+    }
+}
+@media (max-width:1800px) {
+    .textos-hero h1{
+        font-size: 4.2rem;
+        width: 85%;
+    }
+
+}
+@media (max-width:1750px) {
+    .textos-hero h1{
+        font-size: 3.6rem;
+        width: 85%;
+        line-height: 5rem;
+    }
+}
+@media (max-width:1650px) {
+    .textos-hero h1{
+        font-size: 3.3rem;
+        width: 80%;
+    }
+    .hero-comida-principal{
+        width: 27rem;
+    }
+    .hero-comida-pequeña{
+        position: absolute;
+        width: 5rem;
+        height: 4.8rem;
+    }
+    .panqueque{
+        top: 21rem;
+        left: 31rem;
+    }
+    .pancakes{
+        top: 30rem;
+        left: 26rem;
+    }
+    .pescado{
+        top: 33rem;
+        left: 13rem;
+    }
+    .vegetales{
+        top: 29rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 21rem;
+        left: -6rem;
+    }
+}
+@media (max-width:1600px) {
+    .textos-hero h1{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+    .panqueque{
+        top: 21rem;
+        left: 31rem;
+    }
+    .pancakes{
+        top: 28rem;
+        left: 25rem;
+    }
+    .pescado{
+        top: 32rem;
+        left: 13rem;
+    }
+    .vegetales{
+        top: 28rem;
+        left: 1rem;
+    }
+    .arroz{
+        top: 21rem;
+        left: -5rem;
+    }
+    .contenedor-opciones{
+        gap: 2rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        bottom: 14rem;
+        left: 2rem;
+    }
+}
+@media (max-width:1565px) {
+    .contenedor-hero{
+        margin-top: 1rem;
+    }
+    .textos-hero p{
+        width: 65%;
+    }
+}
+@media (max-width:1444px) {
+    .textos-hero p{
+        width: 75%;
+    }
+    .textos-hero h1{
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 25rem;
+        border: 1.8rem solid var(--verde-claro);
+    }
+    .panqueque{
+        top: 19rem;
+        left: 27.5rem;
+    }
+    .pancakes{
+        top: 27rem;
+        left: 21rem;
+    }
+    .pescado{
+        top: 30rem;
+        left: 10rem;
+    }
+    .vegetales{
+        top: 27rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 19rem;
+        left: -5rem;
+    }
+}
+@media (max-width:1400px) {
+    .textos-hero p{
+        font-size: 1.1rem;
+        width: 75%;
+    }
+    .textos-hero h1{
+        font-size: 3.2rem;
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 24rem;
+        border: 1.8rem solid var(--verde-claro);
+    }
+    .btn-hero-izq{
+        padding: 1.4rem 2.6rem;
+    }
+    .btn-hero-der{
+        padding: 1.4rem 2rem;
+    }
+}
+@media (max-width:1360px) {
+    .contenedor-hero{
+        margin-top: 1rem;
+    }
+    .textos-hero p{
+        font-size: 1.1rem;
+        width: 75%;
+    }
+    .textos-hero h1{
+        font-size: 3rem;
+        line-height: 4rem;
+        width: 90%;
+    }
+    .hero-comida-principal{
+        width: 22rem;
+        border: 1.8rem solid var(--verde-claro);
+    }
+    .btn-hero-izq{
+        padding: 1.4rem 2.6rem;
+    }
+    .btn-hero-der{
+        padding: 1.4rem 2rem;
+    }
+    .panqueque{
+        top: 15rem;
+        left: 25.5rem;
+    }
+    .pancakes{
+        top: 23rem;
+        left: 20rem;
+    }
+    .pescado{
+        top: 26rem;
+        left: 10rem;
+    }
+    .vegetales{
+        top: 23rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 15rem;
+        left: -5.5rem;
+    }
+}
+@media (max-width:1300px) {
+    .textos-hero h1{
+        font-size: 2.7rem;
+        line-height: 4rem;
+        width: 85%;
+    }
+    .hero-comida-principal{
+        width: 20rem;
+        border: 1.5rem solid var(--verde-claro);
+    }
+    .panqueque{
+        top: 14rem;
+        left: 23rem;
+    }
+    .pancakes{
+        top: 21rem;
+        left: 18rem;
+    }
+    .pescado{
+        top: 24rem;
+        left: 8.5rem;
+    }
+    .vegetales{
+        top: 21rem;
+        left: -1rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -5.5rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+    padding: 0.6rem 1rem;
+    } 
+    .btn-hero-izq{
+        padding: 1.3rem 2.4rem;
+    }
+    .btn-hero-der{
+        padding: 1.3rem 1.9rem;
+    }
+}
+@media (max-width:1200px) {
+    .contenedor-hero{
+        margin-top: 0rem;
+    }
+    .hero-comida-principal{
+        width: 19rem;
+        border: 1.4rem solid var(--verde-claro);
+    }
+    .panqueque{
+        top: 14rem;
+        left: 22rem;
+    }
+    .pancakes{
+        top: 20rem;
+        left: 17rem;
+    }
+    .pescado{
+        top: 22.5rem;
+        left: 8.7rem;
+    }
+    .vegetales{
+        top: 20rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -5.2rem;
+    }
+}
+@media (max-width:1150px) {
+    .textos-hero h1{
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+        width: 90%;
+    }
+    .textos-hero p{
+        font-size: 1rem;
+    }
+    .hero-comida-pequeña{
+        width: 4rem;
+        height: 4rem;
+    }
+    .btn-hero-izq{
+        font-size: 0.9rem;
+        padding: 1.2rem 2.3rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 1.2rem 1.7rem;
+    }
+    .panqueque{
+        top: 14rem;
+        left: 22rem;
+    }
+    .pancakes{
+        top: 20rem;
+        left: 17rem;
+    }
+    .pescado{
+        top: 22rem;
+        left: 8.7rem;
+    }
+    .vegetales{
+        top: 20rem;
+        left: 1rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -4rem;
+    }
+}
+@media (max-width:1100px) {
+    .hero-comida-principal{
+        width: 18rem;
+        border: 1.3rem solid var(--verde-claro);
+    }
+    .textos-hero h1{
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+        width: 95%;
+    }
+    .textos-hero p{
+        font-size: 1rem;
+    }
+    .panqueque{
+        top: 14rem;
+        left: 20rem;
+    }
+    .pancakes{
+        top: 19rem;
+        left: 15rem;
+    }
+    .pescado{
+        top: 21rem;
+        left: 7.6rem;
+    }
+    .vegetales{
+        top: 19rem;
+        left: 0rem;
+    }
+    .arroz{
+        top: 14rem;
+        left: -4rem;
+    }
+}
+/* ====FIN COMPUTADOR LAPTOP===== */
+/* ==== TABLET===== */
+@media (max-width:1024px) {
+    .panqueque,
+    .pancakes,
+    .pescado,
+    .vegetales,
+    .arroz{
+        display: none;
+    }
+    .hero-comida-principal{
+        width: 17.5rem;
+        border: 0.7rem solid var(--verde-claro);
+    }
+}
+@media (max-width:993px) {
+    .textos-hero p{
+        width: 95%;
+    }
+    .textos-hero h1{
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+    padding: 0.4rem 0.6rem;
+    } 
+    .swiper-slide-hero{
+        margin-left: 1.3rem;
+    }
+}
+@media (max-width:900px) {
+    .textos-hero p{
+        width: 100%;
+    }
+    .textos-hero h1{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 1rem 2rem;
+        text-wrap: nowrap;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+        text-wrap: nowrap;
+    }
+    .swiper-slide-hero{
+        margin-left: 1rem;
+    }
+}
+@media (max-width:800px) {
+    .textos-hero p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .textos-hero h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 1rem 1.5rem;
+        text-wrap: nowrap;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 1rem 1rem;
+        text-wrap: nowrap;
+    }
+    .swiper-slide-hero{
+        gap: 1.5rem;
+    }
+    .hero-comida-principal{
+        width: 15rem;
+        border: 0.6rem solid var(--verde-claro);
+    }
+    .btn-hero-pregunta{
+        font-size: 1rem;
+    }
+}
+/* ==== FIN TABLET===== */
+/* ====CELULAR==== */
+@media (max-width:768px) {
+    .swiper-hero{
+        width: 95vw; 
+    }
+    .swiper-slide-hero{
+        justify-content: center;
+        text-align: center;
+        margin-top: -4rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -9rem;  
+        padding: 0.2rem 0.4rem;
+    } 
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 1.2rem;
+    } 
+    .textos-hero{
+        align-items: center;
+        justify-content: center;
+    }
+    .btns-hero{
+        margin: 0 auto;
+    }
+    .hero-comida-principal{
+        display: none;
+    }
+    .btn-hero-pregunta{
+        display: none;
+    }
+    .textos-hero h1{
+        font-size: 2rem;
+    }
+    .textos-hero p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:570px) {
+    .textos-hero h1{
+        font-size: 1.6rem;
+    }
+    .textos-hero p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .textos-hero h1{
+        font-size: 1.4rem;
+    }
+    .textos-hero p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.8rem 1rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 0.8rem 0.8rem;
+    }
+}
+@media (max-width:400px) {
+    .textos-hero h1{
+        font-size: 1.2rem;
+    }
+    .textos-hero p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.6rem 0.7rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 0.6rem 0.6rem;
+    }
+}
+@media (max-width:360px) {
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -9rem;  
+        padding: 0.1rem 0.1rem;
+    } 
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 0.6rem;
+    } 
+    .textos-hero h1{
+        font-size: 1.2rem;
+    }
+    .textos-hero p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.6rem 0.7rem;
+    }
+    .btn-hero-der{
+        font-size: 0.9rem;
+        padding: 0.6rem 0.6rem;
+    }
+}
+@media (max-width:322px) {
+    .swiper-slide-hero{
+        margin-top: 0rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -4rem;  
+        padding: 0.1rem 0.1rem;
+    } 
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 0.5rem;
+    } 
+    .textos-hero h1{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .textos-hero p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .btn-hero-izq{
+        padding: 0.6rem 0.7rem;
+        font-size: 0.7rem;
+    }
+    .btn-hero-der{
+        font-size: 0.7rem;
+        padding: 0.6rem 0.6rem;
+    }
+}
+/* ====FIN CELULAR==== */
+
+/* FIN MEDIA QUERIES HERO */
 /*====== FIN HERO======== */
 
 /*========== SECCION OPCIONES========= */
@@ -361,28 +1063,31 @@ nav a:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     box-shadow: 0px 0px 10px rgb(209, 205, 205);
     cursor: pointer;
 }
 .tarjeta-producto{
+    transition: all 250ms;
     cursor: pointer;
+}
+.tarjeta-producto:hover{
+    box-shadow: 0px 0px 10px var(--verde--oscuro);
 }
 .tarjeta img{
     width: 14rem;
     border-radius: 50%;
     border: 0.9rem solid var(--verde--oscuro);
-    position: absolute;
-    bottom: 15rem;
-    left: 3.8rem;
+    transform: translateY(-50%);
+    margin: 0;
 }
 .tarjeta-textos{
-    padding: 9rem 0rem 2rem 0rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 0.7rem;
+    transform: translateY(-50%);
 }
 .tarjeta-textos h2{
     font-size: 1.7rem;
@@ -443,6 +1148,241 @@ nav a:focus{
     color: var(--verde--oscuro);
     cursor: pointer;
 }
+
+/* MEDIA QUERIES OPCIONES */
+/* ===COMPUTADORA O LAPTOP=== */
+@media (max-width:1750px) {
+    .tarjeta{
+        width: 21rem;
+        height: 22rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+    }
+    .tarjeta-textos{
+        padding-top: 2rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.7rem;
+        width: 90%;
+    }
+}
+@media (max-width:1650px) {
+    .tarjeta{
+        width: 20.4rem;
+        height: 22rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+    }
+}
+@media (max-width:1550px) {
+    .tarjeta{
+        width: 20.4rem;
+        height: 22rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+    }
+}
+@media (max-width:1500px) {
+    .tarjeta{
+        width: 20.4rem;
+        height: 20rem;
+    }
+    .tarjeta img{
+        width: 11rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .opciones-comprar p{
+        font-size: 1rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .tarjeta-textos p{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:1400px) {
+    .tarjeta{
+        width: 21rem;
+        height: 20rem;
+    }
+    .tarjeta img{
+        width: 11rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .opciones-comprar p{
+        font-size: 1rem;
+    }
+    .tarjeta-textos{
+        padding-top: 3rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.4rem;
+        width: 90%;
+    }
+    .tarjeta-textos p{
+        font-size: 0.9rem;
+    }
+    .opciones-comprar a{
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0.7rem;
+    }
+    .opciones-comprar button{
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0.7rem;
+    }
+}
+@media (max-width:1350px) {
+    .tarjeta img{
+        width: 9.5rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .tarjeta-textos{
+        padding-top: 5rem;
+    }
+    .tarjeta-textos h2{
+        width: 95%;
+    }
+}
+@media (max-width:1300px) {
+    .seccion-opciones{
+        padding: 8rem 0rem 2rem;
+    }
+    .tarjeta-textos p{
+        font-size: 0.8rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1200px) {
+    .contenedor-opciones{
+        justify-content: center;
+        gap: 1rem;
+    }
+    .tarjeta{
+        width: 22rem;
+    }
+    .tarjeta-textos p{
+        font-size: 0.8rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.2rem;
+    }
+    .opciones-comprar a{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar button{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar p{
+        padding: 0.4rem 0.6rem;
+    }
+}
+/* ===FIN COMPUTADORA O LAPTOP */
+
+/* ===TABLET==== */
+@media (max-width:1024px) {
+    .seccion-opciones{
+        padding: 0rem;
+        margin: -2rem 0rem 0rem;
+    }
+    .tarjeta{
+        margin-top: 7rem;
+    }
+    .tarjeta img{
+        width: 12rem;
+        border: 0.6rem solid var(--verde--oscuro);
+    }
+    .contenedor-opciones{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .tarjeta-textos{
+        transform: translateY(-60%);
+    }
+    .tarjeta-textos p{
+        font-size: 1rem;
+    }
+    .tarjeta-textos h2{
+        font-size: 1.5rem;
+    }
+    .opciones-comprar a{
+        font-size: 1.1rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar button{
+        font-size: 1.1rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .opciones-comprar p{
+        font-size: 1.1rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+@media (max-width:848px) {
+    .tarjeta{
+        width: 20rem;
+    }
+}
+/* === FIN TABLET==== */
+
+/* ===CELULAR=== */
+@media (max-width:768px) {
+    .contenedor-opciones{
+        width: 95vw;
+    }
+    .seccion-opciones{
+        margin: -13rem 0rem 0rem;
+    }
+}
+@media (max-width:400px) {
+    .seccion-opciones{
+        margin: -12rem 0rem 0rem;
+    }
+}
+@media (max-width:360px) {
+    .seccion-opciones{
+        margin: -12rem 0rem 0rem;
+    }
+    .tarjeta{
+        width: 19rem;
+    }
+    .tarjeta img{
+        width: 10rem;
+        border: 0.6rem solid var(--verde--oscuro);
+    }
+    .tarjeta-textos{
+        transform: translateY(-50%);
+    }
+}
+@media (max-width:322px) {
+    .seccion-opciones{
+        margin: -5rem 0rem 0rem;
+    }
+    .tarjeta{
+        width: 16rem;
+    }
+    .tarjeta img{
+        width: 8.5rem;
+        border: 0.6rem solid var(--verde--oscuro);
+        transform: translateY(-60%);
+    }
+    .tarjeta-textos{
+        transform: translateY(-50%);
+    }
+}
+/* ===FIN CELULAR=== */
+
+/* FIN MEDIA QUERIES OPCIONES */
+
+
 /*======= FIN SECCION OPCIONES=========== */
 
 /* ===========ELEGIRNOS=============== */
@@ -466,8 +1406,9 @@ nav a:focus{
 }
 .motivos{
     display: flex;
+    width: 85vw;
     align-items: center;
-    gap: 2.6rem;
+    justify-content: space-between;
     margin-top: 1.5rem;
 }
 .textos-elegirnos{
@@ -484,7 +1425,7 @@ nav a:focus{
 }
 .motivo{
     width: 32rem;
-    height: 20rem;
+    height: 21rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,6 +1467,266 @@ nav a:focus{
     width: 17.5em;
     padding-top: 1.2em;
 }
+
+/* MEDIA QUERIES ELEGINOS */
+/* =====COMPUTADORA O LAPTOP===== */
+@media (max-width:1850px) {
+    .motivo{
+        width: 31rem;
+        height: 20rem;
+    }
+}
+@media (max-width: 1800px) {
+    .motivo{
+        width: 30rem;
+        height: 18rem;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1720px) {
+    .motivo{
+        width: 29rem;
+        height: 18rem;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1680px) {
+    .motivo{
+        width: 26rem;
+        height: 18rem;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1500px) {
+    .motivo{
+        width: 24rem;
+        height: 17rem;
+    }
+    .motivo img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .motivo h2{
+        font-size: 2.1rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1400px) {
+    .motivo{
+        width: 22.5rem;
+        height: 16rem;
+    }
+    .motivo img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .motivo h2{
+        font-size: 1.9rem;
+    }
+    .motivo p{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1300px) {
+    .elegirnos{
+        padding: 4rem 0rem;
+    }
+    .motivo{
+        width: 21.5rem;
+        height: 15rem;
+    }
+    .motivo img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .motivo h2{
+        font-size: 1.8rem;
+    }
+    .motivo p{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1250px) {
+    .motivo{
+        width: 20rem;
+        height: 14rem;
+    }
+    .motivo h2{
+        font-size: 1.7rem;
+    }
+    .motivo p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1150px) {
+    .motivo{
+        width: 19rem;
+        height: 13rem;
+    }
+    .motivo h2{
+        font-size: 1.5rem;
+    }
+    .motivo p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+}
+@media (max-width: 1100px) {
+    .motivo{
+        width: 17.6rem;
+        height: 13rem;
+    }
+    .motivo h2{
+        font-size: 1.5rem;
+    }
+    .motivo p{
+        font-size: 0.8rem;
+        width: 90%;
+    }
+}
+/* ====FIN COMPUTADORA O LAPTOP===== */
+
+/* ==== TABLET===== */
+@media (max-width:1024px) {
+    .contenedor-elegirnos h1{
+        font-size: 2.8rem;
+    }
+    .textos-elegirnos p{
+        font-size: 1.1rem;
+    }
+    .motivos{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .motivo{
+        width: 26rem;
+        height: 16rem;
+    }
+    .motivo h2{
+        font-size: 2rem;
+    }
+    .motivo p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+    .motivo img{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+/* ==== FIN TABLET===== */
+/* ====CELULAR===== */
+@media (max-width:768px) {
+    .contenedor-elegirnos{
+        width: 95vw;
+    }
+    .contenedor-elegirnos h1{
+        font-size: 2.2rem;
+    }
+    .textos-elegirnos p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .motivo{
+        width: 24rem;
+        height: 16rem;
+    }
+    .motivo h2{
+        font-size: 1.8rem;
+    }
+    .motivo p{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width:500px) {
+    .contenedor-elegirnos h1{
+        font-size: 1.9rem;
+    }
+    .textos-elegirnos p{
+        font-size: 0.9rem;
+    }
+    .motivo{
+        width: 21rem;
+        height: 14rem;
+    }
+}
+@media (max-width:360px) {
+    .contenedor-elegirnos h1{
+        font-size: 1.7rem;
+    }
+    .textos-elegirnos p{
+        font-size: 0.8rem;
+    }
+    .motivo{
+        width: 19rem;
+        height: 14rem;
+    }
+}
+@media (max-width:322px) {
+    .contenedor-elegirnos h1{
+        font-size: 1.7rem;
+    }
+    .textos-elegirnos p{
+        font-size: 0.8rem;
+    }
+    .motivo{
+        width: 17rem;
+        height: 13rem;
+    }
+    .motivo h2{
+        font-size: 1.6rem;
+    }
+    .motivo p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .motivo img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+/* ====FIN CELULAR===== */
+
+
+/* FIN MEDIA QUERIES ELEGINOS */
+
 /* ===========FIN ELEGIRNOS=============== */
 
 /* =======COMIDA ESPECIAL====== */
@@ -637,6 +1838,7 @@ nav a:focus{
     position: absolute;
     bottom: 0;
     right: 0;
+    border: none;
     padding: 3rem 2.5rem;
     border-radius:8px;
     cursor: pointer;
@@ -674,6 +1876,7 @@ span:hover{
     padding-left: 0.3rem;
 }
 .swiper-pagination span{
+    margin: 0 auto;
     background-color: #84B74E;
     width: 1.5rem;
     height: 1.5rem;
@@ -685,6 +1888,502 @@ span:hover{
     gap: 2rem;
 }
 /* ===== FIN COMIDA ESPECIAL SWIPER====  */
+
+/* MEDIA QUERIES ESPECIAL */
+/* ====COMPUTADORA O LAPTOP===== */
+@media (max-width: 1750px) {
+    .especial{
+        width: 26rem;
+        height: 29rem;
+    }
+    .comida{
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .estrellas img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .especial h2{
+        font-size: 2.3rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2.5rem 2rem;
+    }
+    .precio{
+        top: 23rem;
+    }
+    .estrellas{
+    top: 19.5rem;
+    }
+}
+@media (max-width: 1650px) {
+    .especial{
+        width: 25rem;
+        height: 27rem;
+    }
+    .comida{
+        width: 15rem;
+        height: 15rem;
+    }
+    .estrellas img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .especial h2{
+        font-size: 2.2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2.5rem 2rem;
+    }
+    .precio{
+        top: 23rem;
+    }
+    .estrellas{
+    top: 19.5rem;
+    }
+}
+@media (max-width: 1600px) {
+    .especial{
+        width: 24rem;
+        height: 26.5rem;
+    }
+    .comida{
+        width: 14rem;
+        height: 14rem;
+    }
+    .especial h2{
+        font-size: 2.2rem;
+        width: 85%;
+    }
+}
+@media (max-width: 1550px) {
+    .especial{
+        width: 24rem;
+        height: 24.8rem;
+    }
+    .comida{
+        width: 13rem;
+        height: 13rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2rem 1.8rem;
+    }
+    .precio{
+        top: 20rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 16.5rem;
+    }
+    .num{
+        font-size: 1.1rem;
+    }
+    .comida{
+        padding: 0.8rem;
+    }
+}
+@media (max-width: 1500px) {
+    .especial{
+        width: 22rem;
+        height: 22.8rem;
+    }
+    .comida{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2rem 1.8rem;
+    }
+    .precio{
+        top: 19rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 16rem;
+    }
+}
+@media (max-width: 1450px) {
+    .especial{
+        width: 21rem;
+        height: 22.8rem;
+    }
+    .comida{
+        width: 11.5rem;
+        height: 11.5rem;
+    }
+    .estrellas img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media (max-width: 1400px) {
+    .especial{
+        width: 20rem;
+        height: 23rem;
+    }
+    .comida{
+        padding: 0.7rem;
+        top: -7rem;
+        left: 10rem;
+    }
+    .estrellas img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .especial h2{
+        font-size: 1.8rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 2rem 1.8rem;
+    }
+    .precio{
+        top: 18rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 15.5rem;
+    }
+    .num{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 1300px) {
+    .comida-especial{
+        padding: 3rem 0rem 0rem;
+    }
+    .especial{
+        width: 19rem;
+        height: 22rem;
+    }
+    .comida{
+        padding: 0.6rem;
+    }
+    .estrellas img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .especial h2{
+        font-size: 1.8rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.8rem 1.5rem;
+    }
+    .precio{
+        top: 18rem;
+        font-size: 2.5rem;
+    }
+    .estrellas{
+        top: 15.5rem;
+    }
+    .num{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1250px) {
+    .especial{
+        width: 18.5rem;
+        height: 20.5rem;
+    }
+    .comida{
+        width: 10.4rem;
+        height: 10.4rem;
+    }
+    .estrellas img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .especial h2{
+        font-size: 1.8rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.6rem 1.3rem;
+    }
+    .precio{
+        top: 17rem;
+    }
+    .estrellas{
+        top: 14rem;
+    }
+}
+@media (max-width: 1200px) {
+    .especial{
+        width: 17rem;
+        height: 18rem;
+    }
+    .especial h2{
+        bottom: 7.5rem;
+    }
+    .comida{
+        width: 9.6rem;
+        height: 9.6rem;
+    }
+    .estrellas img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .especial h2{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.4rem 1.1rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 12rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width: 1100px) {
+    .especial{
+        width: 16rem;
+        height: 18rem;
+    }
+    .especial h2{
+        bottom: 7.5rem;
+    }
+    .comida{
+        width: 9.9rem;
+        height: 10rem;
+        top: -5rem;
+        left: 7.5rem;
+        padding: 0.5rem;
+    }
+    .estrellas img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .especial h2{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+    .bolsa{
+        padding: 1.4rem 1.1rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 12rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+    .precio{
+        font-size: 1.9rem;
+    }
+}
+/* ====FIN COMPUTADORA O LAPTOP===== */
+
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    .swiper-slide-especial{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .textos-especial h1{
+        font-size: 3rem;
+    }
+    .textos-especial p{
+        font-size: 1.1rem;
+        width: 85%;
+    }
+    .especial{
+        width: 20rem;
+        height: 22rem;
+    }
+    .especial h2{
+        bottom: 7.5rem;
+    }
+    .comida{
+        width: 12rem;
+        height: 12rem;
+        top: -5rem;
+        left: 9rem;
+        padding: 0.8rem;
+    }
+    .estrellas img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .especial h2{
+        font-size: 2rem;
+        width: 90%;
+    }
+    .bolsa{
+        padding: 2rem 1.5rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 15rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+    .precio{
+        font-size: 1.9rem;
+        top: 18rem;
+    }
+}
+
+/* ====FIN TABLET===== */
+
+/* ====CELULAR==== */
+@media (max-width:768px) {
+    .comida-especial-contenedor{
+        width: 95vw;
+    }
+    .swiper-especial{
+        width: 95vw;
+    }
+    .especiales{
+        max-width: 95vw;
+    }
+    .textos-especial h1{
+        font-size: 2.5rem;
+    }
+    .textos-especial p{
+        font-size: 1rem;
+        width: 85%;
+    }
+}
+@media (max-width:500px) {
+    .textos-especial h1{
+        font-size: 2rem;
+    }
+    .textos-especial p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .especial{
+        width: 18rem;
+        height: 20rem;
+    }
+    .especial h2{
+        bottom: 6.5rem;
+        font-size: 1.6rem;
+    }
+    .comida{
+        width: 11rem;
+        height: 11rem;
+        top: -5rem;
+        left: 9rem;
+        padding: 0.8rem;
+    }
+    .estrellas img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .bolsa{
+        padding: 1.6rem 1.3rem;
+    }
+    .precio{
+        top: 17rem;
+    }
+    .estrellas{
+        top: 15rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width:400px) {
+    .textos-especial p{
+        width: 100%;
+    }
+    .especial{
+        width: 17rem;
+        height: 18rem;
+    }
+    .comida{
+        width: 9rem;
+        height: 9rem;
+        top: -5rem;
+        left: 9rem;
+        padding: 0.8rem;
+    }
+    .estrellas img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .bolsa{
+        padding: 1.6rem 1.3rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 13rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width:322px) {
+    .textos-especial p{
+        width: 100%;
+    }
+    .especial{
+        width: 15rem;
+        height: 18rem;
+    }
+    .comida{
+        width: 9rem;
+        height: 9rem;
+        top: -4rem;
+        left: 7rem;
+        padding: 0.6rem;
+    }
+    .estrellas img{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    .bolsa{
+        padding: 1.3rem 1.1rem;
+    }
+    .precio{
+        top: 15rem;
+    }
+    .estrellas{
+        top: 13rem;
+    }
+    .bolsa-comprar{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+/* ====FIN CELULAR==== */
+
+
+/* FIN MEDIA QUERIES ESPECIAL */
+
+
 /* ======= FIN COMIDA ESPECIAL====== */
 
 /* ========= COMIDA HABITUAL ============= */
@@ -745,18 +2444,16 @@ span:hover{
 }
 .tarjeta-habitual:hover{
     box-shadow: 0px 0px 10px var(--verde--oscuro);
-
 }
 .tarjeta-habitual-img{
     width: 18.5rem;
     border-radius: 50%;
     border: 0.9rem solid var(--verde--oscuro);
-    position: absolute;
-    bottom: 19rem;
-    left: 5rem;
+    transform: translateY(-60%);
 }
 .tarjeta-textos-habitual{
-    padding: 9rem 0rem 2rem 0rem;
+    transform: translateY(-60%);
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -770,6 +2467,9 @@ span:hover{
 .tarjeta-textos-habitual p{
     color: var(--gris);
     width: 80%;
+    font-size: 1.2rem;
+}
+.habitual-precio p{
     font-size: 1.2rem;
 }
 .opciones-comprar-habitual{
@@ -815,7 +2515,24 @@ span:hover{
     width: 1.8rem;
     height: 1.8rem;
 }
-
+.opciones-comprar-habitual button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar-habitual button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
 
 /* ===== COMIDA HABITUAL SWIPER===== */
 .swiper-habitual{
@@ -849,6 +2566,255 @@ span:hover{
 }
 /* ===== FIN COMIDA HABITUAL SWIPER===== */
 
+/* MEDIA QUERIES HABITUAL */
+
+/* ==== COMPUTADORA O LAPTOP====== */
+@media (max-width:1750px) {
+    .tarjeta-habitual{
+        width: 26rem;
+        height: 27rem;
+    }
+    .tarjeta-habitual-img{
+        width: 15.5rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-50%);
+    }
+}
+@media (max-width:1650px) {
+    .tarjeta-habitual{
+        width: 24rem;
+        height: 27rem;
+    }
+    .tarjeta-habitual-img{
+        width: 15rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1550px) {
+    .tarjeta-habitual{
+        width: 23rem;
+        height: 27rem;
+    }
+    .tarjeta-habitual-img{
+        width: 15rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1500px) {
+    .tarjeta-habitual{
+        width: 21.5rem;
+        height: 26rem;
+    }
+    .tarjeta-habitual-img{
+        width: 14rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-45%);
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1400px) {
+    .swiper-slide-habitual{
+        gap: 3rem; 
+    }
+    .tarjeta-habitual{
+        width: 21rem;
+        height: 24rem;
+    }
+    .tarjeta-habitual-img{
+        width: 13rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-45%);
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.6rem;
+        width: 90%;
+    }
+    .tarjeta-textos-habitual p{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.3rem;
+    }
+    .opciones-comprar-habitual{
+        margin-top: 1rem;
+    }
+}
+@media (max-width:1300px) {
+    .contenedor-comida-habitual{
+        padding: 0rem 0rem 2rem;
+    }
+    .comidas{
+        margin-top: 0rem;
+    }
+    .swiper-slide-habitual{
+        gap: 1rem; 
+        padding-top: 0.5rem;
+    }
+    .tarjeta-habitual{
+        width: 20.5rem;
+        height: 23.5rem;
+    }
+}
+@media (max-width:1200px) {
+    .tarjeta-habitual{
+        width: 18.5rem;
+        height: 23.5rem;
+    }
+    .tarjeta-habitual-img{
+        width: 12rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.4rem;
+    }
+    .estrellasHabitual img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media (max-width:1100px) {
+    .tarjeta-habitual{
+        width: 17.45rem;
+        height: 23rem;
+    }
+    .tarjeta-habitual-img{
+        width: 11.5rem;
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.3rem;
+    }
+    .estrellasHabitual img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .opciones-comprar-habitual a{
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.1rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-40%);
+    }
+}
+/* ====FIN COMPUTADORA O LAPTOP====== */
+
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    .titulos-habitual h1{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .titulos-habitual p{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .tarjeta-habitual{
+        width: 20rem;
+        height: 23rem;
+    }
+    .tarjeta-habitual-img{
+        width: 11.5rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .tarjeta-textos-habitual h2{
+        font-size: 1.5rem;
+    }
+    .estrellasHabitual img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .opciones-comprar-habitual a{
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    }
+    .opciones-comprar-habitual p{
+        font-size: 1.1rem;
+    }
+    .tarjeta-textos-habitual{
+        transform: translateY(-40%);
+    }
+}
+/* ====FIN TABLET===== */
+/* ===CELULAR=== */
+@media (max-width:768px) {
+    .contenedor-comida-habitual{
+        width: 95vw;
+    }
+    .titulos-habitual h1{
+        font-size: 2.4rem;
+    }
+    .titulos-habitual p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .tarjeta-habitual{
+        width: 21rem;
+        height: 23rem;
+    }
+}
+@media (max-width:360px) {
+    .titulos-habitual h1{
+        font-size: 1.8rem;
+    }
+    .titulos-habitual p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .tarjeta-habitual{
+        width: 19rem;
+        height: 22rem;
+    }
+}
+/* ===FIN CELULAR=== */
+
+
+/* FIN MEDIA QUERIES HABITUAL */
 
 
 /* ========= FIN COMIDA HABITUAL ============= */
@@ -916,6 +2882,282 @@ span:hover{
     border-radius: 10px;
     padding-right: 1rem;
 }
+
+/* MEDIA QUERIES NOSOTROS */
+/* ====COMPUTADORA O LAPTOP */
+@media (max-width:1750px) {
+    .chefs-img{
+        gap: 5.6rem;
+    }
+    .uno{
+        width: 23rem;
+        height: 29rem;
+    }
+    .dos{
+        width: 20rem;
+        height: 33rem;
+    }
+    
+    .tres{
+        width: 23.2rem;
+        height: 33rem;
+    }
+}
+@media (max-width:1650px) {
+    .chefs-img{
+        gap: 4rem;
+    }
+    .uno{
+        width: 21.6rem;
+        height: 28rem;
+    }
+    .dos{
+        width: 20rem;
+        height: 33rem;
+    }
+    
+    .tres{
+        width: 22rem;
+        height: 32rem;
+    }
+}
+@media (max-width:1500px) {
+    .chefs-img{
+        gap: 3.4rem;
+    }
+    .uno{
+        width: 19rem;
+        height: 26rem;
+    }
+    .dos{
+        width: 18rem;
+        height: 29rem;
+    }
+    
+    .tres{
+        width: 19rem;
+        height: 27.5rem;
+    }
+}
+@media (max-width:1400px) {
+    .chefs-img{
+        gap: 2.2rem;
+    }
+}
+@media (max-width:1350px) {
+    .chefs-img{
+        gap: 3.2rem;
+    }
+    .uno{
+        width: 17.3rem;
+        height: 24rem;
+    }
+    .dos{
+        width: 16rem;
+        height: 26rem;
+    }
+    
+    .tres{
+        width: 17.3rem;
+        height: 26rem;
+    }
+}
+@media (max-width:1300px) {
+    .chefs-img{
+        gap: 2.3rem;
+    }
+}
+@media (max-width:1250px) {
+    .chefs-img{
+        gap: 2.5rem;
+    }
+    .uno{
+        width: 16rem;
+        height: 23rem;
+    }
+    .dos{
+        width: 15rem;
+        height: 25rem;
+    }
+    
+    .tres{
+        width: 16rem;
+        height: 25rem;
+    }
+}
+@media (max-width:1200px) {
+    .chefs-img{
+        gap: 2rem;
+    }
+}
+@media (max-width:1150px) {
+    .chefs-img{
+        gap: 1.5rem;
+    }
+    .uno{
+        width: 15rem;
+        height: 21rem;
+    }
+    .dos{
+        width: 14rem;
+        height: 25rem;
+    }
+    
+    .tres{
+        width: 15rem;
+        height: 23rem;
+    }
+}
+@media (max-width:1150px) {
+    .chefs-img{
+        gap: 0.5rem;
+    }
+    .uno{
+        width: 14rem;
+        height: 20rem;
+    }
+    .dos{
+        width: 13rem;
+        height: 24rem;
+    }
+    
+    .tres{
+        width: 14rem;
+        height: 22rem;
+    }
+}
+/* ===FIN COMPUTADORA O LAPTOP==== */
+
+/* ===TABLET==== */
+@media (max-width:1024px) {
+    .chefs-img{
+        gap: 1.5rem;
+    }
+    .uno{
+        width: 12rem;
+        height: 18rem;
+    }
+    .dos{
+        width: 11rem;
+        height: 23rem;
+    }
+    
+    .tres{
+        width: 12rem;
+        height: 20rem;
+    }
+    .texto-chefs h2{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .texto-chefs p{
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:900px) {
+    .chefs-img{
+        gap: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .uno{
+        width: 24rem;
+        height: 30rem;
+        margin-bottom: -5rem;
+    }
+    .dos{
+        width: 20rem;
+        height: 33rem;
+    }
+    
+    .tres{
+        width: 23.3rem;
+        height: 32rem;
+    }
+}
+/* === FIN TABLET==== */
+
+/* =====CELULAR======= */
+@media (max-width:768px) {
+    .contenedor-chefs{
+        width: 95vw;
+    }
+    .texto-chefs h2{
+        margin-top: 0rem;
+        font-size: 2.5rem;
+    }
+    .texto-chefs p{
+        width: 85%;
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .texto-chefs h2{
+        font-size: 2.3rem;
+    }
+    .texto-chefs p{
+        width: 85%;
+        font-size: 0.9rem;
+    }
+    .uno{
+        width: 21rem;
+        height: 27rem;
+        margin-bottom: -5rem;
+    }
+    .dos{
+        width: 17rem;
+        height: 29rem;
+    }
+    
+    .tres{
+        width: 20rem;
+        height: 29rem;
+    }
+}
+@media (max-width:360px) {
+    .texto-chefs h2{
+        font-size: 1.8rem;
+    }
+    .texto-chefs p{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .uno{
+        width: 19rem;
+        height: 27rem;
+        margin-bottom: -5rem;
+    }
+    .dos{
+        width: 15rem;
+        height: 29rem;
+    }
+    
+    .tres{
+        width: 18rem;
+        height: 27rem;
+    }
+}
+@media (max-width:320px) {
+    .uno{
+        width: 17rem;
+        height: 24rem;
+    }
+    .dos{
+        width: 13rem;
+        height: 26rem;
+    }
+    
+    .tres{
+        width: 16rem;
+        height: 24rem;
+    }
+}
+/* =====FIN CELULAR======= */
+
+
+/* FIN  MEDIA QUERIES NOSOTROS */
+
 /* ===== FIN SOBRE NOSOTROS ======== */
 
 
@@ -946,18 +3188,8 @@ footer a{
 footer a:hover{
     color: black;
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 1.5rem;
-}
-.ayuda{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 1.5rem;
-}
+.menu,
+.ayuda,
 .contacto{
     display: flex;
     flex-direction: column;
@@ -975,7 +3207,6 @@ footer a:hover{
     line-height: 2rem;
 }
 .suscribite input{
-    position: relative;
     background-color: transparent;
     border: 2px solid rgb(132,183,78);
     border-radius: 10px;
@@ -995,10 +3226,8 @@ footer a:hover{
     border: 2px solid rgb(132,183,78);
     font-size: 1.3rem;
     color: white;
-    padding: 1.19rem 2rem;
+    padding: 1.21rem 2rem;
     border-radius: 10px;
-    position: absolute;
-    right: 7.95rem;
     cursor: pointer;
     transition: all 250ms;
 }
@@ -1007,6 +3236,185 @@ footer a:hover{
     border: 2px solid rgb(132,183,78);
     color: rgb(132,183,78);
 }
+.suscribite span{
+    position: absolute;
+    transform: translateX(-100%);
+    background-color: transparent;
+}
+
+/* MEDIA QUERIES FOOTER */
+/* ===COMPUTADORA O LAPTOP==== */
+@media (max-width:1650px) {
+    footer h2{
+        font-size: 2.1rem;
+    }
+    footer a{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1550px) {
+    footer h2{
+        font-size: 2.1rem;
+    }
+    footer a{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1450px) {
+    footer h2{
+        font-size: 1.9rem;
+    }
+    footer a{
+        font-size: 1.1rem;
+    }
+    .suscribite input{
+        width: 27rem;
+    }
+}
+@media (max-width:1400px) {
+    .suscribite input{
+        padding: 1rem 0.8rem 1rem;
+    }
+    .suscribite button{
+        padding: 1.15rem 2rem;
+    }
+    .suscribite h2{
+        line-height: 1.5rem;
+    }
+}
+@media (max-width:1300px) {
+    .suscribite input{
+        padding: 0.8rem 0.8rem 1rem;
+    }
+    .suscribite button{
+        padding: 1.05rem 2rem;
+    }
+}
+@media (max-width:1200px) {
+    .suscribite input{
+        width: 24rem;
+        padding: 0.6rem 0.8rem 0.8rem;
+    }
+    .suscribite button{
+        padding: 0.85rem 2rem;
+    }
+}
+@media (max-width:1150px) {
+    .suscribite input{
+        width: 23rem;
+    }
+    .suscribite button{
+        padding: 0.9rem 2rem;
+    }
+}
+@media (max-width:1100px) {
+    .suscribite input{
+        width: 23rem;
+    }
+    .suscribite button{
+        padding: 0.9rem 2rem;
+    }
+    footer a{
+        font-size: 0.9rem;
+    }
+    .suscribite{
+        gap: 1rem;
+    }
+}
+/* ====COMPUTADORA O LAPTOP==== */
+
+/* ===TABLET==== */
+@media (max-width:1024px) {
+    footer h2{
+        font-size: 1.7rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+    .suscribite input::placeholder{
+        font-size: 1.2rem;
+        color: grey;
+    }
+    .suscribite button{
+        font-size: 1.1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+@media (max-width:920px) {
+    footer h2{
+        font-size: 1.7rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 17rem;
+        font-size: 1.2rem;
+    }
+    .suscribite input::placeholder{
+        font-size: 1.2rem;
+        color: grey;
+    }
+    .suscribite button{
+        font-size: 1.1rem;
+        padding: 0.7rem 1rem;
+    }
+}
+@media (max-width:860px) {
+    .contenedor-footer{
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .menu,
+    .ayuda,
+    .contacto{
+        align-items: center;
+        gap: 1rem;
+    }
+    .suscribite{
+        align-items: center;
+    }
+    footer h2{
+        font-size: 2.4rem;
+    }
+    footer a{
+        font-size: 1.2rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+    .suscribite input::placeholder{
+        font-size: 1.2rem;
+        color: grey;
+    }
+    .suscribite button{
+        font-size: 1.1rem;
+        padding: 0.7rem 0.7rem;
+    } 
+}
+/* ===FIN TABLET==== */
+
+/* ====CELULAR==== */
+@media (max-width:360px) {
+    footer h2{
+        font-size: 2rem;
+    }
+    .suscribite input{
+        padding: 0.5rem 0.8rem 0.8rem;
+        width: 17rem;
+        font-size: 1.2rem;
+    }
+}
+/* ====FIN CELULAR==== */
+
+
+
+/* FIN MEDIA QUERIES FOOTER */
+
 /* ====== FIN FOOTER========= */
 
 
@@ -1017,19 +3425,20 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    margin-top: 4rem;
 }
 .shop h1{
     color: #010101;
     font-size: 3.5rem;
     margin: 6rem 0rem 0rem 0rem;
-
 }
 .titulos{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 4rem;
+    gap: 3.5rem;
     width: 100%;
     margin: 0;
 }
@@ -1047,15 +3456,15 @@ footer a:hover{
     color: rgb(132,183,78);
 }
 .comidas-shop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3.2rem;
-    flex-wrap: wrap;
-    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    place-items: center;
 }
 .tarjeta-shop{
-    margin-top: 6rem;
+    margin-top: 7rem;
     background-color: white;
     border-radius: 25px;
     width: 23rem;
@@ -1066,14 +3475,171 @@ footer a:hover{
     position: relative;
     box-shadow: 0px 0px 10px rgb(209, 205, 205);
 }
+.tarjeta-shop-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0rem 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+.tarjeta-shop-textos p{
+    color: gray;
+}
+.opciones-comprar p{
+    color: #010101;
+}
 .tarjeta-shop img{
     width: 14rem;
     border-radius: 50%;
     border: 0.9rem solid var(--verde--oscuro);
     position: absolute;
     bottom: 15rem;
-    left: 3.8rem;
+    left: 3.8em;
 }
+/* MEDIA QUERIES SHOP */
+
+/* === COMPUTADORA O LAPTOP===== */
+@media (max-width:1600px){
+    .comidas-shop{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+}
+@media (max-width:1550px){
+    .comidas-shop{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    .tarjeta-shop{
+        width: 22rem;
+        height: 23rem;
+    }
+}
+@media (max-width:1480px){
+    .tarjeta-shop{
+        width: 20rem;
+        height: 23rem;
+    }
+    .tarjeta-shop img{
+        width: 13rem;
+        bottom: 15rem;
+        left: 2.8rem;
+    }
+}
+@media (max-width:1360px){
+    .titulos a{
+        font-size: 1.2rem;
+    }
+    .tarjeta-shop{
+        width: 19rem;
+        height: 23.5rem;
+    }
+    .tarjeta-shop img{
+        width: 13rem;
+        bottom: 15rem;
+        left: 2.4rem;
+    }
+
+}
+@media (max-width:1268px){
+    .tarjeta-shop{
+        width: 18rem;
+        height: 23.5rem;
+    }
+    .comidas-shop{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .tarjeta-shop img{
+        width: 12rem;
+        left: 2.4rem;
+    }
+}
+@media (max-width:1170px){
+    .tarjeta-shop{
+        width: 18rem;
+        height: 22rem;
+    }
+    .comidas-shop{
+        gap: 2rem;
+    }
+    .tarjeta-shop img{
+        width: 10rem;
+        bottom: 17rem;
+        left: 3.4rem;
+        border: 0.7rem solid var(--verde--oscuro);
+    }
+    .tarjeta-shop-textos{
+        margin-top: 8rem;
+    }
+}
+@media (max-width:1100px){
+    .tarjeta-shop{
+        width: 17.8rem;
+        height: 22rem;
+    }
+    .tarjeta-shop-textos{
+        margin-top: 6rem;
+    }
+    .comidas-shop{
+        gap: 0.5rem;
+    }
+}
+/* ===FIN COMPUTADORA O LAPTOP===== */
+
+/* ===TABLET Y CELULAR==== */
+@media (max-width:650px){
+    .shop h1{
+        font-size: 3rem;
+    }
+    .titulos{
+        gap: 3rem
+    }
+    .titulos a{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:550px){
+    .shop h1{
+        font-size: 2.4rem;
+    }
+    .titulos{
+        gap: 2.5rem
+    }
+    .titulos a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:430px){
+    .shop h1{
+        font-size: 2rem;
+    }
+    .titulos{
+        gap: 1.5rem
+    }
+    .titulos a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:365px){
+    .shop h1{
+        font-size: 1.7rem;
+    }
+    .titulos{
+        gap: 1.5rem
+    }
+    .titulos a{
+        font-size: 0.9rem;
+    }
+}
+/* === FIN TABLET Y CELULAR==== */
+/* FIN MEDIA QUERIES SHOP */
 /* ======= FIN SHOP =========== */
 
 
@@ -1242,161 +3808,6 @@ a{
 /*==== FIN SIGN-UP - LOG-IN====== */
 
 
-/* MEDIA-QUERIES */
-/* HERO */
-@media (max-width:1900px) {
-    .circulo-verde-der{
-        left: 40rem;
-    }
-    .circulo-verde-izq{
-        left: 86rem;
-    }
-    .textos-hero h1{
-        font-size: 4.8rem;
-    }
-}
-@media (max-width:1850px) {
-    .textos-hero h1{
-        font-size: 4.7rem;
-    }
-}
-@media (max-width:1800px) {
-    .textos-hero h1{
-        font-size: 4.2rem;
-        width: 85%;
-    }
-
-}
-@media (max-width:1750px) {
-    .circulo-verde-der{
-        left: 36rem;
-    }
-    .circulo-verde-izq{
-        left: 78rem;
-    }
-    .textos-hero h1{
-        font-size: 3.6rem;
-        width: 85%;
-        line-height: 5rem;
-    }
-}
-@media (max-width:1650px) {
-    .circulo-verde-der{
-        left: 32rem;
-    }
-    .circulo-verde-izq{
-        left: 74rem;
-    }
-    .textos-hero h1{
-        font-size: 3.3rem;
-        width: 80%;
-    }
-}
-@media (max-width:1600px) {
-    .circulo-verde-der{
-        left: 28rem;
-    }
-    .circulo-verde-izq{
-        left: 65rem;
-    }
-    .textos-hero h1{
-        font-size: 3.5rem;
-        width: 100%;
-    }
-    .hero-comida-principal{
-        width: 27rem;
-    }
-    .panqueque{
-        top: 21rem;
-        left: 31rem;
-    }
-    .pancakes{
-        top: 28rem;
-        left: 25rem;
-    }
-    .pescado{
-        top: 32rem;
-        left: 13rem;
-    }
-    .vegetales{
-        top: 28rem;
-        left: 1rem;
-    }
-    .arroz{
-        top: 21rem;
-        left: -5rem;
-    }
-    .contenedor-opciones{
-        gap: 2rem;
-    }
-    .tarjeta img{
-        width: 12rem;
-        bottom: 14rem;
-        left: 2rem;
-    }
-}
-
-@media (max-width:768px){
-    .ensa{
-        width: 16em;
-        height: 16em;
-        border: 13px solid #83B64D;
-    }
-}
-
-@media(max-width:390px){
-    .img{
-        display: none;
-    }
-
-    h1{
-        display: flex;
-        text-align: center;
-        align-items: center;
-    }
-    .iniciar{
-        width: 10em;
-    }
-    .formulario{
-        
-        width: 26em;
-    }
-    .email{
-       
-        width: 18em;
-     }
-
-     .btn-form{
-        width:13.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .metodos{
-        width: 26em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .google-enlace{
-        width:13em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .regi{
-       
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25.5em;
-    }
-.opcio{
-   width: 26em;
-}
-}
 
 /*======FIN MEDIA-QUERIES======= */
 .badge {
@@ -1415,28 +3826,6 @@ a{
 }
 
 
-/* CARRITO DE COMPRAS */
-.header-iconos{
-    position: relative;
-}
-.carrito-compras{
-    position: absolute;
-    top: 2.5rem;
-    right: 0.3rem;
-    width: 25rem;
-    height: fit-content;
-    max-height: 25rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.6rem;
-    display: none;
-}
 ::-webkit-scrollbar {
     width: 12px; /* Ancho de la barra de desplazamiento */
     border-radius: 10px;
@@ -1451,45 +3840,3 @@ a{
 ::-webkit-scrollbar-track {
     background-color: #E5F1D9; /* Color de fondo de la barra de desplazamiento */
 }
-.carrito-productos{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.carrito-productos img{
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-}
-.carrito-compras a{
-    background-color: #83B64D;
-    color: #EEEEEE;
-    padding: 0.2rem 0.5rem;
-    border-radius: 10px;
-    margin: 0;
-}
-.carrito-compras a:hover{
-    color: black;
-}
-.carrito-productos p{
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 0.5rem;
-}
-.realizar-compra{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.realizar-compra p{
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-
-
-
-
-
-
-

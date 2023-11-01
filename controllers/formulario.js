@@ -1,5 +1,6 @@
 const Cliente = require('../models/Cliente')
 const jwt = require('jsonwebtoken')
+const passport = require('passport')
 /* MANEJO DE ERRORES */
 const manejoDeErrores = (err) => {
     console.log(err.message, err.code)
@@ -34,7 +35,7 @@ const signup_post = async (req, res) =>{
         const cliente = await Cliente.create({email, nombreCompleto, usuario, password})
         const token = createToken(cliente._id, cliente.email, cliente.password)
         res.cookie('nuevo_cliente',token,{maxAge: maxAge*1000})
-        res.redirect('/auth/login')  
+        res.render('login')  
     }
     catch(err){
         const errors = manejoDeErrores(err)
@@ -42,9 +43,24 @@ const signup_post = async (req, res) =>{
     }
 }
 
-const login_post = (req, res) =>{
+const login_post = passport.authenticate('local',{
+    failureRedirect:'/auth/signup',
+    successRedirect:'/comidas/all'
+})
+/*     const {email} = req.body
+    
+    try{
+        const cliente = await Cliente.find({email})
+        if(cliente){
+            res.render('home')
+        } else{
+            res.render('signup')
+        }
+    }
+    catch(error){
+        res.status(400).json({error})
+    } */
 
-}
 
 /* METODO GET */
 const signup_get = (req, res) =>{

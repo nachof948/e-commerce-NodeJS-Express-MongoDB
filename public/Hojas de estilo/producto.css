@@ -137,6 +137,72 @@ nav a:focus{
 .registrarse a:hover{
     color: var(--verde-claro);
 }
+/* ===COMPUTADORA O LAPTOP==== */
+@media (max-width:1470px) {
+    nav{
+        gap: 5rem;
+    }
+}
+@media (max-width:1400px) {
+    nav{
+        gap: 4rem;
+    }
+}
+@media (max-width:1300px) {
+    nav{
+        gap: 3rem;
+    }
+    .empresa{
+        font-size: 1.7rem;
+    }
+    .registrarse a{
+        font-size: 1.1rem;
+        padding: 0.7rem 0.9rem;
+    }
+    .header-iconos a{
+        font-size: 1.2rem;
+        padding: 0.5rem 0.6rem;
+    }
+    .perfil{
+        width: 11rem;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:1200px) {
+    nav{
+        gap: 2.5rem;
+    }
+    nav a{
+        font-size: 0.9rem;
+    }
+    .empresa{
+        font-size: 1.5rem;
+    }
+    .registrarse a{
+        font-size: 0.9rem;
+    }
+    .header-iconos a{
+        font-size: 1rem;
+    }
+    .perfil{
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+    /* =====FIN COMPUTADORA O LAPTOP===== */
+    /* ====TABLET===== */
+@media (max-width:1024px) {
+    .menu-responsive{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .header-derecha{
+        display: none;
+    }
+}
+/* ====FIN TABLET===== */
 /*==== FIN HEADER======= */
 
 /*======= PRODUCTO=========== */
@@ -275,39 +341,3 @@ nav a:focus{
     color: rgba(132, 183, 78, 1);
     background-color: transparent;
 }
-
-
-/* Pantallas de hasta 768px */
-@media (max-width: 768px) {
-    .producto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 6rem;
-    }
-
-    .img-producto {
-        width: 27.375rem;
-        height: 27.375rem;
-        border-radius: 50%;
-    }
-}
-
-/* Pantallas de hasta 390px */
-@media (max-width: 390px) {
-    .producto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .img-producto {
-        width: 18.25rem;
-        height: 18.25rem;
-        border-radius: 50%;
-    }
-}
-

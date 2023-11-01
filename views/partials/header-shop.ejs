@@ -2,53 +2,27 @@
 <header style="background-color: rgb(132,183,78);">
     <div class="contenedor-header">
         <a class="empresa" href="/">FOODIED</a>
-        <nav>
-            <a href="/">Inicio</a>
-            <a href="#menuEspecial">Menu</a>
-            <a href="#sobreNosotros">Sobre Nosotros</a>
-            <a href="#contactos">Contacto</a>
-        </nav>
-        <div class="header-derecha">
-            <div class="header-iconos">
-                <a href="#"><i class="bi bi-search"></i></a>
-                <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
-                <div id="carrito-container" class="carrito-compras">
-                <%if(carrito.length > 0){%>
-                    <% let total = 0 %>
-                    <% carrito.forEach(producto => { %>
-                        <div class="carrito-productos">
-                            <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-                            <a href="#">+</a>
-                            <p><%= producto.cantidad %></p>
-                            <a href="#">-</a>
-                            <form action="/productos-carrito/<%=producto.id%>" method="post">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <a type="submit">Eliminar</a>
-                            </form>
-                            <p>$ <%= producto.precio %></p>
-                        </div>
-                        <% total += Number(producto.precio) * Number(producto.cantidad); %>
-                        <% }); %>
-                        <div class="realizar-compra">
-                            <p>Total: <%= total %></p>
-                            <a class="compra" href="#">Comprar</a>
-                        </div>
-                
-                <%
-                }
-                else
-                {
-                %>
-                    <p>No hay productos en el carrito</p>
-                <%    
-                }
-                %>
-                
+        <button id="menuResponsive" class="menu-responsive"><i class="bi bi-list"></i></button>
+        <div class="contenedor-menu-responsive">
+            <nav>
+                <a href="/">Inicio</a>
+                <a href="#menuEspecial">Menu</a>
+                <a href="#sobreNosotros">Sobre Nosotros</a>
+                <a href="#contactos">Contacto</a>
+            </nav>
+            <div class="header-derecha">
+                <div class="header-iconos">
+                    <a href="#"><i class="bi bi-search"></i></a>
+                    <%if (carrito.length > 0) {%>
+                    <a class="bag" href="/compras"><i class="bi bi-bag"></i></a>
+                    <div class="circulo-rojo"></div>
+                    <%}else{%>
+                        <a href="/compras"><i class="bi bi-bag"></i></a>
+                    <%}%>
             </div>
-        </div>
             <%if(user) {%>
                 <div class="perfil">
-                    <img src=<%=user.image%> alt="">
+                    <img src="<%=user.image%>" alt="">
                     <a href="/auth/logout"><%=user.username%></a>
                 </div>
                 <%}else{%>
@@ -56,7 +30,7 @@
                     <a href="/auth/signup">Registarse</a>
                 </div>
             <%}%>
-        
-    </div>
+        </div>
+        </div>
 </div>
 </header>

@@ -3,69 +3,45 @@
 <header id="header">
     <div class="contenedor-header">
         <a class="empresa" href="/">FOODIED</a>
-        <nav>
-            <a href="/">Inicio</a>
-            <a href="#menuEspecial">Menu</a>
-            <a href="#sobreNosotros">Sobre Nosotros</a>
-            <a href="#contactos">Contacto</a>
-        </nav>
-        <div class="header-derecha">
-            <div class="header-iconos">
-                <a href="#"><i class="bi bi-search"></i></a>
-                <button id="carrito" href="#"><i class="bi bi-bag"></i></button>
-                <div id="carrito-container" class="carrito-compras">
-                    <%if(carrito.length > 0){%>
-                        <% let total = 0 %>
-                        <% carrito.forEach(producto => { %>
-                            <div class="carrito-productos">
-                                <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-                                <a href="#">+</a>
-                                <p><%= producto.cantidad %></p>
-                                <a href="#">-</a>
-                                <form action="/productos-carrito/<%=producto.id%>" method="post">
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <a type="submit">Eliminar</a>
-                                </form>
-                                <p>$ <%= producto.precio %></p>
-                            </div>
-                            <% total += Number(producto.precio) * Number(producto.cantidad); %>
-                            <% }); %>
-                            <div class="realizar-compra">
-                                <p>Total: <%= total %></p>
-                                <a class="compra" href="#">Comprar</a>
-                            </div>
-                    
-                    <%
-                    }
-                    else
-                    {
-                    %>
-                        <p>No hay productos en el carrito</p>
-                    <%    
-                    }
-                    %>
+        <button id="menuResponsive" class="menu-responsive"><i class="bi bi-list"></i></button>
+        <div class="contenedor-menu-responsive">
+            <nav>
+                <a href="/">Inicio</a>
+                <a href="#menuEspecial">Menu</a>
+                <a href="#sobreNosotros">Sobre Nosotros</a>
+                <a href="#contactos">Contacto</a>
+            </nav>
+            <div class="header-derecha">
+                <div class="header-iconos">
+                    <a href="#"><i class="bi bi-search"></i></a>
+                    <% if (carrito.length > 0) {%>
+                    <a class="bag" href="/compras"><i class="bi bi-bag"></i></a>
+                    <div class="circulo-rojo"></div>
+                    <%}else{%>
+                        <a href="/compras"><i class="bi bi-bag"></i></a>
+                    <%}%>
+            </div>
+            <%if(user) {%>
+                <div class="perfil">
+                    <img src="<%=user.image%>" alt="">
+                    <a href="/auth/logout"><%=user.username%></a>
                 </div>
+                <%}else{%>
+                <div class="registrarse">
+                    <a href="/auth/signup">Registarse</a>
+                </div>
+            <%}%>
         </div>
-        <%if(user) {%>
-            <div class="perfil">
-                <img src="<%=user.image%>" alt="">
-                <a href="/auth/logout"><%=user.username%></a>
-            </div>
-            <%}else{%>
-            <div class="registrarse">
-                <a href="/auth/signup">Registarse</a>
-            </div>
-        <%}%>
+        </div>
     </div>
-    </div>
-</header>
+</header> 
 
 <main>
     <!-- HERO -->
     <section id="hero" class="hero">
-        <span class="circulo-verde-der"></span>
-        <span class="circulo-verde-izq"></span>
-        <img class="planta-hero" src="imagenes/Planta-Header.png" alt="">
+        <!-- <span class="circulo-verde-der"></span>
+        <span class="circulo-verde-izq"></span> -->
+        <img class="planta-hero" src="imagenes/Hero/Planta-Header.png" alt="">
         <div class="contenedor-hero">
             <div class="swiper swiper-hero">
                 <div class="swiper-wrapper">
@@ -80,12 +56,12 @@
                             </div>
                         </div>
                         <div class="imagenes-hero">
-                            <img class="hero-comida-principal" src="imagenes/Hero-Principal.png" alt="">
-                            <img class="hero-comida-pequeña panqueque" src="imagenes/Panqueques.png" alt="">
-                            <img class="hero-comida-pequeña pancakes" src="imagenes/Pancakes.png" alt="">
-                            <img class="hero-comida-pequeña pescado" src="imagenes/Pescado.jpg" alt="">
-                            <img class="hero-comida-pequeña vegetales" src="imagenes/Arroz.jpg" alt="">
-                            <img class="hero-comida-pequeña arroz" src="imagenes/Vegetales.png" alt="">
+                            <img class="hero-comida-principal" src="imagenes/Hero/Hero-Principal.png" alt="">
+                            <img class="hero-comida-pequeña panqueque" src="imagenes/Hero/Panqueques.png" alt="">
+                            <img class="hero-comida-pequeña pancakes" src="imagenes/Hero/Pancakes.png" alt="">
+                            <img class="hero-comida-pequeña pescado" src="imagenes/Hero/Pescado.jpg" alt="">
+                            <img class="hero-comida-pequeña vegetales" src="imagenes/Hero/Arroz.jpg" alt="">
+                            <img class="hero-comida-pequeña arroz" src="imagenes/Hero/Vegetales.png" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-hero  swiper-no-swiping">
@@ -99,12 +75,12 @@
                             </div>
                         </div>
                         <div class="imagenes-hero">
-                            <img class="hero-comida-principal" src="imagenes/green salad wit 0.png" alt="">
-                            <img class="hero-comida-pequeña panqueque" src="imagenes/Hero-Principal.png" alt="">
-                            <img class="hero-comida-pequeña pancakes" src="imagenes/Pancakes.png" alt="">
-                            <img class="hero-comida-pequeña pescado" src="imagenes/Pescado.jpg" alt="">
-                            <img class="hero-comida-pequeña vegetales" src="imagenes/Arroz.jpg" alt="">
-                            <img class="hero-comida-pequeña arroz" src="imagenes/Panqueques.png" alt="">
+                            <img class="hero-comida-principal" src="imagenes/Hero/green salad wit 0.png" alt="">
+                            <img class="hero-comida-pequeña panqueque" src="imagenes/Hero/salad 1.png" alt="">
+                            <img class="hero-comida-pequeña pancakes" src="imagenes/Hero/salad carrot 1.png" alt="">
+                            <img class="hero-comida-pequeña pescado" src="imagenes/Hero/salad green 1.png" alt="">
+                            <img class="hero-comida-pequeña vegetales" src="imagenes/Hero/salad onion 1.png" alt="">
+                            <img class="hero-comida-pequeña arroz" src="imagenes/Hero/salad tomatoes 1.png" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-hero  swiper-no-swiping">
@@ -118,15 +94,14 @@
                             </div>
                         </div>
                         <div class="imagenes-hero">
-                            <img class="hero-comida-principal" src="imagenes/cheesecake view 1.png" alt="">
-                            <img class="hero-comida-pequeña panqueque" src="imagenes/Panqueques.png" alt="">
-                            <img class="hero-comida-pequeña pancakes" src="imagenes/Pancakes.png" alt="">
-                            <img class="hero-comida-pequeña pescado" src="imagenes/Pescado.jpg" alt="">
-                            <img class="hero-comida-pequeña vegetales" src="imagenes/Hero-Principal.png" alt="">
-                            <img class="hero-comida-pequeña arroz" src="imagenes/Vegetales.png" alt="">
+                            <img class="hero-comida-principal" src="imagenes/Hero/cheesecake view 1.png" alt="">
+                            <img class="hero-comida-pequeña panqueque" src="imagenes/Hero/Panqueques.png" alt="">
+                            <img class="hero-comida-pequeña pancakes" src="imagenes/Hero/Pancakes.png" alt="">
+                            <img class="hero-comida-pequeña pescado" src="imagenes/Hero/cake 1.png" alt="">
+                            <img class="hero-comida-pequeña vegetales" src="imagenes/Hero/cake chocolate 0.png" alt="">
+                            <img class="hero-comida-pequeña arroz" src="imagenes/Hero/cake strawberri 1.png" alt="">
                         </div>
                     </div>
-                   
                 </div>
               
             </div>
@@ -137,34 +112,36 @@
     <!-- FIN HERO -->
 
     <!-- SECCION OPCIONES -->
-        <section id="opciones" class="seccion-opciones">
-            <div class="contenedor-opciones">
-                <% for (let i = 0; i < productos.length && i < 4; i++) { %>
-                    <div class="tarjeta tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                        <img src=<%=productos[i].imgUrl%> alt="">
-                        <div class="tarjeta-textos">
-                            <h2><%=productos[i].nombre%></h2>
-                            <p><%=productos[i].descripcion%></p>
-                            <div class="opciones-comprar">
-                                <p>$<%=productos[i].precio%></p>
-                                <%if (user) {%>
-                                    <form class="comprar-formulario" action="/" method="post">
-                                        <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                        <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                        <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                        <button class="comprar-ahora" type="submit">Comprar Ahora</button>
-                                    </form>
-                                <%}else{%>
-                                    <a href="/auth/signup">Comprar Ahora</a>
-                                <%}%>
-                            </div>
+    <section id="opciones" class="seccion-opciones">
+        <div class="contenedor-opciones">
+            <% for (let i = 0; i < productos.length && i < 4; i++) { %>
+                <div class="tarjeta tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                    <img src=<%=productos[i].imgUrl%> alt="">
+                    <div class="tarjeta-textos">
+                        <h2><%=productos[i].nombre%></h2>
+                        <p><%=productos[i].descripcion%></p>
+                        <div class="opciones-comprar">
+                            <p>$<%=productos[i].precio%></p>
+                            <%if (user) {%>
+                                <form action="/compras/agregar" method="POST">
+                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
+                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                    <button type="submit" class="comprar-ahora">Comprar Ahora</button>
+                                </form>
+                            <%}else{%>
+                                <a href="/auth/signup">Comprar Ahora</a>
+                            <%}%>
                         </div>
                     </div>
-                <%} %>
-            </div>
-        </section>
-        
-        <!-- FIN SECCION OPCIONES -->
+                </div>
+            <%} %>
+        </div>
+    </section>
+    
+    <!-- FIN SECCION OPCIONES -->
+
 
         <!-- ELEGIRNOS -->
         <section class='elegirnos' id="eleginos">
@@ -175,19 +152,19 @@
                 </div>
                 <div class="motivos">
                     <div class="motivo">
-                        <img src="imagenes/icons8-ensalada-64.png" alt=""/>
+                        <img src="imagenes/Elegirnos/icons8-ensalada-64.png" alt=""/>
                         <h2>Comida sana</h2>
                         <p>Aqui servimos comida sana. Usted puede elegir cualquier alimento que le guste.</p>
                     </div>
         
                     <div class="motivo">
-                        <img src="imagenes/icons8-carpeta.svg" alt=""/>
+                        <img src="imagenes/Elegirnos/icons8-carpeta.svg" alt=""/>
                         <h2>La mejor calidad</h2>
                         <p>La calidad de nuestra comida es excelente. Aqui obtendra exactamente lo que desea.</p>
                     </div>
         
                     <div class="motivo">
-                        <img src="imagenes/icons8-fast-delivery-64.png" alt=""/>
+                        <img src="imagenes/Elegirnos/icons8-fast-delivery-64.png" alt=""/>
                         <h2>Entrega rapida</h2>
                         <p>Se puede decir que el principal objetivo de nuestro repartidor es entregar los pedidos rapidamente.</p>
                     </div>
@@ -223,15 +200,18 @@
                                         <div class="precio">
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
-                                        <div class="bolsa">
-                                            <%if (user) {%>
-                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}else{%>
-                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}%>
-                                        </div>
-                                    </div>
-                                    <%}%>
+                                        <%if (user) {%>
+                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%}else{%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%>
+                                            </div>
+                                <%}%>
                             </div>
                             <div class="swiper-slide swiper-slide-especial">
                                 <% for (let i = 7; i < productos.length && i < 10; i++) { %>
@@ -249,14 +229,17 @@
                                         <div class="precio">
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
-                                        <div class="bolsa">
-                                            <%if (user) {%>
-                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}else{%>
-                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}%>
-                                        </div>
-                                    </div>
+                                        <%if (user) {%>
+                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%}else{%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%>
+                                            </div>
                                     <%}%>
                             </div>
                             <div class="swiper-slide swiper-slide-especial">
@@ -275,13 +258,17 @@
                                         <div class="precio">
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
-                                        <div class="bolsa">
-                                            <%if (user) {%>
-                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}else{%>
-                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}%>
-                                        </div>
+                                        <%if (user) {%>
+                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%}else{%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%>
+                                            
                                     </div>
                                     <%}%>
                             </div>
@@ -301,14 +288,17 @@
                                         <div class="precio">
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
-                                        <div class="bolsa">
-                                            <%if (user) {%>
-                                                <a href="/comidas/all"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}else{%>
-                                                <a href="/auth/signup"><img class="bolsasa" src="imagenes/icons8-bolsa-de-compras-45.png"alt=""/></a>
-                                            <%}%>
-                                        </div>
-                                    </div>
+                                        <%if (user) {%>
+                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%}else{%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%>
+                                            </div>
                                     <%}%>
                             </div>
                         </div>
@@ -348,7 +338,12 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <a href="/comidas/all">Comprar Ahora</a>
+                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                            </form>
                                         <%}else{%>
                                             <a href="/auth/signup">Comprar Ahora</a>
                                         <%}%>
@@ -375,7 +370,12 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <a href="/comidas/all">Comprar Ahora</a>
+                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                            </form>
                                         <%}else{%>
                                             <a href="/auth/signup">Comprar Ahora</a>
                                         <%}%>
@@ -402,7 +402,12 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <a href="/comidas/all">Comprar Ahora</a>
+                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                            </form>
                                         <%}else{%>
                                             <a href="/auth/signup">Comprar Ahora</a>
                                         <%}%>
@@ -429,7 +434,12 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <a href="/comidas/all">Comprar Ahora</a>
+                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                            </form>
                                         <%}else{%>
                                             <a href="/auth/signup">Comprar Ahora</a>
                                         <%}%>
@@ -453,9 +463,9 @@
                     <p>A continuación se presentan algunos de nuestros chefs especiales que trabajan para preparar sus comidas.</p>
                 </div>
                 <div class="chefs-img">
-                    <img class="uno" src="imagenes/chef1.png"alt=""/>
-                    <img class="dos" src="imagenes/chef2.png"alt=""/>
-                    <img class="tres" src="imagenes/chef3.png" alt=""/>
+                    <img class="uno" src="imagenes/Chefs/chef1.png"alt=""/>
+                    <img class="dos" src="imagenes/Chefs/chef2.png"alt=""/>
+                    <img class="tres" src="imagenes/Chefs/chef3.png" alt=""/>
                 </div>
             </div>
         </section>
@@ -465,7 +475,9 @@
     <%- include('./partials/footer.ejs') %>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/signup.js"></script>
     <script src="js/swiper.js"></script>
+
     
 </body>
 </html>

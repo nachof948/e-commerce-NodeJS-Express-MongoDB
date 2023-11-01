@@ -9,9 +9,13 @@ const keys = require('./config/keys')
 const connectDB = require('./db/conexion')
 require('dotenv').config()
 const cookieSession = require('cookie-session')
-const passportSetup= require('./config/config')
+const passportGoogle= require('./config/config')
+const passportLocal =require('./config/passport-cliente')
 const passport = require('passport')
 const bodyParser = require('body-parser');
+
+
+
 
 /* PUERTO DEL SERVIDOR */
 const puerto = process.env.PUERTO
@@ -21,7 +25,6 @@ app.set('view engine', 'ejs')
 
 // ACCESO A LOS ARCHIVOS ESTATICOS 
 app.use(express.static('public'))
-
 
 /* COOKIE SESSION */
 app.use(cookieSession({
@@ -44,7 +47,7 @@ app.use(express.urlencoded({extended:false}))
 // CONEXION A LAS RUTAS
 app.use('/', home)
 app.use('/', producto)
-app.use('/', carrito)
+app.use('/compras', carrito)
 app.use('/auth', formulario)
 app.use('/comidas', shop)
 
@@ -58,7 +61,7 @@ const iniciar = async () =>{
         await connectDB(process.env.MONGO_URL)
         app.listen(puerto, console.log(`El servidor se inicio en http://localhost:${puerto}`))
     }catch(error){
-        console.log(error)
+        console.log('Error al conectar con la base de datos',error)
     }
 }
 iniciar()

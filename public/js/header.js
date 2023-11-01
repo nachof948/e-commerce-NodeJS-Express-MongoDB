@@ -1,9 +1,11 @@
 const header = document.getElementById('header');
 const contenedorHeader = document.getElementsByClassName('contenedor-header');
-const badge = document.getElementById('carrito');
-const carrito = document.querySelector(".carrito-compras")
+const buttonResponsive = document.getElementById("menuResponsive");
+const menuResponsive = document.querySelector('.contenedor-menu-responsive');
 
-
+buttonResponsive.addEventListener('click',()=>{
+    menuResponsive.classList.toggle('activo')
+})
 
 
 document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
@@ -12,20 +14,15 @@ document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
       window.location.href = '/producto/' + productoId; // Redirigir a la página del producto
     });
   });
-badge.addEventListener('click', () =>{
-    if(carrito.style.display==='flex'){
-        carrito.style.display ='none'
-    } else{
-        carrito.style.display ='flex'
-    }
-}) 
 
 
-window.addEventListener('scroll', () =>{
-    if(window.scrollY > 1){
-        header.style.backgroundColor = 'rgb(132,183,78)';
-        header.style.padding= '0rem 0rem';
-    }else{
-        header.style.backgroundColor = 'transparent';
+  window.addEventListener('scroll', () => {
+    if (window.innerWidth > 1024) {
+        if (window.scrollY > 1) {
+            header.style.backgroundColor = 'rgb(132,183,78)';
+            header.style.padding = '0rem 0rem';
+        } else {
+            header.style.backgroundColor = 'transparent';
+        }
     }
 })

@@ -3,6 +3,7 @@
         "nombre": "Bife de Res a la Parrilla",
         "descripcion": "Un jugoso bife de res a la parrilla condimentado con hierbas frescas y acompañado de papas asadas y espárragos tiernos.",
         "precio": 5899,
+        "estrellas":80,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Bife%20de%20Res%20a%20la%20Parrilla.png",
@@ -10,11 +11,13 @@
         "rating": 4.5,
         "vendidos": 100,
         "descripcionDetallada": "Prepárate para disfrutar de un exquisito bife de res a la parrilla, cocinado a la perfección para obtener ese punto jugoso y lleno de sabor que tanto te gusta. Nuestros chefs expertos sazonan la carne con una selección de hierbas frescas que realzan su sabor único. Acompañamos este delicioso plato con papas asadas, crocantes por fuera y tiernas por dentro, además de espárragos frescos que aportan un toque de elegancia. Una experiencia culinaria que deleitará tu paladar y te dejará con ganas de más."
+        
         },
         {
         "nombre": "Lasagna Clásica",
         "descripcion": "Nuestra lasagna casera con capas de pasta al huevo, ricota cremosa, carne molida y salsa de tomate, gratinada con queso mozzarella derretido.",
         "precio": 4321,
+        "estrellas":95,
         "vegano": false,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Lasagna%20Clasica.png",
@@ -22,11 +25,13 @@
         "rating": 4.2,
         "vendidos": 90,
         "descripcionDetallada": "Déjate conquistar por nuestra Lasagna Clásica, una obra maestra de la cocina italiana. Capa tras capa de pasta al huevo cocinada a la perfección, se intercalan con ricota cremosa y una sabrosa mezcla de carne molida sazonada con especias secretas. Todo esto es coronado con nuestra salsa de tomate casera, que aporta ese toque de acidez y frescura. Para rematar, gratinamos la lasagna con generosas porciones de queso mozzarella, logrando un dorado irresistible. Cada bocado es una explosión de sabores que te transportará a las cocinas de la bella Italia."
+        
         },
         {
         "nombre": "Pizza BBQ con Pollo",
         "descripcion": "Una pizza gourmet con salsa barbacoa, tierno pollo a la parrilla, cebolla morada y cilantro fresco, coronada con queso cheddar derretido.",
         "precio": 4599,
+        "estrellas":150,
         "vegano": false,
         "categoria": "pizzas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20BBQ%20con%20Pollo.png",
@@ -34,11 +39,13 @@
         "rating": 4.3,
         "vendidos": 120,
         "descripcionDetallada": "Nuestra Pizza BBQ con Pollo es un festín para los amantes de los sabores audaces. Comienza con una base de salsa barbacoa, rica y ligeramente ahumada, que sirve como lienzo para los ingredientes estrella. El pollo a la parrilla, jugoso y lleno de sabor, se combina con cebolla morada que aporta un toque picante y cilantro fresco que añade una nota herbácea. Pero la verdadera estrella es el queso cheddar derretido, que cubre la pizza con su cremosidad irresistible. Cada bocado es una explosión de sabores que te dejará anhelando el próximo."
+        
         },
         {
         "nombre": "Ensalada César",
         "descripcion": "Crujientes hojas de lechuga romana mezcladas con aderezo césar casero, croutons de ajo y lascas de queso parmesano.",
         "precio": 2899,
+        "estrellas":136,
         "vegano": false,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20Cesar.png",
@@ -46,11 +53,13 @@
         "rating": 4.0,
         "vendidos": 70,
         "descripcionDetallada": "Nuestra Ensalada César es una explosión de texturas y sabores que te transportará al corazón de la cocina mediterránea. Las crujientes hojas de lechuga romana se combinan a la perfección con nuestro aderezo césar casero, que aporta un equilibrio exquisito de notas ácidas y cremosas. Los croutons de ajo, crujientes por fuera y tiernos por dentro, aportan un contraste delicioso. Para coronar, generosas lascas de queso parmesano añaden un toque salado y umami. Cada bocado es una experiencia gastronómica que te dejará con una sonrisa en el rostro."
+        
         },
         {
         "nombre": "Sopa de Champiñones",
         "descripcion": "Una sopa cremosa de champiñones frescos, cocida a fuego lento con cebolla caramelizada y ajo, coronada con cebollín picado.",
         "precio": 2499,
+        "estrellas":,
         "vegano": true,
         "categoria": "sopas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Champi%C3%B1ones.png",
@@ -58,11 +67,13 @@
         "rating": 4.7,
         "vendidos": 80,
         "descripcionDetallada": "Sumérgete en el reconfortante abrazo de nuestra Sopa de Champiñones, una deliciosa mezcla de sabores y texturas. Utilizamos champiñones frescos, cocidos a fuego lento con cebolla caramelizada y ajo, para crear una base rica y cremosa. La mezcla de aromas es simplemente irresistible. Para rematar, coronamos la sopa con cebollín picado, que aporta un toque fresco y vibrante. Cada cucharada es una experiencia reconfortante que te hará volver por más."
+        
         },
         {
         "nombre": "Sushi de Salmón y Palta",
         "descripcion": "Finas rebanadas de salmón fresco y palta cremosa envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y wasabi.",
         "precio": 3899,
+        "estrellas":,
         "vegano": false,
         "categoria": "sushi",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Salmon%20y%20Palta.png",
@@ -70,11 +81,13 @@
         "rating": 4.6,
         "vendidos": 110,
         "descripcionDetallada": "Nuestro Sushi de Salmón y Palta es una oda a la frescura y la armonía de sabores. Finas rebanadas de salmón fresco se combinan con la cremosidad de la palta, envueltas en alga nori y arroz sazonado con maestría. Cada bocado es una explosión de texturas y sabores que te transportará a las costas del Pacífico. Acompañamos este festín con salsa de soya para un toque salado y wasabi para un toque picante. Prepárate para una experiencia culinaria inolvidable."
+        
         },
         {
         "nombre": "Tarta de Manzana",
         "descripcion": "Una deliciosa tarta de manzana con una base de masa hojaldrada y relleno de manzanas caramelizadas, espolvoreada con canela y azúcar glas.",
         "precio": 3199,
+        "estrellas":,
         "vegano": true,
         "categoria": "dulces",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Manzana.png",
@@ -82,11 +95,13 @@
         "rating": 4.4,
         "vendidos": 130,
         "descripcionDetallada": "Nuestra Tarta de Manzana es un homenaje a la clásica y reconfortante combinación de manzanas y canela. La base de masa hojaldrada, crujiente y dorada, sirve como lecho para un relleno generoso de manzanas caramelizadas, tiernas y llenas de sabor. Para rematar, espolvoreamos con canela y azúcar glas, creando una capa de dulzura y aroma irresistibles. Cada bocado es un deleite para los sentidos, una experiencia que evoca los sabores de la infancia y te deja con una sensación de satisfacción plena."
+        
         },
         {
         "nombre": "Fideos con Albóndigas",
         "descripcion": "Fideos al dente servidos con albóndigas jugosas y salsa de tomate casera, espolvoreados con queso parmesano rallado.",
         "precio": 3452,
+        "estrellas":,
         "vegano": false,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Fideos%20con%20Albondigas.png",
@@ -94,11 +109,13 @@
         "rating": 4.1,
         "vendidos": 100,
         "descripcionDetallada": "Prepárate para disfrutar de una experiencia reconfortante con nuestros Fideos con Albóndigas. Los fideos al dente se combinan con albóndigas jugosas y una salsa de tomate casera, cocinada a fuego lento para obtener ese sabor auténtico. Para rematar, espolvoreamos con generosas cantidades de queso parmesano rallado, que se derrite sobre la pasta creando una capa de sabor irresistible. Cada bocado es una explosión de sabores que te dejará con una sensación de plenitud y satisfacción."
+        
         },
         {
         "nombre": "Hamburguesa Vegetariana",
         "descripcion": "Una sabrosa hamburguesa vegetariana a base de garbanzos, acompañada de lechuga fresca, tomate y mayonesa vegana, servida en pan integral.",
         "precio": 3125,
+        "estrellas":,
         "vegano": true,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20Vegetariana.png",
@@ -106,11 +123,13 @@
         "rating": 4.2,
         "vendidos": 70,
         "descripcionDetallada": "Nuestra Hamburguesa Vegetariana es una explosión de sabores y texturas para satisfacer hasta el paladar más exigente. Está elaborada a base de garbanzos, cuidadosamente seleccionados y sazonados para obtener una mezcla sabrosa y nutritiva. La hamburguesa se complementa con lechuga fresca y tomate, que aportan un contraste crujiente y refrescante. Para los amantes de lo vegano, la mayonesa utilizada es 100% vegana. Todo esto es servido en un suave pan integral que completa esta experiencia culinaria única."
+        
         },
         {
         "nombre": "Pizza Vegana de Verduras",
         "descripcion": "Una deliciosa pizza vegana con una mezcla de champiñones, pimientos, cebolla y aceitunas negras, cubierta con queso vegano derretido.",
         "precio": 3699,
+        "estrellas":,
         "vegano": true,
         "categoria": "pizzas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Vegana.png",
@@ -118,11 +137,13 @@
         "rating": 4.3,
         "vendidos": 90,
         "descripcionDetallada": "Nuestra Pizza Vegana de Verduras es un festín de colores y sabores que deleitará hasta a los paladares más exigentes. La base de masa crujiente sirve como lienzo para una generosa mezcla de champiñones, pimientos, cebolla y aceitunas negras, que aportan una explosión de sabores y texturas. Pero la estrella de esta pizza es el queso vegano derretido, que completa esta experiencia culinaria con su cremosidad irresistible. Prepárate para un viaje de sabores sin igual."
+        
         },
         {
         "nombre": "Ensalada de Quinoa y Garbanzos",
         "descripcion": "Una ensalada nutritiva con quinoa cocida, garbanzos, pepino, tomate y aguacate, aliñada con vinagreta de limón y comino.",
         "precio": 2860,
+        "estrellas":,
         "vegano": true,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Quinoa%20y%20Garbanzos.png",
@@ -130,11 +151,13 @@
         "rating": 4.4,
         "vendidos": 80,
         "descripcionDetallada": "Nuestra Ensalada de Quinoa y Garbanzos es mucho más que una simple ensalada, es una explosión de nutrientes y sabores que revitalizará tu paladar. La quinoa cocida se combina con garbanzos, pepino, tomate y aguacate, creando una mezcla equilibrada de texturas y sabores. Para realzar el conjunto, hemos preparado una vinagreta de limón y comino que aporta un toque cítrico y aromático. Cada bocado es una celebración de la frescura y la nutrición, una experiencia que te dejará con una sensación de bienestar."
+        
         },
         {
         "nombre": "Sopa de Tomate y Albahaca",
         "descripcion": "Una sopa reconfortante de tomate maduro y albahaca fresca, servida con croutons de pan y una pizca de queso parmesano.",
         "precio": 2550,
+        "estrellas":,
         "vegano": true,
         "categoria": "sopas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Tomate%20y%20Albahaca.png",
@@ -142,11 +165,13 @@
         "rating": 4.5,
         "vendidos": 100,
         "descripcionDetallada": "Sumérgete en la reconfortante calidez de nuestra Sopa de Tomate y Albahaca, una combinación clásica que nunca pasa de moda. Utilizamos tomates maduros de la más alta calidad, cocidos a fuego lento para intensificar su sabor natural. La albahaca fresca añade un toque de frescura y aroma, elevando esta sopa a otro nivel. La experiencia se completa con croutons de pan crujientes y una pizca de queso parmesano, que aporta un toque salado y umami. Cada cucharada es un bocado de consuelo y satisfacción."
+        
         },
         {
         "nombre": "Sushi Vegano de Palta y Pepino",
         "descripcion": "Rolls de sushi rellenos de palta y pepino fresco, envueltos en alga nori y arroz sazonado, acompañados de salsa de soya y jengibre encurtido.",
         "precio": 3399,
+        "estrellas":,
         "vegano": true,
         "categoria": "sushi",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20Vegano%20de%20Palta%20y%20Pepino.png",
@@ -154,11 +179,13 @@
         "rating": 4.3,
         "vendidos": 90,
         "descripcionDetallada": "Nuestro Sushi Vegano de Palta y Pepino es una celebración de la frescura y la simplicidad. Los rolls de sushi están rellenos de palta y pepino fresco, envueltos en alga nori y arroz sazonado con maestría. Esta combinación crea una experiencia de sabor equilibrada y deliciosa. Acompañamos este festín con salsa de soya para un toque salado y jengibre encurtido que añade un toque picante y aromático. Prepárate para una experiencia culinaria que deleitará tus sentidos."
+        
         },
         {
           "nombre": "Crema de Calabacín",
           "descripcion": "Una cremosa sopa de calabacín con un toque de nuez moscada, servida con picatostes de pan crujiente.",
           "precio": 2499,
+          "estrellas":,
           "vegano": false,
           "categoria": "sopas",
           "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Crema%20de%20Calabac%C3%ADn.png",
@@ -167,10 +194,12 @@
           "vendidos": 110,
           "descripcionDetallada": "La Crema de Calabacín es una opción reconfortante y llena de sabor. Esta cremosa sopa combina la suavidad del calabacín con un toque de nuez moscada que resalta su sabor. Se sirve con picatostes de pan crujiente que añaden un contraste textural. Una elección perfecta para una comida reconfortante y sabrosa."
         },
+          
         {
           "nombre": "Canelones de Carne",
           "descripcion": "Canelones rellenos de una mezcla de carne molida, espinacas y ricota, cubiertos con bechamel y gratinados con queso parmesano.",
           "precio": 3920,
+          "estrellas":,
           "vegano": false,
           "categoria": "pastas",
           "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Canelones%20de%20Carne.png",
@@ -179,11 +208,13 @@
           "vendidos": 70,
           "descripcionDetallada": "Los Canelones de Carne son una opción reconfortante y sabrosa para los amantes de la pasta. Están rellenos de una mezcla deliciosa de carne molida, espinacas y ricota, que proporciona una combinación de sabores y texturas. Cubiertos con bechamel y gratinados con queso parmesano, ofrecen una capa dorada y cremosa que complementa perfectamente el relleno. Un plato clásico de la cocina italiana que nunca pasa de moda."
         },
+          
         
     {
         "nombre": "Tarta de Limón Vegana",
         "descripcion": "Una tarta refrescante de limón sin productos de origen animal, con una base de galleta y un relleno suave y ácido.",
         "precio": 3150,
+        "estrellas":,
         "vegano": true,
         "categoria": "dulces",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Lim%C3%B3n%20Vegana.png",
@@ -192,10 +223,12 @@
         "vendidos": 90,
         "descripcionDetallada": "Nuestra Tarta de Limón Vegana es una explosión de sabor cítrico y frescura en cada bocado. La base de galleta proporciona un contraste crujiente y dulce, complementando a la perfección el relleno suave y ácido de limón. Esta delicia no contiene productos de origen animal, lo que la hace apta para veganos. Cada porción es una experiencia refrescante y deliciosa que deleitará tu paladar."
       },
+        
       {
         "nombre": "Pechuga de Pollo a la Parrilla",
         "descripcion": "Jugosa pechuga de pollo marinada y cocinada a la parrilla, acompañada de puré de papas y espárragos al vapor.",
         "precio": 5499,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pechuga%20de%20Pollo%20a%20la%20Parrilla.png",
@@ -204,10 +237,12 @@
         "vendidos": 140,
         "descripcionDetallada": "Nuestra Pechuga de Pollo a la Parrilla es una experiencia culinaria que combina jugosidad y sabor en cada bocado. La pechuga de pollo se marina cuidadosamente para realzar su sabor y se cocina a la parrilla para obtener ese característico aroma ahumado. Se sirve acompañada de un cremoso puré de papas y espárragos al vapor, creando un equilibrio perfecto entre sabores y texturas. Esta opción no es apta para veganos, pero es una delicia para los amantes de la carne."
       },
+        
       {
         "nombre": "Fettuccine Alfredo",
         "descripcion": "Fettuccine frescos bañados en una cremosa salsa Alfredo con manteca y parmesano, adornados con perejil picado.",
         "precio": 3890,
+        "estrellas":,
         "vegano": false,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Fettuccine%20Alfredo.png",
@@ -216,10 +251,12 @@
         "vendidos": 120,
         "descripcionDetallada": "Nuestros Fettuccine Alfredo son una oda a la indulgencia y la cremosidad. Los fettuccine frescos se bañan en una lujosa salsa Alfredo preparada con manteca y queso parmesano, creando una textura suave y sedosa que envuelve cada hebra de pasta. El plato se completa con perejil picado para un toque de frescura. Esta opción es una delicia para los amantes de los sabores ricos y reconfortantes."
       },
+        
       {
         "nombre": "Pizza Vegetariana",
         "descripcion": "Una colorida pizza con pimientos, champiñones, cebolla y aceitunas negras, cubierta con queso mozzarella derretido.",
         "precio": 4199,
+        "estrellas":,
         "vegano": true,
         "categoria": "pizzas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Vegetariana.png",
@@ -228,10 +265,12 @@
         "vendidos": 130,
         "descripcionDetallada": "Nuestra Pizza Vegetariana es una explosión de colores y sabores frescos. Pimientos, champiñones, cebolla y aceitunas negras se combinan armoniosamente sobre una base de salsa de tomate, creando un festín visual y gustativo. La generosa capa de queso mozzarella derretido aporta cremosidad y un toque salado. Esta opción es apta para veganos y es una delicia para todos los amantes de la pizza."
       },
+        
       {
         "nombre": "Ensalada de Espinacas y Arándanos",
         "descripcion": "Espinacas frescas mezcladas con arándanos, nueces tostadas y queso feta, aliñadas con vinagreta de frambuesa.",
         "precio": 2999,
+        "estrellas":,
         "vegano": false,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Espinacas%20y%20Ar%C3%A1ndanos.png",
@@ -240,10 +279,12 @@
         "vendidos": 100,
         "descripcionDetallada": "Nuestra Ensalada de Espinacas y Arándanos es una combinación perfecta de frescura y sabor. Las espinacas frescas se mezclan con arándanos jugosos, nueces tostadas y queso feta para crear una sinfonía de texturas y sabores. La vinagreta de frambuesa aporta un toque agridulce que realza el conjunto. Cada bocado es una experiencia de sabor equilibrada y deliciosa."
       },
+        
       {
         "nombre": "Sushi de Pez Mantequilla",
         "descripcion": "Finas rebanadas de pez mantequilla fresco y aguacate cremoso envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y jengibre encurtido.",
         "precio": 4599,
+        "estrellas":,
         "vegano": false,
         "categoria": "sushi",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Pez%20Mantequilla.png",
@@ -252,10 +293,12 @@
         "vendidos": 120,
         "descripcionDetallada": "Nuestro Sushi de Pez Mantequilla es una obra maestra de frescura y sabor. Las finas rebanadas de pez mantequilla se combinan con aguacate cremoso para crear una explosión de texturas y sabores. Envuelto en alga nori y arroz sazonado, cada bocado es una experiencia de fusión culinaria. Se sirve con salsa de soya y jengibre encurtido para un toque final de autenticidad."
       },
+        
       {
         "nombre": "Tarta de Frutillas",
         "descripcion": "Una tentadora tarta con una base de masa quebrada, rellena de frutillas frescas y cubierta con una capa de gelatina brillante.",
         "precio": 3299,
+        "estrellas":,
         "vegano": true,
         "categoria": "dulces",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Frutillas.png",
@@ -264,10 +307,12 @@
         "vendidos": 130,
         "descripcionDetallada": "Nuestra Tarta de Frutillas es una oda a la frescura y la dulzura natural. La base de masa quebrada proporciona un contraste crujiente que complementa a la perfección el relleno de frutillas frescas y jugosas. La capa de gelatina brillante realza el color y sabor de las frutillas. Esta delicia es apta para veganos y es el postre perfecto para cualquier ocasión especial."
       },
+        
       {
         "nombre": "Canelones de Carne",
         "descripcion": "Canelones rellenos de una mezcla de carne molida, espinacas y ricota, cubiertos con bechamel y gratinados con queso parmesano.",
         "precio": 3920,
+        "estrellas":,
         "vegano": false,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Canelones%20de%20Carne.png",
@@ -276,10 +321,12 @@
         "vendidos": 70,
         "descripcionDetallada": "Nuestros Canelones de Carne son una deliciosa combinación de sabores y texturas. Los canelones están rellenos de una mezcla sabrosa de carne molida, espinacas y ricota, que aportan una combinación perfecta de proteínas y verduras. Cubiertos con bechamel y gratinados con queso parmesano, cada bocado es una experiencia de indulgencia y satisfacción."
       },
+        
       {
         "nombre": "Hamburguesa de Garbanzos",
         "descripcion": "Una jugosa hamburguesa a base de garbanzos, aderezada con hierbas mediterráneas, acompañada de ensalada de pepino y tahini.",
         "precio": 2999,
+        "estrellas":,
         "vegano": true,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Garbanzos.png",
@@ -288,10 +335,12 @@
         "vendidos": 80,
         "descripcionDetallada": "Nuestra Hamburguesa de Garbanzos es una explosión de sabores y nutrientes en cada bocado. Está elaborada con garbanzos cuidadosamente cocidos y sazonados con hierbas mediterráneas que realzan su sabor único. Se sirve con una refrescante ensalada de pepino y una cremosa salsa de tahini. Cada bocado es una experiencia satisfactoria que te hará olvidar que estás disfrutando de una opción vegana."
       },
+        
       {
         "nombre": "Pizza Margherita con Tomates Cherry",
         "descripcion": "Una variante de la clásica pizza Margherita con tomates cherry, albahaca fresca y mozzarella de búfala.",
         "precio": 3599,
+        "estrellas":,
         "vegano": false,
         "categoria": "pizzas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20Margherita%20con%20Tomates%20Cherry.png",
@@ -300,10 +349,12 @@
         "vendidos": 120,
         "descripcionDetallada": "Nuestra Pizza Margherita con Tomates Cherry es una reinterpretación fresca y vibrante de la clásica receta. Los tomates cherry aportan un estallido de sabor dulce y ácido, que se complementa con la suavidad de la mozzarella de búfala y el aroma de la albahaca fresca. Esta pizza es una verdadera celebración de los sabores mediterráneos."
       },
+        
       {
         "nombre": "Ensalada Griega",
         "descripcion": "Una ensalada tradicional con pepino, tomate, aceitunas Kalamata, queso feta y orégano, aliñada con aceite de oliva.",
         "precio": 2860,
+        "estrellas":,
         "vegano": false,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20Griega.png",
@@ -312,10 +363,12 @@
         "vendidos": 100,
         "descripcionDetallada": "Nuestra Ensalada Griega es una verdadera oda a los sabores mediterráneos. El pepino crujiente, los tomates jugosos, las aceitunas Kalamata, el queso feta y el toque de orégano se combinan en una sinfonía de sabores frescos y auténticos. Todo ello es aliñado con el mejor aceite de oliva para una experiencia de sabor inolvidable."
       },
+        
       {
         "nombre": "Sopa de Calabaza y Zanahoria",
         "descripcion": "Una reconfortante sopa de zapallo y zanahoria con un toque de jengibre, servida con crocantes picatostes de pan.",
         "precio": 2650,
+        "estrellas":,
         "vegano": true,
         "categoria": "sopas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Calabaza%20y%20Zanahoria.png",
@@ -324,10 +377,12 @@
         "vendidos": 90,
         "descripcionDetallada": "Nuestra Sopa de Calabaza y Zanahoria es una caricia cálida para el alma. La cremosa mezcla de zapallo y zanahoria se realza con un toque de jengibre que aporta una nota de frescura y calidez. Se sirve con crocantes picatostes de pan que añaden un contraste delicioso en textura. Cada cucharada es una experiencia de confort y sabor reconfortante."
       },
+        
       {
         "nombre": "Sushi de Tempura de Vegetales",
         "descripcion": "Rolls de sushi con tempura de vegetales variados, palta y mayonesa picante, envueltos en alga nori y arroz sazonado.",
         "precio": 3399,
+        "estrellas":,
         "vegano": true,
         "categoria": "sushi",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Tempura%20de%20Vegetales.png",
@@ -336,10 +391,12 @@
         "vendidos": 110,
         "descripcionDetallada": "Nuestro Sushi de Tempura de Vegetales es una explosión de sabores y texturas en cada bocado. Los vegetales variados se envuelven en una ligera tempura que aporta un contraste crujiente y sabroso. La palta y la mayonesa picante añaden cremosidad y un toque picante al roll. Envuelto en alga nori y arroz sazonado, cada bocado es una fiesta para el paladar."
       },
+        
       {
         "nombre": "Tarta de Chocolate y Avellanas",
         "descripcion": "Una irresistible tarta de chocolate y avellanas con una base de galleta y un centro cremoso de avellanas.",
         "precio": 3299,
+        "estrellas":,
         "vegano": true,
         "categoria": "dulces",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Chocolate%20y%20Avellanas.png",
@@ -348,10 +405,12 @@
         "vendidos": 130,
         "descripcionDetallada": "Nuestra Tarta de Chocolate y Avellanas es una tentación para los amantes del chocolate. La base de galleta proporciona un contraste crujiente que complementa a la perfección el centro cremoso de avellanas y chocolate. Cada bocado es una experiencia de sabor rico, indulgente y simplemente irresistible. Además, es apta para veganos, lo que la convierte en una opción para todos los amantes del chocolate."
       },
+        
       {
         "nombre": "Pasta Primavera",
         "descripcion": "Pasta al dente mezclada con una variedad de vegetales frescos salteados en aceite de oliva y ajo, espolvoreada con queso parmesano.",
         "precio": 3120,
+        "estrellas":,
         "vegano": false,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pasta%20Primavera.png",
@@ -360,10 +419,12 @@
         "vendidos": 100,
         "descripcionDetallada": "Nuestra Pasta Primavera es una celebración de la frescura y simplicidad de la cocina italiana. La pasta al dente se mezcla con una variedad de vegetales frescos salteados en aceite de oliva y ajo, creando una sinfonía de sabores y colores. El queso parmesano rallado añade un toque de sabor y cremosidad a este plato lleno de vitalidad."
       },
+        
       {
         "nombre": "Hamburguesa de Portobello",
         "descripcion": "Una suculenta hamburguesa a base de hongo Portobello a la parrilla, acompañada de rúcula y mayonesa de ajo.",
         "precio": 2999,
+        "estrellas":,
         "vegano": true,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Portobello.png",
@@ -372,10 +433,12 @@
         "vendidos": 95,
         "descripcionDetallada": "Esta hamburguesa de Portobello es una opción deliciosa y saludable para los amantes de los hongos. El hongo Portobello se cocina a la parrilla, realzando su sabor único y textura suculenta. Se sirve en un pan fresco y se acompaña de rúcula fresca para un toque de sabor y una mayonesa de ajo que le da un toque cremoso y aromático. Es una opción perfecta para quienes buscan una alternativa vegana y llena de sabor."
       },
+        
       {
         "nombre": "Pizza de Pera y Gorgonzola",
         "descripcion": "Una pizza gourmet con peras caramelizadas, queso gorgonzola y nueces tostadas, sobre una base de salsa de tomate.",
         "precio": 3699,
+        "estrellas":,
         "vegano": true,
         "categoria": "pizzas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20de%20Pera%20y%20Gorgonzola.png",
@@ -384,10 +447,12 @@
         "vendidos": 105,
         "descripcionDetallada": "Esta pizza es una experiencia gourmet para los amantes de sabores complejos y contrastantes. Las peras caramelizadas aportan un toque dulce y suave que se combina perfectamente con el queso gorgonzola, conocido por su sabor intenso y ligeramente picante. Las nueces tostadas añaden un crujido delicioso. Todo esto se asienta sobre una base de salsa de tomate que equilibra los sabores. Una opción vegana que sorprenderá a tu paladar."
       },
+        
       {
         "nombre": "Ensalada de Espárragos y Huevo",
         "descripcion": "Espárragos tiernos cocidos al vapor con huevo poché, tomate cherry y vinagreta de mostaza y miel.",
         "precio": 2999,
+        "estrellas":,
         "vegano": false,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Esparragos%20y%20Huevo.png",
@@ -396,10 +461,12 @@
         "vendidos": 95,
         "descripcionDetallada": "Esta ensalada combina la frescura de los espárragos tiernos cocidos al vapor con la suavidad del huevo poché, creando una mezcla de texturas y sabores única. Los tomates cherry aportan un toque de acidez y color vibrante. Todo esto se adereza con una vinagreta de mostaza y miel que realza los sabores de cada ingrediente. Una opción no vegana perfecta para una comida ligera y nutritiva."
       },
+        
       {
         "nombre": "Crema de Espárragos",
         "descripcion": "Una deliciosa crema de espárragos verdes con un toque de crema fresca, servida con picatostes de pan integral.",
         "precio": 2499,
+        "estrellas":,
         "vegano": false,
         "categoria": "sopas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Crema%20de%20Esparragos.png",
@@ -408,10 +475,12 @@
         "vendidos": 70,
         "descripcionDetallada": "Esta crema de espárragos verdes es una opción reconfortante y llena de sabor. Los espárragos se cocinan a la perfección y se combinan con una crema fresca que le da una textura suave y cremosa. Se sirve con picatostes de pan integral para un toque crujiente. Esta sopa es una excelente elección para comenzar una comida o como plato principal para una experiencia reconfortante."
       },
+        
       {
         "nombre": "Sushi de Salmón y Mango",
         "descripcion": "Finas rebanadas de salmón fresco y mango dulce envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y wasabi.",
         "precio": 3899,
+        "estrellas":,
         "vegano": false,
         "categoria": "sushi",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Salmon%20y%20Mango.png",
@@ -420,10 +489,12 @@
         "vendidos": 115,
         "descripcionDetallada": "Este sushi combina la frescura del salmón fresco con el dulzor del mango, creando una explosión de sabores en cada bocado. Todo está cuidadosamente envuelto en alga nori y arroz sazonado, proporcionando una textura equilibrada. Se sirve con salsa de soya y wasabi para un toque adicional de sabor. Una opción perfecta para los amantes del sushi y los sabores exóticos."
       },
+        
       {
         "nombre": "Tarta de Frambuesas",
         "descripcion": "Una exquisita tarta con una base de masa quebrada, rellena de frambuesas frescas y cubierta con una capa de gelatina brillante.",
         "precio": 3199,
+        "estrellas":,
         "vegano": true,
         "categoria": "dulces",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Frambuesas.png",
@@ -432,10 +503,12 @@
         "vendidos": 110,
         "descripcionDetallada": "Esta tarta es una verdadera delicia para los amantes de los postres. La base de masa quebrada aporta una textura crujiente que contrasta perfectamente con la suavidad de las frambuesas frescas. La capa de gelatina brillante añade un toque de elegancia y realza el sabor de la fruta. Una opción vegana que te dejará con ganas de más."
       },
+        
       {
         "nombre": "Rigatoni con Salsa de Champiñones",
         "descripcion": "Rigatoni al dente en una cremosa salsa de champiñones frescos, espolvoreados con queso parmesano rallado.",
         "precio": 3450,
+        "estrellas":,
         "vegano": true,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Rigatoni%20con%20Salsa%20de%20Champi%C3%B1ones.png",
@@ -444,10 +517,12 @@
         "vendidos": 100,
         "descripcionDetallada": "Esta pasta es una opción reconfortante y llena de sabor. Los rigatoni se cocinan al dente y se mezclan con una cremosa salsa de champiñones frescos, que aporta un sabor terroso y delicioso. Se termina con queso parmesano rallado para un toque de salinidad y complejidad. Una opción vegana que satisfará tu paladar con cada bocado."
       },
+        
       {
         "nombre": "Hamburguesa de Garbanzos y Espinacas",
         "descripcion": "Una jugosa hamburguesa a base de garbanzos, espinacas y especias, acompañada de hummus y ensalada de pepino.",
         "precio": 3120,
+        "estrellas":,
         "vegano": true,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Garbanzos%20y%20Espinacas.png",
@@ -456,10 +531,12 @@
         "vendidos": 95,
         "descripcionDetallada": "Esta hamburguesa a base de garbanzos y espinacas es una opción sabrosa y nutritiva para aquellos que buscan una alternativa vegana. Los garbanzos y las espinacas se combinan con una selección de especias que realzan el sabor. Se sirve con hummus para un extra de cremosidad y una ensalada de pepino para un toque refrescante. Una opción deliciosa para satisfacer tu apetito."
       },
+        
       {
         "nombre": "Pizza de Higos y Queso de Cabra",
         "descripcion": "Una pizza gourmet con higos frescos, queso de cabra y miel, sobre una base de salsa de tomate.",
         "precio": 3990,
+        "estrellas":,
         "vegano": false,
         "categoria": "pizzas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pizza%20de%20Higos%20y%20Queso%20de%20Cabra.png",
@@ -468,10 +545,12 @@
         "vendidos": 105,
         "descripcionDetallada": "Esta pizza es una verdadera joya para los amantes de los sabores sofisticados. Los higos frescos aportan un toque de dulzura que se complementa perfectamente con el queso de cabra, conocido por su sabor suave y cremoso. La miel añade un toque de indulgencia, mientras que la base de salsa de tomate equilibra los sabores. Una opción no vegana que te transportará a un mundo de sabores exquisitos."
       },
+        
       {
         "nombre": "Ensalada Caprese",
         "descripcion": "Rodajas de tomate y mozzarella fresca intercaladas, aderezadas con albahaca fresca y aceite de oliva virgen extra.",
         "precio": 2899,
+        "estrellas":,
         "vegano": false,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20Caprese.png",
@@ -480,10 +559,12 @@
         "vendidos": 100,
         "descripcionDetallada": "Esta ensalada es una celebración de sabores simples y frescos. Las rodajas de tomate y mozzarella se combinan en capas, intercaladas con hojas de albahaca fresca que aportan un aroma delicioso. Todo se adereza con un generoso chorro de aceite de oliva virgen extra que realza los sabores naturales de los ingredientes. Una opción clásica que nunca pasa de moda."
       },
+        
       {
         "nombre": "Sopa de Lentejas",
         "descripcion": "Una reconfortante sopa de lentejas con zanahoria, cebolla y ajo, sazonada con comino y pimentón ahumado.",
         "precio": 2550,
+        "estrellas":,
         "vegano": true,
         "categoria": "sopas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sopa%20de%20Lentejas.png",
@@ -492,10 +573,12 @@
         "vendidos": 80,
         "descripcionDetallada": "Esta sopa de lentejas es una experiencia reconfortante y llena de sabor. Las lentejas se cocinan a la perfección con zanahoria, cebolla y ajo, creando una base rica y aromática. El comino y el pimentón ahumado añaden profundidad de sabor. Es una opción vegana que te llenará de energía y satisfacción en cada cucharada."
       },
+        
       {
         "nombre": "Sushi de Atún y Palta",
         "descripcion": "Finas rebanadas de atún fresco y palta cremosa envueltas en alga nori y arroz sazonado, acompañadas de salsa de soya y wasabi.",
         "precio": 4299,
+        "estrellas":,
         "vegano": false,
         "categoria": "sushi",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Sushi%20de%20Atun%20%20y%20Palta.png",
@@ -504,10 +587,12 @@
         "vendidos": 125,
         "descripcionDetallada": "Este sushi es una deliciosa combinación de sabores y texturas. El atún fresco aporta un sabor intenso y la palta cremosa proporciona un contraste suave y cremoso. Todo está envuelto en alga nori y arroz sazonado, creando una experiencia equilibrada. Se sirve con salsa de soya y wasabi para un toque adicional de sabor. Una opción imprescindible para los amantes del sushi."
       },
+        
       {
         "nombre": "Tarta de Manzana y Caramelo",
         "descripcion": "Una deliciosa tarta de manzana con una base de masa brisa y un relleno de manzanas caramelizadas, bañada en una irresistible salsa de caramelo.",
         "precio": 3499,
+        "estrellas":,
         "vegano": true,
         "categoria": "dulces",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Tarta%20de%20Manzana%20y%20Caramelo.png",
@@ -516,10 +601,12 @@
         "vendidos": 110,
         "descripcionDetallada": "Esta tarta de manzana es una verdadera obra maestra de la repostería. La base de masa brisa aporta una textura crujiente que contrasta maravillosamente con el relleno de manzanas caramelizadas, que aportan un sabor dulce y almibarado. La salsa de caramelo baña cada bocado en indulgencia. Una opción vegana que te transportará a un mundo de sabores reconfortantes."
       },
+        
       {
         "nombre": "Ravioles de Espinacas y Ricotta",
         "descripcion": "Ravioles rellenos de espinacas frescas y ricotta cremosa, bañados en una delicada salsa de manteca y salvia, espolvoreados con queso parmesano rallado.",
         "precio": 3599,
+        "estrellas":,
         "vegano": false,
         "categoria": "pastas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ravioles%20de%20Espinacas%20y%20Ricotta.png",
@@ -528,10 +615,12 @@
         "vendidos": 105,
         "descripcionDetallada": "Estos ravioles son una experiencia de sabor sublime. El relleno de espinacas frescas y ricotta cremosa aporta una textura suave y un sabor delicioso. La salsa de manteca y salvia es delicada y realza los sabores. El queso parmesano rallado añade un toque final de salinidad y complejidad. Una opción perfecta para los amantes de la pasta fresca y sabrosa."
       },
+        
       {
         "nombre": "Costillas de Cerdo a la Barbacoa",
         "descripcion": "Tiernas costillas de cerdo glaseadas con salsa barbacoa casera, servidas con ensalada de repollo y papas fritas.",
         "precio": 6299,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Costillas%20de%20Cerdo%20a%20la%20Barbacoa.png",
@@ -540,10 +629,12 @@
         "vendidos": 135,
         "descripcionDetallada": "Estas costillas de cerdo son una verdadera delicia para los amantes de la carne. Están tiernamente glaseadas con una salsa barbacoa casera que aporta un sabor ahumado y delicioso. Se sirven con una ensalada de repollo refrescante y papas fritas crujientes. Una opción que te dejará con ganas de repetir."
       },
+        
       {
         "nombre": "Chuletas de Cerdo con Salsa de Manzana",
         "descripcion": "Chuletas de cerdo a la parrilla bañadas en una salsa agridulce de manzana y canela, acompañadas de puré de batata.",
         "precio": 5799,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Chuletas%20de%20Cerdo%20con%20Salsa%20de%20Manzana.png",
@@ -552,10 +643,12 @@
         "vendidos": 125,
         "descripcionDetallada": "Estas chuletas de cerdo son una explosión de sabores agridulces. La salsa de manzana y canela aporta una mezcla deliciosa de dulzura y especias que complementa perfectamente la carne a la parrilla. El puré de batata añade un toque reconfortante y delicioso. Una opción que te dejará con un sabor inolvidable en cada bocado."
       },
+        
       {
         "nombre": "Pechuga de Pollo al Limón",
         "descripcion": "Pechuga de pollo a la parrilla bañada en una salsa de limón y hierbas frescas, servida con arroz basmati y espárragos al vapor.",
         "precio": 5120,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Pechuga%20de%20Pollo%20al%20Limon.png",
@@ -564,10 +657,12 @@
         "vendidos": 110,
         "descripcionDetallada": "Esta pechuga de pollo es una explosión de sabores cítricos y frescos. La salsa de limón y hierbas frescas realza el sabor de la carne a la parrilla, creando una experiencia deliciosa y aromática. Se sirve con arroz basmati que absorbe los sabores y espárragos al vapor para un toque saludable. Una opción que te dejará con una sensación de satisfacción y ligereza."
       },
+        
       {
         "nombre": "Chuletas de Cerdo Glaseadas",
         "descripcion": "Chuletas de cerdo glaseadas con una mezcla de miel y mostaza, acompañadas de puré de batata y brócoli al vapor.",
         "precio": 5499,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Chuletas%20de%20Cerdo%20Glaseadas.png",
@@ -576,10 +671,12 @@
         "vendidos": 105,
         "descripcionDetallada": "Estas chuletas de cerdo glaseadas son una verdadera delicia para los amantes de sabores agridulces. La mezcla de miel y mostaza crea un glaseado que carameliza las chuletas, aportando un equilibrio perfecto entre dulzura y picante. Se sirven con puré de batata cremoso y brócoli al vapor para una combinación irresistible de sabores y texturas."
       },
+        
       {
         "nombre": "Filete de Ternera con Salsa de Champiñones",
         "descripcion": "Filete de ternera a la parrilla con una rica salsa de champiñones y cebolla caramelizada, servido con puré de papas y espárragos a la manteca.",
         "precio": 6320,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Filete%20de%20Ternera%20con%20Salsa%20de%20Champi%C3%B1ones.png",
@@ -588,10 +685,12 @@
         "vendidos": 130,
         "descripcionDetallada": "Este filete de ternera es una experiencia culinaria de lujo. La carne a la parrilla es tierna y jugosa, complementada a la perfección por una rica salsa de champiñones y cebolla caramelizada. El puré de papas cremoso y los espárragos a la manteca añaden un toque reconfortante. Una opción que te hará disfrutar de sabores intensos y deliciosos."
       },
+        
       {
         "nombre": "Muslos de Pollo Asados con Hierbas",
         "descripcion": "Muslos de pollo asados con una mezcla de hierbas mediterráneas, acompañados de papas asadas y zanahorias glaseadas.",
         "precio": 4980,
+        "estrellas":,
         "vegano": false,
         "categoria": "carnes",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Muslos%20de%20Pollo%20Asados%20con%20Hierbas.png",
@@ -600,10 +699,12 @@
         "vendidos": 115,
         "descripcionDetallada": "Estos muslos de pollo asados son una verdadera fiesta de sabores mediterráneos. La mezcla de hierbas aporta aromas y sabores intensos que realzan la jugosidad de la carne. Las papas asadas y las zanahorias glaseadas complementan el plato con una textura crujiente y un sabor dulce y almibarado. Una opción que te transportará a las costas del Mediterráneo en cada bocado."
       },
+        
       {
         "nombre": "Hamburguesa BBQ con Panceta",
         "descripcion": "Una jugosa hamburguesa de carne de res a la parrilla con panceta crujiente, cebolla caramelizada y salsa barbacoa, servida en pan de hamburguesa tostado.",
         "precio": 4799,
+        "estrellas":,
         "vegano": false,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20BBQ%20con%20Panceta.png",
@@ -612,10 +713,12 @@
         "vendidos": 125,
         "descripcionDetallada": "La Hamburguesa BBQ con Panceta es una explosión de sabores y texturas. La carne de res jugosa y sabrosa se combina a la perfección con la panceta crujiente y la cebolla caramelizada, creando una experiencia de sabor inigualable. La salsa barbacoa añade un toque ahumado y delicioso. Todo esto se sirve en un pan de hamburguesa tostado que complementa perfectamente los sabores intensos del relleno."
       },
+        
       {
         "nombre": "Hamburguesa de Pollo con Palta",
         "descripcion": "Una deliciosa hamburguesa de pechuga de pollo a la parrilla con rodajas de palta fresca, lechuga y mayonesa de chipotle, servida en pan integral.",
         "precio": 4320,
+        "estrellas":,
         "vegano": false,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Pollo%20con%20Palta.png",
@@ -624,10 +727,12 @@
         "vendidos": 110,
         "descripcionDetallada": "La Hamburguesa de Pollo con Palta es una opción deliciosa y saludable. La pechuga de pollo a la parrilla es tierna y jugosa, y se combina con las rodajas de palta fresca que aportan un toque cremoso y refrescante. La lechuga y la mayonesa de chipotle añaden un contraste de texturas y sabores. Todo esto se sirve en un pan integral que agrega un toque nutritivo al plato."
       },
+        
       {
         "nombre": "Hamburguesa de Ternera con Queso Azul",
         "descripcion": "Una hamburguesa de ternera a la parrilla con queso azul derretido, cebolla morada y mayonesa de mostaza dijon, servida en pan brioche.",
         "precio": 4980,
+        "estrellas":,
         "vegano": false,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20de%20Ternera%20con%20Queso%20Azul.png",
@@ -636,10 +741,12 @@
         "vendidos": 100,
         "descripcionDetallada": "La Hamburguesa de Ternera con Queso Azul es una opción para los amantes de los sabores intensos. La carne de ternera a la parrilla es jugosa y se combina perfectamente con el queso azul derretido que aporta un sabor fuerte y delicioso. La cebolla morada y la mayonesa de mostaza dijon añaden un toque adicional de sabor y complejidad. Todo esto se sirve en un suave pan brioche que complementa la intensidad de los ingredientes."
     },
+      
     {
         "nombre": "Hamburguesa de Garbanzos",
         "descripcion": "Una sabrosa hamburguesa vegetariana a base de garbanzos y especias, acompañada de lechuga fresca, tomate y mayonesa vegana, servida en pan integral.",
         "precio": 4120,
+        "estrellas":,
         "vegano": true,
         "categoria": "hamburguesas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Hamburguesa%20Vegetariana%20de%20Garbanzos.png",
@@ -648,10 +755,12 @@
         "vendidos": 105,
         "descripcionDetallada": "La Hamburguesa Vegetariana de Garbanzos es una opción deliciosa y nutritiva. Está hecha a base de garbanzos y especias que aportan un sabor auténtico y sabroso. Se combina con lechuga fresca y tomate para un toque refrescante, y se complementa con mayonesa vegana para un extra de cremosidad. Todo esto se sirve en un pan integral que agrega un toque saludable y satisfactorio al plato."
     },
+      
     {
         "nombre": "Ensalada de Quinoa y Berros",
         "descripcion": "Una ensalada nutritiva con quinoa cocida, berros, tomate cherry y pepino, aliñada con vinagreta de limón y aceite de oliva.",
         "precio": 2890,
+        "estrellas":,
         "vegano": true,
         "categoria": "ensaladas",
         "imgUrl": "https://raw.githubusercontent.com/nachof948/imagenes-ecommerce/main/Ensalada%20de%20Quinoa%20y%20Berros.png",
@@ -660,4 +769,5 @@
         "vendidos": 84,
         "descripcionDetallada": "La Ensalada de Quinoa y Berros es una opción nutritiva y llena de sabor. La quinoa cocida aporta proteínas y textura, mientras que los berros, tomate cherry y pepino aportan frescura y color."
     }
+      
 ]
