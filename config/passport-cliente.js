@@ -3,13 +3,13 @@ const LocalStrategy = require('passport-local').Strategy
 const Cliente = require('../models/Cliente')
 
 
-passport.serializeUser((user, done)=>{
-    done(null, user.id)
+passport.serializeUser((usuario, done)=>{
+    done(null, usuario.id)
 })
 
 passport.deserializeUser((id, done)=>{
-    Cliente.findById(id,(error, user)=>{
-        done(error, user)
+    Cliente.findById(id,(error, usuario)=>{
+        done(error, usuario)
     })
 })
 
