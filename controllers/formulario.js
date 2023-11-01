@@ -1,5 +1,6 @@
 const Cliente = require('../models/Cliente')
 const jwt = require('jsonwebtoken')
+const passport = require('passport')
 /* MANEJO DE ERRORES */
 const manejoDeErrores = (err) => {
     console.log(err.message, err.code)
@@ -34,7 +35,7 @@ const signup_post = async (req, res) =>{
         const cliente = await Cliente.create({email, nombreCompleto, usuario, password})
         const token = createToken(cliente._id, cliente.email, cliente.password)
         res.cookie('nuevo_cliente',token,{maxAge: maxAge*1000})
-        res.redirect('/login')  
+        res.render('login')  
     }
     catch(err){
         const errors = manejoDeErrores(err)
@@ -42,8 +43,11 @@ const signup_post = async (req, res) =>{
     }
 }
 
-const login_post = async (req, res) =>{
-    const {email} = req.body
+const login_post = passport.authenticate('local',{
+    failureRedirect:'/auth/signup',
+    successRedirect:'/'
+})
+/*     const {email} = req.body
     
     try{
         const cliente = await Cliente.find({email})
@@ -52,12 +56,11 @@ const login_post = async (req, res) =>{
         } else{
             res.render('signup')
         }
-        
     }
     catch(error){
         res.status(400).json({error})
-    }
-}
+    } */
+
 
 /* METODO GET */
 const signup_get = (req, res) =>{
@@ -66,6 +69,7 @@ const signup_get = (req, res) =>{
 
 const login_get = (req, res) =>{
     res.render('login', {user:req.user})
+    console.log('Usuario logeado')
 }
 const logout_get = (req, res) =>{
     req.logOut()
