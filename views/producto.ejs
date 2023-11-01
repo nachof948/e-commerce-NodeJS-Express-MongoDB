@@ -73,11 +73,6 @@
                         <option value="MEDIANA">MEDIANA</option>
                         <option value="GRANDE">GRANDE</option>
                         </select>
-                        <div class="input-group">
-                            <button type="button" class="menos">-</button>
-                                <input class="cantidad" type="number" id="cantidad" name="cantidad" min="0" max="100" step="1">
-                            <button type="button" class="mas">+</button>
-                        </div>
                         <%if (user) {%>
                             <form class="comprar" action="/compras/agregar" method="POST">
                                 <input type="hidden" name="nombre" value="<%=producto.nombre%>">
