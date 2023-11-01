@@ -45,7 +45,7 @@ const signup_post = async (req, res) =>{
 
 const login_post = passport.authenticate('local',{
     failureRedirect:'/auth/signup',
-    successRedirect:'/'
+    successRedirect:'/comidas/all'
 })
 /*     const {email} = req.body
     
@@ -69,7 +69,6 @@ const signup_get = (req, res) =>{
 
 const login_get = (req, res) =>{
     res.render('login', {user:req.user})
-    console.log('Usuario logeado')
 }
 const logout_get = (req, res) =>{
     req.logOut()
