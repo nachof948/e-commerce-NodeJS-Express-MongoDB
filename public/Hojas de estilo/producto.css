@@ -138,7 +138,7 @@ nav a:focus{
     color: var(--verde-claro);
 }
 /* ===COMPUTADORA O LAPTOP==== */
-@media (max-width:1470px) {
+/*@media (max-width:1470px) {
     nav{
         gap: 5rem;
     }
@@ -188,10 +188,10 @@ nav a:focus{
         width: 10rem;
         font-size: 1rem;
     }
-}
+}*/
     /* =====FIN COMPUTADORA O LAPTOP===== */
     /* ====TABLET===== */
-@media (max-width:1024px) {
+/*@media (max-width:1024px) {
     .menu-responsive{
         display: block;
     }
@@ -201,7 +201,7 @@ nav a:focus{
     .header-derecha{
         display: none;
     }
-}
+}*/
 /* ====FIN TABLET===== */
 /*==== FIN HEADER======= */
 
@@ -217,17 +217,21 @@ nav a:focus{
     width: 36.5rem;
     height: 36.5rem;
     border-radius: 50%;
+    align-items: center;
+}
+
+.segundo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
 }
 /* ========FIN PRODUCTO======= */
 
 
 /*-----------------------------------------------*/
-.segundo{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1rem;
-}
+
 .nombre-producto{
     font-size: 2.8rem;
 }
@@ -341,3 +345,261 @@ nav a:focus{
     color: rgba(132, 183, 78, 1);
     background-color: transparent;
 }
+
+
+/* --------RESPONSIVE---------------*/
+
+@media (min-width:1801px) and (max-width:1920px){
+    .producto{
+        width: 98%; 
+        margin-left: -200px;  
+        gap: 20rem;  
+    }
+    .img-producto{
+        width: 25rem;
+        height: 25rem;
+    }
+    .segundo{
+        width: 45%;
+    }
+    .texto{
+        width: 60%;
+    }
+}
+
+@media (min-width:1601px) and (max-width:1800px){
+    .img-producto{
+        width: 22rem;
+        height: 22rem;
+    }  
+}
+
+@media (min-width:1401px) and (max-width:1600px){
+    .producto{
+        margin-left: -1px; 
+        margin-top: 2rem;
+    }
+
+    .segundo{
+        margin-top: -4rem;
+        margin-left: 10rem;
+        
+    }
+    .img-producto{
+        width: 20rem;
+        height: 20rem;
+        margin-top: -5rem;
+        margin-left: -10rem;
+    }
+    
+    .nombre-producto{
+        font-size: 2.5rem;
+        margin-bottom: -1rem;
+    }
+    
+    .precio-producto{
+        font-size: 2.2rem;
+        margin-top: -1rem;
+    }
+    .texto{
+        font-size: 0.9rem;
+    }
+    .opciones{
+        width: 9rem;
+        height: 2.2rem;
+        margin-top: -0.5rem;
+        letter-spacing: 3px;  
+     }
+     .input-group{
+         margin-top: -0.5rem; 
+         height: 2rem; 
+     }
+     
+}
+
+@media (min-width:1280px) and (max-width:1400px){
+    .segundo{
+        margin-left: 5rem;
+    }
+    .img-producto{
+        width: 19rem;
+        height: 19rem;
+        margin-left: -7rem;
+    }          
+}
+
+@media (min-width:1080px) and (max-width:1279px){
+    .img-producto{
+        width: 18rem;
+        height: 18rem;
+        margin-left: -10rem;
+    }
+}
+
+@media (min-width:951px) and (max-width:1079px){
+    .producto{
+        margin-top: 1rem;
+    }
+    .img-producto{
+        width: 16rem;
+        height: 16rem;
+        margin-left: -15rem;
+    }
+    .texto{
+        font-size: 0.7rem;
+    }
+}
+@media (min-width:886px) and (max-width:950px){
+    .img-producto{
+        width: 15rem;
+        height: 15rem;
+        margin-left: -14rem;
+    }
+    .texto{
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+}
+
+@media (min-width:791px) and (max-width:885px){
+    .segundo{
+        gap: 0.5rem;
+    }
+    .img-producto{
+        width: 15rem;
+        height: 15rem;
+        margin-left: -14rem;
+    }
+    .nombre-producto{
+        font-size: 2.7rem;
+    }
+    .texto{
+        font-size: 0.6rem;
+        line-height: 0.9rem;
+    }
+}
+@media (min-width:627px) and (max-width:790px){
+    .img-producto{
+        width: 13rem;
+        height: 13rem;
+        margin-top: -4rem;
+        margin-left: -16rem;
+    }
+    .segundo{
+        margin-left: -3rem;
+        margin-top: -3rem;
+        gap: 0.4rem;
+    }
+    .nombre-producto{
+        font-size: 2.3rem;
+    }
+    .precio-producto{
+        font-size: 1.9rem;
+    }
+    .texto{
+        font-size: 0.59rem;
+        line-height: 0.8rem;
+    }
+     .miniEstrella{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    .alfa p{
+        font-size: 0.7rem;
+    }
+    .beta p{
+        font-size: 0.7rem;
+    }
+}
+@media (min-width:481px) and (max-width:626px){
+    .img-producto{
+        width: 10rem;
+        height: 10rem;
+        margin-top: -4rem;
+        margin-left: -18rem;
+    }
+    .segundo{
+        margin-left: -3rem;
+        margin-top: -3rem;
+        gap: 0.2rem;
+    }
+    .nombre-producto{
+        font-size: 1.9rem;
+    }
+    .precio-producto{
+        font-size: 1.5rem;
+    }
+    .texto{
+        font-size: 0.55rem;
+        line-height: 0.8rem;
+    }
+     .miniEstrella{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .alfa p{
+        font-size: 0.6rem;
+    }
+    .beta p{
+        font-size: 0.6rem;
+    }
+    .opciones{
+        width: 9rem;
+        height: 1.3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 3px;  
+     }
+     .segundo a{
+        padding: 0.8rem 1.8rem;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        
+     }
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .producto{
+        display: flex;
+        flex-direction: column; 
+    }
+    .img-producto{
+        width: 10rem;
+        height: 10rem;
+        margin-top: -3rem;
+        margin-left: -20rem;
+
+    }
+    .segundo{
+        margin-top: -3rem;
+        margin-left: -16.5rem;
+    }
+    
+    .nombre-producto{
+        font-size: 1.9rem;
+        margin-bottom: -1rem;
+    }
+    
+    .precio-producto{
+        font-size: 1.4rem;
+        margin-top: -1rem;
+    }
+    .texto{
+        width: 85%;
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+    }
+    .opciones{
+        width: 9rem;
+        height: 1.3rem;
+        margin-top: -0.5rem;
+        letter-spacing: 3px;  
+     }
+     
+     .segundo a{
+        padding: 0.8rem 1.8rem;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        
+     }
+    }
