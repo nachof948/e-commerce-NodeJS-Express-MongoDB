@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #E5F1D9;
+}
+h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+.volver-inicio{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    background-color: #84B74E;
+    padding: 0.6rem 1rem;
+    border-radius: 19px;
+    border:1px solid #84B74E ;
+    transition: all 250ms;
+}
+.volver-inicio:hover{
+    background-color: transparent;
+    color: #84B74E;
+}
+.nombre{
+    font-size: 2.5rem;
+}
+.contenedor-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.verificado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recuadro{
+    background-color: #84B74E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    border-radius: 40px;
+}
+.titulo{
+    font-size: 3rem;
+}
+    .gracias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 3rem;
+    }
+.verificado img{
+    margin-right: 0.5rem;
+}
+
+/* MEDIA-QUERIES */
+@media (max-width:860px) {
+    h2{
+        font-size: 1.6rem;
+    }
+    .recuadro{
+        padding: 2.5rem;
+    }
+}
+@media (max-width:769px) {
+    h2{
+        font-size: 1.4rem;
+    }
+    .recuadro{
+        padding: 2rem;
+    }
+    .titulo{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:669px) {
+    h2{
+        font-size: 1.2rem;
+    }
+    .recuadro{
+        padding: 1rem;
+        border-radius: 25px;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+    .volver-inicio{
+        font-size: 1.2rem;
+        padding: 0.6rem 1rem;
+    }
+    .nombre{
+        font-size: 2.2rem;
+    }
+    .verificado img{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+}
+@media (max-width:565px) {
+    h2{
+        font-size: 1rem;
+    }
+    .recuadro{
+        padding: 0.8rem;
+    }
+    .titulo{
+        font-size: 1.7rem;
+    }
+    .volver-inicio{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:485px) {
+    h2{
+        font-size: 0.9rem;
+    }
+    .recuadro{
+        padding: 0.7rem;
+    }
+    .titulo{
+        font-size: 1.6rem;
+    }
+    .volver-inicio{
+        font-size: 1.1rem;
+    }
+    .nombre{
+        font-size: 2rem;
+    }
+    .gracias{
+        padding-top: 2.5rem;
+    }
+}
+@media (max-width:431px) {
+    h2{
+        font-size: 0.8rem;
+    }
+    .recuadro{
+        padding: 0.4rem;
+    }
+    .titulo{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:375px) {
+    h2{
+        font-size: 0.75rem;
+    }
+    .recuadro{
+        padding: 0.3rem;
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+    .volver-inicio{
+        font-size: 1rem;
+    }
+}
+/* FIN MEDIA-QUERIES */

@@ -11,6 +11,9 @@ const mostrarCarrito= async(req, res) => {
     }
 }
 
+
+
+
 /* AGREGAR PRODUCTOS AL CARRITO */
 const agregarProductos = async (req, res) => {
     const nombre = req.body.nombre
@@ -71,9 +74,21 @@ const eliminarProductos = async (req, res) => {
     }
 }
 
+const comprarProductos = async (req, res) => {
+    try {
+        const comprar = await Carrito.deleteMany({});
+        console.log('Operación de eliminación exitosa:', comprar);
+        res.render('compra')
+    } catch (error) {
+        console.error('Error al eliminar documentos de la colección Carrito:', error);
+        // Puedes manejar el error de alguna manera, como renderizando una página de error.
+    }
+}
+
 module.exports ={
     mostrarCarrito,
     agregarProductos,
     modificarProductos,
-    eliminarProductos
+    eliminarProductos,
+    comprarProductos
 }

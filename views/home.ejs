@@ -1,40 +1,6 @@
 <%- include('./partials/head.ejs') -%>
     
-<header id="header">
-    <div class="contenedor-header">
-        <a class="empresa" href="/">FOODIED</a>
-        <button id="menuResponsive" class="menu-responsive"><i class="bi bi-list"></i></button>
-        <div class="contenedor-menu-responsive">
-            <nav>
-                <a href="/">Inicio</a>
-                <a href="#menuEspecial">Menu</a>
-                <a href="#sobreNosotros">Sobre Nosotros</a>
-                <a href="#contactos">Contacto</a>
-            </nav>
-            <div class="header-derecha">
-                <div class="header-iconos">
-                    <a href="#"><i class="bi bi-search"></i></a>
-                    <% if (carrito.length > 0) {%>
-                    <a class="bag" href="/compras"><i class="bi bi-bag"></i></a>
-                    <div class="circulo-rojo"></div>
-                    <%}else{%>
-                        <a href="/compras"><i class="bi bi-bag"></i></a>
-                    <%}%>
-            </div>
-            <%if(user) {%>
-                <div class="perfil">
-                    <img src="<%=user.image%>" alt="">
-                    <a href="/auth/logout"><%=user.username%></a>
-                </div>
-                <%}else{%>
-                <div class="registrarse">
-                    <a href="/auth/signup">Registarse</a>
-                </div>
-            <%}%>
-        </div>
-        </div>
-    </div>
-</header> 
+<%- include('./partials/header.ejs') -%> 
 
 <main>
     <!-- HERO -->
@@ -130,9 +96,9 @@
                                     <input type="hidden" name="precio" value="<%=productos[i].precio%>">
                                     <button type="submit" class="comprar-ahora">Comprar Ahora</button>
                                 </form>
-                            <%}else{%>
+                            <%} else {%>
                                 <a href="/auth/signup">Comprar Ahora</a>
-                            <%}%>
+                            <%}%>    
                         </div>
                     </div>
                 </div>
@@ -201,15 +167,16 @@
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
                                                 <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
                                             </form>
-                                        <%}else{%>
+                                        <%} else {%>
                                             <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                        <%}%>
+                                        <%}%> 
                                             </div>
                                 <%}%>
                             </div>
@@ -230,15 +197,16 @@
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
                                                 <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
                                             </form>
-                                        <%}else{%>
+                                        <%} else {%>
                                             <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                        <%}%>
+                                        <%}%> 
                                             </div>
                                     <%}%>
                             </div>
@@ -259,15 +227,16 @@
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
                                                 <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
                                             </form>
-                                        <%}else{%>
+                                        <%}else {%>
                                             <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                        <%}%>
+                                        <%}%> 
                                             
                                     </div>
                                     <%}%>
@@ -289,15 +258,16 @@
                                             <p>$<%=productos[i].precio%></p>
                                         </div>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario bolsa" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
                                                 <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
                                             </form>
-                                        <%}else{%>
+                                        <%}else {%>
                                             <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                        <%}%>
+                                        <%}%> 
                                             </div>
                                     <%}%>
                             </div>
@@ -338,15 +308,16 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                                <button type="submit" class="comprar-ahora">Comprar Ahora</button>
                                             </form>
-                                        <%}else{%>
+                                        <%}else {%>
                                             <a href="/auth/signup">Comprar Ahora</a>
-                                        <%}%>
+                                        <%}%> 
                                     </div>
                                 </div>
                             </div>
@@ -370,15 +341,16 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                                <button type="submit" class="comprar-ahora">Comprar Ahora</button>
                                             </form>
-                                        <%}else{%>
+                                        <%}else {%>
                                             <a href="/auth/signup">Comprar Ahora</a>
-                                        <%}%>
+                                        <%}%> 
                                     </div>
                                 </div>
                             </div>
@@ -402,15 +374,16 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                                <button type="submit" class="comprar-ahora">Comprar Ahora</button>
                                             </form>
-                                        <%}else{%>
+                                        <%} else {%>
                                             <a href="/auth/signup">Comprar Ahora</a>
-                                        <%}%>
+                                        <%}%> 
                                     </div>
                                 </div>
                             </div>
@@ -434,15 +407,16 @@
                                     <div class="opciones-comprar-habitual">
                                         <p>$<%=productos[i].precio%></p>
                                         <%if (user) {%>
-                                            <form class="comprar-formulario" action="/compras/agregar" method="POST">
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
                                                 <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
                                                 <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
                                                 <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                <button class="comprar-ahora" type="submit">Comprar Ahora</button>
+                                                <button type="submit" class="comprar-ahora">Comprar Ahora</button>
                                             </form>
-                                        <%}else{%>
+                                        <%}else {%>
                                             <a href="/auth/signup">Comprar Ahora</a>
-                                        <%}%>
+                                        <%}%> 
                                     </div>
                                 </div>
                             </div>

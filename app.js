@@ -5,15 +5,14 @@ const home = require('./routes/home')
 const shop = require('./routes/shop')
 const carrito = require('./routes/carrito')
 const producto = require('./routes/producto')
+const compra = require('./routes/compra')
 const keys = require('./config/keys')
 const connectDB = require('./db/conexion')
 require('dotenv').config()
 const cookieSession = require('cookie-session')
 const passportGoogle= require('./config/config')
-const passportLocal =require('./config/passport-cliente')
 const passport = require('passport')
 const bodyParser = require('body-parser');
-
 
 
 
@@ -46,10 +45,11 @@ app.use(express.urlencoded({extended:false}))
 
 // CONEXION A LAS RUTAS
 app.use('/', home)
-app.use('/', producto)
+app.use('/producto', producto)
 app.use('/compras', carrito)
 app.use('/auth', formulario)
 app.use('/comidas', shop)
+app.use('/', compra)
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

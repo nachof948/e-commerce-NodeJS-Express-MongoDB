@@ -115,23 +115,39 @@ nav a:focus{
 .header-iconos button:hover{
     color: var(--verde-claro);
 }
+.perfil-cliente{
+    border: none;
+    background-color: var(--blanco);
+    padding: 0.4rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.perfil-cliente i{
+    position: relative;
+    font-size: 1.6rem;
+    right: 0.25rem;
+}
+.perfil-cliente:hover i{
+   color: #779e4c;
+}
 .perfil{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 13rem;
+    width: fit-content;
     text-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.3rem;
+    text-align: center;
     border: none;
     background-color: var(--blanco);
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 0.5rem;
     border-radius: 25px;
     cursor: pointer;
     transition: all 200ms ease;
-    margin: 0;
 }
 .perfil img{
     border-radius: 50%;

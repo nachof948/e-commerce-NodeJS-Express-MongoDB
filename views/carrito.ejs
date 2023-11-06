@@ -59,7 +59,9 @@
                         <div class="realizar-compra">
                             <div class="comprar-carrito">
                                 <p>Total:$<%= total %></p>
-                                <a class="compra" href="#">Comprar</a>
+                                <form action="/compra-realizada" method="post">
+                                    <button class="compra">Comprar</button>
+                                </form>
                             </div>
                             <div>
                                 <a class="explorar" href="/comidas/all">Explorar mas</a>

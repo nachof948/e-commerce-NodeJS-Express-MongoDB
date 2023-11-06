@@ -223,6 +223,22 @@ section{
     align-items: center;
     gap: 1.5rem;
 }
+.comprar-carrito button{
+    background-color: #83B64D;
+    color: #EEEEEE;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 250ms;
+    border: 2px solid #83B64D;
+    transition: all 250ms;
+}
+.comprar-carrito button:hover{
+    background-color: transparent;
+    color: #83B64D;
+}
 .buscar-productos{
     display: flex;
     flex-direction: column;
@@ -253,10 +269,54 @@ section{
     color: #010101;
 }
 
+/* MEDIA-QUERIES */
+@media (max-width:736px) {
+    .carrito-titulo{
+        font-size: 3.5rem;
+    }
+    .mensaje-carrito{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:610px) {
+    .carrito-titulo{
+        font-size: 3rem;
+    }
+    .mensaje-carrito{
+        font-size: 2rem;
+    }
+    .buscar-productos a{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:486px) {
+    .carrito-titulo{
+        font-size: 2.5rem;
+    }
+    .mensaje-carrito{
+        font-size: 1.5rem;
+    }
+    .buscar-productos a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:365px) {
+    .carrito-titulo{
+        font-size: 2rem;
+    }
+    .mensaje-carrito{
+        font-size: 1.2rem;
+    }
+    .buscar-productos a{
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+/* FIN MEDIA-QUERIS */
 
 
 
 
 
 
-/* ====FIN ARRITO DE COMPRAS===== */
+/* ====FIN CARRITO DE COMPRAS===== */
