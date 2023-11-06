@@ -206,6 +206,7 @@ section{
     border: 2px solid black;
     padding: 0.5rem;
     font-size: 2rem;
+    text-wrap: nowrap;
 }
 .realizar-compra{
     display: flex;
@@ -270,7 +271,88 @@ section{
 }
 
 /* MEDIA-QUERIES */
+@media (max-width:1250px) {
+    .carrito-productos{
+        gap: 6rem;
+    }
+}
+@media (max-width:1154px) {
+    .carrito-productos{
+        gap: 5rem;
+    }
+    .carrito-productos img{
+        width: 10.5rem;
+        height: 10rem;
+    }
+    .carrito-compras a{
+        font-size: 1.8rem;
+    }
+    .carrito-productos p{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:1012px) {
+    .carrito-productos{
+        gap: 4rem;
+    }
+    .carrito-productos img{
+        width: 9.5rem;
+        height: 9rem;
+    }
+    .carrito-compras a{
+        font-size: 1.6rem;
+    }
+    .carrito-productos p{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:876px) {
+    .carrito-productos{
+        gap: 3rem;
+    }
+    .carrito-productos img{
+        width: 7.5rem;
+        height: 6.9rem;
+    }
+    .carrito-compras a{
+        font-size: 1.4rem;
+    }
+    .carrito-productos p{
+        font-size: 1.4rem;
+    }
+    .realizar-compra p{
+        font-size: 1.7rem;
+    }
+    .comprar-carrito button{
+        font-size: 1.7rem;
+    }
+    .realizar-compra .explorar{
+        font-size: 1.7rem;
+    }
+}
 @media (max-width:736px) {
+    .carrito-productos{
+        gap: 2.2rem;
+    }
+    .carrito-productos img{
+        width: 6.5rem;
+        height: 5.9rem;
+    }
+    .carrito-compras a{
+        font-size: 1.2rem;
+    }
+    .carrito-productos p{
+        font-size: 1.2rem;
+    }
+    .realizar-compra p{
+        font-size: 1.5rem;
+    }
+    .comprar-carrito button{
+        font-size: 1.5rem;
+    }
+    .realizar-compra .explorar{
+        font-size: 1.5rem;
+    }
     .carrito-titulo{
         font-size: 3.5rem;
     }
@@ -279,6 +361,28 @@ section{
     }
 }
 @media (max-width:610px) {
+    .carrito-productos{
+        gap: 1.8rem;
+    }
+    .carrito-productos img{
+        width: 5.5rem;
+        height: 4.9rem;
+    }
+    .carrito-compras a{
+        font-size: 1.2rem;
+    }
+    .carrito-productos p{
+        font-size: 1.2rem;
+    }
+    .realizar-compra p{
+        font-size: 1.3rem;
+    }
+    .comprar-carrito button{
+        font-size: 1.3rem;
+    }
+    .realizar-compra .explorar{
+        font-size: 1.3rem;
+    }
     .carrito-titulo{
         font-size: 3rem;
     }
@@ -289,7 +393,58 @@ section{
         font-size: 1.3rem;
     }
 }
+@media (max-width:544px) {
+    .carrito-productos{
+        gap: 1.2rem;
+    }
+    .carrito-productos img{
+        width: 4.5rem;
+        height: 4rem;
+    }
+    .carrito-compras a{
+        font-size: 1rem;
+    }
+    .carrito-productos p{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .realizar-compra p{
+        font-size: 1.1rem;
+    }
+    .comprar-carrito button{
+        font-size: 1.1rem;
+        padding: 0.2rem 0.4rem;
+    }
+    .realizar-compra .explorar{
+        font-size: 1.1rem;
+    }
+}
 @media (max-width:486px) {
+    .carrito-productos{
+        gap: 0.8rem;
+        margin-top: 2rem;
+    }
+    .carrito-compras a{
+        font-size: 1rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 5px;
+    }
+    .carrito-productos p{
+        font-size: 1rem;
+    }
+    .realizar-compra p{
+        font-size: 1.1rem;
+    }
+    .comprar-carrito button{
+        font-size: 1.1rem;
+        padding: 0.2rem 0.4rem;
+    }
+    .realizar-compra{
+        margin-top: 1rem;
+    }
+    .realizar-compra .explorar{
+        font-size: 1.1rem;
+    }
     .carrito-titulo{
         font-size: 2.5rem;
     }
@@ -301,6 +456,14 @@ section{
     }
 }
 @media (max-width:365px) {
+    .carrito-productos img{
+        width: 3.3rem;
+        height: 3rem;
+    }
+    .carrito-productos p{
+        font-size: 1rem;
+        border: 1px solid black;
+    }
     .carrito-titulo{
         font-size: 2rem;
     }
@@ -312,7 +475,7 @@ section{
         font-size: 1rem;
     }
 }
-/* FIN MEDIA-QUERIS */
+/* FIN MEDIA-QUERIES */
 
 
 
