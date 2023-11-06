@@ -75,6 +75,7 @@ nav a:focus{
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    position: relative;
 }
 
 .header-iconos a{
@@ -84,22 +85,16 @@ nav a:focus{
     border-radius: 50%;
     padding: 0.5rem 0.6rem;
     cursor: pointer;
+
     transition: all 200ms ease;
 }
 .header-iconos a:hover{
     color: var(--verde-claro);
 }
-.bag{
-    position: relative;
-}
-.circulo-rojo{
-    position: absolute;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 50%;
+
+.header-iconos .bag-red{
     background-color: red;
-    top: 2.2rem;
-    right: 26.5rem;
+    color: white;
 }
 .header-iconos button{
     font-size: 1.2rem;
@@ -151,6 +146,7 @@ nav a:focus{
 }
 .perfil img{
     border-radius: 50%;
+    margin-right: 0.5rem;
     height: 1.8rem;
     width: 1.8rem;
 }
@@ -3440,6 +3436,7 @@ footer a:hover{
     width: 85vw;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
     gap: 3rem;
     margin-top: 4rem;
 }
@@ -3474,7 +3471,6 @@ footer a:hover{
 .comidas-shop{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     gap: 2rem;
     margin-top: 2rem;
     place-items: center;
@@ -3661,7 +3657,7 @@ footer a:hover{
 
 
 /*==== SIGN-UP - LOG-IN====== */
-.ingreso {
+/* .ingreso {
     display: flex;
 }
 .logo{
@@ -3820,7 +3816,7 @@ a{
 .regi a:hover{
     text-decoration: underline 1px solid black;
     transition: 500ms;
-}
+} */
 /*==== FIN SIGN-UP - LOG-IN====== */
 
 

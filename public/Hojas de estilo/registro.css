@@ -172,3 +172,102 @@ a{
     transition: 500ms;
 }
 /*==== FIN SIGN-UP - LOG-IN====== */
+/* SECTOR MEDIA-QUERIES */
+
+@media (max-width:1150px){
+    .ensa{
+        width: 18rem;
+        height: 18rem;
+        border: 13px solid #83B64D;
+    }
+}
+@media (max-width:768px){
+    .ensa{
+        width: 16em;
+        height: 16em;
+        border: 13px solid #83B64D;
+    }
+}
+
+@media(max-width:850px){
+    .partedos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .img{
+        display: none;
+    }
+    h1{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .iniciar{
+        width: 10em;
+    }
+    .email{
+        width: 18em;
+    }
+    .btn-form{
+        width:13.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario{
+        width: 26em;
+    }
+    .metodos{
+        width: 20.5em;
+    }
+    .google-enlace{
+        width:13em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .regi{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24.5em;
+    }
+}
+@media(max-width:431px){
+    .partedos{
+        padding-bottom: 2rem;
+    }
+    .iniciar{
+        font-size: 2rem;
+    }
+    .email{
+        width: 18em;
+    }
+    .btn-form{
+        width:13.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario{
+        width: 18em;
+    }
+    .metodos{
+        width: 20.5em;
+    }
+    .google-enlace{
+        width:13em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .regi{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24.5em;
+    }
+}
