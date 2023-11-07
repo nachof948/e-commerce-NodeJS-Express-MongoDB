@@ -18,7 +18,12 @@
                             <p>Aquí encontrarás comida pura y de la mejor calidad. Ordene ahora para satisfacer su hambre</p>
                             <div class="btns-hero">
                                 <a href="#comidaHabitual" class="btn-hero-izq">Ordena Ahora</a>
-                                <a href="/comidas/all" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%if(user){%>
+                                    <a href="/comidas/all" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%} else{%>
+                                    <a href="/auth/signup" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%}%>
+                                
                             </div>
                         </div>
                         <div class="imagenes-hero">
@@ -37,7 +42,11 @@
                             <p>Aquí encontrarás comida vegana y de la mejor calidad. Ordene ahora para satisfacer su hambre</p>
                             <div class="btns-hero">
                                 <a href="#comidaHabitual" class="btn-hero-izq">Ordena Ahora</a>
-                                <a href="/comidas/veganas" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%if(user){%>
+                                    <a href="/comidas/veganas" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%} else{%>
+                                    <a href="/auth/signup" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%}%>
                             </div>
                         </div>
                         <div class="imagenes-hero">
@@ -56,7 +65,11 @@
                             <p>Aquí encontrarás comida dulces de la mejor calidad. Ordene ahora para satisfacer su hambre</p>
                             <div class="btns-hero">
                                 <a href="#comidaHabitual" class="btn-hero-izq">Ordena Ahora</a>
-                                <a href="/comidas/dulces" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%if(user){%>
+                                    <a href="/comidas/dulces" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%} else{%>
+                                    <a href="/auth/signup" class="btn-hero-der">Explorar Mas <span><i class="bi bi-arrow-right"></i></span></a>
+                                <%}%>
                             </div>
                         </div>
                         <div class="imagenes-hero">
