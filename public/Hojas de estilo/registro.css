@@ -7,13 +7,17 @@ a,
 p{
     font-family: 'Lato', sans-serif;
 }
+a{
+    text-decoration: none;
+    padding-left: 0.5em;
+    color: black;
+}
 .ingreso {
     display: flex;
 }
 .logo{
     padding-bottom: 1em;
     font-size: 5rem;
-    background-color: #E5F1D9;
     font-family: 'Oswald', sans-serif;
 }
 .img{
@@ -45,66 +49,6 @@ p{
     display: flex;
     justify-content: center;
 }
-.formulario{
-    display: flex;
-    justify-content: center;
-
-}
-label{
-    display: flex;
-    flex-direction: column;
-}
-.persona{
-    display: flex;
-    padding-bottom: 2em;
-    align-items: center;
-}
-.persona-email{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-.imagen{
-    position: absolute;
-    background-color: transparent;
-    padding-left: 0.5em;
-}
-.email{
-    padding: 1rem 2.6rem ;
-    width: 22em;
-    border: 0;
-    background-color: #EEEEEE;
-    border-radius: 10px;
-}
-.btn-form{
-    width: 100%;
-    padding: 0.4em 0; 
-    text-align: center;
-    letter-spacing: 0.5px;
-    background-color: black;
-    color: white;
-    border: 0;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 1.5rem;
-}
-.btn-form{
-    width: 100%;
-    padding: 0.4em 0; 
-    text-align: center;
-    letter-spacing: 0.5px;
-    background-color: black;
-    color: white;
-    border: 1px solid black;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    transition: all 250ms;
-}
-.btn-form:hover{
-    background-color: transparent;
-    color: #010101;
-}
 .regi{
     padding-top: 1em;
     display: flex;
@@ -113,18 +57,6 @@ label{
 }
 .preg{
     color: gray;
-}
-a{
-    text-decoration: none;
-    padding-left: 0.5em;
-    color: black;
-}
-.metodos{
-    color: gray;
-    display: flex;
-    justify-content: center;
-    margin-top: 1.2em;
-    font-family: 'Lato', sans-serif;
 }
 .opcio{
     display: flex;
@@ -137,9 +69,8 @@ a{
     align-items: center;
 
 }
-.facebook i,
 .google i{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 .google{
     display: flex;
@@ -149,10 +80,10 @@ a{
 .google-enlace{
     background-color: #6AAAFB;
     border: 1px solid #6AAAFB;
-    padding: 0.6rem 1.9rem;
+    padding: 1rem 2.2rem;
     border-radius: 10px;
     color: white;
-    font-size: 1.3rem;  
+    font-size: 2.2rem;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,29 +107,47 @@ a{
 
 @media (max-width:1150px){
     .ensa{
-        width: 18rem;
-        height: 18rem;
+        width: 22rem;
+        height: 22rem;
         border: 13px solid #83B64D;
     }
 }
-@media (max-width:768px){
+@media (max-width:1000px){
     .ensa{
-        width: 16em;
-        height: 16em;
-        border: 13px solid #83B64D;
+        width: 20rem;
+        height: 20rem;
+        border: 10px solid #83B64D;
     }
 }
 
-@media(max-width:850px){
+@media(max-width:1024px){
+    .ingreso{
+        flex-direction: column;
+    }
     .partedos{
+        position: relative;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        bottom: 3rem;
+    }
+    .logo{
+        font-size: 4rem;
+        margin-top: 4rem;
     }
     .img{
-        display: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12rem;
+        width: 100%;
+        height: 20vh;
+    }
+    .ensa{
+        width: 9em;
+        height: 9em;
+        border: 9px solid #83B64D;
     }
     h1{
         display: flex;
@@ -208,21 +157,6 @@ a{
     .iniciar{
         width: 10em;
     }
-    .email{
-        width: 18em;
-    }
-    .btn-form{
-        width:13.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .formulario{
-        width: 26em;
-    }
-    .metodos{
-        width: 20.5em;
-    }
     .google-enlace{
         width:13em;
         display: flex;
@@ -236,38 +170,99 @@ a{
         width: 24.5em;
     }
 }
-@media(max-width:431px){
-    .partedos{
-        padding-bottom: 2rem;
+@media (max-width:600px) {
+    .img{
+        gap: 7rem;
     }
-    .iniciar{
-        font-size: 2rem;
+    .logo{
+        font-size: 3.5rem;
     }
-    .email{
-        width: 18em;
-    }
-    .btn-form{
-        width:13.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .formulario{
-        width: 18em;
-    }
-    .metodos{
-        width: 20.5em;
+    .ensa{
+        width: 8em;
+        height: 8em;
+        border: 7px solid #83B64D;
     }
     .google-enlace{
-        width:13em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width:11em;
     }
-    .regi{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 24.5em;
+}
+@media (max-width:490px) {
+    .img{
+        gap: 6rem;
+    }
+    .logo{
+        font-size: 3.5rem;
+    }
+    .ensa{
+        width: 8em;
+        height: 8em;
+        border: 7px solid #83B64D;
+    }
+    .google-enlace{
+        width:9em;
+    }
+}
+@media(max-width:437px){
+    .img{
+        gap: 4rem;
+    }
+    .logo{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .ensa{
+        width: 8em;
+        height: 8em;
+        border: 7px solid #83B64D;
+    }
+    .google-enlace{
+        width:8em;
+    }
+}
+@media(max-width:400px){
+    .img{
+        gap: 4rem;
+        height: 18vh;
+    }
+    .logo{
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .ensa{
+        width: 7em;
+        height: 7em;
+        border: 5px solid #83B64D;
+    }
+    .google-enlace{
+        width:6em;
+    }
+    .regi p,
+    .regi a{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:360px){
+    .img{
+        gap: 3rem;
+        height: 23vh;
+    }
+    .logo{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .ensa{
+        width: 6em;
+        height: 6em;
+    }
+    .google-enlace{
+        width:6em;
+        padding: 0.9rem;
+    }
+    .regi p,
+    .regi a{
+        font-size: 0.8rem;
+    }
+    .iniciar h1{
+        font-size: 3rem;
     }
 }
