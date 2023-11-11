@@ -205,6 +205,34 @@ nav a:focus{
 ::-webkit-scrollbar-track {
     background-color: #E5F1D9;
 }
+.btn-sesion{
+    background-color: transparent;
+    border: none;
+    text-wrap: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: all 250ms;
+    cursor: pointer;
+}
+.perfil:hover .btn-sesion{
+    color: var(--verde-claro);
+}
+.cerrar-sesion{
+    display: none;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 700;
+    top: 3.5rem;
+    left: 10rem;
+    background-color: #E5F1D9;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+}
+.cerrar-sesion:hover{
+    color: #83B64D;
+}
+
 /* MEDIA QUERIES HEADER */
 /* ====COMPUTADORA O LAPTOP==== */
 @media (max-width:1650px) {

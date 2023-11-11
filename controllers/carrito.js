@@ -11,9 +11,6 @@ const mostrarCarrito= async(req, res) => {
     }
 }
 
-
-
-
 /* AGREGAR PRODUCTOS AL CARRITO */
 const agregarProductos = async (req, res) => {
     const nombre = req.body.nombre
@@ -37,30 +34,36 @@ const agregarProductos = async (req, res) => {
         return res.status(500).json({ mensaje: "Error interno del servidor" });
     }
 };
-/* AGREGAR O ELIMINAR PRODUCTOS DEL CARRITO */
-const modificarProductos = async (req, res) => {
+const restarProductos = async (req, res) => {
+    const nombre = req.body.nombre;
+
     try {
-        const { query } = req.query;
-        const producto = req.body;
-        const id = producto._id;
+        const productoEnCarrito = await Carrito.findOne({ nombre });
 
-        const productoBuscado = await Carrito.findById(id);
-
-        if (productoBuscado && query === 'add') {
-            productoBuscado.cantidad += 1;
-            await Carrito.findByIdAndUpdate(id, productoBuscado, { new: true });
-            res.redirect('/compras'); 
-        } else if (productoBuscado && query === 'del') {
-            productoBuscado.cantidad -= 1;
-            await Carrito.findByIdAndUpdate(id, producto, { new: true });
-            res.redirect('/compras'); // Redirección en caso de 'del'
-        } else {
-            res.status(400).json({ mensaje: "Ocurrió un error" });
+        if (productoEnCarrito) {
+            if (productoEnCarrito.cantidad < 2) {
+                // Usar findByIdAndRemove en lugar de findOneAndDelete
+                await Carrito.findByIdAndRemove(productoEnCarrito._id);
+            } else {
+                // Usar productoEnCarrito._id en lugar de id
+                await Carrito.findByIdAndUpdate(productoEnCarrito._id, { cantidad: productoEnCarrito.cantidad - 1 });
+                productoEnCarrito.cantidad -= 1;
+                await productoEnCarrito.save();
+            }
         }
+
+        // Redirigir después de la operación de base de datos
+        res.redirect('/compras');
     } catch (error) {
-        res.status(500).json({ mensaje: "Error interno del servidor", error });
+        console.error(error);
+        return res.status(500).json({ mensaje: "Error interno del servidor" });
     }
-}
+};
+
+
+
+/* AGREGAR O ELIMINAR PRODUCTOS DEL CARRITO */
+
 
 /* ELIMINAR PRODUCTO DEL CARRITO */
 const eliminarProductos = async (req, res) => {
@@ -88,7 +91,7 @@ const comprarProductos = async (req, res) => {
 module.exports ={
     mostrarCarrito,
     agregarProductos,
-    modificarProductos,
+    restarProductos,
     eliminarProductos,
     comprarProductos
 }

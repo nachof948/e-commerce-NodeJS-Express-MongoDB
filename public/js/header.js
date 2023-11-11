@@ -2,11 +2,13 @@ const header = document.getElementById('header');
 const contenedorHeader = document.getElementsByClassName('contenedor-header');
 const buttonResponsive = document.getElementById("menuResponsive");
 const menuResponsive = document.querySelector('.contenedor-menu-responsive');
+const btnSesion = document.querySelector('.perfil')
+const cerrarSesion = document.querySelector('.cerrar-sesion');
+
 
 buttonResponsive.addEventListener('click',()=>{
     menuResponsive.classList.toggle('activo')
 })
-
 
 document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
     tarjeta.addEventListener('click', function() {
@@ -19,8 +21,7 @@ document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
     });
   });
 
-
-  window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     if (window.innerWidth > 1024) {
         if (window.scrollY > 1) {
             header.style.backgroundColor = 'rgb(132,183,78)';
@@ -30,3 +31,11 @@ document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
         }
     }
 })
+btnSesion.addEventListener('click',()=>{
+    if (cerrarSesion.style.display === 'block') {
+        cerrarSesion.style.display = 'none';
+    } else {
+        cerrarSesion.style.display = 'block';
+    }
+})
+

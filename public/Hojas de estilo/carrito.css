@@ -224,6 +224,22 @@ section{
     align-items: center;
     gap: 1.5rem;
 }
+.agregar{
+    background-color: #83B64D;
+    color: #EEEEEE;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 250ms;
+    border: 2px solid #83B64D;
+    transition: all 250ms;
+}
+.agregar:hover{
+    background-color: transparent;
+    color: #83B64D;
+}
 .comprar-carrito button{
     background-color: #83B64D;
     color: #EEEEEE;
