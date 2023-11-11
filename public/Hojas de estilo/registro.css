@@ -91,6 +91,10 @@ a{
     transition: all 250ms;
     width: 19.6rem;
 }
+.registro-separador{
+    margin:2px 0px 0px 8px;
+    font-size: 1rem;
+}
 .google-enlace:hover{
     background-color: transparent;
     color: #6AAAFB;
