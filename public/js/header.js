@@ -11,7 +11,11 @@ buttonResponsive.addEventListener('click',()=>{
 document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
     tarjeta.addEventListener('click', function() {
       const productoId = this.dataset.productoId; // Obtener el ID del producto de la tarjeta clickeada
-      window.location.href = '/producto/' + productoId; // Redirigir a la página del producto
+        if(productoId){
+            window.location.href = '/producto/' + productoId; // Redirigir a la página del producto
+        } else{
+            window.location.href = '/auth/signup'
+        }
     });
   });
 

@@ -45,11 +45,12 @@
         </div>
 
     </header>
-    
-    <section class="contenedor-producto">
-            <div class="producto">
+    <main class="main-producto">
+    <section>
+            <div class="contenedor-producto">
+                <div class="producto" >
                     <img class="img-producto"  src="<%=producto.imgUrl%>" >
-        
+
             <div class="segundo">
                     <h1 class="nombre-producto"><%=producto.nombre%></h1>
                     <div class="grupo1">
@@ -71,11 +72,6 @@
                         
                     <h2 class="precio-producto">$<%=producto.precio%></h2>
                     <p class="texto"><%=producto.descripcionDetallada%></p>
-                        <select class="opciones" name="PORCIONES" id="PORCIONES">
-                        <option value="PEQUEÑA">PEQUEÑA</option>
-                        <option value="MEDIANA">MEDIANA</option>
-                        <option value="GRANDE">GRANDE</option>
-                        </select>
                         <%if (user) {%>
                             <form class="comprar" action="/compras/agregar" method="POST">
                                 <input type="hidden" name="nombre" value="<%=producto.nombre%>">
@@ -87,10 +83,12 @@
                             <a href="/auth/signup">Comprar Ahora</a>
                         <%}%>
             </div>
+
+                </div>
+                
         </div>
     </section>
-    
-
+</main>
     <%- include('../views/partials/footer.ejs') %>
 <script src="js/header.js"></script>
 </body>
