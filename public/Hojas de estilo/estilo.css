@@ -1462,6 +1462,7 @@ nav a:focus{
     justify-content: center;
     margin: 0 auto;
     padding: 6rem 0rem;
+    position: relative;
 }
 .contenedor-elegirnos{
     width: 85vw;
@@ -1492,6 +1493,11 @@ nav a:focus{
     font-size: 1.3rem;
     color: gray;
     width: 70%;
+}
+.menta-derecha{
+    position: absolute;
+    right: 0.75rem;
+    top: -3rem;
 }
 .motivo{
     width: 32rem;
@@ -1808,6 +1814,12 @@ nav a:focus{
     flex-direction: column;
     margin: 0 auto;
     padding: 6rem 0rem 4rem;
+    position: relative;
+}
+.menta-izquierda{
+    position: absolute;
+    left: 0;
+    top: -5rem;
 }
 .comida-especial-contenedor{
     width: 85vw;
@@ -2896,6 +2908,12 @@ span:hover{
     justify-content: center;
     padding-top: 4rem;
     margin: 0 auto;
+    position: relative;
+}
+.hoja-chef{
+    position: absolute;
+    right: 0.75rem;
+    top: -5rem;
 }
 .contenedor-chefs{
     width: 85vw;
