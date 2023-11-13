@@ -537,7 +537,9 @@ nav a:focus{
     justify-content: center;
     align-items: center; 
 }
-
+.swiper-wrapper{
+    position: relative;
+}
 .swiper-button-prev,
 .swiper-button-next{
     color: #010101;
@@ -1046,7 +1048,7 @@ nav a:focus{
         display: none;
     }
     .textos-hero h1{
-        font-size: 2rem;
+        font-size: 2.4rem;
         width: 100%;
     }
     .textos-hero p{
@@ -1056,19 +1058,26 @@ nav a:focus{
 }
 @media (max-width:600px) {
     .textos-hero h1{
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
     .textos-hero p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
-
+    .swiper-wrapper{
+        right: 1.3rem;
+    }
+}
+@media (max-width:550px) {
+    .swiper-wrapper{
+        right: 2.7rem;
+    }
 }
 @media (max-width:500px) {
     .swiper-wrapper{
-        padding-left: 5rem;
+        padding-left: 7rem;
     }
     .textos-hero h1{
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
     .textos-hero p{
         font-size: 0.9rem;
@@ -1082,9 +1091,19 @@ nav a:focus{
         padding: 0.8rem 0.8rem;
     }
 }
+@media (max-width:480px) {
+    .swiper-wrapper{
+        padding-left: 6rem;
+    }
+}
+@media (max-width:450px) {
+    .swiper-wrapper{
+        padding-left: 5.5rem;
+    }
+}
 @media (max-width:400px) {
-    .textos-hero h1{
-        font-size: 1.2rem;
+    .contenedor-hero{
+        margin-top: 5rem;
     }
     .textos-hero p{
         font-size: 0.8rem;
@@ -1097,13 +1116,14 @@ nav a:focus{
         font-size: 0.9rem;
         padding: 0.6rem 0.6rem;
     }
-}
-@media (max-width:360px) {
     .swiper-button-prev,
     .swiper-button-next{
-        margin-top: -9rem;  
+        margin-top: -15rem;  
         padding: 0.1rem 0.1rem;
     } 
+}
+@media (max-width:360px) {
+
     .swiper-button-prev::after,
     .swiper-button-next::after{
         font-size: 0.6rem;
