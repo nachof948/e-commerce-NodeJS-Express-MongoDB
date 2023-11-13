@@ -383,6 +383,11 @@ nav a:focus{
     align-items: center;
     margin-top: 3rem;
 }
+.contenedor-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .textos-hero{
     display: flex;
     flex-direction: column;
@@ -459,6 +464,7 @@ nav a:focus{
     background-color: var(--negro);
     color: var(--blanco);
 }
+
 .imagenes-hero{
     position: relative;
     margin-right: 6rem;
@@ -524,11 +530,14 @@ nav a:focus{
 .swiper-hero{
     width: 85vw; 
     height: 1000px;
+    margin: 0 auto;
 }
 .swiper-slide-hero{
     display: flex; 
+    justify-content: center;
     align-items: center; 
 }
+
 .swiper-button-prev,
 .swiper-button-next{
     color: #010101;
@@ -699,7 +708,14 @@ nav a:focus{
 }
 @media (max-width:1360px) {
     .contenedor-hero{
-        margin-top: 1rem;
+        margin-top: -2rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -10rem;
+    } 
+    .imagenes-hero{
+        margin-bottom: 4rem;
     }
     .textos-hero p{
         font-size: 1.1rem;
@@ -784,7 +800,7 @@ nav a:focus{
 }
 @media (max-width:1200px) {
     .contenedor-hero{
-        margin-top: 0rem;
+        margin-top: -4rem;
     }
     .hero-comida-principal{
         width: 19rem;
@@ -812,6 +828,9 @@ nav a:focus{
     }
 }
 @media (max-width:1150px) {
+    .swiper-wrapper{
+        padding-left: 1rem;
+    }
     .textos-hero h1{
         font-size: 2.4rem;
         line-height: 3.5rem;
@@ -890,16 +909,33 @@ nav a:focus{
 /* ====FIN COMPUTADOR LAPTOP===== */
 /* ==== TABLET===== */
 @media (max-width:1024px) {
+    .swiper-wrapper{
+        padding-left: 3rem;
+    }
     .panqueque,
     .pancakes,
     .pescado,
     .vegetales,
-    .arroz{
+    .arroz,
+    .planta-hero{
         display: none;
     }
     .hero-comida-principal{
-        width: 17.5rem;
+        width: 18rem;
         border: 0.7rem solid var(--verde-claro);
+    }
+    .contenedor-hero{
+        margin-top: 8rem;
+    }
+    .textos-hero{
+        flex-basis: 60%;
+        gap: 1rem;
+    }
+    .imagenes-hero{
+        flex-basis: 40%;
+    }
+    .swiper-slide-hero{
+        height: 600px;
     }
 }
 @media (max-width:993px) {
@@ -914,11 +950,11 @@ nav a:focus{
     .swiper-button-next{
     padding: 0.4rem 0.6rem;
     } 
-    .swiper-slide-hero{
-        margin-left: 1.3rem;
-    }
 }
 @media (max-width:900px) {
+    .hero-comida-principal{
+        width: 17rem;
+    }
     .textos-hero p{
         width: 100%;
     }
@@ -935,11 +971,11 @@ nav a:focus{
         padding: 1rem 1.5rem;
         text-wrap: nowrap;
     }
-    .swiper-slide-hero{
-        margin-left: 1rem;
-    }
 }
 @media (max-width:800px) {
+    .textos-hero{
+        margin-top: -1.5rem;
+    }
     .textos-hero p{
         font-size: 0.9rem;
         width: 100%;
@@ -975,14 +1011,20 @@ nav a:focus{
     .swiper-hero{
         width: 95vw; 
     }
+    .hero{
+        background:none;
+    }
+    .swiper-wrapper{
+        padding-left: 7rem;
+    }
     .swiper-slide-hero{
         justify-content: center;
         text-align: center;
-        margin-top: -4rem;
+        margin-top: 0rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
-        margin-top: -9rem;  
+        margin-top: -10rem;  
         padding: 0.2rem 0.4rem;
     } 
     .swiper-button-prev::after,
@@ -992,6 +1034,7 @@ nav a:focus{
     .textos-hero{
         align-items: center;
         justify-content: center;
+        flex-basis: 100%;
     }
     .btns-hero{
         margin: 0 auto;
@@ -1004,20 +1047,26 @@ nav a:focus{
     }
     .textos-hero h1{
         font-size: 2rem;
+        width: 100%;
     }
     .textos-hero p{
         font-size: 1.1rem;
+        width: 100%;
     }
 }
-@media (max-width:570px) {
+@media (max-width:600px) {
     .textos-hero h1{
         font-size: 1.6rem;
     }
     .textos-hero p{
         font-size: 1rem;
     }
+
 }
 @media (max-width:500px) {
+    .swiper-wrapper{
+        padding-left: 5rem;
+    }
     .textos-hero h1{
         font-size: 1.4rem;
     }
@@ -1307,6 +1356,9 @@ nav a:focus{
     }
 }
 @media (max-width:1350px) {
+    .contenedor-opciones{
+        margin-top: -5rem;
+    }
     .tarjeta img{
         width: 9.5rem;
         border: 0.7rem solid var(--verde--oscuro);
@@ -1363,6 +1415,9 @@ nav a:focus{
         padding: 0rem;
         margin: -2rem 0rem 0rem;
     }
+    .contenedor-opciones{
+        margin-top: -17rem;
+    }
     .tarjeta{
         margin-top: 7rem;
     }
@@ -1409,7 +1464,7 @@ nav a:focus{
         width: 95vw;
     }
     .seccion-opciones{
-        margin: -13rem 0rem 0rem;
+        margin: -9rem 0rem 0rem;
     }
 }
 @media (max-width:400px) {

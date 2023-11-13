@@ -39,6 +39,7 @@ const swiperEspecial = new Swiper('.swiper-especial', {
       effect: 'slide',
       noSwiping: true,
       noSwipingClass: 'swiper-no-swiping',
+      slidesPerView: 1,
       autoplay: {
         delay:4000,
         speed:3000,
