@@ -228,7 +228,7 @@ nav a:focus{
     }
 }
 @media (max-width:1575px) {
-    .registrarse a{
+    .btn-sesion{
         font-size: 1rem;
     }
 }
@@ -254,7 +254,7 @@ nav a:focus{
     .empresa{
         font-size: 1.7rem;
     }
-    .registrarse a{
+    .btn-sesion{
         font-size: 0.9rem;
         padding: 0.7rem 0.4rem;
     }
@@ -276,7 +276,7 @@ nav a:focus{
     .empresa{
         font-size: 1.5rem;
     }
-    .registrarse a{
+    .btn-sesion{
         font-size: 0.8rem;
     }
     .header-iconos a{
@@ -336,7 +336,7 @@ nav a:focus{
         flex-direction: column;
         align-items: center;
     }
-    .registrarse a{
+    .btn-sesion{
         font-size: 1.2rem;
         padding: 0.7rem 1.7rem;
         margin-left: 0.4rem;
@@ -354,8 +354,8 @@ nav a:focus{
     }
 }
 @media (max-width:330px) {
-    .registrarse a{
-        font-size: 1rem;
+    .btn-sesion{
+        font-size: 1.2rem;
     }
 }
 /* ====FIN TABLET===== */
