@@ -188,6 +188,21 @@ section{
     height: 11rem;
     border-radius: 50%;
 }
+.comprar-carrito button{
+    background-color: #83B64D;
+    color: #EEEEEE;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 1px solid #83B64D;
+    transition: all 250ms;
+}
+.comprar-carrito button:hover{
+    color: #83B64D;
+    background-color: transparent;
+}
 .carrito-compras a{
     background-color: #83B64D;
     color: #EEEEEE;
@@ -240,22 +255,6 @@ section{
     background-color: transparent;
     color: #83B64D;
 }
-.comprar-carrito button{
-    background-color: #83B64D;
-    color: #EEEEEE;
-    padding: 0.3rem 0.6rem;
-    border-radius: 10px;
-    margin: 0;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: all 250ms;
-    border: 2px solid #83B64D;
-    transition: all 250ms;
-}
-.comprar-carrito button:hover{
-    background-color: transparent;
-    color: #83B64D;
-}
 .buscar-productos{
     display: flex;
     flex-direction: column;
@@ -300,6 +299,10 @@ section{
         width: 10.5rem;
         height: 10rem;
     }
+    .comprar-carrito button{
+        padding: 0.1rem 0.6rem;
+        font-size: 1.8rem;
+    }
     .carrito-compras a{
         font-size: 1.8rem;
     }
@@ -339,7 +342,7 @@ section{
     .realizar-compra p{
         font-size: 1.7rem;
     }
-    .comprar-carrito button{
+    .comprar-ahora button{
         font-size: 1.7rem;
     }
     .realizar-compra .explorar{
@@ -411,11 +414,11 @@ section{
 }
 @media (max-width:544px) {
     .carrito-productos{
-        gap: 1.2rem;
+        gap: 2rem;
     }
     .carrito-productos img{
         width: 4.5rem;
-        height: 4rem;
+        height: 4.2rem;
     }
     .carrito-compras a{
         font-size: 1rem;
@@ -437,7 +440,7 @@ section{
 }
 @media (max-width:486px) {
     .carrito-productos{
-        gap: 0.8rem;
+        gap: 1rem;
         margin-top: 2rem;
     }
     .carrito-compras a{
@@ -470,8 +473,15 @@ section{
     .buscar-productos a{
         font-size: 1rem;
     }
+    .agregar{
+        padding: 0.1rem 0.4rem;
+        font-size: 1.5rem;
+    }
 }
 @media (max-width:365px) {
+    .carrito-productos{
+        gap: 0.6rem;
+    }
     .carrito-productos img{
         width: 3.3rem;
         height: 3rem;
@@ -489,6 +499,14 @@ section{
     .buscar-productos a{
         padding: 0.7rem 1.2rem;
         font-size: 1rem;
+    }
+    .comprar-carrito button{
+        font-size: 1.1rem;
+        padding: 0.2rem 0.4rem;
+    }
+    .agregar{
+        padding: 0.1rem 0.4rem;
+        font-size: 1.1rem;
     }
 }
 /* FIN MEDIA-QUERIES */

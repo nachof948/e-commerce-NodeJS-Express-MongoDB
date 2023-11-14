@@ -1196,7 +1196,7 @@ nav a:focus{
 }
 @media (max-width:322px) {
     .swiper-slide-hero{
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
@@ -1561,7 +1561,7 @@ nav a:focus{
 }
 @media (max-width:322px) {
     .seccion-opciones{
-        margin: 0rem 0rem 0rem;
+        margin: 4rem 0rem 0rem;
     }
     .tarjeta{
         width: 16rem;
@@ -1859,6 +1859,9 @@ nav a:focus{
 /* ==== FIN TABLET===== */
 /* ====CELULAR===== */
 @media (max-width:768px) {
+    .elegirnos{
+        padding: 6rem 0rem 2rem;
+    }
     .contenedor-elegirnos{
         width: 95vw;
     }
@@ -2463,6 +2466,9 @@ nav a:focus{
     .comida-especial-contenedor{
         width: 95vw;
         justify-content: center;
+    }
+    .especial{
+        margin-top: 5rem;
     }
     .swiper-especial{
         width: 95vw;
@@ -3322,6 +3328,9 @@ nav a:focus{
 @media (max-width:768px) {
     .contenedor-chefs{
         width: 95vw;
+    }
+    .chefs{
+        padding-top: 0rem;
     }
     .texto-chefs h2{
         margin-top: 0rem;
