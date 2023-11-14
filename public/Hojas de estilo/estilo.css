@@ -286,6 +286,9 @@ nav a:focus{
     .perfil{
         font-size: 1rem;
     }
+    .header-derecha{
+        gap: 2rem;
+    }
 }
 /* =====FIN COMPUTADORA O LAPTOP===== */
 /* ====TABLET===== */
