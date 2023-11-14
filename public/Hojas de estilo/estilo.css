@@ -1731,6 +1731,9 @@ nav a:focus{
         font-size: 1rem;
         width: 90%;
     }
+    .menta-derecha{
+        right: 0rem;
+    }
 }
 @media (max-width: 1250px) {
     .motivo{
@@ -1824,6 +1827,9 @@ nav a:focus{
     .motivo p{
         font-size: 1rem;
         width: 90%;
+    }
+    .menta-derecha{
+        display: none;
     }
 }
 @media (max-width:500px) {
@@ -2406,6 +2412,11 @@ span:hover{
         top: 18rem;
     }
 }
+@media (max-width:891px) {
+    .menta-izquierda{
+        left: -1rem;
+    }
+}
 
 /* ====FIN TABLET===== */
 
@@ -2426,6 +2437,9 @@ span:hover{
     .textos-especial p{
         font-size: 1rem;
         width: 85%;
+    }
+    .menta-izquierda{
+        display: none;
     }
 }
 @media (max-width:500px) {
@@ -3253,6 +3267,9 @@ span:hover{
     .texto-chefs p{
         width: 85%;
         font-size: 1rem;
+    }
+    .hoja-chef{
+        display: none;
     }
 }
 @media (max-width:500px) {

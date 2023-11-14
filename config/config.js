@@ -20,7 +20,7 @@ passport.use(
         // Opciones de estrategia de Google
         clientID: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
-        callbackURL:'/auth/google/redirect'
+        callbackURL:'https://foodied-k8x2.onrender.com/auth/google/redirect'
     }, async (accessToken, refreshToken, profile, done) => { 
         try {
             // Buscar un usuario registrado
