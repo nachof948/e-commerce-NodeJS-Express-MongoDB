@@ -21,6 +21,7 @@ const swiperEspecial = new Swiper('.swiper-especial', {
       direction: 'horizontal',
       loop: true,
       effect: 'slide',
+      spaceBetween:200,
       autoplay: {
         delay:3000,
         pauseOnMouseEnter:true,

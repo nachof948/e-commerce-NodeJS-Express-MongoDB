@@ -1963,7 +1963,6 @@ nav a:focus{
 .especiales{
     display: flex;
     align-items: center;
-    padding-right: 3.7rem;
     margin-bottom: 4rem;
     max-width: 85vw;
 }
@@ -2062,33 +2061,20 @@ nav a:focus{
 .bolsa:hover{
     background-color: #aed882;
 }
-.slide{
-    display: flex;
-    gap: 2.5rem;
-}
-.slide span{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background-color: var(--verde-claro);
-    cursor: pointer;
-    transition: all 250ms;
-}
-span:hover{
-    background-color: var(--verde--oscuro);
-}
 
 /* ===== COMIDA ESPECIAL SWIPER====  */
 .swiper-especial{
-    width: 90vw;
+    margin: 0 auto;
+    width: 85vw;
 }
 .swiper-wrapper-especial{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 5rem;
 }
 .swiper-slide-especial{
     display: flex; 
-    justify-content: space-between; 
-    padding-left: 0.3rem;
+    justify-content: space-evenly; 
 }
 .swiper-pagination span{
     margin: 0 auto;
@@ -2098,8 +2084,8 @@ span:hover{
 }
 .swiper-pagination{
     display: flex;
+    margin: 0 auto;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 /* ===== FIN COMIDA ESPECIAL SWIPER====  */
@@ -2476,6 +2462,7 @@ span:hover{
 @media (max-width:768px) {
     .comida-especial-contenedor{
         width: 95vw;
+        justify-content: center;
     }
     .swiper-especial{
         width: 95vw;
@@ -2495,9 +2482,9 @@ span:hover{
     }
 }
 @media (max-width:550px) {
-    .swiper-slide-especial{
-        padding-left: 2.7rem;
-    }
+    .swiper-wrapper-especial{
+        padding-left: 2.5rem;
+    } 
 }
 @media (max-width:500px) {
     .textos-especial h1{
@@ -2572,11 +2559,11 @@ span:hover{
         width: 2rem;
         height: 2rem;
     }
-    .swiper-slide-especial{
-        padding-left: 2.5rem;
+    .swiper-wrapper-especial{
+        padding-left: 2.9rem;
     }
 }
-@media (max-width:322px) {
+@media (max-width:335px) {
     .textos-especial p{
         width: 100%;
     }
@@ -2607,6 +2594,9 @@ span:hover{
     .bolsa-comprar{
         width: 2rem;
         height: 2rem;
+    }
+    .swiper-wrapper-especial{
+        padding-left: 2.4rem;
     }
 }
 /* ====FIN CELULAR==== */
