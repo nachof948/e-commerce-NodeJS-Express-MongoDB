@@ -1,8 +1,7 @@
 const GoogleStrategy = require('passport-google-oauth20').Strategy
-const keys = require('./keys');
 const GoogleCliente = require('../models/Cliente-Google')
 const passport = require('passport');
-
+require('dotenv').config()
 
 
 /* SESION CON GOOGLE */
@@ -19,8 +18,8 @@ passport.deserializeUser((id, done)=>{
 passport.use(
     new GoogleStrategy({
         // Opciones de estrategia de Google
-        clientID: keys.google.clientID,
-        clientSecret: keys.google.clientSecret,
+        clientID: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
         callbackURL:'/auth/google/redirect'
     }, async (accessToken, refreshToken, profile, done) => { 
         try {

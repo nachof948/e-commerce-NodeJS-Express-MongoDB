@@ -6,7 +6,6 @@ const shop = require('./routes/shop')
 const carrito = require('./routes/carrito')
 const producto = require('./routes/producto')
 const compra = require('./routes/compra')
-const keys = require('./config/keys')
 const connectDB = require('./db/conexion')
 require('dotenv').config()
 const cookieSession = require('cookie-session')
@@ -28,7 +27,7 @@ app.use(express.static('public'))
 /* COOKIE SESSION */
 app.use(cookieSession({
     maxAge:24*60*60*1000,
-    keys:[keys.session.cookieKey]
+    keys:[process.env.COOKIE_KEY]
 }))
 
 app.use(passport.initialize())
