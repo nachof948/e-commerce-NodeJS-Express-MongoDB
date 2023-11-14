@@ -227,14 +227,24 @@ nav a:focus{
         width: 75%;
     }
 }
-@media (max-width:1470px) {
+@media (max-width:1575px) {
+    .registrarse a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:1500px) {
     nav{
-        gap: 5rem;
+        gap: 4.5rem;
     }
 }
 @media (max-width:1400px) {
     nav{
         gap: 4rem;
+    }
+}
+@media (max-width:1350px) {
+    nav{
+        gap: 3.5rem;
     }
 }
 @media (max-width:1300px) {
@@ -245,15 +255,14 @@ nav a:focus{
         font-size: 1.7rem;
     }
     .registrarse a{
-        font-size: 1.1rem;
-        padding: 0.7rem 0.9rem;
+        font-size: 0.9rem;
+        padding: 0.7rem 0.4rem;
     }
     .header-iconos a{
         font-size: 1.2rem;
         padding: 0.5rem 0.6rem;
     }
     .perfil{
-/*         width: 11rem; */
         font-size: 1.1rem;
     }
 }
@@ -268,13 +277,12 @@ nav a:focus{
         font-size: 1.5rem;
     }
     .registrarse a{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .header-iconos a{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .perfil{
-/*         width: 10rem; */
         font-size: 1rem;
     }
 }
@@ -336,10 +344,18 @@ nav a:focus{
     .perfil{
         font-size: 1.1rem;
     }
+    .header-iconos a{
+        font-size: 1rem;
+    }
 }
 @media (max-width:768px) {
     .contenedor-header{
         width: 95vw;
+    }
+}
+@media (max-width:330px) {
+    .registrarse a{
+        font-size: 1rem;
     }
 }
 /* ====FIN TABLET===== */
