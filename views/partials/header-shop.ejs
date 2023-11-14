@@ -22,9 +22,10 @@
             <%if(user) {%>
                 <div class="perfil">
                     <img src="<%=user.image%>" alt="">
-                    <a href="/auth/logout"><%=user.username%></a>
+                    <button class="btn-sesion"><%=user.username%></button>
                 </div>
-                <%}else{%>
+                <a class="cerrar-sesion" href="/auth/logout">Cerrar Sesion</a>
+                <%} else{%>
                 <div class="registrarse">
                     <a href="/auth/signup">Registarse</a>
                 </div>
