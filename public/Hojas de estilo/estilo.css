@@ -559,7 +559,7 @@ nav a:focus{
     justify-content: center;
     align-items: center; 
 }
-.swiper-wrapper{
+.swiper-wrapper-hero{
     position: relative;
 }
 .swiper-button-prev,
@@ -852,7 +852,7 @@ nav a:focus{
     }
 }
 @media (max-width:1150px) {
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         padding-left: 1rem;
     }
     .textos-hero h1{
@@ -933,7 +933,7 @@ nav a:focus{
 /* ====FIN COMPUTADOR LAPTOP===== */
 /* ==== TABLET===== */
 @media (max-width:1024px) {
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         padding-left: 3rem;
     }
     .panqueque,
@@ -1038,7 +1038,7 @@ nav a:focus{
     .hero{
         background:none;
     }
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         padding-left: 7rem;
     }
     .swiper-slide-hero{
@@ -1085,7 +1085,7 @@ nav a:focus{
     .textos-hero p{
         font-size: 0.9rem;
     }
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         right: 1.3rem;
     }
 }
@@ -1095,7 +1095,7 @@ nav a:focus{
     }
 }
 @media (max-width:500px) {
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         padding-left: 7rem;
     }
     .textos-hero h1{
@@ -1114,12 +1114,12 @@ nav a:focus{
     }
 }
 @media (max-width:480px) {
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         padding-left: 6rem;
     }
 }
 @media (max-width:450px) {
-    .swiper-wrapper{
+    .swiper-wrapper-hero{
         padding-left: 5.5rem;
     }
 }
