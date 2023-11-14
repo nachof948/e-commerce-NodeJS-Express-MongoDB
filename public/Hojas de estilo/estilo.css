@@ -110,22 +110,6 @@ nav a:focus{
 .header-iconos button:hover{
     color: var(--verde-claro);
 }
-.perfil-cliente{
-    border: none;
-    background-color: var(--blanco);
-    padding: 0.4rem;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 200ms ease;
-}
-.perfil-cliente i{
-    position: relative;
-    font-size: 1.6rem;
-    right: 0.25rem;
-}
-.perfil-cliente:hover i{
-   color: #779e4c;
-}
 .perfil{
     display: flex;
     flex-direction: row;
@@ -158,6 +142,7 @@ nav a:focus{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.3rem;
+    width: fit-content;
     border: none;
     background-color: var(--blanco);
     padding: 0.7rem 1rem;
@@ -208,6 +193,7 @@ nav a:focus{
 .btn-sesion{
     background-color: transparent;
     border: none;
+    width: fit-content;
     text-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -221,6 +207,7 @@ nav a:focus{
 .cerrar-sesion{
     display: none;
     position: absolute;
+    width: fit-content;
     font-size: 1.3rem;
     font-weight: 700;
     top: 3.5rem;
