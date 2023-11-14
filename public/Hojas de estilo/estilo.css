@@ -1933,6 +1933,7 @@ nav a:focus{
 .especiales{
     display: flex;
     align-items: center;
+    padding-right: 3rem;
     margin-bottom: 4rem;
     max-width: 85vw;
 }
