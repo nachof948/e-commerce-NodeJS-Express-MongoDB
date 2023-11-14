@@ -568,6 +568,11 @@ nav a:focus{
     background-color: #aed882;
     border-radius: 50%;
     padding: 1rem 1.4rem;
+    display: none;
+}
+.swiper-hero:hover .swiper-button-prev,
+.swiper-hero:hover .swiper-button-next{
+    display: block;
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover{
