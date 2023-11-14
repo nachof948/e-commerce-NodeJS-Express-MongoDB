@@ -11,7 +11,7 @@ require('dotenv').config()
 const cookieSession = require('cookie-session')
 const passportGoogle= require('./config/config')
 const passport = require('passport')
-const bodyParser = require('body-parser');
+
 
 
 
@@ -49,10 +49,6 @@ app.use('/compras', carrito)
 app.use('/auth', formulario)
 app.use('/comidas', shop)
 app.use('/', compra)
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
 
 /* Conexion a la base de datos */
 const iniciar = async () =>{
