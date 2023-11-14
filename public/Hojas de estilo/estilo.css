@@ -264,6 +264,7 @@ nav a:focus{
     }
     .perfil{
         font-size: 1.1rem;
+        padding: 0.2rem 0.5rem;
     }
 }
 @media (max-width:1200px) {
@@ -338,8 +339,7 @@ nav a:focus{
     }
     .btn-sesion{
         font-size: 1.2rem;
-        padding: 0.7rem 1.7rem;
-        margin-left: 0.4rem;
+        padding: 0.7rem 0.4rem;
     }
     .perfil{
         font-size: 1.1rem;
