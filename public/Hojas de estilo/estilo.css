@@ -207,6 +207,7 @@ nav a:focus{
 .cerrar-sesion{
     display: none;
     position: absolute;
+    text-wrap: nowrap;
     width: fit-content;
     font-size: 1.3rem;
     font-weight: 700;
