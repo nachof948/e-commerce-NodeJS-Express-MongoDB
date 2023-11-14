@@ -2,7 +2,8 @@ const swiperEspecial = new Swiper('.swiper-especial', {
     // Optional parameters
       direction: 'horizontal',
       loop: true,
-      effect: 'fade',
+      effect: 'slide',
+      spaceBetween:100,
       autoplay: {
         delay:3000,
         pauseOnMouseEnter:true,
@@ -19,7 +20,7 @@ const swiperEspecial = new Swiper('.swiper-especial', {
     // Optional parameters
       direction: 'horizontal',
       loop: true,
-      effect: 'fade',
+      effect: 'slide',
       autoplay: {
         delay:3000,
         pauseOnMouseEnter:true,
