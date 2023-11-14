@@ -363,7 +363,7 @@ nav a:focus{
         font-size: 1rem;
     }
     .cerrar-sesion{
-        left: 1.3rem;
+        left: 2.5rem;
         top: 7rem;
     }
 }
@@ -1935,7 +1935,6 @@ nav a:focus{
     align-items: center;
     margin-bottom: 4rem;
     max-width: 85vw;
-    padding: 0rem 3rem 0rem 0rem;
 }
 .textos-especial{
     display: flex;
@@ -2464,6 +2463,11 @@ span:hover{
         display: none;
     }
 }
+@media (max-width:550px) {
+    .swiper-slide-especial{
+        padding-left: 2rem;
+    }
+}
 @media (max-width:500px) {
     .textos-especial h1{
         font-size: 2rem;
@@ -2536,6 +2540,9 @@ span:hover{
     .bolsa-comprar{
         width: 2rem;
         height: 2rem;
+    }
+    .swiper-slide-especial{
+        padding-left: 2.5rem;
     }
 }
 @media (max-width:322px) {

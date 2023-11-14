@@ -3,11 +3,7 @@ const swiperEspecial = new Swiper('.swiper-especial', {
       direction: 'horizontal',
       loop: true,
       effect: 'fade',
-      autoplay: {
-        delay:3000,
-        pauseOnMouseEnter:true,
-        disableOnInteraction:false,
-      },
+
   
     // If we need pagination
       pagination: {
