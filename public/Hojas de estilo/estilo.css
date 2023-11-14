@@ -253,7 +253,7 @@ nav a:focus{
         padding: 0.5rem 0.6rem;
     }
     .perfil{
-        width: 11rem;
+/*         width: 11rem; */
         font-size: 1.1rem;
     }
 }
@@ -274,7 +274,7 @@ nav a:focus{
         font-size: 1rem;
     }
     .perfil{
-        width: 10rem;
+/*         width: 10rem; */
         font-size: 1rem;
     }
 }
