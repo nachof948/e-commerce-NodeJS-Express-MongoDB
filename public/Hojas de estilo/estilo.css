@@ -2998,6 +2998,16 @@ span:hover{
         height: 23rem;
     }
 }
+@media (max-width:550px) {
+    .swiper-habitual{
+        padding-left: 4.1rem;
+    }
+}
+@media (max-width:430px) {
+    .swiper-habitual{
+        padding-left: 3.7rem;
+    }
+}
 @media (max-width:360px) {
     .titulos-habitual h1{
         font-size: 1.8rem;
@@ -3009,6 +3019,9 @@ span:hover{
     .tarjeta-habitual{
         width: 19rem;
         height: 22rem;
+    }
+    .swiper-habitual{
+        padding-left: 3.4rem;
     }
 }
 /* ===FIN CELULAR=== */
