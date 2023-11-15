@@ -53,6 +53,9 @@ nav a:hover{
 nav a:focus{
     color: var(--verde-claro);
 }
+.header-shop{
+    background-color: rgb(132,183,78);
+}
 .contenedor-header{
     width: 85vw;
     display: flex;

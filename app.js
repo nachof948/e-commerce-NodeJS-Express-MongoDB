@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const expressLayout = require('express-ejs-layouts')
 const formulario = require('./routes/formulario')
 const home = require('./routes/home')
 const shop = require('./routes/shop')
@@ -19,6 +20,7 @@ const passport = require('passport')
 const puerto = process.env.PUERTO
 
 // Configuración de plantilla EJS
+
 app.set('view engine', 'ejs')
 
 // ACCESO A LOS ARCHIVOS ESTATICOS 
