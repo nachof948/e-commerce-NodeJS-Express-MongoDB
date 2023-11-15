@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
         }
     }
 })
-/* BOTON CERRAR SESION */
+/* BOTON CERRAR */
 btnSesion.addEventListener('click',()=>{
     if (cerrarSesion.style.display === 'block') {
         cerrarSesion.style.display = 'none';

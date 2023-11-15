@@ -692,7 +692,7 @@ nav a:focus{
     margin-top: 7rem;
     position: relative;
     padding-left: 1.5rem;
-    background-color: rgb(244, 243, 243);
+    background-color: rgb(249,250,252);
     transition: all 250ms;
 }
 .especial:hover{
