@@ -223,165 +223,6 @@ nav a:focus{
 .cerrar-sesion:hover{
     color: #83B64D;
 }
-
-/* MEDIA QUERIES HEADER */
-/* ====COMPUTADORA O LAPTOP==== */
-@media (max-width:1650px) {
-    .contenedor-menu-responsive{
-        width: 75%;
-    }
-}
-@media (max-width:1575px) {
-    .btn-sesion{
-        font-size: 1rem;
-    }
-    .cerrar-sesion{
-        left: 9.8rem;
-        padding: 0.7rem 1.1rem;
-    }
-}
-@media (max-width:1500px) {
-    nav{
-        gap: 4.5rem;
-    }
-}
-@media (max-width:1400px) {
-    nav{
-        gap: 4rem;
-    }
-}
-@media (max-width:1350px) {
-    nav{
-        gap: 3.5rem;
-    }
-}
-@media (max-width:1300px) {
-    nav{
-        gap: 3rem;
-    }
-    .empresa{
-        font-size: 1.7rem;
-    }
-    .btn-sesion{
-        font-size: 0.9rem;
-        padding: 0.7rem 0.4rem;
-    }
-    .header-iconos a{
-        font-size: 1.2rem;
-        padding: 0.5rem 0.6rem;
-    }
-    .perfil{
-        font-size: 1.1rem;
-        padding: 0.2rem 0.5rem;
-    }
-    .cerrar-sesion{
-        top: 3rem;
-    }
-}
-@media (max-width:1200px) {
-    nav{
-        gap: 2.5rem;
-    }
-    nav a{
-        font-size: 0.9rem;
-    }
-    .empresa{
-        font-size: 1.5rem;
-    }
-    .btn-sesion{
-        font-size: 0.8rem;
-    }
-    .header-iconos a{
-        font-size: 0.7rem;
-    }
-    .perfil{
-        font-size: 1rem;
-    }
-    .header-derecha{
-        gap: 2rem;
-    }
-    .cerrar-sesion{
-        left: 8.2rem;
-        padding: 0.5rem 0.8rem;
-    }
-}
-/* =====FIN COMPUTADORA O LAPTOP===== */
-/* ====TABLET===== */
-@media (max-width:1024px) {
-    header{
-        background-color: #83B64D;
-    }
-    .menu-responsive{
-        display: block;
-        cursor: pointer;
-    }
-    .menu-responsive i{
-        font-size: 3.5rem;
-    }
-    .menu-responsive:hover{
-        filter: drop-shadow(2px 2px 5px white);
-    }
-    .contenedor-menu-responsive{
-        height: 0vh;
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 250ms;
-        cursor: pointer;
-    }
-    .contenedor-menu-responsive.activo{
-        overflow: hidden;
-        width: 100%;
-        height: 52vh;
-        padding-bottom: 1rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-    }
-    nav{
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    nav a{
-        font-size: 1.3rem;
-    }
-    .header-derecha{
-        margin-top: 2rem;
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn-sesion{
-        font-size: 1.2rem;
-        padding: 0.7rem 0.4rem;
-    }
-    .perfil{
-        font-size: 1.1rem;
-    }
-    .header-iconos a{
-        font-size: 1rem;
-    }
-    .cerrar-sesion{
-        left: 2.5rem;
-        top: 7rem;
-    }
-}
-@media (max-width:768px) {
-    .contenedor-header{
-        width: 95vw;
-    }
-}
-@media (max-width:330px) {
-    .btn-sesion{
-        font-size: 1.2rem;
-    }
-}
-/* ====FIN TABLET===== */
-/* FIN MEDIA QUERIES HEADER */
 /*==== FIN HEADER======= */
 
 /*=========== HERO========== */
@@ -582,6 +423,948 @@ nav a:focus{
     color: white;
 }
 /* ======FIN HERO SWIPER======= */
+
+/*====== FIN HERO======== */
+
+/*========== SECCION OPCIONES========= */
+.seccion-opciones{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10rem 0rem 2rem;
+}
+.contenedor-opciones{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarjeta{
+    background-color: white;
+    border-radius: 25px;
+    width: 23rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+    cursor: pointer;
+}
+.tarjeta-producto{
+    transition: all 250ms;
+    cursor: pointer;
+}
+.tarjeta-producto:hover{
+    box-shadow: 0px 0px 10px var(--verde--oscuro);
+}
+.tarjeta img{
+    width: 14rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    transform: translateY(-50%);
+    margin: 0;
+}
+.tarjeta-textos{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+    transform: translateY(-50%);
+}
+.tarjeta-textos h2{
+    font-size: 1.7rem;
+    width: 80%;
+}
+.tarjeta-textos p{
+    color: var(--gris);
+    width: 85%;
+    margin-top: 0.5;
+}
+.opciones-comprar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.opciones-comprar p{
+    border: 1px solid var(--negro);
+    border-radius: 20px;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: var(--negro);
+}
+.opciones-comprar a{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar a:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+.opciones-comprar button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+
+/*======= FIN SECCION OPCIONES=========== */
+
+/* ===========ELEGIRNOS=============== */
+.elegirnos{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 6rem 0rem;
+    position: relative;
+}
+.contenedor-elegirnos{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-elegirnos h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.motivos{
+    display: flex;
+    width: 85vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.textos-elegirnos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.textos-elegirnos p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: gray;
+    width: 70%;
+}
+.menta-derecha{
+    position: absolute;
+    right: 0.75rem;
+    top: -3rem;
+}
+.motivo{
+    width: 32rem;
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 11px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Lato', sans-serif;
+    transition: all 300ms;
+}
+.motivo:hover{
+    transform: scale(1.12);
+    transition: 400ms;
+}
+.motivo img{
+    width: 5rem;
+    height: 5rem;
+    padding-bottom: 2rem;
+}
+.motivo h2{
+    font-size: 2.3rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.motivo p{
+    text-align: center;
+    color: gray;
+    font-size: 1.2rem;
+    padding-top: 1.2em;
+    width: 90%;
+}
+
+.letp2{
+    text-align: center;
+    color: gray;
+    font-size: 0.8rem;
+    width: 17.5em;
+    padding-top: 1.2em;
+}
+/* ===========FIN ELEGIRNOS=============== */
+
+/* =======COMIDA ESPECIAL====== */
+.comida-especial{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 6rem 0rem 4rem;
+    position: relative;
+}
+.menta-izquierda{
+    position: absolute;
+    left: 0;
+    top: -5rem;
+}
+.comida-especial-contenedor{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.especiales{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    max-width: 85vw;
+}
+.textos-especial{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.textos-especial h1{
+    font-size: 3.5rem;
+}
+.textos-especial p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: gray;
+    width: 60%;
+}
+.especial{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+    width: 28rem;
+    height: 30rem;
+    border-radius:10px;
+    margin-top: 7rem;
+    position: relative;
+    padding-left: 1.5rem;
+    background-color: rgb(244, 243, 243);
+    transition: all 250ms;
+}
+.especial:hover{
+    box-shadow: 0px 0px 10px #84B74E; 
+}
+.comida{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background-color: #84B74E;
+    padding: 1rem;
+    position: absolute;
+    top: -7rem;
+    left: 10.8rem;
+    z-index: 10;
+    object-fit: cover;
+}
+.especial h2{
+    font-size: 2.9rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin: 0;
+    position: absolute;
+    bottom: 10rem;
+}
+
+.estrellas{
+    position: absolute;
+    top: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+    background-color: transparent;
+}
+.estrellas img{
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.num{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+.precio{
+    position: absolute;
+    top: 24rem;
+    font-weight: bold;
+    color: #84B74E;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+}
+
+.bolsa{
+    background-color: #84B74E;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    padding: 3rem 2.5rem;
+    border-radius:8px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+.bolsa:hover{
+    background-color: #aed882;
+}
+
+/* ===== COMIDA ESPECIAL SWIPER====  */
+.swiper-especial{
+    margin: 0 auto;
+    width: 85vw;
+}
+.swiper-wrapper-especial{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.swiper-slide-especial{
+    display: flex; 
+    justify-content: space-evenly; 
+}
+.swiper-pagination span{
+    margin: 0 auto;
+    background-color: #84B74E;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.swiper-pagination{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 2rem;
+}
+/* ===== FIN COMIDA ESPECIAL SWIPER====  */
+
+/* ======= FIN COMIDA ESPECIAL====== */
+
+/* ========= COMIDA HABITUAL ============= */
+.comida-habitual{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0rem 0rem 2rem;
+}
+.contenedor-comida-habitual{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 8rem;
+    padding: 1rem 0rem 2rem;
+}
+.comidas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+
+.titulos-habitual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0rem -4rem ;
+}
+.titulos-habitual h1{
+    font-size: 3.5rem;
+}
+.titulos-habitual p{
+    font-size: 1.3rem;
+    width: 65%;
+    color: grey;
+    text-align: center;
+    margin-top: 1rem;
+}
+.tarjeta-habitual{
+    background-color: white;
+    border-radius: 25px;
+    width: 30rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+    margin-top: 9.5rem;
+    transition: all 250ms;
+}
+.tarjeta-habitual:hover{
+    box-shadow: 0px 0px 10px var(--verde--oscuro);
+}
+.tarjeta-habitual-img{
+    width: 18.5rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    transform: translateY(-60%);
+}
+.tarjeta-textos-habitual{
+    transform: translateY(-60%);
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.tarjeta-textos-habitual h2{
+    font-size: 2rem;
+    width: 80%;
+    margin: 0rem;
+}
+.tarjeta-textos-habitual p{
+    color: var(--gris);
+    width: 80%;
+    font-size: 1.2rem;
+}
+.habitual-precio p{
+    font-size: 1.2rem;
+}
+.opciones-comprar-habitual{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.opciones-comprar-habitual p{
+    border: 1px solid var(--negro);
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: var(--negro);
+    user-select: none;
+}
+.opciones-comprar-habitual a{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar-habitual a:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+.estrellasHabitual{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0rem;
+}
+.estrellasHabitual img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.opciones-comprar-habitual button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar-habitual button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+
+/* ===== COMIDA HABITUAL SWIPER===== */
+.swiper-habitual{
+    width: 85vw; 
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+}
+.swiper-wrapper-habitual{
+    margin-bottom: 5rem;
+}
+.swiper-slide-habitual{
+    display: flex; 
+    justify-content:center; 
+    flex-wrap: wrap; 
+    gap: 5rem; 
+    padding-top: 2.9rem;
+}
+.slide-habitual{
+    display: flex;
+    gap: 2.5rem;
+}
+.slide-habitual span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--verde-claro);
+    cursor: pointer;
+    transition: all 250ms;
+    margin-top: -2.6rem;
+}
+/* ===== FIN COMIDA HABITUAL SWIPER===== */
+
+/* ========= FIN COMIDA HABITUAL ============= */
+
+/* ===== SOBRE NOSOTROS ======== */
+.chefs{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    margin: 0 auto;
+    position: relative;
+}
+.hoja-chef{
+    position: absolute;
+    right: 0.75rem;
+    top: -5rem;
+}
+.contenedor-chefs{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.texto-chefs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.texto-chefs h2{
+    margin-top: 1rem;
+    margin: 0;
+    font-size: 3rem;
+}
+.texto-chefs p{
+    color: gray;
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chefs-img{
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.uno{
+    background-color: #E5F1D9;
+    width: 24rem;
+    height: 30rem;
+    border-radius: 10px;
+    padding-top: 1.5rem;
+}
+.dos{
+    background-color: #E5F1D9;
+    width: 20rem;
+    height: 33rem;
+    border-radius: 10px;
+    padding: 1rem 2rem 0rem 2rem;
+    margin: 5rem 4rem 0rem;
+}
+
+.tres{
+    background-color: #E5F1D9;
+    width: 24rem;
+    height: 32rem;
+    border-radius: 10px;
+    padding-right: 1rem;
+}
+
+
+/* ===== FIN SOBRE NOSOTROS ======== */
+
+
+/* ======= FOOTER========= */
+footer{
+    width: 100vw;
+    background-color: rgb(229,241,217);
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0rem;
+    margin: 0 auto;
+}
+.contenedor-footer{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+}
+footer h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+footer a{
+    font-size: 1.5rem;
+    padding-left: 0rem;
+    color: grey;
+    transition: all 250ms;
+}
+footer a:hover{
+    color: black;
+}
+.menu,
+.ayuda,
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+.suscribite{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+.suscribite h2{
+    line-height: 2rem;
+}
+.suscribite input{
+    background-color: transparent;
+    border: 2px solid rgb(132,183,78);
+    border-radius: 10px;
+    padding: 1.1rem 0.8rem 1rem;
+    width: 32rem;
+    font-size: 1.6rem;
+    color: grey;
+    outline: none;
+}
+.suscribite input::placeholder{
+    font-size: 1.6rem;
+    color: grey;
+}
+
+.suscribite button{
+    background-color: rgb(132,183,78);
+    border: 2px solid rgb(132,183,78);
+    font-size: 1.3rem;
+    color: white;
+    padding: 1.21rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+.suscribite button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(132,183,78);
+    color: rgb(132,183,78);
+}
+.suscribite span{
+    position: absolute;
+    transform: translateX(-100%);
+    background-color: transparent;
+}
+
+/* ====== FIN FOOTER========= */
+
+
+/* ======= SHOP =========== */
+.shop{
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+.shop h1{
+    color: #010101;
+    font-size: 3.5rem;
+    margin: 6rem 0rem 0rem 0rem;
+}
+.titulos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3.5rem;
+    width: 100%;
+    margin: 0;
+}
+.titulos a{
+    font-size: 1.4rem;
+    color: grey;
+    text-align: center;
+    margin-bottom: -1rem;
+    text-wrap: nowrap;
+}
+.titulos a:hover{
+    color: rgb(132,183,78);
+}
+.titulos a:hover{
+    color: rgb(132,183,78);
+}
+.comidas-shop{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    place-items: center;
+}
+.tarjeta-shop{
+    margin-top: 7rem;
+    background-color: white;
+    border-radius: 25px;
+    width: 23rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+}
+.tarjeta-shop-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0rem 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+.tarjeta-shop-textos p{
+    color: gray;
+}
+.opciones-comprar p{
+    color: #010101;
+}
+.tarjeta-shop img{
+    width: 14rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    position: absolute;
+    bottom: 15rem;
+    left: 3.8em;
+}
+
+/*=================================== MEDIA QUERIES   ============================= */
+
+/* MEDIA QUERIES HEADER */
+/* ====COMPUTADORA O LAPTOP==== */
+@media (max-width:1650px) {
+    .contenedor-menu-responsive{
+        width: 75%;
+    }
+}
+@media (max-width:1575px) {
+    .btn-sesion{
+        font-size: 1rem;
+    }
+    .cerrar-sesion{
+        left: 9.8rem;
+        padding: 0.7rem 1.1rem;
+    }
+}
+@media (max-width:1500px) {
+    nav{
+        gap: 4.5rem;
+    }
+}
+@media (max-width:1400px) {
+    nav{
+        gap: 4rem;
+    }
+}
+@media (max-width:1350px) {
+    nav{
+        gap: 3.5rem;
+    }
+}
+@media (max-width:1300px) {
+    nav{
+        gap: 3rem;
+    }
+    .empresa{
+        font-size: 1.7rem;
+    }
+    .btn-sesion{
+        font-size: 0.9rem;
+        padding: 0.7rem 0.4rem;
+    }
+    .header-iconos a{
+        font-size: 1.2rem;
+        padding: 0.5rem 0.6rem;
+    }
+    .perfil{
+        font-size: 1.1rem;
+        padding: 0.2rem 0.5rem;
+    }
+    .cerrar-sesion{
+        top: 3rem;
+    }
+}
+@media (max-width:1200px) {
+    nav{
+        gap: 2.5rem;
+    }
+    nav a{
+        font-size: 0.9rem;
+    }
+    .empresa{
+        font-size: 1.5rem;
+    }
+    .btn-sesion{
+        font-size: 0.8rem;
+    }
+    .header-iconos a{
+        font-size: 0.7rem;
+    }
+    .perfil{
+        font-size: 1rem;
+    }
+    .header-derecha{
+        gap: 2rem;
+    }
+    .cerrar-sesion{
+        left: 8.2rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+/* =====FIN COMPUTADORA O LAPTOP===== */
+/* ====TABLET===== */
+@media (max-width:1024px) {
+    header{
+        background-color: #83B64D;
+    }
+    .menu-responsive{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-responsive i{
+        font-size: 3.5rem;
+    }
+    .menu-responsive:hover{
+        filter: drop-shadow(2px 2px 5px white);
+    }
+    .contenedor-menu-responsive{
+        height: 0vh;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 250ms;
+        cursor: pointer;
+    }
+    .contenedor-menu-responsive.activo{
+        overflow: hidden;
+        width: 100%;
+        height: 52vh;
+        padding-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    nav a{
+        font-size: 1.3rem;
+    }
+    .header-derecha{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-sesion{
+        font-size: 1.2rem;
+        padding: 0.7rem 0.4rem;
+    }
+    .perfil{
+        font-size: 1.1rem;
+    }
+    .header-iconos a{
+        font-size: 1rem;
+    }
+    .cerrar-sesion{
+        left: 2.5rem;
+        top: 7rem;
+    }
+}
+@media (max-width:768px) {
+    .contenedor-header{
+        width: 95vw;
+    }
+}
+@media (max-width:330px) {
+    .btn-sesion{
+        font-size: 1.2rem;
+    }
+}
+/* ====FIN TABLET===== */
+/* FIN MEDIA QUERIES HEADER */
+
 
 /* MEDIA QUERIES HERO */
 
@@ -1239,117 +2022,7 @@ nav a:focus{
 /* ====FIN CELULAR==== */
 
 /* FIN MEDIA QUERIES HERO */
-/*====== FIN HERO======== */
 
-/*========== SECCION OPCIONES========= */
-.seccion-opciones{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10rem 0rem 2rem;
-}
-.contenedor-opciones{
-    width: 85vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.tarjeta{
-    background-color: white;
-    border-radius: 25px;
-    width: 23rem;
-    height: 23rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgb(209, 205, 205);
-    cursor: pointer;
-}
-.tarjeta-producto{
-    transition: all 250ms;
-    cursor: pointer;
-}
-.tarjeta-producto:hover{
-    box-shadow: 0px 0px 10px var(--verde--oscuro);
-}
-.tarjeta img{
-    width: 14rem;
-    border-radius: 50%;
-    border: 0.9rem solid var(--verde--oscuro);
-    transform: translateY(-50%);
-    margin: 0;
-}
-.tarjeta-textos{
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.7rem;
-    transform: translateY(-50%);
-}
-.tarjeta-textos h2{
-    font-size: 1.7rem;
-    width: 80%;
-}
-.tarjeta-textos p{
-    color: var(--gris);
-    width: 85%;
-    margin-top: 0.5;
-}
-.opciones-comprar{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-.opciones-comprar p{
-    border: 1px solid var(--negro);
-    border-radius: 20px;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    color: var(--negro);
-}
-.opciones-comprar a{
-    border: 1px solid var(--verde--oscuro);
-    border-radius: 20px;
-    padding: 0.5rem 0.8rem;
-    white-space: nowrap;
-    font-size: 1.1rem;
-    font-weight: 400;
-    background-color: var(--verde--oscuro);
-    color: var(--blanco);
-    cursor: pointer;
-    transition: all 250ms ease;
-}
-.opciones-comprar a:hover{
-    border: 1px solid var(--verde--oscuro);
-    background-color: var(--blanco);
-    color: var(--verde--oscuro);
-    cursor: pointer;
-}
-.opciones-comprar button{
-    border: 1px solid var(--verde--oscuro);
-    border-radius: 20px;
-    padding: 0.5rem 0.8rem;
-    white-space: nowrap;
-    font-size: 1.1rem;
-    font-weight: 400;
-    background-color: var(--verde--oscuro);
-    color: var(--blanco);
-    cursor: pointer;
-    transition: all 250ms ease;
-}
-.opciones-comprar button:hover{
-    border: 1px solid var(--verde--oscuro);
-    background-color: var(--blanco);
-    color: var(--verde--oscuro);
-    cursor: pointer;
-}
 
 /* MEDIA QUERIES OPCIONES */
 /* ===COMPUTADORA O LAPTOP=== */
@@ -1595,97 +2268,6 @@ nav a:focus{
 
 /* FIN MEDIA QUERIES OPCIONES */
 
-
-/*======= FIN SECCION OPCIONES=========== */
-
-/* ===========ELEGIRNOS=============== */
-.elegirnos{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 6rem 0rem;
-    position: relative;
-}
-.contenedor-elegirnos{
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor-elegirnos h1{
-    font-size: 3.5rem;
-    text-align: center;
-}
-.motivos{
-    display: flex;
-    width: 85vw;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-}
-.textos-elegirnos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.textos-elegirnos p{
-    text-align: center;
-    font-size: 1.3rem;
-    color: gray;
-    width: 70%;
-}
-.menta-derecha{
-    position: absolute;
-    right: 0.75rem;
-    top: -3rem;
-}
-.motivo{
-    width: 32rem;
-    height: 21rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 11px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    font-family: 'Lato', sans-serif;
-    transition: all 300ms;
-}
-.motivo:hover{
-    transform: scale(1.12);
-    transition: 400ms;
-}
-.motivo img{
-    width: 5rem;
-    height: 5rem;
-    padding-bottom: 2rem;
-}
-.motivo h2{
-    font-size: 2.3rem;
-    text-align: center;
-    letter-spacing: 0.5px;
-    margin: 0;
-}
-
-.motivo p{
-    text-align: center;
-    color: gray;
-    font-size: 1.2rem;
-    padding-top: 1.2em;
-    width: 90%;
-}
-
-.letp2{
-    text-align: center;
-    color: gray;
-    font-size: 0.8rem;
-    width: 17.5em;
-    padding-top: 1.2em;
-}
 
 /* MEDIA QUERIES ELEGINOS */
 /* =====COMPUTADORA O LAPTOP===== */
@@ -1952,162 +2534,8 @@ nav a:focus{
 }
 /* ====FIN CELULAR===== */
 
-
 /* FIN MEDIA QUERIES ELEGINOS */
 
-/* ===========FIN ELEGIRNOS=============== */
-
-/* =======COMIDA ESPECIAL====== */
-.comida-especial{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 6rem 0rem 4rem;
-    position: relative;
-}
-.menta-izquierda{
-    position: absolute;
-    left: 0;
-    top: -5rem;
-}
-.comida-especial-contenedor{
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.especiales{
-    display: flex;
-    align-items: center;
-    margin-bottom: 4rem;
-    max-width: 85vw;
-}
-.textos-especial{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-.textos-especial h1{
-    font-size: 3.5rem;
-}
-.textos-especial p{
-    text-align: center;
-    font-size: 1.3rem;
-    color: gray;
-    width: 60%;
-}
-.especial{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
-    width: 28rem;
-    height: 30rem;
-    border-radius:10px;
-    margin-top: 7rem;
-    position: relative;
-    padding-left: 1.5rem;
-    background-color: rgb(244, 243, 243);
-    transition: all 250ms;
-}
-.especial:hover{
-    box-shadow: 0px 0px 10px #84B74E; 
-}
-.comida{
-    width: 18rem;
-    height: 18rem;
-    border-radius: 50%;
-    background-color: #84B74E;
-    padding: 1rem;
-    position: absolute;
-    top: -7rem;
-    left: 10.8rem;
-    z-index: 10;
-    object-fit: cover;
-}
-.especial h2{
-    font-size: 2.9rem;
-    letter-spacing: 1px;
-    font-weight: 900;
-    margin: 0;
-    position: absolute;
-    bottom: 10rem;
-}
-
-.estrellas{
-    position: absolute;
-    top: 21rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 0.6rem;
-    background-color: transparent;
-}
-.estrellas img{
-    width: 2.1rem;
-    height: 2.1rem;
-}
-
-.num{
-    color: gray;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 0.5rem;
-}
-.precio{
-    position: absolute;
-    top: 24rem;
-    font-weight: bold;
-    color: #84B74E;
-    font-size: 3rem;
-    letter-spacing: 0.5px;
-}
-
-.bolsa{
-    background-color: #84B74E;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border: none;
-    padding: 3rem 2.5rem;
-    border-radius:8px;
-    cursor: pointer;
-    transition: all 250ms;
-}
-.bolsa:hover{
-    background-color: #aed882;
-}
-
-/* ===== COMIDA ESPECIAL SWIPER====  */
-.swiper-especial{
-    margin: 0 auto;
-    width: 85vw;
-}
-.swiper-wrapper-especial{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-}
-.swiper-slide-especial{
-    display: flex; 
-    justify-content: space-evenly; 
-}
-.swiper-pagination span{
-    margin: 0 auto;
-    background-color: #84B74E;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.swiper-pagination{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 2rem;
-}
-/* ===== FIN COMIDA ESPECIAL SWIPER====  */
 
 /* MEDIA QUERIES ESPECIAL */
 /* ====COMPUTADORA O LAPTOP===== */
@@ -2627,192 +3055,8 @@ nav a:focus{
     }
 }
 /* ====FIN CELULAR==== */
-
-
 /* FIN MEDIA QUERIES ESPECIAL */
 
-
-/* ======= FIN COMIDA ESPECIAL====== */
-
-/* ========= COMIDA HABITUAL ============= */
-.comida-habitual{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0rem 0rem 2rem;
-}
-.contenedor-comida-habitual{
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    gap: 8rem;
-    padding: 1rem 0rem 2rem;
-}
-.comidas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4rem;
-    margin-top: 1rem;
-}
-
-.titulos-habitual{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem 0rem -4rem ;
-}
-.titulos-habitual h1{
-    font-size: 3.5rem;
-}
-.titulos-habitual p{
-    font-size: 1.3rem;
-    width: 65%;
-    color: grey;
-    text-align: center;
-    margin-top: 1rem;
-}
-.tarjeta-habitual{
-    background-color: white;
-    border-radius: 25px;
-    width: 30rem;
-    height: 27rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    box-shadow: 0px 0px 10px rgb(209, 205, 205);
-    margin-top: 9.5rem;
-    transition: all 250ms;
-}
-.tarjeta-habitual:hover{
-    box-shadow: 0px 0px 10px var(--verde--oscuro);
-}
-.tarjeta-habitual-img{
-    width: 18.5rem;
-    border-radius: 50%;
-    border: 0.9rem solid var(--verde--oscuro);
-    transform: translateY(-60%);
-}
-.tarjeta-textos-habitual{
-    transform: translateY(-60%);
-    padding-bottom: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.tarjeta-textos-habitual h2{
-    font-size: 2rem;
-    width: 80%;
-    margin: 0rem;
-}
-.tarjeta-textos-habitual p{
-    color: var(--gris);
-    width: 80%;
-    font-size: 1.2rem;
-}
-.habitual-precio p{
-    font-size: 1.2rem;
-}
-.opciones-comprar-habitual{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-}
-.opciones-comprar-habitual p{
-    border: 1px solid var(--negro);
-    border-radius: 20px;
-    font-size: 1.3rem;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    color: var(--negro);
-    user-select: none;
-}
-.opciones-comprar-habitual a{
-    border: 1px solid var(--verde--oscuro);
-    border-radius: 20px;
-    padding: 0.7rem 1rem;
-    white-space: nowrap;
-    font-size: 1.1rem;
-    font-weight: 400;
-    background-color: var(--verde--oscuro);
-    color: var(--blanco);
-    cursor: pointer;
-    transition: all 250ms ease;
-}
-.opciones-comprar-habitual a:hover{
-    border: 1px solid var(--verde--oscuro);
-    background-color: var(--blanco);
-    color: var(--verde--oscuro);
-    cursor: pointer;
-}
-.estrellasHabitual{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 0rem;
-}
-.estrellasHabitual img{
-    width: 1.8rem;
-    height: 1.8rem;
-}
-.opciones-comprar-habitual button{
-    border: 1px solid var(--verde--oscuro);
-    border-radius: 20px;
-    padding: 0.5rem 0.8rem;
-    white-space: nowrap;
-    font-size: 1.1rem;
-    font-weight: 400;
-    background-color: var(--verde--oscuro);
-    color: var(--blanco);
-    cursor: pointer;
-    transition: all 250ms ease;
-}
-.opciones-comprar-habitual button:hover{
-    border: 1px solid var(--verde--oscuro);
-    background-color: var(--blanco);
-    color: var(--verde--oscuro);
-    cursor: pointer;
-}
-
-/* ===== COMIDA HABITUAL SWIPER===== */
-.swiper-habitual{
-    width: 85vw; 
-    display: flex;
-    justify-content: center; 
-    margin: 0 auto;
-}
-.swiper-wrapper-habitual{
-    margin-bottom: 5rem;
-}
-.swiper-slide-habitual{
-    display: flex; 
-    justify-content:center; 
-    flex-wrap: wrap; 
-    gap: 5rem; 
-    padding-top: 2.9rem;
-}
-.slide-habitual{
-    display: flex;
-    gap: 2.5rem;
-}
-.slide-habitual span{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background-color: var(--verde-claro);
-    cursor: pointer;
-    transition: all 250ms;
-    margin-top: -2.6rem;
-}
-/* ===== FIN COMIDA HABITUAL SWIPER===== */
 
 /* MEDIA QUERIES HABITUAL */
 
@@ -3074,81 +3318,8 @@ nav a:focus{
 }
 /* ===FIN CELULAR=== */
 
-
 /* FIN MEDIA QUERIES HABITUAL */
 
-
-/* ========= FIN COMIDA HABITUAL ============= */
-
-/* ===== SOBRE NOSOTROS ======== */
-.chefs{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-    margin: 0 auto;
-    position: relative;
-}
-.hoja-chef{
-    position: absolute;
-    right: 0.75rem;
-    top: -5rem;
-}
-.contenedor-chefs{
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-}
-.texto-chefs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.texto-chefs h2{
-    margin-top: 1rem;
-    margin: 0;
-    font-size: 3rem;
-}
-.texto-chefs p{
-    color: gray;
-    width: 70%;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.chefs-img{
-    margin: 3rem 0rem;
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-}
-.uno{
-    background-color: #E5F1D9;
-    width: 24rem;
-    height: 30rem;
-    border-radius: 10px;
-    padding-top: 1.5rem;
-}
-.dos{
-    background-color: #E5F1D9;
-    width: 20rem;
-    height: 33rem;
-    border-radius: 10px;
-    padding: 1rem 2rem 0rem 2rem;
-    margin: 5rem 4rem 0rem;
-}
-
-.tres{
-    background-color: #E5F1D9;
-    width: 24rem;
-    height: 32rem;
-    border-radius: 10px;
-    padding-right: 1rem;
-}
 
 /* MEDIA QUERIES NOSOTROS */
 /* ====COMPUTADORA O LAPTOP */
@@ -3428,92 +3599,8 @@ nav a:focus{
 }
 /* =====FIN CELULAR======= */
 
-
 /* FIN  MEDIA QUERIES NOSOTROS */
 
-/* ===== FIN SOBRE NOSOTROS ======== */
-
-
-/* ======= FOOTER========= */
-footer{
-    width: 100vw;
-    background-color: rgb(229,241,217);
-    display: flex;
-    justify-content: center;
-    padding: 4rem 0rem;
-    margin: 0 auto;
-}
-.contenedor-footer{
-    width: 85vw;
-    display: flex;
-    justify-content: space-between;
-}
-footer h2{
-    font-size: 2.5rem;
-    margin: 0;
-}
-footer a{
-    font-size: 1.5rem;
-    padding-left: 0rem;
-    color: grey;
-    transition: all 250ms;
-}
-footer a:hover{
-    color: black;
-}
-.menu,
-.ayuda,
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 1.5rem;
-}
-.suscribite{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
-}
-.suscribite h2{
-    line-height: 2rem;
-}
-.suscribite input{
-    background-color: transparent;
-    border: 2px solid rgb(132,183,78);
-    border-radius: 10px;
-    padding: 1.1rem 0.8rem 1rem;
-    width: 32rem;
-    font-size: 1.6rem;
-    color: grey;
-    outline: none;
-}
-.suscribite input::placeholder{
-    font-size: 1.6rem;
-    color: grey;
-}
-
-.suscribite button{
-    background-color: rgb(132,183,78);
-    border: 2px solid rgb(132,183,78);
-    font-size: 1.3rem;
-    color: white;
-    padding: 1.21rem 2rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 250ms;
-}
-.suscribite button:hover{
-    background-color: transparent;
-    border: 2px solid rgb(132,183,78);
-    color: rgb(132,183,78);
-}
-.suscribite span{
-    position: absolute;
-    transform: translateX(-100%);
-    background-color: transparent;
-}
 
 /* MEDIA QUERIES FOOTER */
 /* ===COMPUTADORA O LAPTOP==== */
@@ -3688,90 +3775,10 @@ footer a:hover{
 
 /* FIN MEDIA QUERIES FOOTER */
 
-/* ====== FIN FOOTER========= */
 
 
-/* ======= SHOP =========== */
-.shop{
-    display: flex;
-    width: 85vw;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    gap: 3rem;
-    margin-top: 4rem;
-}
-.shop h1{
-    color: #010101;
-    font-size: 3.5rem;
-    margin: 6rem 0rem 0rem 0rem;
-}
-.titulos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3.5rem;
-    width: 100%;
-    margin: 0;
-}
-.titulos a{
-    font-size: 1.4rem;
-    color: grey;
-    text-align: center;
-    margin-bottom: -1rem;
-    text-wrap: nowrap;
-}
-.titulos a:hover{
-    color: rgb(132,183,78);
-}
-.titulos a:hover{
-    color: rgb(132,183,78);
-}
-.comidas-shop{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-    place-items: center;
-}
-.tarjeta-shop{
-    margin-top: 7rem;
-    background-color: white;
-    border-radius: 25px;
-    width: 23rem;
-    height: 23rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    box-shadow: 0px 0px 10px rgb(209, 205, 205);
-}
-.tarjeta-shop-textos{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0rem 1rem;
-    gap: 0.5rem;
-    align-items: center;
-    text-align: center;
-    margin-top: 10rem;
-}
-.tarjeta-shop-textos p{
-    color: gray;
-}
-.opciones-comprar p{
-    color: #010101;
-}
-.tarjeta-shop img{
-    width: 14rem;
-    border-radius: 50%;
-    border: 0.9rem solid var(--verde--oscuro);
-    position: absolute;
-    bottom: 15rem;
-    left: 3.8em;
-}
+
+
 /* MEDIA QUERIES SHOP */
 
 /* === COMPUTADORA O LAPTOP===== */
