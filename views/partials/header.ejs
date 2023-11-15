@@ -20,17 +20,13 @@
                         <a href="/compras"><i class="bi bi-bag"></i></a>
                     <%}%>
             </div>
-            <%if(user) {%>
+
                 <div class="perfil">
-                    <img src="<%=user.image%>" alt="">
-                    <button class="btn-sesion"><%=user.username%></button>
+                    <img src="" alt="">
+                    <button class="btn-sesion">Nacho Fernandez</button>
                 </div>
                 <a class="cerrar-sesion" href="/auth/logout">Cerrar Sesion</a>
-                <%} else{%>
-                <div class="registrarse">
-                    <a href="/auth/signup">Registrarse</a>
-                </div>
-            <%}%>
+                
         </div>
         </div>
     </div>
