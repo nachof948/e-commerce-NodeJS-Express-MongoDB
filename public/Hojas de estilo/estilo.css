@@ -1373,7 +1373,7 @@ footer a:hover{
         font-size: 1.2rem;
     }
 }
-@media (min-height:1201px) and (max-height:1400px) {
+@media (min-height:1201px) and (max-height:1500px) {
     .contenedor-menu-responsive.activo{
         height: 25vh;
     }
@@ -1393,13 +1393,17 @@ footer a:hover{
         height: 45vh;
     }
 }
-@media (min-height:800px) and (max-height:880px) {
+@media (min-height:810px) and (max-height:919px) {
     .contenedor-menu-responsive.activo{
         height: 45vh;
     }
 }
-
-@media (min-height:600px) and (max-height:800px) {
+@media (min-height:800px) and (max-width:370px){
+    .contenedor-menu-responsive.activo{
+        height: 45vh;
+    }
+}
+@media (min-height:600px) and (max-height:799px) {
     .contenedor-menu-responsive.activo{
         height: 52vh;
     }
@@ -2146,6 +2150,15 @@ footer a:hover{
         padding: 0.6rem 0.6rem;
     }
 }
+@media (min-height:1401px) and (max-height:1500px){
+    .contenedor-hero{
+        margin-top: -5rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -24rem;  
+    }
+}
 @media (min-height:1201px) and (max-height:1400px){
     .contenedor-hero{
         margin-top: -4rem;
@@ -2182,13 +2195,22 @@ footer a:hover{
         margin-top: -10rem;  
     }
 }
-@media (min-height:901px) and (max-height:950px){
+@media (min-height:921px) and (max-height:950px){
     .contenedor-hero{
         margin-top: 2rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
         margin-top: -7rem;  
+    }
+}
+@media (min-height:901px) and (max-height:920px){
+    .contenedor-hero{
+        margin-top: 2rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -11rem;  
     }
 }
 @media (min-height:881px) and (max-height:900px){
@@ -2203,7 +2225,7 @@ footer a:hover{
     }
     .swiper-button-prev,
     .swiper-button-next{
-        margin-top: -4rem;  
+        margin-top: -9rem;  
     }
 }
 @media (min-height:750px) and (max-height:799px){
@@ -2221,13 +2243,40 @@ footer a:hover{
     }
 
 }
-@media (min-height:650px) and (max-height:720px){
+@media (min-height:670px) and (max-height:720px){
     .contenedor-hero{
         margin-top: 7.5rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
         margin-top: -7rem;  
+    }
+}
+@media (min-height:650px) and (max-height:669px){
+    .contenedor-hero{
+        margin-top: 4rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -5rem;  
+    }
+}
+@media (min-height:636px) and (max-height:649px){
+    .contenedor-hero{
+        margin-top: 7rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -4rem;  
+    }
+}
+@media (min-height:600px) and (max-height:635px){
+    .contenedor-hero{
+        margin-top: 15rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: 0rem;  
     }
 }
 
@@ -2486,6 +2535,11 @@ footer a:hover{
         transform: translateY(-50%);
     }
 }
+@media (min-height:1401px) and (max-height:1500px){
+    .seccion-opciones{
+        margin-top: -16rem;
+    }
+}
 @media (min-height:1201px) and (max-height:1400px){
     .seccion-opciones{
         margin-top: -12rem;
@@ -2517,7 +2571,16 @@ footer a:hover{
         margin-top: 2rem;
     }
 }
-
+@media (min-height:636px) and (max-height:649px){
+    .seccion-opciones{
+        margin-top: 3rem;
+    }
+}
+@media (min-height:600px) and (max-height:636px){
+    .seccion-opciones{
+        margin-top: 5rem;
+    }
+}
 @media (min-height:300px) and (max-height:450px){
     .seccion-opciones{
         margin-top: 9rem;
