@@ -2204,6 +2204,13 @@ footer a:hover{
         margin-top: -11rem;  
     }
 }
+@media (min-height:921px) and (max-height:930px){
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -7rem;  
+    }
+}
 @media (min-height:901px) and (max-height:920px){
     .contenedor-hero{
         margin-top: 2rem;
@@ -2219,13 +2226,14 @@ footer a:hover{
         margin-top: -6rem;  
     }
 }
+
 @media (min-height:800px) and (max-height:820px){
     .contenedor-hero{
         margin-top: 2rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
-        margin-top: -8rem;  
+        margin-top: -9rem;  
     }
 }
 @media (min-height:750px) and (max-height:799px){
