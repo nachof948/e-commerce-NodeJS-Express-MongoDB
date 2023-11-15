@@ -6,9 +6,21 @@
         <div class="contenedor-menu-responsive">
             <nav>
                 <a href="/">Inicio</a>
-                <a href="#menuEspecial">Menu</a>
-                <a href="#sobreNosotros">Sobre Nosotros</a>
-                <a href="#contactos">Contacto</a>
+                <%if(user){%>
+                    <a href="/comidas/carnes">Menu Salado</a>
+                <%} else{%>
+                    <a href="/auth/signup">Menu Salado</a>
+                <%}%>
+                <%if(user){%>
+                    <a href="/comidas/dulces">Menu Dulce</a>
+                <%} else{%>
+                    <a href="/auth/signup">Menu Dulce</a>
+                <%}%>
+                <%if(user){%>
+                    <a href="/comidas/veganos">Menu Vegano</a>
+                <%} else{%>
+                    <a href="/auth/signup">Menu Vegano</a>
+                <%}%>
             </nav>
             <div class="header-derecha">
                 <div class="header-iconos">
