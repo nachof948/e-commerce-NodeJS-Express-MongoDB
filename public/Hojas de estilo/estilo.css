@@ -2020,7 +2020,7 @@ nav a:focus{
     padding: 1rem;
     position: absolute;
     top: -7rem;
-    left: 12rem;
+    left: 10.8rem;
     z-index: 10;
     object-fit: cover;
 }
@@ -2507,7 +2507,7 @@ nav a:focus{
 }
 @media (max-width:500px) {
     .textos-especial h1{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .textos-especial p{
         font-size: 0.9rem;
