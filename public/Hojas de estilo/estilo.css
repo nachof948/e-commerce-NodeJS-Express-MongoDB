@@ -1329,7 +1329,6 @@ footer a:hover{
     .contenedor-menu-responsive.activo{
         overflow: hidden;
         width: 100%;
-        padding-bottom: 1rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
