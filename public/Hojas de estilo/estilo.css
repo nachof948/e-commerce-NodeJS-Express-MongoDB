@@ -2137,7 +2137,34 @@ footer a:hover{
     }
 }
 
+@media (min-height:1101px) and (max-height:1200px){
+    .contenedor-hero{
+        margin-top: -1rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -18rem;  
+    }
+}
+@media (min-height:1001px) and (max-height:1100px){
+    .contenedor-hero{
+        margin-top: 0rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -16rem;  
+    }
+}
 
+@media (min-height:901px) and (max-height:1000px){
+    .contenedor-hero{
+        margin-top: 2rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -12rem;  
+    }
+}
 @media (min-height:750px) and (max-height:900px){
     .contenedor-hero{
         margin-top: 4rem;
@@ -2413,6 +2440,12 @@ footer a:hover{
     }
 }
 
+
+@media (min-height:1101px) and (max-height:1200px){
+    .seccion-opciones{
+        margin-top: -6rem;
+    }
+}
 @media (min-height:750px) and (max-height:900px){
     .seccion-opciones{
         margin-top: -4rem;
