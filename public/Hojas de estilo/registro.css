@@ -44,7 +44,7 @@ a{
     letter-spacing: 2px;
 }
 .iniciar{
-    padding: 4.5em 0em 1em;
+    padding: 4.2em 0em 1em;
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -62,12 +62,6 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 1em;
-}
-.facebook{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 .google i{
     font-size: 1.9rem;
@@ -108,7 +102,11 @@ a{
 }
 /*==== FIN SIGN-UP - LOG-IN====== */
 /* SECTOR MEDIA-QUERIES */
-
+@media (max-width:1500px) {
+    .iniciar{
+        padding-top: 3.9em;
+    }
+}
 @media (max-width:1150px){
     .ensa{
         width: 22rem;
@@ -174,6 +172,7 @@ a{
         width: 24.5em;
     }
 }
+
 @media (max-width:600px) {
     .img{
         gap: 7rem;
@@ -209,6 +208,7 @@ a{
 @media(max-width:437px){
     .img{
         gap: 4rem;
+        height: 21vh;
     }
     .logo{
         font-size: 3rem;
@@ -224,10 +224,6 @@ a{
     }
 }
 @media(max-width:400px){
-    .img{
-        gap: 4rem;
-        height: 18vh;
-    }
     .logo{
         font-size: 2.5rem;
         margin-top: 3rem;
@@ -268,5 +264,12 @@ a{
     }
     .iniciar h1{
         font-size: 3rem;
+    }
+}
+
+@media (min-height:600px) and (max-height:650px) {
+    .ensa{
+        width: 6em;
+        height: 6em;
     }
 }
