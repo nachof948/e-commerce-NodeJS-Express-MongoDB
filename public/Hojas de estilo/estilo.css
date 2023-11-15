@@ -2173,14 +2173,22 @@ footer a:hover{
         margin-top: -16rem;  
     }
 }
-
-@media (min-height:901px) and (max-height:1000px){
+@media (min-height:951px) and (max-height:1000px){
     .contenedor-hero{
         margin-top: 2rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
-        margin-top: -12rem;  
+        margin-top: -10rem;  
+    }
+}
+@media (min-height:901px) and (max-height:950px){
+    .contenedor-hero{
+        margin-top: 2rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -7rem;  
     }
 }
 @media (min-height:881px) and (max-height:900px){
@@ -2189,7 +2197,16 @@ footer a:hover{
         margin-top: -6rem;  
     }
 }
-@media (min-height:750px) and (max-height:880px){
+@media (min-height:800px) and (max-height:820px){
+    .contenedor-hero{
+        margin-top: 2rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: -4rem;  
+    }
+}
+@media (min-height:750px) and (max-height:799px){
     .contenedor-hero{
         margin-top: 4rem;
     }
@@ -2198,7 +2215,13 @@ footer a:hover{
         margin-top: -12rem;  
     }
 }
-@media (min-height:650px) and (max-height:749px){
+@media (min-height:721px) and (max-height:749px){
+    .contenedor-hero{
+        margin-top: 5rem;
+    }
+
+}
+@media (min-height:650px) and (max-height:720px){
     .contenedor-hero{
         margin-top: 7.5rem;
     }
@@ -2474,12 +2497,22 @@ footer a:hover{
         margin-top: -6rem;
     }
 }
-@media (min-height:750px) and (max-height:900px){
+@media (min-height:800px) and (max-height:820px){
+    .seccion-opciones{
+        margin-top: -2rem;
+    }
+}
+@media (min-height:750px) and (max-height:799px){
     .seccion-opciones{
         margin-top: -4rem;
     }
 }
-@media (min-height:650px) and (max-height:749px){
+@media (min-height:721px) and (max-height:749px){
+    .seccion-opciones{
+        margin-top: -1rem;
+    }
+}
+@media (min-height:650px) and (max-height:720px){
     .seccion-opciones{
         margin-top: 2rem;
     }
