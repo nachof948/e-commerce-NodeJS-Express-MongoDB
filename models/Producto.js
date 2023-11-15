@@ -13,6 +13,10 @@ const productoSchema = new mongoose.Schema({
         type:Number,
         required:[true,'precio del producto']
     },
+    estrellas:{
+        type:Number,
+        required:[true,'estrellas del producto']
+    },
     vegano:{
         type:Boolean,
         required:[true,'tipo de producto']
