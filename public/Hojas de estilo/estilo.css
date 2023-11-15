@@ -1724,6 +1724,10 @@ footer a:hover{
 /* ====FIN COMPUTADOR LAPTOP===== */
 /* ==== TABLET===== */
 @media (max-width:1024px) {
+    .swiper-hero{
+        height: 600px;
+        margin-top: -18rem;
+    }
     .swiper-button-prev,
     .swiper-button-next{
         display: block;
@@ -1826,6 +1830,7 @@ footer a:hover{
 @media (max-width:768px) {
     .swiper-hero{
         width: 95vw; 
+        margin-top: -18rem;
     }
     .hero{
         background:none;
@@ -1916,7 +1921,7 @@ footer a:hover{
         padding-left: 6rem;
     }
     .swiper-slide-hero{
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
@@ -1931,7 +1936,7 @@ footer a:hover{
 }
 @media (max-width:400px) {
     .swiper-slide-hero{
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
     .textos-hero p{
         font-size: 0.8rem;
@@ -1990,11 +1995,11 @@ footer a:hover{
 }
 @media (max-width:322px) {
     .swiper-slide-hero{
-        margin-top: 7rem;
+        margin-top: 4rem;
     }
     .swiper-button-prev,
     .swiper-button-next{
-        margin-top: -4rem;  
+        margin-top: -2rem;  
         background-color: transparent;
         margin-inline: -1rem ;
     }

@@ -27,7 +27,6 @@ passport.use(
             const dato = await GoogleCliente.findOne({ googleId: profile.id });
             
             if (dato) {
-                console.log('El usuario ya está registrado', dato);
                 done(null, dato)
             } else {
                 // Registrar un nuevo usuario
@@ -37,11 +36,9 @@ passport.use(
                     image:profile.photos[0].value
                 }).save();/* Metodo para guardar informacion */
                 
-                console.log('El usuario se creó con éxito', user); /* .then() es lo qe nos devuelve la base datos */
                 done(null, user);
             }
         } catch (error) {
-            console.error('Error:', error);
             done(error, null);
         }
     })

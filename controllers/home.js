@@ -8,7 +8,6 @@ const home = async (req, res) => {
         const productos = await Producto.find();
         res.render('home', { productos: productos, user: req.user, carrito: carrito});
     } catch (error) {
-        console.error(error);
         res.status(500).send('Error interno del servidor');
     }
 };

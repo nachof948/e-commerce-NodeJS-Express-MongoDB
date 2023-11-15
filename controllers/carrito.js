@@ -6,7 +6,6 @@ const mostrarCarrito= async(req, res) => {
         const carrito = await Carrito.find({})
         res.render('carrito', {carrito:carrito, user:req.user})
     } catch(err){
-        console.error(err);
         res.status(404).send('Error');
     }
 }
@@ -30,7 +29,6 @@ const agregarProductos = async (req, res) => {
 
         res.redirect('/compras');
     } catch (error) {
-        console.error(error);
         return res.status(500).json({ mensaje: "Error interno del servidor" });
     }
 };
@@ -55,7 +53,6 @@ const restarProductos = async (req, res) => {
         // Redirigir después de la operación de base de datos
         res.redirect('/compras');
     } catch (error) {
-        console.error(error);
         return res.status(500).json({ mensaje: "Error interno del servidor" });
     }
 };
