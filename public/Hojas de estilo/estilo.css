@@ -1373,6 +1373,11 @@ footer a:hover{
         font-size: 1.2rem;
     }
 }
+@media (min-height:1201px) and (max-height:1400px) {
+    .contenedor-menu-responsive.activo{
+        height: 25vh;
+    }
+}
 @media (min-height:1051px) and (max-height:1200px) {
     .contenedor-menu-responsive.activo{
         height: 30vh;
@@ -1383,7 +1388,12 @@ footer a:hover{
         height: 35vh;
     }
 }
-@media (min-height:800px) and (max-height:1000px) {
+@media (min-height:920px) and (max-height:999px) {
+    .contenedor-menu-responsive.activo{
+        height: 45vh;
+    }
+}
+@media (min-height:800px) and (max-height:880px) {
     .contenedor-menu-responsive.activo{
         height: 45vh;
     }
@@ -2453,7 +2463,11 @@ footer a:hover{
         transform: translateY(-50%);
     }
 }
-
+@media (min-height:1201px) and (max-height:1400px){
+    .seccion-opciones{
+        margin-top: -12rem;
+    }
+}
 
 @media (min-height:1101px) and (max-height:1200px){
     .seccion-opciones{
