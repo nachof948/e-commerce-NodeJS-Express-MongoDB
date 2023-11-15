@@ -42,12 +42,12 @@ const swiperEspecial = new Swiper('.swiper-especial', {
       noSwiping: true,
       noSwipingClass: 'swiper-no-swiping',
       slidesPerView: 1,
-      autoplay: {
+/*       autoplay: {
         delay:4000,
         speed:3000,
         pauseOnMouseEnter:true,
         disableOnInteraction:false,
-      },
+      }, */
   
     // If we need pagination
       pagination: {
