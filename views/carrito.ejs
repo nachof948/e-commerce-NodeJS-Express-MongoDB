@@ -47,11 +47,15 @@
                                 </form>
                             </div>
                             <div>
-                                <a class="explorar" href="/comidas/all">Explorar mas</a>
+                                <%if(user){%>
+                                    <a class="explorar" href="/comidas/all">Explorar mas</a>
+                                <%}else{%>
+                                    <a class="explorar" href="/auth/signup">Explorar mas</a>
+                                <%}%>
                             </div>
                         </div>
-                <%
-                } else {%>
+                
+                <%} else {%>
                     <div class="buscar-productos"> 
                         <h1 class="mensaje-carrito">No hay productos en el carrito</h1>
                         <a href="/comidas/all">Explorar mas</a>
