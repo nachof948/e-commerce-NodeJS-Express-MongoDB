@@ -98,7 +98,7 @@
     <section id="opciones" class="seccion-opciones">
         <div class="contenedor-opciones">
             <% for (let i = 0; i < productos.length && i < 4; i++) { %>
-                <%if(user){%>
+
                     <div class="tarjeta tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
                         <img src=<%=productos[i].imgUrl%> alt="">
                         <div class="tarjeta-textos">
@@ -120,30 +120,6 @@
                             </div>
                         </div>
                     </div>
-                <%} else{%>
-                    <div class="tarjeta tarjeta-producto">
-                        <img src=<%=productos[i].imgUrl%> alt="">
-                        <div class="tarjeta-textos">
-                            <h2><%=productos[i].nombre%></h2>
-                            <p><%=productos[i].descripcion%></p>
-                            <div class="opciones-comprar">
-                                <p>$<%=productos[i].precio%></p>
-                                <%if (user) {%>
-                                    <form action="/compras/agregar" method="POST">
-                                        <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                        <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                        <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                        <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                        <button type="submit" class="comprar-ahora">Comprar Ahora</button>
-                                    </form>
-                                <%} else {%>
-                                    <a href="/auth/signup">Comprar Ahora</a>
-                                <%}%>    
-                            </div>
-                        </div>
-                    </div>
-                    <%}%>
-                
             <%} %>
         </div>
     </section>
@@ -195,247 +171,124 @@
                     <div class="swiper swiper-especial especiales"  >
                         <div class="swiper-wrapper swiper-wrapper-especial" >
                             <div class="swiper-slide swiper-slide-especial" >
-                                <%if(user){%>
-                                    <% for (let i = 4; i < productos.length && i < 7; i++) { %>
-                                        <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
+                                <% for (let i = 4; i < productos.length && i < 7; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <%if (user) {%>
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%} else {%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%> 
                                             </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
+                                <%}%>
+                            </div>
+                            <div class="swiper-slide swiper-slide-especial">
+                                <% for (let i = 7; i < productos.length && i < 10; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <%if (user) {%>
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%} else {%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%> 
                                             </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
-                                <%} else{%>
-                                    <% for (let i = 4; i < productos.length && i < 7; i++) { %>
-                                        <div class="especial tarjeta-producto">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
-                                            </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
                                     <%}%>
                             </div>
-                            <div class="swiper-slide swiper-slide-especial" >
-                                <%if(user){%>
-                                    <% for (let i = 7; i < productos.length && i < 10; i++) { %>
-                                        <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
-                                            </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
-                                <%} else{%>
-                                    <% for (let i = 7; i < productos.length && i < 10; i++) { %>
-                                        <div class="especial tarjeta-producto">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
-                                            </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
+                            <div class="swiper-slide swiper-slide-especial">
+                                <% for (let i = 10; i < productos.length && i < 13; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <%if (user) {%>
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%}else {%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%> 
+                                            
+                                    </div>
                                     <%}%>
                             </div>
-                            <div class="swiper-slide swiper-slide-especial" >
-                                <%if(user){%>
-                                    <% for (let i = 10; i < productos.length && i < 13; i++) { %>
-                                        <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
+                            <div class="swiper-slide swiper-slide-especial">
+                                <% for (let i = 13; i < productos.length && i < 16; i++) { %>
+                                    <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
+                                        <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
+                                        <h2><%=productos[i].nombre%></h2>
+                                        <div class="estrellas">
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <img src="imagenes/icons8-estrella.png" alt=""/>
+                                            <p class="num">(169)</p>
+                                        </div>
+                                        <div class="precio">
+                                            <p>$<%=productos[i].precio%></p>
+                                        </div>
+                                        <%if (user) {%>
+                                            <form action="/compras/agregar" method="POST">
+                                                <input type="hidden" name="id" value="<%=productos[i]._id%>">
+                                                <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
+                                                <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
+                                                <input type="hidden" name="precio" value="<%=productos[i].precio%>">
+                                                <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
+                                            </form>
+                                        <%}else {%>
+                                            <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
+                                        <%}%> 
                                             </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
-                                <%} else{%>
-                                    <% for (let i = 10; i < productos.length && i < 13; i++) { %>
-                                        <div class="especial tarjeta-producto">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
-                                            </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
-                                    <%}%>
-                            </div>
-                            <div class="swiper-slide swiper-slide-especial" >
-                                <%if(user){%>
-                                    <% for (let i = 13; i < productos.length && i < 16; i++) { %>
-                                        <div class="especial tarjeta-producto" data-producto-id="<%-productos[i]._id%>">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
-                                            </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
-                                <%} else{%>
-                                    <% for (let i = 13; i < productos.length && i < 16; i++) { %>
-                                        <div class="especial tarjeta-producto">
-                                            <img class="comida" src=<%=productos[i].imgUrl%> alt=""/>
-                                            <h2><%=productos[i].nombre%></h2>
-                                            <div class="estrellas">
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <img src="imagenes/icons8-estrella.png" alt=""/>
-                                                <p class="num">(169)</p>
-                                            </div>
-                                            <div class="precio">
-                                                <p>$<%=productos[i].precio%></p>
-                                            </div>
-                                            <%if (user) {%>
-                                                <form action="/compras/agregar" method="POST">
-                                                    <input type="hidden" name="id" value="<%=productos[i]._id%>">
-                                                    <input type="hidden" name="nombre" value="<%=productos[i].nombre%>">
-                                                    <input type="hidden" name="imagen" value="<%=productos[i].imgUrl%>">
-                                                    <input type="hidden" name="precio" value="<%=productos[i].precio%>">
-                                                    <button class="comprar-ahora bolsa" type="submit"><img src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></button>
-                                                </form>
-                                            <%} else {%>
-                                                <a class="bolsa" href="/auth/signup"><img class="bolsa-comprar" src="imagenes/icons8-bolsa-de-compras-45.png" alt=""></a>
-                                            <%}%> 
-                                                </div>
-                                    <%}%>
                                     <%}%>
                             </div>
                         </div>
