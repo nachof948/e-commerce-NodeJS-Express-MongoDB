@@ -13,7 +13,11 @@
             </nav>
             <div class="header-derecha">
                 <div class="header-iconos">
-                    <a href="#"><i class="bi bi-search"></i></a>
+                    <%if(user){%>
+                        <a href="/comidas/all"><i class="bi bi-search"></i></a>
+                    <%}else{%>
+                        <a href="/auth/signup"><i class="bi bi-search"></i></a>
+                        <%}%>
                     <% if (carrito.length > 0) {%>
                     <a class="bag-red" href="/compras"><i class="bi bi-bag"></i></a>
                     <%}else{%>
