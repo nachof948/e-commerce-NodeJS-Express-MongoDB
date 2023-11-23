@@ -26,7 +26,6 @@ const agregarProductos = async (req, res) => {
             productoEnCarrito.cantidad += 1;
             await productoEnCarrito.save();
         }
-
         res.redirect('/compras');
     } catch (error) {
         return res.status(500).json({ mensaje: "Error interno del servidor" });

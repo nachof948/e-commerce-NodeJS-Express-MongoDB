@@ -10,12 +10,12 @@ const swiperEspecial = new Swiper('.swiper-especial', {
         disableOnInteraction:false,
       },
   
-
       pagination: {
       el: '.swiper-pagination',
       clickable:true,
       },
   });
+
   const swiper = new Swiper('.swiper-habitual', {
 
       direction: 'horizontal',
