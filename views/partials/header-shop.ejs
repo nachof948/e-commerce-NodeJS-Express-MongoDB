@@ -29,11 +29,14 @@
                     <%}else{%>
                         <a href="/auth/signup"><i class="bi bi-search"></i></a>
                     <%}%>
-                    <%if (carrito.length > 0) {%>
+                    <% if (user && carrito && carrito.length > 0) { %>
                         <a class="bag-red" href="/compras"><i class="bi bi-bag"></i></a>
-                    <%}else{%>
+                    <% } else if (user && (!carrito || carrito.length === 0)) { %>
                         <a href="/compras"><i class="bi bi-bag"></i></a>
-                    <%}%>
+                    <% } else if (!user) { %>
+                        <a href="/compras"><i class="bi bi-bag"></i></a>
+                    <% } %>
+                    
             </div>
             <%if(user) {%>
                 <div class="perfil">

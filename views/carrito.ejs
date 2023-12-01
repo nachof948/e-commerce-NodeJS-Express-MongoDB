@@ -17,29 +17,31 @@
                 <div class="carrito-compras">
                     <%if(carrito.length > 0){%>
                         <% let total = 0 %>
-                        <% carrito.forEach(producto => { %>
-                            <div class="carrito-productos">
-                                <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-                                <form action="/compras/agregar" method="POST">
-                                    <input type="hidden" name="id" value="<%=producto._id%>">
-                                    <input type="hidden" name="nombre" value="<%=producto.nombre%>">
-                                    <input type="hidden" name="imagen" value="<%=producto.imgUrl%>">
-                                    <input type="hidden" name="precio" value="<%=producto.precio%>">
-                                    <button class="comprar-ahora agregar" type="submit">+</button>
-                                </form>
-                                <p class="product-quantity"><%= Number(producto.cantidad) %></p>
-                                <form action="/compras/restar" method="POST">
-                                    <input type="hidden" name="id" value="<%=producto._id%>">
-                                    <input type="hidden" name="nombre" value="<%=producto.nombre%>">
-                                    <input type="hidden" name="imagen" value="<%=producto.imgUrl%>">
-                                    <input type="hidden" name="precio" value="<%=producto.precio%>">
-                                    <button class="comprar-ahora agregar" type="submit">-</button>
-                                </form>
-                                    <a href="compras/eliminar/<%= producto._id %>">Eliminar</a>
-                                <p>$ <%= producto.precio %></p>
-                            </div>
-                            <% total += Number(producto.precio) * Number(producto.cantidad); %>
+                        <% carrito.forEach(item => { %>
+                            <% item.items.forEach(producto => { %>
+                                <div class="carrito-productos">
+                                    <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
+                                    <form action="/compras/agregar" method="POST">
+                                        <input type="hidden" name="id" value="<%= producto._id %>">
+                                        <input type="hidden" name="nombre" value="<%= producto.nombre %>">
+                                        <input type="hidden" name="imagen" value="<%= producto.imagen %>">
+                                        <input type="hidden" name="precio" value="<%= producto.precio %>">
+                                        <button class="comprar-ahora agregar" type="submit">+</button>
+                                    </form>
+                                    <p class="product-quantity"><%= Number(producto.cantidad) %></p>
+                                    <form action="/compras/restar" method="POST">
+                                        <input type="hidden" name="id" value="<%= producto._id %>">
+                                        <input type="hidden" name="nombre" value="<%= producto.nombre %>">
+                                        <input type="hidden" name="imagen" value="<%= producto.imagen %>">
+                                        <input type="hidden" name="precio" value="<%= producto.precio %>">
+                                        <button class="comprar-ahora agregar" type="submit">-</button>
+                                    </form>
+                                    <a href="/compras/eliminar/<%= producto._id %>">Eliminar</a>
+                                    <p>$ <%= producto.precio %></p>
+                                </div>
+                                <% total += Number(producto.precio) * Number(producto.cantidad); %>
                             <% }); %>
+                        <% }); %>
                             <div class="realizar-compra">
                                 <div class="comprar-carrito">
                                     <p>Total:$<%= total %></p>
